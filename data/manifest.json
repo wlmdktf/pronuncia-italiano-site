@@ -1267,5 +1267,1382 @@
   "stt": "Unisci le sillabe.",
   "bytes": 21312,
   "ts": "2026-08-02 20:50"
+ },
+ "word-mago": {
+  "hash": "d1c8dd29373f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Mago.",
+  "qa": "ok",
+  "stt": "Mago.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-mare": {
+  "hash": "f5d3bf1277c3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Mare.",
+  "qa": "ok",
+  "stt": "Mare.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-topo": {
+  "hash": "d1edf92f47fa",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Topo.",
+  "qa": "ok",
+  "stt": "Topo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-sole": {
+  "hash": "13bb88b99277",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sole.",
+  "qa": "ok",
+  "stt": "Sole.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-moto": {
+  "hash": "ab6ac72e0523",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Moto.",
+  "qa": "ok",
+  "stt": "Moto.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-moneta": {
+  "hash": "ede978e54488",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Moneta.",
+  "qa": "ok",
+  "stt": "Moneta.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pera": {
+  "hash": "47230f0eaca2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pera.",
+  "qa": "ok",
+  "stt": "Pera.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-melone": {
+  "hash": "5473dbd8fbdc",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Melone.",
+  "qa": "ok",
+  "stt": "Melone.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-limone": {
+  "hash": "87c1e5a0a48d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Limone.",
+  "qa": "ok",
+  "stt": "Limone.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-mirtillo": {
+  "hash": "318d15f5e206",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Mirtillo.",
+  "qa": "ok",
+  "stt": "Mirtillo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-muro": {
+  "hash": "5f8ffe5aa590",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Muro.",
+  "qa": "ok",
+  "stt": "Muro.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-nastro": {
+  "hash": "455191dd7cf7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Nastro.",
+  "qa": "ok",
+  "stt": "Nastro.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pane": {
+  "hash": "fee4e77e41a8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pane.",
+  "qa": "ok",
+  "stt": "Pane.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-nero": {
+  "hash": "2428bb547c3d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Nero.",
+  "qa": "ok",
+  "stt": "Nero.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-nuoto": {
+  "hash": "5acc81d2c532",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Nuoto.",
+  "qa": "ok",
+  "stt": "Nuoto.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "letter-p-sound": {
+  "hash": "494775f60807",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<phoneme alphabet='ipa' ph='pə'>p</phoneme>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 7488,
+  "ts": "2026-08-02 22:46"
+ },
+ "letter-p-name": {
+  "hash": "5785b58f9d65",
+  "voice": "it-IT-ElsaNeural",
+  "text": "pi.",
+  "qa": "check",
+  "stt": "P.",
+  "bytes": 7488,
+  "ts": "2026-08-02 22:46"
+ },
+ "letter-p-mouth": {
+  "hash": "3dfd9dc81858",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Quando dico la <say-as interpret-as='characters'>P</say-as>, le labbra prima si chiudono e poi si aprono di colpo, come un piccolo scoppio!",
+  "qa": "ok",
+  "stt": "Quando dico lapì le labbra prima si chiudono e poi si aprono di colpo, come un piccolo scoppio.",
+  "bytes": 73440,
+  "ts": "2026-08-02 22:49"
+ },
+ "letter-p-shape": {
+  "hash": "87d9c1cfe9a5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "La <say-as interpret-as='characters'>P</say-as> ha una gran pancia davanti.",
+  "qa": "ok",
+  "stt": "La P ha una gran pancia davanti.",
+  "bytes": 30240,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pa": {
+  "hash": "1645c2b0820d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "pa.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pa-slow": {
+  "hash": "d9c00017a75a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>pa</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pane-slow": {
+  "hash": "9427692fd25c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pane.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-po": {
+  "hash": "dd68ad2727c8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "po.",
+  "qa": "ok",
+  "stt": "Po.",
+  "bytes": 7488,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-po-slow": {
+  "hash": "41d856550922",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>po</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-porta": {
+  "hash": "4bccfb8705af",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Porta.",
+  "qa": "ok",
+  "stt": "Porta.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-porta-slow": {
+  "hash": "8fb0e98265de",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Porta.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pe": {
+  "hash": "25c03772bc2e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "pe.",
+  "qa": "check",
+  "stt": "P.",
+  "bytes": 7776,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pe-slow": {
+  "hash": "de4bf43fc5f8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>pe</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pesce": {
+  "hash": "e99aeda956da",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pesce.",
+  "qa": "ok",
+  "stt": "Pesce.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pesce-slow": {
+  "hash": "0073eca74595",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pesce.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pi": {
+  "hash": "5785b58f9d65",
+  "voice": "it-IT-ElsaNeural",
+  "text": "pi.",
+  "qa": "check",
+  "stt": "P.",
+  "bytes": 7488,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pi-slow": {
+  "hash": "aec3af550674",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>pi</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pizza": {
+  "hash": "a5ee9e8eec24",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pizza.",
+  "qa": "ok",
+  "stt": "Pizza.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pizza-slow": {
+  "hash": "46ac7b6c6f84",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pizza.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pu": {
+  "hash": "91701364293e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "pu.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-02 22:46"
+ },
+ "sil-pu-slow": {
+  "hash": "ddc28144cf01",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>pu</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pulcino": {
+  "hash": "a70be819e7e7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pulcino.",
+  "qa": "ok",
+  "stt": "Pulcino.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pulcino-slow": {
+  "hash": "9c95939cd5bf",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pulcino.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-patata": {
+  "hash": "1f3b15dd7c31",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Patata.",
+  "qa": "ok",
+  "stt": "Patata.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pollo": {
+  "hash": "b29f19e961f5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pollo.",
+  "qa": "ok",
+  "stt": "Pollo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pomodoro": {
+  "hash": "d995c93ac626",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pomodoro.",
+  "qa": "ok",
+  "stt": "Pomodoro.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-polipo": {
+  "hash": "54efb955591d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Polipo.",
+  "qa": "ok",
+  "stt": "Polipo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pecora": {
+  "hash": "3e606ca5c68c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pecora.",
+  "qa": "ok",
+  "stt": "Pecora.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-penna": {
+  "hash": "081facba97d2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Penna.",
+  "qa": "ok",
+  "stt": "Penna.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pino": {
+  "hash": "b9b9b97b1eaa",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pino.",
+  "qa": "ok",
+  "stt": "Pino.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-piede": {
+  "hash": "372fca05beda",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Piede.",
+  "qa": "ok",
+  "stt": "Piede.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pipistrello": {
+  "hash": "9788f7303ca7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pipistrello.",
+  "qa": "ok",
+  "stt": "Pipistrello.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pupazzo": {
+  "hash": "b8aa2ab63832",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pupazzo.",
+  "qa": "ok",
+  "stt": "Pupazzo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pugno": {
+  "hash": "22523df9784b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pugno.",
+  "qa": "ok",
+  "stt": "Pugno.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-fiore": {
+  "hash": "a76f4cfe52ca",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Fiore.",
+  "qa": "ok",
+  "stt": "Fiore.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-papa": {
+  "hash": "7328b357ffda",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Papà.",
+  "qa": "ok",
+  "stt": "Papà.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-papa-slow": {
+  "hash": "ee4033daccca",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Papà.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-pino-slow": {
+  "hash": "71e67ae1281c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pino.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-mappa": {
+  "hash": "b5120c1a9967",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Mappa.",
+  "qa": "ok",
+  "stt": "Mappa.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "word-mappa-slow": {
+  "hash": "c0abf10007a9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Mappa.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:46"
+ },
+ "letter-t-sound": {
+  "hash": "de62eeadb4e2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<phoneme alphabet='ipa' ph='tə'>t</phoneme>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 7488,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-t-name": {
+  "hash": "22ba99ff9e0e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "ti.",
+  "qa": "check",
+  "stt": "T.",
+  "bytes": 8064,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-t-mouth": {
+  "hash": "e6e554b433cc",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Quando dico la <say-as interpret-as='characters'>T</say-as>, la punta della lingua batte dietro i denti di sopra.",
+  "qa": "ok",
+  "stt": "Quando dico latì la punta della lingua batte dietro i denti di sopra.",
+  "bytes": 55008,
+  "ts": "2026-08-02 22:49"
+ },
+ "letter-t-shape": {
+  "hash": "45ff881f6b85",
+  "voice": "it-IT-ElsaNeural",
+  "text": "La <say-as interpret-as='characters'>T</say-as> è dritta come un tavolino con una gamba sola.",
+  "qa": "ok",
+  "stt": "La T è dritta come un tavolino con una gamba sola.",
+  "bytes": 44352,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-ta": {
+  "hash": "f128be45d546",
+  "voice": "it-IT-ElsaNeural",
+  "text": "ta.",
+  "qa": "check",
+  "stt": "Da.",
+  "bytes": 8064,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-ta-slow": {
+  "hash": "f7401a357a4d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>ta</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tamburo": {
+  "hash": "165ca5f62189",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tamburo.",
+  "qa": "ok",
+  "stt": "Tamburo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tamburo-slow": {
+  "hash": "5d857ce3dcc8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Tamburo.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-to": {
+  "hash": "80715a177f51",
+  "voice": "it-IT-ElsaNeural",
+  "text": "to.",
+  "qa": "check",
+  "stt": "Tu.",
+  "bytes": 7200,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-to-slow": {
+  "hash": "90189899f46f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>to</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-topo-slow": {
+  "hash": "299ce1050f1b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Topo.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-te": {
+  "hash": "ad042ff3f519",
+  "voice": "it-IT-ElsaNeural",
+  "text": "te.",
+  "qa": "check",
+  "stt": "T.",
+  "bytes": 7776,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-te-slow": {
+  "hash": "56a8b656869e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>te</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-telefono": {
+  "hash": "3580523ce66b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Telefono.",
+  "qa": "ok",
+  "stt": "Telefono.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-telefono-slow": {
+  "hash": "dd98255b2668",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Telefono.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-ti": {
+  "hash": "22ba99ff9e0e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "ti.",
+  "qa": "check",
+  "stt": "T.",
+  "bytes": 8064,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-ti-slow": {
+  "hash": "7be24735d5be",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>ti</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tigre-slow": {
+  "hash": "9a063486e93a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Tigre.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-tu": {
+  "hash": "6fd5fdbd990e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "tu.",
+  "qa": "ok",
+  "stt": "Tu.",
+  "bytes": 7200,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-tu-slow": {
+  "hash": "7cff388eae0e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>tu</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tulipano": {
+  "hash": "45d5b25c1697",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tulipano.",
+  "qa": "ok",
+  "stt": "Tulipano.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tulipano-slow": {
+  "hash": "00f8b8d54178",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Tulipano.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-taxi": {
+  "hash": "5755ce820bf0",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Taxi.",
+  "qa": "ok",
+  "stt": "Taxi.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-torta": {
+  "hash": "8ee38bdedd26",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Torta.",
+  "qa": "ok",
+  "stt": "Torta.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-toro": {
+  "hash": "4b152096b2b5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Toro.",
+  "qa": "ok",
+  "stt": "Toro.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:49"
+ },
+ "word-tesoro": {
+  "hash": "968c507e743e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tesoro.",
+  "qa": "ok",
+  "stt": "Tesoro.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tenda": {
+  "hash": "518aa67904e0",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tenda.",
+  "qa": "ok",
+  "stt": "Tenda.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-tivu": {
+  "hash": "8b28397a6ea7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tivù.",
+  "qa": "ok",
+  "stt": "TV.",
+  "bytes": 8640,
+  "ts": "2026-08-02 22:49"
+ },
+ "word-tuono": {
+  "hash": "ffd0f97ed9f3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tuono.",
+  "qa": "ok",
+  "stt": "Tuono.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-moto-slow": {
+  "hash": "8c69cf6c200f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Moto.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-notte-slow": {
+  "hash": "5308ef885969",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Notte.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-patata-slow": {
+  "hash": "7cc224b6db24",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Patata.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-l-sound": {
+  "hash": "ce38ff6013db",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<phoneme alphabet='ipa' ph='lː'>l</phoneme>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 8352,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-l-name": {
+  "hash": "08a4521104be",
+  "voice": "it-IT-ElsaNeural",
+  "text": "elle.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-l-mouth": {
+  "hash": "ce36321b1eec",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Quando dico la <say-as interpret-as='characters'>L</say-as>, la punta della lingua tocca dietro i denti di sopra e la voce scorre ai lati.",
+  "qa": "ok",
+  "stt": "Quando dico la L, la punta della lingua tocca dietro i denti di sopra, e la voce scorre ai lati.",
+  "bytes": 76032,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-l-shape": {
+  "hash": "1aef86c8baa4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "La <say-as interpret-as='characters'>L</say-as> sembra una gamba con il piede.",
+  "qa": "ok",
+  "stt": "La L Sembra una gamba con il piede.",
+  "bytes": 34560,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-la": {
+  "hash": "34bf635b5a0d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "la.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-la-slow": {
+  "hash": "8a7b90b9d1f2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>la</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-latte": {
+  "hash": "858050fe2597",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Latte.",
+  "qa": "ok",
+  "stt": "Latte.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-latte-slow": {
+  "hash": "bad330d1bba3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Latte.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-lo": {
+  "hash": "39d5a35b60a7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "lo.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-lo-slow": {
+  "hash": "40b290c3c3d5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>lo</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-locomotiva": {
+  "hash": "d18ce5aece05",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Locomotiva.",
+  "qa": "ok",
+  "stt": "Locomotiva.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-locomotiva-slow": {
+  "hash": "5b0d32e45850",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Locomotiva.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 23040,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-le": {
+  "hash": "5ea116a4ef34",
+  "voice": "it-IT-ElsaNeural",
+  "text": "le.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-le-slow": {
+  "hash": "4b372c04bfa3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>le</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-leone": {
+  "hash": "64c625cd92a4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Leone.",
+  "qa": "ok",
+  "stt": "Leone.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-leone-slow": {
+  "hash": "0ed7121aabaf",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Leone.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-li": {
+  "hash": "2b2dcff54376",
+  "voice": "it-IT-ElsaNeural",
+  "text": "li.",
+  "qa": "ok",
+  "stt": "Lì.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-li-slow": {
+  "hash": "051d7c80b98b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>li</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-limone-slow": {
+  "hash": "c0f9feb14239",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Limone.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-lu": {
+  "hash": "d7d7c45d6c65",
+  "voice": "it-IT-ElsaNeural",
+  "text": "lu.",
+  "qa": "ok",
+  "stt": "Lu.",
+  "bytes": 7776,
+  "ts": "2026-08-02 22:47"
+ },
+ "sil-lu-slow": {
+  "hash": "0b9768fd64f8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>lu</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-luna-slow": {
+  "hash": "655f664ba121",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Luna.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-lampada": {
+  "hash": "ec2d23c52ea9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lampada.",
+  "qa": "ok",
+  "stt": "Lampada.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-lontra": {
+  "hash": "d28a96ce6eac",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lontra.",
+  "qa": "mismatch",
+  "stt": "Londra.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:49"
+ },
+ "word-lupo": {
+  "hash": "eb8349474bbe",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lupo.",
+  "qa": "ok",
+  "stt": "Lupo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-letto": {
+  "hash": "967e09521fee",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Letto.",
+  "qa": "ok",
+  "stt": "Letto.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-lente": {
+  "hash": "d923e84955e4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lente.",
+  "qa": "ok",
+  "stt": "Lente.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-libro": {
+  "hash": "79a0fda4e0f1",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Libro.",
+  "qa": "ok",
+  "stt": "Libro.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-lingua": {
+  "hash": "7a235dd79e76",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lingua.",
+  "qa": "ok",
+  "stt": "Lingua.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-lumaca": {
+  "hash": "91da749a9812",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lumaca.",
+  "qa": "ok",
+  "stt": "Lumaca.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-lupo-slow": {
+  "hash": "ba3c36effc33",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Lupo.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "word-palla-slow": {
+  "hash": "d6a394bd01c5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Palla.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-s-sound": {
+  "hash": "e6c86d7b603f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<phoneme alphabet='ipa' ph='sː'>s</phoneme>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 8352,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-s-name": {
+  "hash": "791ae5c3d6f3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "esse.",
+  "qa": "ok",
+  "stt": "Esse.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:47"
+ },
+ "letter-s-mouth": {
+  "hash": "913001188843",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Quando dico la <say-as interpret-as='characters'>S</say-as>, i denti sono quasi chiusi e l'aria esce facendo sssss, come un serpente.",
+  "qa": "ok",
+  "stt": "Quando dico la SI denti sono quasi chiusi e l'aria esce facendo SSSSS come un serpente.",
+  "bytes": 92448,
+  "ts": "2026-08-02 22:48"
+ },
+ "letter-s-shape": {
+  "hash": "e0e59c7f4468",
+  "voice": "it-IT-ElsaNeural",
+  "text": "La <say-as interpret-as='characters'>S</say-as> è come un serpente che striscia.",
+  "qa": "ok",
+  "stt": "La S è come un serpente che striscia.",
+  "bytes": 35136,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-sa": {
+  "hash": "f69321c36a15",
+  "voice": "it-IT-ElsaNeural",
+  "text": "sa.",
+  "qa": "ok",
+  "stt": "Sa.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-sa-slow": {
+  "hash": "b4cab1cf2bb4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>sa</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sale": {
+  "hash": "e6ede7f88b08",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sale.",
+  "qa": "ok",
+  "stt": "Sale.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sale-slow": {
+  "hash": "8582f19fce98",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Sale.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-so": {
+  "hash": "2d68da2efafb",
+  "voice": "it-IT-ElsaNeural",
+  "text": "so.",
+  "qa": "ok",
+  "stt": "So.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-so-slow": {
+  "hash": "4ce73d06bb46",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>so</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sole-slow": {
+  "hash": "420706f62ca5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Sole.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-se": {
+  "hash": "a714779bd61a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "se.",
+  "qa": "check",
+  "stt": "Sì.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-se-slow": {
+  "hash": "76f6619ca15c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>se</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-serpente": {
+  "hash": "34e6423a53cb",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Serpente.",
+  "qa": "ok",
+  "stt": "Serpente.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-serpente-slow": {
+  "hash": "29d2e790e602",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Serpente.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21600,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-si": {
+  "hash": "ea12ab02eb40",
+  "voice": "it-IT-ElsaNeural",
+  "text": "si.",
+  "qa": "ok",
+  "stt": "Sì.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-si-slow": {
+  "hash": "5b86c715a69e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>si</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sirena": {
+  "hash": "39a4de215629",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sirena.",
+  "qa": "ok",
+  "stt": "Sirena.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sirena-slow": {
+  "hash": "2e69311e4391",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Sirena.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-su": {
+  "hash": "0f41c4ca80ad",
+  "voice": "it-IT-ElsaNeural",
+  "text": "su.",
+  "qa": "ok",
+  "stt": "Su.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "sil-su-slow": {
+  "hash": "c71dd360faac",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-40%'>su</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-succo": {
+  "hash": "9079e57ca112",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Succo.",
+  "qa": "ok",
+  "stt": "Succo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-succo-slow": {
+  "hash": "4e3cacd7fc04",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Succo.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sasso": {
+  "hash": "f675dc889110",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sasso.",
+  "qa": "ok",
+  "stt": "Sasso.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sapone": {
+  "hash": "64cfff7a51b2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sapone.",
+  "qa": "ok",
+  "stt": "Sapone.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sofa": {
+  "hash": "96ba484329d7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sofà.",
+  "qa": "ok",
+  "stt": "Sofà.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-soldi": {
+  "hash": "551537ecf0e4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Soldi.",
+  "qa": "ok",
+  "stt": "Soldi.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sedia": {
+  "hash": "ad0d9ade36fe",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sedia.",
+  "qa": "ok",
+  "stt": "Sedia.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-semaforo": {
+  "hash": "647e374fddcf",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Semaforo.",
+  "qa": "ok",
+  "stt": "Semaforo.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-silenzio": {
+  "hash": "3744b2b26289",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Silenzio.",
+  "qa": "ok",
+  "stt": "Silenzio.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-supereroe": {
+  "hash": "396ceeed9866",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Supereroe.",
+  "qa": "ok",
+  "stt": "Supereroe.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-sasso-slow": {
+  "hash": "b42f1597c7fa",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Sasso.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-mimosa": {
+  "hash": "afc909d2575e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Mimosa.",
+  "qa": "ok",
+  "stt": "Mimosa.",
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
+ },
+ "word-mimosa-slow": {
+  "hash": "9aa8e666df1f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Mimosa.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-02 22:48"
  }
 }

@@ -23,6 +23,9 @@ export function h(tag, props = {}, ...kids) {
 
 const app = () => document.getElementById('app');
 const praise = () => 'ui-brava' + (1 + Math.floor(Math.random() * 4));
+// 与音频管线一致的 id 转写: 去重音、只留 a-z0-9 (PAPÀ -> word-papa)
+const slug = (w) => w.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+const pickN = (arr, n) => [...arr].sort(() => Math.random() - 0.5).slice(0, n);
 
 function confetti() {
   const em = ['🎉', '⭐', '🌟', '🦄', '💜', '🎈'];
@@ -114,7 +117,7 @@ const micBtn = (modelIds) => h('button', { class: 'round-btn mic', onclick: () =
 const soundBtn = (ids, cls = 'round-btn primary') => h('button', { class: cls, onclick: () => A.playSeq(ids, 250) }, '🔊');
 
 function wordCard(w, { slow = false, hlDoppia = false } = {}) {
-  const id = 'word-' + w.word.toLowerCase();
+  const id = 'word-' + slug(w.word);
   let text = w.word;
   if (hlDoppia) {
     const m = w.word.match(/(.)\1/);
@@ -306,12 +309,15 @@ export function renderCasa(unitId, idx) {
   const low = row.s.toLowerCase();
   let found = 0;
 
-  const cards = [...row.correct.map(w => ({ ...w, ok: true })), ...row.wrong.map(w => ({ ...w, ok: false }))]
+  // 题库抽卡: 每轮从池子里随机抽 2 正确 + 2 干扰, 重复玩不重样
+  const chosen = [...pickN(row.correct, 2).map(w => ({ ...w, ok: true })),
+                  ...pickN(row.wrong, 2).map(w => ({ ...w, ok: false }))]
     .sort(() => Math.random() - 0.5);
+  const target = chosen.filter(c => c.ok).length;
 
   const grid = h('div', { class: 'pick-grid' });
-  for (const c of cards) {
-    const id = 'word-' + c.word.toLowerCase();
+  for (const c of chosen) {
+    const id = 'word-' + slug(c.word);
     const btn = h('button', { class: 'pick-card' }, c.emoji);
     btn.addEventListener('click', async () => {
       await A.play(id);
@@ -319,7 +325,7 @@ export function renderCasa(unitId, idx) {
         A.sfx('ok');
         btn.classList.add('gone');
         found++;
-        if (found === row.correct.length) {
+        if (found === target) {
           await A.play(praise());
           if (idx + 1 < u.casa.length) go({ screen: 'casa', unitId, idx: idx + 1 });
           else celebrate(`${unitId}:casa`, { screen: 'unit', unitId });
@@ -346,7 +352,7 @@ export function renderCasa(unitId, idx) {
 export function renderParole(unitId, idx) {
   const u = CUR.units.find(x => x.id === unitId);
   const W = u.parole[idx];
-  const wid = 'word-' + W.word.toLowerCase();
+  const wid = 'word-' + slug(W.word);
   let filled = 0;
 
   const slots = W.sillabe.map(() => h('div', { class: 'slot' }, '·'));
