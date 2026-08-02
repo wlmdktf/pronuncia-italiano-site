@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "voice": "it-IT-ElsaNeural",
+  "appTitle": "Sillabe Magiche",
+  "units": [
+    {
+      "id": "vocali",
+      "title": "Le vocali",
+      "emoji": "🌸",
+      "type": "vocali",
+      "letters": [
+        {
+          "grapheme": "A",
+          "name": "a",
+          "ipa": "aː",
+          "anchor": { "word": "APE", "emoji": "🐝" },
+          "extra": [ { "word": "ALBERO", "emoji": "🌳" }, { "word": "ANATRA", "emoji": "🦆" } ],
+          "mouth": { "it": "Quando dico la A, la bocca è tutta aperta!", "zh": "发 A 嘴巴张到最大，像看牙医时说“啊”" }
+        },
+        {
+          "grapheme": "E",
+          "name": "e",
+          "ipa": "eː",
+          "anchor": { "word": "ELEFANTE", "emoji": "🐘" },
+          "extra": [ { "word": "ELMO", "emoji": "⛑️" }, { "word": "ERBA", "emoji": "🌿" } ],
+          "mouth": { "it": "Quando dico la E, le labbra fanno un sorriso.", "zh": "发 E 嘴角向两边咧开，像在微笑" }
+        },
+        {
+          "grapheme": "I",
+          "name": "i",
+          "ipa": "iː",
+          "anchor": { "word": "ISOLA", "emoji": "🏝️" },
+          "extra": [ { "word": "IPPOPOTAMO", "emoji": "🦛" }, { "word": "INSALATA", "emoji": "🥗" } ],
+          "mouth": { "it": "Quando dico la I, faccio un sorriso con i denti quasi chiusi.", "zh": "发 I 大微笑，牙齿几乎合上，声音尖尖的" }
+        },
+        {
+          "grapheme": "O",
+          "name": "o",
+          "ipa": "oː",
+          "anchor": { "word": "OCA", "emoji": "🪿" },
+          "extra": [ { "word": "OMBRELLO", "emoji": "☂️" }, { "word": "ORSO", "emoji": "🐻" } ],
+          "mouth": { "it": "Quando dico la O, la bocca fa un cerchio.", "zh": "发 O 嘴巴圆圆的，像字母 O 本身" }
+        },
+        {
+          "grapheme": "U",
+          "name": "u",
+          "ipa": "uː",
+          "anchor": { "word": "UVA", "emoji": "🍇" },
+          "extra": [ { "word": "UNO", "emoji": "1️⃣" }, { "word": "UCCELLINO", "emoji": "🐦" } ],
+          "mouth": { "it": "Quando dico la U, le labbra fanno un piccolo cerchio in avanti.", "zh": "发 U 嘴唇缩成小圆圈向前突，像要亲亲" }
+        }
+      ]
+    },
+    {
+      "id": "m",
+      "title": "La lettera M",
+      "emoji": "⛰️",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "M",
+        "name": "emme",
+        "ipa": "mː",
+        "shape": { "it": "La M ha la forma di due montagne vicine.", "zh": "M 像两座挨在一起的山" },
+        "mouth": { "it": "Quando dico la M, le mie labbra sono unite e il suono esce anche un po' dal naso.", "zh": "发 M 双唇闭拢，声音从鼻子里哼出来（摸鼻翼能感到震动）" }
+      },
+      "sillabe": [
+        { "s": "MA", "anchor": { "word": "MANO", "emoji": "✋" } },
+        { "s": "MO", "anchor": { "word": "MONDO", "emoji": "🌍" } },
+        { "s": "ME", "anchor": { "word": "MELA", "emoji": "🍎" } },
+        { "s": "MI", "anchor": { "word": "MIELE", "emoji": "🍯" } },
+        { "s": "MU", "anchor": { "word": "MUCCA", "emoji": "🐄" } }
+      ],
+      "casa": [
+        { "s": "MA", "correct": [ { "word": "MATITA", "emoji": "✏️" }, { "word": "MAIALE", "emoji": "🐷" } ], "wrong": [ { "word": "RANA", "emoji": "🐸" }, { "word": "LAMA", "emoji": "🦙" } ] },
+        { "s": "MO", "correct": [ { "word": "MOSTRO", "emoji": "👾" }, { "word": "MOSCA", "emoji": "🪰" } ], "wrong": [ { "word": "ASINO", "emoji": "🫏" }, { "word": "PALLA", "emoji": "⚽" } ] },
+        { "s": "ME", "correct": [ { "word": "MEDAGLIA", "emoji": "🏅" }, { "word": "MELA", "emoji": "🍎" } ], "wrong": [ { "word": "TARTARUGA", "emoji": "🐢" }, { "word": "UFO", "emoji": "🛸" } ] },
+        { "s": "MI", "correct": [ { "word": "MIELE", "emoji": "🍯" }, { "word": "MINESTRA", "emoji": "🍲" } ], "wrong": [ { "word": "ROBOT", "emoji": "🤖" }, { "word": "LUNA", "emoji": "🌙" } ] },
+        { "s": "MU", "correct": [ { "word": "MUCCA", "emoji": "🐄" }, { "word": "MUSICA", "emoji": "🎵" } ], "wrong": [ { "word": "MONDO", "emoji": "🌍" }, { "word": "FARFALLA", "emoji": "🦋" } ] }
+      ],
+      "parole": [
+        { "word": "MAMMA", "sillabe": [ "MA", "MA" ], "emoji": "👩", "doppia": true },
+        { "word": "MIMO", "sillabe": [ "MI", "MO" ], "emoji": "🎭", "doppia": false }
+      ]
+    },
+    {
+      "id": "n",
+      "title": "La lettera N",
+      "emoji": "🌊",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "N",
+        "name": "enne",
+        "ipa": "nː",
+        "shape": { "it": "La N somiglia alle montagne russe.", "zh": "N 像过山车的轨道" },
+        "mouth": { "it": "Quando dico la N, la punta della lingua si appoggia sul palato e il suono esce anche dal naso.", "zh": "发 N 舌尖顶住上颚，声音也从鼻子出来" }
+      },
+      "sillabe": [
+        { "s": "NA", "anchor": { "word": "NASO", "emoji": "👃" } },
+        { "s": "NO", "anchor": { "word": "NOTA", "emoji": "🎵" } },
+        { "s": "NE", "anchor": { "word": "NEVE", "emoji": "❄️" } },
+        { "s": "NI", "anchor": { "word": "NIDO", "emoji": "🪺" } },
+        { "s": "NU", "anchor": { "word": "NUVOLA", "emoji": "☁️" } }
+      ],
+      "casa": [
+        { "s": "NA", "correct": [ { "word": "NAVE", "emoji": "🚢" }, { "word": "NASO", "emoji": "👃" } ], "wrong": [ { "word": "GATTO", "emoji": "🐱" }, { "word": "CANE", "emoji": "🐶" } ] },
+        { "s": "NO", "correct": [ { "word": "NOTA", "emoji": "🎵" }, { "word": "NOTTE", "emoji": "🌙" } ], "wrong": [ { "word": "ANELLO", "emoji": "💍" }, { "word": "SQUALO", "emoji": "🦈" } ] },
+        { "s": "NE", "correct": [ { "word": "NEVE", "emoji": "❄️" }, { "word": "NEGOZIO", "emoji": "🏪" } ], "wrong": [ { "word": "NOCE", "emoji": "🌰" }, { "word": "CONIGLIO", "emoji": "🐰" } ] },
+        { "s": "NI", "correct": [ { "word": "NIDO", "emoji": "🪺" }, { "word": "NINFEA", "emoji": "🪷" } ], "wrong": [ { "word": "RANA", "emoji": "🐸" }, { "word": "BRADIPO", "emoji": "🦥" } ] },
+        { "s": "NU", "correct": [ { "word": "NUVOLA", "emoji": "☁️" }, { "word": "NUMERI", "emoji": "🔢" } ], "wrong": [ { "word": "ARCOBALENO", "emoji": "🌈" }, { "word": "TIGRE", "emoji": "🐯" } ] }
+      ],
+      "parole": [
+        { "word": "NONNA", "sillabe": [ "NO", "NA" ], "emoji": "👵", "doppia": true },
+        { "word": "NONNO", "sillabe": [ "NO", "NO" ], "emoji": "👴", "doppia": true },
+        { "word": "NANNA", "sillabe": [ "NA", "NA" ], "emoji": "😴", "doppia": true },
+        { "word": "NOME", "sillabe": [ "NO", "ME" ], "emoji": "📛", "doppia": false },
+        { "word": "MANO", "sillabe": [ "MA", "NO" ], "emoji": "✋", "doppia": false },
+        { "word": "MANI", "sillabe": [ "MA", "NI" ], "emoji": "🙌", "doppia": false }
+      ]
+    }
+  ],
+  "ui": {
+    "welcome": "Ciao! Giochiamo con le lettere!",
+    "tap_listen": "Tocca per ascoltare!",
+    "your_turn": "Adesso prova tu!",
+    "listen_compare": "Prima io, poi tu!",
+    "record_after_beep": "Parla dopo il bip!",
+    "brava1": "Bravissima!",
+    "brava2": "Perfetto!",
+    "brava3": "Che brava!",
+    "brava4": "Evviva!",
+    "retry": "Quasi! Riprova!",
+    "star": "Hai vinto una stellina!",
+    "sticker_new": "Un adesivo nuovo per te!",
+    "which_house": "In quale casa entra?",
+    "make_word": "Unisci le sillabe!"
+  }
+}
