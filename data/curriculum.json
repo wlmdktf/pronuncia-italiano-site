@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -13,41 +13,365 @@
           "grapheme": "A",
           "name": "a",
           "ipa": "aː",
-          "anchor": { "word": "APE", "emoji": "🐝" },
-          "extra": [ { "word": "ALBERO", "emoji": "🌳" }, { "word": "ANATRA", "emoji": "🦆" } ],
-          "mouth": { "it": "Quando dico la A, la bocca è tutta aperta!", "zh": "发 A 嘴巴张到最大，像看牙医时说“啊”" }
+          "anchor": {
+            "word": "APE",
+            "emoji": "🐝"
+          },
+          "extra": [
+            {
+              "word": "ALBERO",
+              "emoji": "🌳"
+            },
+            {
+              "word": "ANATRA",
+              "emoji": "🦆"
+            }
+          ],
+          "mouth": {
+            "it": "Quando dico la A, la bocca è tutta aperta!",
+            "zh": "发 A 嘴巴张到最大，像看牙医时说“啊”"
+          }
         },
         {
           "grapheme": "E",
           "name": "e",
           "ipa": "eː",
-          "anchor": { "word": "ELEFANTE", "emoji": "🐘" },
-          "extra": [ { "word": "ELMO", "emoji": "⛑️" }, { "word": "ERBA", "emoji": "🌿" } ],
-          "mouth": { "it": "Quando dico la E, le labbra fanno un sorriso.", "zh": "发 E 嘴角向两边咧开，像在微笑" }
+          "anchor": {
+            "word": "ELEFANTE",
+            "emoji": "🐘"
+          },
+          "extra": [
+            {
+              "word": "ELMO",
+              "emoji": "⛑️"
+            },
+            {
+              "word": "ERBA",
+              "emoji": "🌿"
+            }
+          ],
+          "mouth": {
+            "it": "Quando dico la E, le labbra fanno un sorriso.",
+            "zh": "发 E 嘴角向两边咧开，像在微笑"
+          }
         },
         {
           "grapheme": "I",
           "name": "i",
           "ipa": "iː",
-          "anchor": { "word": "ISOLA", "emoji": "🏝️" },
-          "extra": [ { "word": "IPPOPOTAMO", "emoji": "🦛" }, { "word": "INSALATA", "emoji": "🥗" } ],
-          "mouth": { "it": "Quando dico la I, faccio un sorriso con i denti quasi chiusi.", "zh": "发 I 大微笑，牙齿几乎合上，声音尖尖的" }
+          "anchor": {
+            "word": "ISOLA",
+            "emoji": "🏝️"
+          },
+          "extra": [
+            {
+              "word": "IPPOPOTAMO",
+              "emoji": "🦛"
+            },
+            {
+              "word": "INSALATA",
+              "emoji": "🥗"
+            }
+          ],
+          "mouth": {
+            "it": "Quando dico la I, faccio un sorriso con i denti quasi chiusi.",
+            "zh": "发 I 大微笑，牙齿几乎合上，声音尖尖的"
+          }
         },
         {
           "grapheme": "O",
           "name": "o",
           "ipa": "oː",
-          "anchor": { "word": "OCA", "emoji": "🪿" },
-          "extra": [ { "word": "OMBRELLO", "emoji": "☂️" }, { "word": "ORSO", "emoji": "🐻" } ],
-          "mouth": { "it": "Quando dico la O, la bocca fa un cerchio.", "zh": "发 O 嘴巴圆圆的，像字母 O 本身" }
+          "anchor": {
+            "word": "OCA",
+            "emoji": "🪿"
+          },
+          "extra": [
+            {
+              "word": "OMBRELLO",
+              "emoji": "☂️"
+            },
+            {
+              "word": "ORSO",
+              "emoji": "🐻"
+            }
+          ],
+          "mouth": {
+            "it": "Quando dico la O, la bocca fa un cerchio.",
+            "zh": "发 O 嘴巴圆圆的，像字母 O 本身"
+          }
         },
         {
           "grapheme": "U",
           "name": "u",
           "ipa": "uː",
-          "anchor": { "word": "UVA", "emoji": "🍇" },
-          "extra": [ { "word": "UNO", "emoji": "1️⃣" }, { "word": "UCCELLINO", "emoji": "🐦" } ],
-          "mouth": { "it": "Quando dico la U, le labbra fanno un piccolo cerchio in avanti.", "zh": "发 U 嘴唇缩成小圆圈向前突，像要亲亲" }
+          "anchor": {
+            "word": "UVA",
+            "emoji": "🍇"
+          },
+          "extra": [
+            {
+              "word": "UNO",
+              "emoji": "1️⃣"
+            },
+            {
+              "word": "UCCELLINO",
+              "emoji": "🐦"
+            }
+          ],
+          "mouth": {
+            "it": "Quando dico la U, le labbra fanno un piccolo cerchio in avanti.",
+            "zh": "发 U 嘴唇缩成小圆圈向前突，像要亲亲"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "A",
+          "correct": [
+            {
+              "word": "APE",
+              "emoji": "🐝"
+            },
+            {
+              "word": "ALBERO",
+              "emoji": "🌳"
+            },
+            {
+              "word": "ANATRA",
+              "emoji": "🦆"
+            },
+            {
+              "word": "ANANAS",
+              "emoji": "🍍"
+            },
+            {
+              "word": "AEREO",
+              "emoji": "✈️"
+            },
+            {
+              "word": "ANGURIA",
+              "emoji": "🍉"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ORSO",
+              "emoji": "🐻"
+            },
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "ELEFANTE",
+              "emoji": "🐘"
+            },
+            {
+              "word": "ISOLA",
+              "emoji": "🏝️"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            }
+          ]
+        },
+        {
+          "s": "E",
+          "correct": [
+            {
+              "word": "ELEFANTE",
+              "emoji": "🐘"
+            },
+            {
+              "word": "ELMO",
+              "emoji": "⛑️"
+            },
+            {
+              "word": "ERBA",
+              "emoji": "🌿"
+            },
+            {
+              "word": "ELICOTTERO",
+              "emoji": "🚁"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "APE",
+              "emoji": "🐝"
+            },
+            {
+              "word": "OCA",
+              "emoji": "🪿"
+            },
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "ISOLA",
+              "emoji": "🏝️"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            }
+          ]
+        },
+        {
+          "s": "I",
+          "correct": [
+            {
+              "word": "ISOLA",
+              "emoji": "🏝️"
+            },
+            {
+              "word": "IPPOPOTAMO",
+              "emoji": "🦛"
+            },
+            {
+              "word": "INSALATA",
+              "emoji": "🥗"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ELMO",
+              "emoji": "⛑️"
+            },
+            {
+              "word": "OCA",
+              "emoji": "🪿"
+            },
+            {
+              "word": "ANATRA",
+              "emoji": "🦆"
+            },
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            }
+          ]
+        },
+        {
+          "s": "O",
+          "correct": [
+            {
+              "word": "OCA",
+              "emoji": "🪿"
+            },
+            {
+              "word": "OMBRELLO",
+              "emoji": "☂️"
+            },
+            {
+              "word": "ORSO",
+              "emoji": "🐻"
+            },
+            {
+              "word": "OROLOGIO",
+              "emoji": "⌚"
+            },
+            {
+              "word": "OCCHIALI",
+              "emoji": "👓"
+            },
+            {
+              "word": "OSSO",
+              "emoji": "🦴"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "APE",
+              "emoji": "🐝"
+            },
+            {
+              "word": "ISOLA",
+              "emoji": "🏝️"
+            },
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "ELEFANTE",
+              "emoji": "🐘"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "GATTO",
+              "emoji": "🐱"
+            }
+          ]
+        },
+        {
+          "s": "U",
+          "correct": [
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "UNO",
+              "emoji": "1️⃣"
+            },
+            {
+              "word": "UCCELLINO",
+              "emoji": "🐦"
+            },
+            {
+              "word": "UOVO",
+              "emoji": "🥚"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "OCA",
+              "emoji": "🪿"
+            },
+            {
+              "word": "APE",
+              "emoji": "🐝"
+            },
+            {
+              "word": "ORSO",
+              "emoji": "🐻"
+            },
+            {
+              "word": "ISOLA",
+              "emoji": "🏝️"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            }
+          ]
         }
       ]
     },
@@ -60,36 +384,344 @@
         "grapheme": "M",
         "name": "emme",
         "ipa": "mː",
-        "shape": { "it": "La M ha la forma di due montagne vicine.", "zh": "M 像两座挨在一起的山" },
-        "mouth": { "it": "Quando dico la M, le mie labbra sono unite e il suono esce anche un po' dal naso.", "zh": "发 M 双唇闭拢，声音从鼻子里哼出来（摸鼻翼能感到震动）" }
+        "shape": {
+          "it": "La M ha la forma di due montagne vicine.",
+          "zh": "M 像两座挨在一起的山"
+        },
+        "mouth": {
+          "it": "Quando dico la M, le mie labbra sono unite e il suono esce anche un po' dal naso.",
+          "zh": "发 M 双唇闭拢，声音从鼻子里哼出来（摸鼻翼能感到震动）"
+        }
       },
       "sillabe": [
-        { "s": "MA", "anchor": { "word": "MANO", "emoji": "✋" } },
-        { "s": "MO", "anchor": { "word": "MONDO", "emoji": "🌍" } },
-        { "s": "ME", "anchor": { "word": "MELA", "emoji": "🍎" } },
-        { "s": "MI", "anchor": { "word": "MIELE", "emoji": "🍯" } },
-        { "s": "MU", "anchor": { "word": "MUCCA", "emoji": "🐄" } }
+        {
+          "s": "MA",
+          "anchor": {
+            "word": "MANO",
+            "emoji": "✋"
+          }
+        },
+        {
+          "s": "MO",
+          "anchor": {
+            "word": "MONDO",
+            "emoji": "🌍"
+          }
+        },
+        {
+          "s": "ME",
+          "anchor": {
+            "word": "MELA",
+            "emoji": "🍎"
+          }
+        },
+        {
+          "s": "MI",
+          "anchor": {
+            "word": "MIELE",
+            "emoji": "🍯"
+          }
+        },
+        {
+          "s": "MU",
+          "anchor": {
+            "word": "MUCCA",
+            "emoji": "🐄"
+          }
+        }
       ],
       "casa": [
-        { "s": "MA",
-          "correct": [ { "word": "MATITA", "emoji": "✏️" }, { "word": "MAIALE", "emoji": "🐷" }, { "word": "MAGO", "emoji": "🧙" }, { "word": "MARE", "emoji": "🌊" } ],
-          "wrong": [ { "word": "RANA", "emoji": "🐸" }, { "word": "LAMA", "emoji": "🦙" }, { "word": "TOPO", "emoji": "🐭" }, { "word": "SOLE", "emoji": "☀️" } ] },
-        { "s": "MO",
-          "correct": [ { "word": "MOSTRO", "emoji": "👾" }, { "word": "MOSCA", "emoji": "🪰" }, { "word": "MOTO", "emoji": "🏍️" }, { "word": "MONETA", "emoji": "🪙" } ],
-          "wrong": [ { "word": "ASINO", "emoji": "🫏" }, { "word": "PALLA", "emoji": "⚽" }, { "word": "NAVE", "emoji": "🚢" }, { "word": "PERA", "emoji": "🍐" } ] },
-        { "s": "ME",
-          "correct": [ { "word": "MEDAGLIA", "emoji": "🏅" }, { "word": "MELA", "emoji": "🍎" }, { "word": "MELONE", "emoji": "🍈" } ],
-          "wrong": [ { "word": "TARTARUGA", "emoji": "🐢" }, { "word": "UFO", "emoji": "🛸" }, { "word": "LIMONE", "emoji": "🍋" }, { "word": "NUVOLA", "emoji": "☁️" } ] },
-        { "s": "MI",
-          "correct": [ { "word": "MIELE", "emoji": "🍯" }, { "word": "MINESTRA", "emoji": "🍲" }, { "word": "MIRTILLO", "emoji": "🫐" } ],
-          "wrong": [ { "word": "ROBOT", "emoji": "🤖" }, { "word": "LUNA", "emoji": "🌙" }, { "word": "MELONE", "emoji": "🍈" }, { "word": "TIGRE", "emoji": "🐯" } ] },
-        { "s": "MU",
-          "correct": [ { "word": "MUCCA", "emoji": "🐄" }, { "word": "MUSICA", "emoji": "🎵" }, { "word": "MURO", "emoji": "🧱" } ],
-          "wrong": [ { "word": "MONDO", "emoji": "🌍" }, { "word": "FARFALLA", "emoji": "🦋" }, { "word": "MELA", "emoji": "🍎" }, { "word": "TOPO", "emoji": "🐭" } ] }
+        {
+          "s": "MA",
+          "correct": [
+            {
+              "word": "MATITA",
+              "emoji": "✏️"
+            },
+            {
+              "word": "MAIALE",
+              "emoji": "🐷"
+            },
+            {
+              "word": "MAGO",
+              "emoji": "🧙"
+            },
+            {
+              "word": "MARE",
+              "emoji": "🌊"
+            },
+            {
+              "word": "MACCHINA",
+              "emoji": "🚗"
+            },
+            {
+              "word": "MARTELLO",
+              "emoji": "🔨"
+            },
+            {
+              "word": "MAESTRA",
+              "emoji": "👩‍🏫"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "LAMA",
+              "emoji": "🦙"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "MIELE",
+              "emoji": "🍯"
+            },
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            }
+          ]
+        },
+        {
+          "s": "MO",
+          "correct": [
+            {
+              "word": "MOSTRO",
+              "emoji": "👾"
+            },
+            {
+              "word": "MOSCA",
+              "emoji": "🪰"
+            },
+            {
+              "word": "MOTO",
+              "emoji": "🏍️"
+            },
+            {
+              "word": "MONETA",
+              "emoji": "🪙"
+            },
+            {
+              "word": "MONTAGNA",
+              "emoji": "⛰️"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ASINO",
+              "emoji": "🫏"
+            },
+            {
+              "word": "PALLA",
+              "emoji": "⚽"
+            },
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "PERA",
+              "emoji": "🍐"
+            },
+            {
+              "word": "MANO",
+              "emoji": "✋"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "MURO",
+              "emoji": "🧱"
+            }
+          ]
+        },
+        {
+          "s": "ME",
+          "correct": [
+            {
+              "word": "MEDAGLIA",
+              "emoji": "🏅"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "MELONE",
+              "emoji": "🍈"
+            },
+            {
+              "word": "MEDUSA",
+              "emoji": "🪼"
+            },
+            {
+              "word": "MELANZANA",
+              "emoji": "🍆"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "TARTARUGA",
+              "emoji": "🐢"
+            },
+            {
+              "word": "UFO",
+              "emoji": "🛸"
+            },
+            {
+              "word": "LIMONE",
+              "emoji": "🍋"
+            },
+            {
+              "word": "NUVOLA",
+              "emoji": "☁️"
+            },
+            {
+              "word": "MANO",
+              "emoji": "✋"
+            },
+            {
+              "word": "MOSCA",
+              "emoji": "🪰"
+            },
+            {
+              "word": "MIELE",
+              "emoji": "🍯"
+            }
+          ]
+        },
+        {
+          "s": "MI",
+          "correct": [
+            {
+              "word": "MIELE",
+              "emoji": "🍯"
+            },
+            {
+              "word": "MINESTRA",
+              "emoji": "🍲"
+            },
+            {
+              "word": "MIRTILLO",
+              "emoji": "🫐"
+            },
+            {
+              "word": "MICIO",
+              "emoji": "🐱"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ROBOT",
+              "emoji": "🤖"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "MELONE",
+              "emoji": "🍈"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "MURO",
+              "emoji": "🧱"
+            },
+            {
+              "word": "MAGO",
+              "emoji": "🧙"
+            }
+          ]
+        },
+        {
+          "s": "MU",
+          "correct": [
+            {
+              "word": "MUCCA",
+              "emoji": "🐄"
+            },
+            {
+              "word": "MUSICA",
+              "emoji": "🎵"
+            },
+            {
+              "word": "MURO",
+              "emoji": "🧱"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "MONDO",
+              "emoji": "🌍"
+            },
+            {
+              "word": "FARFALLA",
+              "emoji": "🦋"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "MANO",
+              "emoji": "✋"
+            },
+            {
+              "word": "MIELE",
+              "emoji": "🍯"
+            },
+            {
+              "word": "MOTO",
+              "emoji": "🏍️"
+            }
+          ]
+        }
       ],
       "parole": [
-        { "word": "MAMMA", "sillabe": [ "MA", "MA" ], "emoji": "👩", "doppia": true },
-        { "word": "MIMO", "sillabe": [ "MI", "MO" ], "emoji": "🎭", "doppia": false }
+        {
+          "word": "MAMMA",
+          "sillabe": [
+            "MA",
+            "MA"
+          ],
+          "emoji": "👩",
+          "doppia": true
+        },
+        {
+          "word": "MIMO",
+          "sillabe": [
+            "MI",
+            "MO"
+          ],
+          "emoji": "🎭",
+          "doppia": false
+        }
       ]
     },
     {
@@ -101,40 +733,360 @@
         "grapheme": "N",
         "name": "enne",
         "ipa": "nː",
-        "shape": { "it": "La N somiglia alle montagne russe.", "zh": "N 像过山车的轨道" },
-        "mouth": { "it": "Quando dico la N, la punta della lingua si appoggia sul palato e il suono esce anche dal naso.", "zh": "发 N 舌尖顶住上颚，声音也从鼻子出来" }
+        "shape": {
+          "it": "La N somiglia alle montagne russe.",
+          "zh": "N 像过山车的轨道"
+        },
+        "mouth": {
+          "it": "Quando dico la N, la punta della lingua si appoggia sul palato e il suono esce anche dal naso.",
+          "zh": "发 N 舌尖顶住上颚，声音也从鼻子出来"
+        }
       },
       "sillabe": [
-        { "s": "NA", "anchor": { "word": "NASO", "emoji": "👃" } },
-        { "s": "NO", "anchor": { "word": "NOTA", "emoji": "🎵" } },
-        { "s": "NE", "anchor": { "word": "NEVE", "emoji": "❄️" } },
-        { "s": "NI", "anchor": { "word": "NIDO", "emoji": "🪺" } },
-        { "s": "NU", "anchor": { "word": "NUVOLA", "emoji": "☁️" } }
+        {
+          "s": "NA",
+          "anchor": {
+            "word": "NASO",
+            "emoji": "👃"
+          }
+        },
+        {
+          "s": "NO",
+          "anchor": {
+            "word": "NOTA",
+            "emoji": "🎵"
+          }
+        },
+        {
+          "s": "NE",
+          "anchor": {
+            "word": "NEVE",
+            "emoji": "❄️"
+          }
+        },
+        {
+          "s": "NI",
+          "anchor": {
+            "word": "NIDO",
+            "emoji": "🪺"
+          }
+        },
+        {
+          "s": "NU",
+          "anchor": {
+            "word": "NUVOLA",
+            "emoji": "☁️"
+          }
+        }
       ],
       "casa": [
-        { "s": "NA",
-          "correct": [ { "word": "NAVE", "emoji": "🚢" }, { "word": "NASO", "emoji": "👃" }, { "word": "NASTRO", "emoji": "🎀" } ],
-          "wrong": [ { "word": "GATTO", "emoji": "🐱" }, { "word": "CANE", "emoji": "🐶" }, { "word": "LUNA", "emoji": "🌙" }, { "word": "PANE", "emoji": "🍞" } ] },
-        { "s": "NO",
-          "correct": [ { "word": "NOTA", "emoji": "🎵" }, { "word": "NOTTE", "emoji": "🌙" }, { "word": "NONNA", "emoji": "👵" }, { "word": "NOCE", "emoji": "🌰" } ],
-          "wrong": [ { "word": "ANELLO", "emoji": "💍" }, { "word": "SQUALO", "emoji": "🦈" }, { "word": "NIDO", "emoji": "🪺" }, { "word": "MELA", "emoji": "🍎" } ] },
-        { "s": "NE",
-          "correct": [ { "word": "NEVE", "emoji": "❄️" }, { "word": "NEGOZIO", "emoji": "🏪" }, { "word": "NERO", "emoji": "⚫" } ],
-          "wrong": [ { "word": "NOCE", "emoji": "🌰" }, { "word": "CONIGLIO", "emoji": "🐰" }, { "word": "NOTTE", "emoji": "🌙" }, { "word": "SOLE", "emoji": "☀️" } ] },
-        { "s": "NI",
-          "correct": [ { "word": "NIDO", "emoji": "🪺" }, { "word": "NINFEA", "emoji": "🪷" } ],
-          "wrong": [ { "word": "RANA", "emoji": "🐸" }, { "word": "BRADIPO", "emoji": "🦥" }, { "word": "NONNA", "emoji": "👵" }, { "word": "LUNA", "emoji": "🌙" } ] },
-        { "s": "NU",
-          "correct": [ { "word": "NUVOLA", "emoji": "☁️" }, { "word": "NUMERI", "emoji": "🔢" }, { "word": "NUOTO", "emoji": "🏊" } ],
-          "wrong": [ { "word": "ARCOBALENO", "emoji": "🌈" }, { "word": "TIGRE", "emoji": "🐯" }, { "word": "NOCE", "emoji": "🌰" }, { "word": "SOLE", "emoji": "☀️" } ] }
+        {
+          "s": "NA",
+          "correct": [
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "NASO",
+              "emoji": "👃"
+            },
+            {
+              "word": "NASTRO",
+              "emoji": "🎀"
+            },
+            {
+              "word": "NATALE",
+              "emoji": "🎄"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "GATTO",
+              "emoji": "🐱"
+            },
+            {
+              "word": "CANE",
+              "emoji": "🐶"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "NOCE",
+              "emoji": "🌰"
+            },
+            {
+              "word": "NEVE",
+              "emoji": "❄️"
+            }
+          ]
+        },
+        {
+          "s": "NO",
+          "correct": [
+            {
+              "word": "NOTA",
+              "emoji": "🎵"
+            },
+            {
+              "word": "NOTTE",
+              "emoji": "🌙"
+            },
+            {
+              "word": "NONNA",
+              "emoji": "👵"
+            },
+            {
+              "word": "NOCE",
+              "emoji": "🌰"
+            },
+            {
+              "word": "NOVE",
+              "emoji": "9️⃣"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ANELLO",
+              "emoji": "💍"
+            },
+            {
+              "word": "SQUALO",
+              "emoji": "🦈"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "NASO",
+              "emoji": "👃"
+            },
+            {
+              "word": "NEVE",
+              "emoji": "❄️"
+            },
+            {
+              "word": "NUVOLA",
+              "emoji": "☁️"
+            }
+          ]
+        },
+        {
+          "s": "NE",
+          "correct": [
+            {
+              "word": "NEVE",
+              "emoji": "❄️"
+            },
+            {
+              "word": "NEGOZIO",
+              "emoji": "🏪"
+            },
+            {
+              "word": "NERO",
+              "emoji": "⚫"
+            },
+            {
+              "word": "NEONATO",
+              "emoji": "👶"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "NOCE",
+              "emoji": "🌰"
+            },
+            {
+              "word": "CONIGLIO",
+              "emoji": "🐰"
+            },
+            {
+              "word": "NOTTE",
+              "emoji": "🌙"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "NASO",
+              "emoji": "👃"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "NUMERI",
+              "emoji": "🔢"
+            }
+          ]
+        },
+        {
+          "s": "NI",
+          "correct": [
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "NINFEA",
+              "emoji": "🪷"
+            },
+            {
+              "word": "NINJA",
+              "emoji": "🥷"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "BRADIPO",
+              "emoji": "🦥"
+            },
+            {
+              "word": "NONNA",
+              "emoji": "👵"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "NOCE",
+              "emoji": "🌰"
+            },
+            {
+              "word": "NEVE",
+              "emoji": "❄️"
+            }
+          ]
+        },
+        {
+          "s": "NU",
+          "correct": [
+            {
+              "word": "NUVOLA",
+              "emoji": "☁️"
+            },
+            {
+              "word": "NUMERI",
+              "emoji": "🔢"
+            },
+            {
+              "word": "NUOTO",
+              "emoji": "🏊"
+            },
+            {
+              "word": "NUTRIA",
+              "emoji": "🦫"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ARCOBALENO",
+              "emoji": "🌈"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "NOCE",
+              "emoji": "🌰"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "NASO",
+              "emoji": "👃"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "NOTA",
+              "emoji": "🎵"
+            }
+          ]
+        }
       ],
       "parole": [
-        { "word": "NONNA", "sillabe": [ "NO", "NA" ], "emoji": "👵", "doppia": true },
-        { "word": "NONNO", "sillabe": [ "NO", "NO" ], "emoji": "👴", "doppia": true },
-        { "word": "NANNA", "sillabe": [ "NA", "NA" ], "emoji": "😴", "doppia": true },
-        { "word": "NOME", "sillabe": [ "NO", "ME" ], "emoji": "📛", "doppia": false },
-        { "word": "MANO", "sillabe": [ "MA", "NO" ], "emoji": "✋", "doppia": false },
-        { "word": "MANI", "sillabe": [ "MA", "NI" ], "emoji": "🙌", "doppia": false }
+        {
+          "word": "NONNA",
+          "sillabe": [
+            "NO",
+            "NA"
+          ],
+          "emoji": "👵",
+          "doppia": true
+        },
+        {
+          "word": "NONNO",
+          "sillabe": [
+            "NO",
+            "NO"
+          ],
+          "emoji": "👴",
+          "doppia": true
+        },
+        {
+          "word": "NANNA",
+          "sillabe": [
+            "NA",
+            "NA"
+          ],
+          "emoji": "😴",
+          "doppia": true
+        },
+        {
+          "word": "NOME",
+          "sillabe": [
+            "NO",
+            "ME"
+          ],
+          "emoji": "📛",
+          "doppia": false
+        },
+        {
+          "word": "MANO",
+          "sillabe": [
+            "MA",
+            "NO"
+          ],
+          "emoji": "✋",
+          "doppia": false
+        },
+        {
+          "word": "MANI",
+          "sillabe": [
+            "MA",
+            "NI"
+          ],
+          "emoji": "🙌",
+          "doppia": false
+        }
       ]
     },
     {
@@ -146,38 +1098,386 @@
         "grapheme": "P",
         "name": "pi",
         "ipa": "pə",
-        "shape": { "it": "La P ha una gran pancia davanti.", "zh": "P 有一个鼓鼓的大肚子" },
-        "mouth": { "it": "Quando dico la P, le labbra prima si chiudono e poi si aprono di colpo, come un piccolo scoppio!", "zh": "发 P 双唇先闭紧再突然弹开，像小爆破；只有气、不带嗓音（区别于 B）" }
+        "shape": {
+          "it": "La P ha una gran pancia davanti.",
+          "zh": "P 有一个鼓鼓的大肚子"
+        },
+        "mouth": {
+          "it": "Quando dico la P, le labbra prima si chiudono e poi si aprono di colpo, come un piccolo scoppio!",
+          "zh": "发 P 双唇先闭紧再突然弹开，像小爆破；只有气、不带嗓音（区别于 B）"
+        }
       },
       "sillabe": [
-        { "s": "PA", "anchor": { "word": "PANE", "emoji": "🍞" } },
-        { "s": "PO", "anchor": { "word": "PORTA", "emoji": "🚪" } },
-        { "s": "PE", "anchor": { "word": "PESCE", "emoji": "🐟" } },
-        { "s": "PI", "anchor": { "word": "PIZZA", "emoji": "🍕" } },
-        { "s": "PU", "anchor": { "word": "PULCINO", "emoji": "🐤" } }
+        {
+          "s": "PA",
+          "anchor": {
+            "word": "PANE",
+            "emoji": "🍞"
+          }
+        },
+        {
+          "s": "PO",
+          "anchor": {
+            "word": "PORTA",
+            "emoji": "🚪"
+          }
+        },
+        {
+          "s": "PE",
+          "anchor": {
+            "word": "PESCE",
+            "emoji": "🐟"
+          }
+        },
+        {
+          "s": "PI",
+          "anchor": {
+            "word": "PIZZA",
+            "emoji": "🍕"
+          }
+        },
+        {
+          "s": "PU",
+          "anchor": {
+            "word": "PULCINO",
+            "emoji": "🐤"
+          }
+        }
       ],
       "casa": [
-        { "s": "PA",
-          "correct": [ { "word": "PANE", "emoji": "🍞" }, { "word": "PALLA", "emoji": "⚽" }, { "word": "PATATA", "emoji": "🥔" } ],
-          "wrong": [ { "word": "PIZZA", "emoji": "🍕" }, { "word": "PERA", "emoji": "🍐" }, { "word": "RANA", "emoji": "🐸" }, { "word": "TOPO", "emoji": "🐭" } ] },
-        { "s": "PO",
-          "correct": [ { "word": "PORTA", "emoji": "🚪" }, { "word": "POLLO", "emoji": "🍗" }, { "word": "POMODORO", "emoji": "🍅" }, { "word": "POLIPO", "emoji": "🐙" } ],
-          "wrong": [ { "word": "PANE", "emoji": "🍞" }, { "word": "PIZZA", "emoji": "🍕" }, { "word": "LUNA", "emoji": "🌙" }, { "word": "PESCE", "emoji": "🐟" } ] },
-        { "s": "PE",
-          "correct": [ { "word": "PESCE", "emoji": "🐟" }, { "word": "PERA", "emoji": "🍐" }, { "word": "PECORA", "emoji": "🐑" }, { "word": "PENNA", "emoji": "🖊️" } ],
-          "wrong": [ { "word": "PIZZA", "emoji": "🍕" }, { "word": "PORTA", "emoji": "🚪" }, { "word": "MELA", "emoji": "🍎" }, { "word": "SOLE", "emoji": "☀️" } ] },
-        { "s": "PI",
-          "correct": [ { "word": "PIZZA", "emoji": "🍕" }, { "word": "PINO", "emoji": "🌲" }, { "word": "PIEDE", "emoji": "🦶" }, { "word": "PIPISTRELLO", "emoji": "🦇" } ],
-          "wrong": [ { "word": "PANE", "emoji": "🍞" }, { "word": "PULCINO", "emoji": "🐤" }, { "word": "NAVE", "emoji": "🚢" }, { "word": "ORSO", "emoji": "🐻" } ] },
-        { "s": "PU",
-          "correct": [ { "word": "PULCINO", "emoji": "🐤" }, { "word": "PUPAZZO", "emoji": "⛄" }, { "word": "PUGNO", "emoji": "👊" } ],
-          "wrong": [ { "word": "POLLO", "emoji": "🍗" }, { "word": "PERA", "emoji": "🍐" }, { "word": "GATTO", "emoji": "🐱" }, { "word": "FIORE", "emoji": "🌸" } ] }
+        {
+          "s": "PA",
+          "correct": [
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "PALLA",
+              "emoji": "⚽"
+            },
+            {
+              "word": "PATATA",
+              "emoji": "🥔"
+            },
+            {
+              "word": "PASTA",
+              "emoji": "🍝"
+            },
+            {
+              "word": "PANDA",
+              "emoji": "🐼"
+            },
+            {
+              "word": "PAGLIACCIO",
+              "emoji": "🤡"
+            },
+            {
+              "word": "PAVONE",
+              "emoji": "🦚"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "PERA",
+              "emoji": "🍐"
+            },
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "PESCE",
+              "emoji": "🐟"
+            },
+            {
+              "word": "POLLO",
+              "emoji": "🍗"
+            },
+            {
+              "word": "PINO",
+              "emoji": "🌲"
+            }
+          ]
+        },
+        {
+          "s": "PO",
+          "correct": [
+            {
+              "word": "PORTA",
+              "emoji": "🚪"
+            },
+            {
+              "word": "POLLO",
+              "emoji": "🍗"
+            },
+            {
+              "word": "POMODORO",
+              "emoji": "🍅"
+            },
+            {
+              "word": "POLIPO",
+              "emoji": "🐙"
+            },
+            {
+              "word": "PONTE",
+              "emoji": "🌉"
+            },
+            {
+              "word": "POPCORN",
+              "emoji": "🍿"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "PESCE",
+              "emoji": "🐟"
+            },
+            {
+              "word": "PALLA",
+              "emoji": "⚽"
+            },
+            {
+              "word": "PERA",
+              "emoji": "🍐"
+            },
+            {
+              "word": "PULCINO",
+              "emoji": "🐤"
+            }
+          ]
+        },
+        {
+          "s": "PE",
+          "correct": [
+            {
+              "word": "PESCE",
+              "emoji": "🐟"
+            },
+            {
+              "word": "PERA",
+              "emoji": "🍐"
+            },
+            {
+              "word": "PECORA",
+              "emoji": "🐑"
+            },
+            {
+              "word": "PENNA",
+              "emoji": "🖊️"
+            },
+            {
+              "word": "PESCA",
+              "emoji": "🍑"
+            },
+            {
+              "word": "PENNELLO",
+              "emoji": "🖌️"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "PORTA",
+              "emoji": "🚪"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "PIEDE",
+              "emoji": "🦶"
+            },
+            {
+              "word": "POLLO",
+              "emoji": "🍗"
+            }
+          ]
+        },
+        {
+          "s": "PI",
+          "correct": [
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "PINO",
+              "emoji": "🌲"
+            },
+            {
+              "word": "PIEDE",
+              "emoji": "🦶"
+            },
+            {
+              "word": "PIPISTRELLO",
+              "emoji": "🦇"
+            },
+            {
+              "word": "PINGUINO",
+              "emoji": "🐧"
+            },
+            {
+              "word": "PIOGGIA",
+              "emoji": "🌧️"
+            },
+            {
+              "word": "PIANTA",
+              "emoji": "🪴"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "PULCINO",
+              "emoji": "🐤"
+            },
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "ORSO",
+              "emoji": "🐻"
+            },
+            {
+              "word": "PESCE",
+              "emoji": "🐟"
+            },
+            {
+              "word": "PALLA",
+              "emoji": "⚽"
+            },
+            {
+              "word": "PORTA",
+              "emoji": "🚪"
+            }
+          ]
+        },
+        {
+          "s": "PU",
+          "correct": [
+            {
+              "word": "PULCINO",
+              "emoji": "🐤"
+            },
+            {
+              "word": "PUPAZZO",
+              "emoji": "⛄"
+            },
+            {
+              "word": "PUGNO",
+              "emoji": "👊"
+            },
+            {
+              "word": "PULMINO",
+              "emoji": "🚐"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "POLLO",
+              "emoji": "🍗"
+            },
+            {
+              "word": "PERA",
+              "emoji": "🍐"
+            },
+            {
+              "word": "GATTO",
+              "emoji": "🐱"
+            },
+            {
+              "word": "FIORE",
+              "emoji": "🌸"
+            },
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "PIEDE",
+              "emoji": "🦶"
+            }
+          ]
+        }
       ],
       "parole": [
-        { "word": "PAPÀ", "sillabe": [ "PA", "PA" ], "emoji": "👨", "doppia": false },
-        { "word": "PANE", "sillabe": [ "PA", "NE" ], "emoji": "🍞", "doppia": false },
-        { "word": "PINO", "sillabe": [ "PI", "NO" ], "emoji": "🌲", "doppia": false },
-        { "word": "MAPPA", "sillabe": [ "MA", "PA" ], "emoji": "🗺️", "doppia": true }
+        {
+          "word": "PAPÀ",
+          "sillabe": [
+            "PA",
+            "PA"
+          ],
+          "emoji": "👨",
+          "doppia": false
+        },
+        {
+          "word": "PANE",
+          "sillabe": [
+            "PA",
+            "NE"
+          ],
+          "emoji": "🍞",
+          "doppia": false
+        },
+        {
+          "word": "PINO",
+          "sillabe": [
+            "PI",
+            "NO"
+          ],
+          "emoji": "🌲",
+          "doppia": false
+        },
+        {
+          "word": "MAPPA",
+          "sillabe": [
+            "MA",
+            "PA"
+          ],
+          "emoji": "🗺️",
+          "doppia": true
+        }
       ]
     },
     {
@@ -189,38 +1489,339 @@
         "grapheme": "T",
         "name": "ti",
         "ipa": "tə",
-        "shape": { "it": "La T è dritta come un tavolino con una gamba sola.", "zh": "T 像一张独脚小桌子" },
-        "mouth": { "it": "Quando dico la T, la punta della lingua batte dietro i denti di sopra.", "zh": "发 T 舌尖在上牙背后轻弹一下，干脆利落，不带嗓音（区别于 D）" }
+        "shape": {
+          "it": "La T è dritta come un tavolino con una gamba sola.",
+          "zh": "T 像一张独脚小桌子"
+        },
+        "mouth": {
+          "it": "Quando dico la T, la punta della lingua batte dietro i denti di sopra.",
+          "zh": "发 T 舌尖在上牙背后轻弹一下，干脆利落，不带嗓音（区别于 D）"
+        }
       },
       "sillabe": [
-        { "s": "TA", "anchor": { "word": "TAMBURO", "emoji": "🥁" } },
-        { "s": "TO", "anchor": { "word": "TOPO", "emoji": "🐭" } },
-        { "s": "TE", "anchor": { "word": "TELEFONO", "emoji": "📞" } },
-        { "s": "TI", "anchor": { "word": "TIGRE", "emoji": "🐯" } },
-        { "s": "TU", "anchor": { "word": "TULIPANO", "emoji": "🌷" } }
+        {
+          "s": "TA",
+          "anchor": {
+            "word": "TAMBURO",
+            "emoji": "🥁"
+          }
+        },
+        {
+          "s": "TO",
+          "anchor": {
+            "word": "TOPO",
+            "emoji": "🐭"
+          }
+        },
+        {
+          "s": "TE",
+          "anchor": {
+            "word": "TELEFONO",
+            "emoji": "📞"
+          }
+        },
+        {
+          "s": "TI",
+          "anchor": {
+            "word": "TIGRE",
+            "emoji": "🐯"
+          }
+        },
+        {
+          "s": "TU",
+          "anchor": {
+            "word": "TULIPANO",
+            "emoji": "🌷"
+          }
+        }
       ],
       "casa": [
-        { "s": "TA",
-          "correct": [ { "word": "TAMBURO", "emoji": "🥁" }, { "word": "TARTARUGA", "emoji": "🐢" }, { "word": "TAXI", "emoji": "🚕" } ],
-          "wrong": [ { "word": "TOPO", "emoji": "🐭" }, { "word": "TIGRE", "emoji": "🐯" }, { "word": "PANE", "emoji": "🍞" }, { "word": "LUNA", "emoji": "🌙" } ] },
-        { "s": "TO",
-          "correct": [ { "word": "TOPO", "emoji": "🐭" }, { "word": "TORTA", "emoji": "🎂" }, { "word": "TORO", "emoji": "🐂" } ],
-          "wrong": [ { "word": "TARTARUGA", "emoji": "🐢" }, { "word": "TELEFONO", "emoji": "📞" }, { "word": "NAVE", "emoji": "🚢" }, { "word": "MELA", "emoji": "🍎" } ] },
-        { "s": "TE",
-          "correct": [ { "word": "TELEFONO", "emoji": "📞" }, { "word": "TESORO", "emoji": "💎" }, { "word": "TENDA", "emoji": "⛺" } ],
-          "wrong": [ { "word": "TIGRE", "emoji": "🐯" }, { "word": "TOPO", "emoji": "🐭" }, { "word": "PIZZA", "emoji": "🍕" }, { "word": "NIDO", "emoji": "🪺" } ] },
-        { "s": "TI",
-          "correct": [ { "word": "TIGRE", "emoji": "🐯" }, { "word": "TIVÙ", "emoji": "📺" } ],
-          "wrong": [ { "word": "TAMBURO", "emoji": "🥁" }, { "word": "TOPO", "emoji": "🐭" }, { "word": "SOLE", "emoji": "☀️" }, { "word": "MELA", "emoji": "🍎" } ] },
-        { "s": "TU",
-          "correct": [ { "word": "TULIPANO", "emoji": "🌷" }, { "word": "TUONO", "emoji": "⛈️" } ],
-          "wrong": [ { "word": "TOPO", "emoji": "🐭" }, { "word": "TARTARUGA", "emoji": "🐢" }, { "word": "TELEFONO", "emoji": "📞" }, { "word": "LUNA", "emoji": "🌙" } ] }
+        {
+          "s": "TA",
+          "correct": [
+            {
+              "word": "TAMBURO",
+              "emoji": "🥁"
+            },
+            {
+              "word": "TARTARUGA",
+              "emoji": "🐢"
+            },
+            {
+              "word": "TAXI",
+              "emoji": "🚕"
+            },
+            {
+              "word": "TACCHINO",
+              "emoji": "🦃"
+            },
+            {
+              "word": "TAZZA",
+              "emoji": "☕"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "TELEFONO",
+              "emoji": "📞"
+            },
+            {
+              "word": "TORTA",
+              "emoji": "🎂"
+            },
+            {
+              "word": "TUONO",
+              "emoji": "⛈️"
+            }
+          ]
+        },
+        {
+          "s": "TO",
+          "correct": [
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "TORTA",
+              "emoji": "🎂"
+            },
+            {
+              "word": "TORO",
+              "emoji": "🐂"
+            },
+            {
+              "word": "TORRE",
+              "emoji": "🗼"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "TARTARUGA",
+              "emoji": "🐢"
+            },
+            {
+              "word": "TELEFONO",
+              "emoji": "📞"
+            },
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "TAMBURO",
+              "emoji": "🥁"
+            },
+            {
+              "word": "TENDA",
+              "emoji": "⛺"
+            }
+          ]
+        },
+        {
+          "s": "TE",
+          "correct": [
+            {
+              "word": "TELEFONO",
+              "emoji": "📞"
+            },
+            {
+              "word": "TESORO",
+              "emoji": "💎"
+            },
+            {
+              "word": "TENDA",
+              "emoji": "⛺"
+            },
+            {
+              "word": "TELESCOPIO",
+              "emoji": "🔭"
+            },
+            {
+              "word": "TEIERA",
+              "emoji": "🫖"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "TORTA",
+              "emoji": "🎂"
+            },
+            {
+              "word": "TAMBURO",
+              "emoji": "🥁"
+            },
+            {
+              "word": "TUONO",
+              "emoji": "⛈️"
+            }
+          ]
+        },
+        {
+          "s": "TI",
+          "correct": [
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "TIVÙ",
+              "emoji": "📺"
+            },
+            {
+              "word": "TIRAMISÙ",
+              "emoji": "🍰"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "TAMBURO",
+              "emoji": "🥁"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "TORO",
+              "emoji": "🐂"
+            },
+            {
+              "word": "TENDA",
+              "emoji": "⛺"
+            }
+          ]
+        },
+        {
+          "s": "TU",
+          "correct": [
+            {
+              "word": "TULIPANO",
+              "emoji": "🌷"
+            },
+            {
+              "word": "TUONO",
+              "emoji": "⛈️"
+            },
+            {
+              "word": "TUFFO",
+              "emoji": "🤿"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "TARTARUGA",
+              "emoji": "🐢"
+            },
+            {
+              "word": "TELEFONO",
+              "emoji": "📞"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "TORTA",
+              "emoji": "🎂"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            }
+          ]
+        }
       ],
       "parole": [
-        { "word": "TOPO", "sillabe": [ "TO", "PO" ], "emoji": "🐭", "doppia": false },
-        { "word": "MOTO", "sillabe": [ "MO", "TO" ], "emoji": "🏍️", "doppia": false },
-        { "word": "NOTTE", "sillabe": [ "NO", "TE" ], "emoji": "🌙", "doppia": true },
-        { "word": "PATATA", "sillabe": [ "PA", "TA", "TA" ], "emoji": "🥔", "doppia": false }
+        {
+          "word": "TOPO",
+          "sillabe": [
+            "TO",
+            "PO"
+          ],
+          "emoji": "🐭",
+          "doppia": false
+        },
+        {
+          "word": "MOTO",
+          "sillabe": [
+            "MO",
+            "TO"
+          ],
+          "emoji": "🏍️",
+          "doppia": false
+        },
+        {
+          "word": "NOTTE",
+          "sillabe": [
+            "NO",
+            "TE"
+          ],
+          "emoji": "🌙",
+          "doppia": true
+        },
+        {
+          "word": "PATATA",
+          "sillabe": [
+            "PA",
+            "TA",
+            "TA"
+          ],
+          "emoji": "🥔",
+          "doppia": false
+        }
       ]
     },
     {
@@ -232,38 +1833,330 @@
         "grapheme": "L",
         "name": "elle",
         "ipa": "lː",
-        "shape": { "it": "La L sembra una gamba con il piede.", "zh": "L 像一条腿带着小脚" },
-        "mouth": { "it": "Quando dico la L, la punta della lingua tocca dietro i denti di sopra e la voce scorre ai lati.", "zh": "发 L 舌尖抵上牙背后，声音从舌头两侧流出来" }
+        "shape": {
+          "it": "La L sembra una gamba con il piede.",
+          "zh": "L 像一条腿带着小脚"
+        },
+        "mouth": {
+          "it": "Quando dico la L, la punta della lingua tocca dietro i denti di sopra e la voce scorre ai lati.",
+          "zh": "发 L 舌尖抵上牙背后，声音从舌头两侧流出来"
+        }
       },
       "sillabe": [
-        { "s": "LA", "anchor": { "word": "LATTE", "emoji": "🥛" } },
-        { "s": "LO", "anchor": { "word": "LOCOMOTIVA", "emoji": "🚂" } },
-        { "s": "LE", "anchor": { "word": "LEONE", "emoji": "🦁" } },
-        { "s": "LI", "anchor": { "word": "LIMONE", "emoji": "🍋" } },
-        { "s": "LU", "anchor": { "word": "LUNA", "emoji": "🌙" } }
+        {
+          "s": "LA",
+          "anchor": {
+            "word": "LATTE",
+            "emoji": "🥛"
+          }
+        },
+        {
+          "s": "LO",
+          "anchor": {
+            "word": "LOCOMOTIVA",
+            "emoji": "🚂"
+          }
+        },
+        {
+          "s": "LE",
+          "anchor": {
+            "word": "LEONE",
+            "emoji": "🦁"
+          }
+        },
+        {
+          "s": "LI",
+          "anchor": {
+            "word": "LIMONE",
+            "emoji": "🍋"
+          }
+        },
+        {
+          "s": "LU",
+          "anchor": {
+            "word": "LUNA",
+            "emoji": "🌙"
+          }
+        }
       ],
       "casa": [
-        { "s": "LA",
-          "correct": [ { "word": "LATTE", "emoji": "🥛" }, { "word": "LAMA", "emoji": "🦙" }, { "word": "LAMPADA", "emoji": "💡" } ],
-          "wrong": [ { "word": "LUNA", "emoji": "🌙" }, { "word": "LEONE", "emoji": "🦁" }, { "word": "MELA", "emoji": "🍎" }, { "word": "PANE", "emoji": "🍞" } ] },
-        { "s": "LO",
-          "correct": [ { "word": "LOCOMOTIVA", "emoji": "🚂" }, { "word": "LONTRA", "emoji": "🦦" } ],
-          "wrong": [ { "word": "LATTE", "emoji": "🥛" }, { "word": "LUPO", "emoji": "🐺" }, { "word": "SOLE", "emoji": "☀️" }, { "word": "NAVE", "emoji": "🚢" } ] },
-        { "s": "LE",
-          "correct": [ { "word": "LEONE", "emoji": "🦁" }, { "word": "LETTO", "emoji": "🛏️" }, { "word": "LENTE", "emoji": "🔍" } ],
-          "wrong": [ { "word": "LIMONE", "emoji": "🍋" }, { "word": "LATTE", "emoji": "🥛" }, { "word": "TOPO", "emoji": "🐭" }, { "word": "UVA", "emoji": "🍇" } ] },
-        { "s": "LI",
-          "correct": [ { "word": "LIMONE", "emoji": "🍋" }, { "word": "LIBRO", "emoji": "📖" }, { "word": "LINGUA", "emoji": "👅" } ],
-          "wrong": [ { "word": "LEONE", "emoji": "🦁" }, { "word": "LUNA", "emoji": "🌙" }, { "word": "NAVE", "emoji": "🚢" }, { "word": "PIZZA", "emoji": "🍕" } ] },
-        { "s": "LU",
-          "correct": [ { "word": "LUNA", "emoji": "🌙" }, { "word": "LUPO", "emoji": "🐺" }, { "word": "LUMACA", "emoji": "🐌" } ],
-          "wrong": [ { "word": "LIMONE", "emoji": "🍋" }, { "word": "LETTO", "emoji": "🛏️" }, { "word": "MANO", "emoji": "✋" }, { "word": "TIGRE", "emoji": "🐯" } ] }
+        {
+          "s": "LA",
+          "correct": [
+            {
+              "word": "LATTE",
+              "emoji": "🥛"
+            },
+            {
+              "word": "LAMA",
+              "emoji": "🦙"
+            },
+            {
+              "word": "LAMPADA",
+              "emoji": "💡"
+            },
+            {
+              "word": "LATTUGA",
+              "emoji": "🥬"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "LEONE",
+              "emoji": "🦁"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "LIMONE",
+              "emoji": "🍋"
+            },
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            },
+            {
+              "word": "LETTO",
+              "emoji": "🛏️"
+            }
+          ]
+        },
+        {
+          "s": "LO",
+          "correct": [
+            {
+              "word": "LOCOMOTIVA",
+              "emoji": "🚂"
+            },
+            {
+              "word": "LONTRA",
+              "emoji": "🦦"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LATTE",
+              "emoji": "🥛"
+            },
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "LEONE",
+              "emoji": "🦁"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "LIBRO",
+              "emoji": "📖"
+            }
+          ]
+        },
+        {
+          "s": "LE",
+          "correct": [
+            {
+              "word": "LEONE",
+              "emoji": "🦁"
+            },
+            {
+              "word": "LETTO",
+              "emoji": "🛏️"
+            },
+            {
+              "word": "LENTE",
+              "emoji": "🔍"
+            },
+            {
+              "word": "LECCA-LECCA",
+              "emoji": "🍭"
+            },
+            {
+              "word": "LEPRE",
+              "emoji": "🐇"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LIMONE",
+              "emoji": "🍋"
+            },
+            {
+              "word": "LATTE",
+              "emoji": "🥛"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "LUMACA",
+              "emoji": "🐌"
+            },
+            {
+              "word": "LIBRO",
+              "emoji": "📖"
+            }
+          ]
+        },
+        {
+          "s": "LI",
+          "correct": [
+            {
+              "word": "LIMONE",
+              "emoji": "🍋"
+            },
+            {
+              "word": "LIBRO",
+              "emoji": "📖"
+            },
+            {
+              "word": "LINGUA",
+              "emoji": "👅"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LEONE",
+              "emoji": "🦁"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "NAVE",
+              "emoji": "🚢"
+            },
+            {
+              "word": "PIZZA",
+              "emoji": "🍕"
+            },
+            {
+              "word": "LATTE",
+              "emoji": "🥛"
+            },
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            }
+          ]
+        },
+        {
+          "s": "LU",
+          "correct": [
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            },
+            {
+              "word": "LUMACA",
+              "emoji": "🐌"
+            },
+            {
+              "word": "LUCERTOLA",
+              "emoji": "🦎"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LIMONE",
+              "emoji": "🍋"
+            },
+            {
+              "word": "LETTO",
+              "emoji": "🛏️"
+            },
+            {
+              "word": "MANO",
+              "emoji": "✋"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "LEONE",
+              "emoji": "🦁"
+            },
+            {
+              "word": "LATTE",
+              "emoji": "🥛"
+            }
+          ]
+        }
       ],
       "parole": [
-        { "word": "MELA", "sillabe": [ "ME", "LA" ], "emoji": "🍎", "doppia": false },
-        { "word": "LUNA", "sillabe": [ "LU", "NA" ], "emoji": "🌙", "doppia": false },
-        { "word": "LUPO", "sillabe": [ "LU", "PO" ], "emoji": "🐺", "doppia": false },
-        { "word": "PALLA", "sillabe": [ "PA", "LA" ], "emoji": "⚽", "doppia": true }
+        {
+          "word": "MELA",
+          "sillabe": [
+            "ME",
+            "LA"
+          ],
+          "emoji": "🍎",
+          "doppia": false
+        },
+        {
+          "word": "LUNA",
+          "sillabe": [
+            "LU",
+            "NA"
+          ],
+          "emoji": "🌙",
+          "doppia": false
+        },
+        {
+          "word": "LUPO",
+          "sillabe": [
+            "LU",
+            "PO"
+          ],
+          "emoji": "🐺",
+          "doppia": false
+        },
+        {
+          "word": "PALLA",
+          "sillabe": [
+            "PA",
+            "LA"
+          ],
+          "emoji": "⚽",
+          "doppia": true
+        }
       ]
     },
     {
@@ -275,38 +2168,331 @@
         "grapheme": "S",
         "name": "esse",
         "ipa": "sː",
-        "shape": { "it": "La S è come un serpente che striscia.", "zh": "S 像一条爬行的蛇" },
-        "mouth": { "it": "Quando dico la S, i denti sono quasi chiusi e l'aria esce facendo sssss, come un serpente.", "zh": "发 S 牙齿轻合，气流从齿缝嘶出来，像蛇的声音" }
+        "shape": {
+          "it": "La S è come un serpente che striscia.",
+          "zh": "S 像一条爬行的蛇"
+        },
+        "mouth": {
+          "it": "Quando dico la S, i denti sono quasi chiusi e l'aria esce facendo sssss, come un serpente.",
+          "zh": "发 S 牙齿轻合，气流从齿缝嘶出来，像蛇的声音"
+        }
       },
       "sillabe": [
-        { "s": "SA", "anchor": { "word": "SALE", "emoji": "🧂" } },
-        { "s": "SO", "anchor": { "word": "SOLE", "emoji": "☀️" } },
-        { "s": "SE", "anchor": { "word": "SERPENTE", "emoji": "🐍" } },
-        { "s": "SI", "anchor": { "word": "SIRENA", "emoji": "🧜‍♀️" } },
-        { "s": "SU", "anchor": { "word": "SUCCO", "emoji": "🧃" } }
+        {
+          "s": "SA",
+          "anchor": {
+            "word": "SALE",
+            "emoji": "🧂"
+          }
+        },
+        {
+          "s": "SO",
+          "anchor": {
+            "word": "SOLE",
+            "emoji": "☀️"
+          }
+        },
+        {
+          "s": "SE",
+          "anchor": {
+            "word": "SERPENTE",
+            "emoji": "🐍"
+          }
+        },
+        {
+          "s": "SI",
+          "anchor": {
+            "word": "SIRENA",
+            "emoji": "🧜‍♀️"
+          }
+        },
+        {
+          "s": "SU",
+          "anchor": {
+            "word": "SUCCO",
+            "emoji": "🧃"
+          }
+        }
       ],
       "casa": [
-        { "s": "SA",
-          "correct": [ { "word": "SALE", "emoji": "🧂" }, { "word": "SASSO", "emoji": "🪨" }, { "word": "SAPONE", "emoji": "🧼" } ],
-          "wrong": [ { "word": "SOLE", "emoji": "☀️" }, { "word": "SIRENA", "emoji": "🧜‍♀️" }, { "word": "LUNA", "emoji": "🌙" }, { "word": "PANE", "emoji": "🍞" } ] },
-        { "s": "SO",
-          "correct": [ { "word": "SOLE", "emoji": "☀️" }, { "word": "SOFÀ", "emoji": "🛋️" }, { "word": "SOLDI", "emoji": "💰" } ],
-          "wrong": [ { "word": "SALE", "emoji": "🧂" }, { "word": "SERPENTE", "emoji": "🐍" }, { "word": "TOPO", "emoji": "🐭" }, { "word": "MELA", "emoji": "🍎" } ] },
-        { "s": "SE",
-          "correct": [ { "word": "SERPENTE", "emoji": "🐍" }, { "word": "SEDIA", "emoji": "🪑" }, { "word": "SEMAFORO", "emoji": "🚦" } ],
-          "wrong": [ { "word": "SIRENA", "emoji": "🧜‍♀️" }, { "word": "SUCCO", "emoji": "🧃" }, { "word": "LEONE", "emoji": "🦁" }, { "word": "NIDO", "emoji": "🪺" } ] },
-        { "s": "SI",
-          "correct": [ { "word": "SIRENA", "emoji": "🧜‍♀️" }, { "word": "SILENZIO", "emoji": "🤫" } ],
-          "wrong": [ { "word": "SOLE", "emoji": "☀️" }, { "word": "SAPONE", "emoji": "🧼" }, { "word": "TIGRE", "emoji": "🐯" }, { "word": "UVA", "emoji": "🍇" } ] },
-        { "s": "SU",
-          "correct": [ { "word": "SUCCO", "emoji": "🧃" }, { "word": "SUPEREROE", "emoji": "🦸" } ],
-          "wrong": [ { "word": "SERPENTE", "emoji": "🐍" }, { "word": "SEDIA", "emoji": "🪑" }, { "word": "LUNA", "emoji": "🌙" }, { "word": "GATTO", "emoji": "🐱" } ] }
+        {
+          "s": "SA",
+          "correct": [
+            {
+              "word": "SALE",
+              "emoji": "🧂"
+            },
+            {
+              "word": "SASSO",
+              "emoji": "🪨"
+            },
+            {
+              "word": "SAPONE",
+              "emoji": "🧼"
+            },
+            {
+              "word": "SALVAGENTE",
+              "emoji": "🛟"
+            },
+            {
+              "word": "SANDALO",
+              "emoji": "👡"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "SIRENA",
+              "emoji": "🧜‍♀️"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            },
+            {
+              "word": "SEDIA",
+              "emoji": "🪑"
+            },
+            {
+              "word": "SUCCO",
+              "emoji": "🧃"
+            },
+            {
+              "word": "SERPENTE",
+              "emoji": "🐍"
+            }
+          ]
+        },
+        {
+          "s": "SO",
+          "correct": [
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "SOFÀ",
+              "emoji": "🛋️"
+            },
+            {
+              "word": "SOLDI",
+              "emoji": "💰"
+            },
+            {
+              "word": "SORRISO",
+              "emoji": "😊"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SALE",
+              "emoji": "🧂"
+            },
+            {
+              "word": "SERPENTE",
+              "emoji": "🐍"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            },
+            {
+              "word": "SIRENA",
+              "emoji": "🧜‍♀️"
+            },
+            {
+              "word": "SASSO",
+              "emoji": "🪨"
+            },
+            {
+              "word": "SEDIA",
+              "emoji": "🪑"
+            }
+          ]
+        },
+        {
+          "s": "SE",
+          "correct": [
+            {
+              "word": "SERPENTE",
+              "emoji": "🐍"
+            },
+            {
+              "word": "SEDIA",
+              "emoji": "🪑"
+            },
+            {
+              "word": "SEMAFORO",
+              "emoji": "🚦"
+            },
+            {
+              "word": "SEME",
+              "emoji": "🌱"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SIRENA",
+              "emoji": "🧜‍♀️"
+            },
+            {
+              "word": "SUCCO",
+              "emoji": "🧃"
+            },
+            {
+              "word": "LEONE",
+              "emoji": "🦁"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "SALE",
+              "emoji": "🧂"
+            },
+            {
+              "word": "SASSO",
+              "emoji": "🪨"
+            }
+          ]
+        },
+        {
+          "s": "SI",
+          "correct": [
+            {
+              "word": "SIRENA",
+              "emoji": "🧜‍♀️"
+            },
+            {
+              "word": "SILENZIO",
+              "emoji": "🤫"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "SAPONE",
+              "emoji": "🧼"
+            },
+            {
+              "word": "TIGRE",
+              "emoji": "🐯"
+            },
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "SERPENTE",
+              "emoji": "🐍"
+            },
+            {
+              "word": "SEDIA",
+              "emoji": "🪑"
+            }
+          ]
+        },
+        {
+          "s": "SU",
+          "correct": [
+            {
+              "word": "SUCCO",
+              "emoji": "🧃"
+            },
+            {
+              "word": "SUPEREROE",
+              "emoji": "🦸"
+            },
+            {
+              "word": "SUPERMERCATO",
+              "emoji": "🏪"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SERPENTE",
+              "emoji": "🐍"
+            },
+            {
+              "word": "SEDIA",
+              "emoji": "🪑"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "GATTO",
+              "emoji": "🐱"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "SASSO",
+              "emoji": "🪨"
+            }
+          ]
+        }
       ],
       "parole": [
-        { "word": "SOLE", "sillabe": [ "SO", "LE" ], "emoji": "☀️", "doppia": false },
-        { "word": "SALE", "sillabe": [ "SA", "LE" ], "emoji": "🧂", "doppia": false },
-        { "word": "SASSO", "sillabe": [ "SA", "SO" ], "emoji": "🪨", "doppia": true },
-        { "word": "MIMOSA", "sillabe": [ "MI", "MO", "SA" ], "emoji": "🌼", "doppia": false }
+        {
+          "word": "SOLE",
+          "sillabe": [
+            "SO",
+            "LE"
+          ],
+          "emoji": "☀️",
+          "doppia": false
+        },
+        {
+          "word": "SALE",
+          "sillabe": [
+            "SA",
+            "LE"
+          ],
+          "emoji": "🧂",
+          "doppia": false
+        },
+        {
+          "word": "SASSO",
+          "sillabe": [
+            "SA",
+            "SO"
+          ],
+          "emoji": "🪨",
+          "doppia": true
+        },
+        {
+          "word": "MIMOSA",
+          "sillabe": [
+            "MI",
+            "MO",
+            "SA"
+          ],
+          "emoji": "🌼",
+          "doppia": false
+        }
       ]
     }
   ],

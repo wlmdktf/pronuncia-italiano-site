@@ -134,7 +134,7 @@ export function renderHome() {
   const name = P.nickname();
   const grid = h('div', { class: 'unit-grid' });
   for (const u of CUR.units) {
-    const total = u.type === 'vocali' ? u.letters.length : 4;
+    const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : 4;
     grid.append(h('button', {
       class: 'unit-card', onclick: () => { A.sfx('tap'); go({ screen: 'unit', unitId: u.id }); }
     },
@@ -205,6 +205,14 @@ function renderVocaliGrid(u) {
       h('span', { class: 'name' }, L.grapheme),
       h('span', { class: 'done' }, P.isDone(`vocali:${L.grapheme}`) ? '⭐' : '')));
   });
+  if (u.casa) {
+    grid.append(h('button', {
+      class: 'unit-card', onclick: () => { A.sfx('tap'); go({ screen: 'casa', unitId: u.id, idx: 0 }); }
+    },
+      h('span', { class: 'emoji' }, '🏠'),
+      h('span', { class: 'name' }, 'La casa dei suoni'),
+      h('span', { class: 'done' }, P.isDone(`${u.id}:casa`) ? '⭐' : '')));
+  }
   app().replaceChildren(topbar(u.title, { screen: 'home' }), grid);
 }
 
@@ -307,6 +315,8 @@ export function renderCasa(unitId, idx) {
   const u = CUR.units.find(x => x.id === unitId);
   const row = u.casa[idx];
   const low = row.s.toLowerCase();
+  // 元音房 (单字母) 播字母音, 辅音房播音节
+  const houseSound = row.s.length === 1 ? `letter-${low}-sound` : `sil-${low}`;
   let found = 0;
 
   // 题库抽卡: 每轮从池子里随机抽 2 正确 + 2 干扰, 重复玩不重样
@@ -342,10 +352,10 @@ export function renderCasa(unitId, idx) {
     topbar('La casa dei suoni', { screen: 'unit', unitId }),
     h('div', { class: 'stage' },
       h('div', { class: 'dots' }, ...u.casa.map((_, i) => h('i', { class: i === idx ? 'on' : '' }))),
-      h('button', { class: 'house', onclick: () => A.playSeq(['ui-which_house', `sil-${low}`], 300) },
+      h('button', { class: 'house', onclick: () => A.playSeq(['ui-which_house', houseSound], 300) },
         h('span', { class: 'h-emoji' }, '🏠'), row.s),
       grid));
-  A.playSeq(['ui-which_house', `sil-${low}`], 300);
+  A.playSeq(['ui-which_house', houseSound], 300);
 }
 
 // ---------- prime parole ----------

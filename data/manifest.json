@@ -2265,7 +2265,7 @@
   "qa": "mismatch",
   "stt": "Londra.",
   "bytes": 21312,
-  "ts": "2026-08-02 22:49"
+  "ts": "2026-08-03 10:41"
  },
  "word-lupo": {
   "hash": "eb8349474bbe",
@@ -2644,5 +2644,437 @@
   "stt": null,
   "bytes": 21312,
   "ts": "2026-08-02 22:48"
+ },
+ "word-ananas": {
+  "hash": "fe6c3ad46061",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ananas.",
+  "qa": "ok",
+  "stt": "Ananas.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-aereo": {
+  "hash": "cdad5abc7873",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Aereo.",
+  "qa": "ok",
+  "stt": "Aereo.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-anguria": {
+  "hash": "8a4121eff37e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Anguria.",
+  "qa": "ok",
+  "stt": "Anguria.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-elicottero": {
+  "hash": "0e45e6490fc8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Elicottero.",
+  "qa": "ok",
+  "stt": "Elicottero.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-orologio": {
+  "hash": "27afaa25989f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Orologio.",
+  "qa": "ok",
+  "stt": "Orologio.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-occhiali": {
+  "hash": "2e4c218fe62f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Occhiali.",
+  "qa": "ok",
+  "stt": "Occhiali.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-osso": {
+  "hash": "459aa1328c50",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Osso.",
+  "qa": "ok",
+  "stt": "Osso.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-uovo": {
+  "hash": "28557076cb63",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Uovo.",
+  "qa": "ok",
+  "stt": "Uovo.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-macchina": {
+  "hash": "1f65e04c8b0c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Macchina.",
+  "qa": "ok",
+  "stt": "Macchina.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-martello": {
+  "hash": "d735bd11d6ca",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Martello.",
+  "qa": "ok",
+  "stt": "Martello.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-maestra": {
+  "hash": "c8e9e195591e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Maestra.",
+  "qa": "ok",
+  "stt": "Maestra.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-montagna": {
+  "hash": "885804f73810",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Montagna.",
+  "qa": "ok",
+  "stt": "Montagna.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-medusa": {
+  "hash": "01ab48cf994c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Medusa.",
+  "qa": "ok",
+  "stt": "Medusa.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-melanzana": {
+  "hash": "456c96dd7562",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Melanzana.",
+  "qa": "ok",
+  "stt": "Melanzana.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-micio": {
+  "hash": "b91eb6f72bea",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Micio.",
+  "qa": "ok",
+  "stt": "Micio.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-natale": {
+  "hash": "2748935ebd33",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Natale.",
+  "qa": "ok",
+  "stt": "Natale.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-nove": {
+  "hash": "30599eb443a9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Nove.",
+  "qa": "ok",
+  "stt": "9.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-neonato": {
+  "hash": "4353a0fed2cd",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Neonato.",
+  "qa": "ok",
+  "stt": "Neonato.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-ninja": {
+  "hash": "6f3c5f8111fd",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ninja.",
+  "qa": "ok",
+  "stt": "Ninja.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-nutria": {
+  "hash": "b2f3e7e2da81",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Nutria.",
+  "qa": "ok",
+  "stt": "Nutria.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pasta": {
+  "hash": "0ff5b8b07e58",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pasta.",
+  "qa": "ok",
+  "stt": "Pasta.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-panda": {
+  "hash": "794b22f6b7fb",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Panda.",
+  "qa": "ok",
+  "stt": "Panda.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pagliaccio": {
+  "hash": "fc00112005d2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pagliaccio.",
+  "qa": "ok",
+  "stt": "Pagliaccio.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pavone": {
+  "hash": "440d088860d5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pavone.",
+  "qa": "ok",
+  "stt": "Pavone.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-ponte": {
+  "hash": "763859d636a6",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ponte.",
+  "qa": "ok",
+  "stt": "Ponte.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-popcorn": {
+  "hash": "39ea86c85713",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Popcorn.",
+  "qa": "ok",
+  "stt": "Popcorn.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pesca": {
+  "hash": "797ee2ec0550",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pesca.",
+  "qa": "ok",
+  "stt": "Pesca.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pennello": {
+  "hash": "91ca8ed6e39f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pennello.",
+  "qa": "ok",
+  "stt": "Pennello.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pinguino": {
+  "hash": "35ee1e3836c9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pinguino.",
+  "qa": "ok",
+  "stt": "Pinguino.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pioggia": {
+  "hash": "a53efc4b0d04",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pioggia.",
+  "qa": "ok",
+  "stt": "Pioggia.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:40"
+ },
+ "word-pianta": {
+  "hash": "1facd2f9a883",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pianta.",
+  "qa": "ok",
+  "stt": "Pianta.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-pulmino": {
+  "hash": "8ebf1d5d94a7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pulmino.",
+  "qa": "ok",
+  "stt": "Pulmino.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-tacchino": {
+  "hash": "cb00bcab24c8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tacchino.",
+  "qa": "ok",
+  "stt": "Tacchino.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-tazza": {
+  "hash": "99f959cf8f6d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tazza.",
+  "qa": "ok",
+  "stt": "Tazza.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-torre": {
+  "hash": "428a00791351",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Torre.",
+  "qa": "ok",
+  "stt": "Torre.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-telescopio": {
+  "hash": "c4fedd3fd61e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Telescopio.",
+  "qa": "ok",
+  "stt": "Telescopio.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-teiera": {
+  "hash": "0ce945b4dc4e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Teiera.",
+  "qa": "ok",
+  "stt": "Teiera.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-tiramisu": {
+  "hash": "9e726ab37b1b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tiramisù.",
+  "qa": "ok",
+  "stt": "Tiramisù.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-tuffo": {
+  "hash": "fd731f983a98",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tuffo.",
+  "qa": "ok",
+  "stt": "Tuffo.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-lattuga": {
+  "hash": "72aacbf29b63",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lattuga.",
+  "qa": "ok",
+  "stt": "Lattuga.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-leccalecca": {
+  "hash": "86afaab918cb",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lecca-lecca.",
+  "qa": "ok",
+  "stt": "Lecca lecca.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-lepre": {
+  "hash": "ec19a87c9489",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lepre.",
+  "qa": "ok",
+  "stt": "Lepre.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-lucertola": {
+  "hash": "629686eaa968",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lucertola.",
+  "qa": "ok",
+  "stt": "Lucertola.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-salvagente": {
+  "hash": "4de7a4dca0af",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Salvagente.",
+  "qa": "ok",
+  "stt": "Salvagente.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-sandalo": {
+  "hash": "8ab5c7b45665",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sandalo.",
+  "qa": "ok",
+  "stt": "Sandalo.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-sorriso": {
+  "hash": "514c7dcce123",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sorriso.",
+  "qa": "ok",
+  "stt": "Sorriso.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-seme": {
+  "hash": "4fc3933c89d9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Seme.",
+  "qa": "ok",
+  "stt": "Seme.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
+ },
+ "word-supermercato": {
+  "hash": "84fa8742fe95",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Supermercato.",
+  "qa": "ok",
+  "stt": "Supermercato.",
+  "bytes": 21312,
+  "ts": "2026-08-03 10:41"
  }
 }

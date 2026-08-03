@@ -1,5 +1,5 @@
 // 离线缓存: 核心文件安装时缓存, 音频首次播放后缓存 + 后台全量预取 (尽力而为)
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = 'sillabe-' + VERSION;
 const CORE = [
   '.', 'index.html', 'css/style.css',
