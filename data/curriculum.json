@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -2612,17 +2612,6 @@
             "ME"
           ],
           "emoji": "🍖",
-          "doppia": false
-        },
-        {
-          "word": "PISOLINO",
-          "sillabe": [
-            "PI",
-            "SO",
-            "LI",
-            "NO"
-          ],
-          "emoji": "💤",
           "doppia": false
         }
       ]

@@ -3230,24 +3230,6 @@
   "bytes": 21312,
   "ts": "2026-08-03 17:03"
  },
- "word-pisolino": {
-  "hash": "3b7a3c9e2679",
-  "voice": "it-IT-ElsaNeural",
-  "text": "Pisolino.",
-  "qa": "ok",
-  "stt": "Pisolino.",
-  "bytes": 21312,
-  "ts": "2026-08-03 17:03"
- },
- "word-pisolino-slow": {
-  "hash": "f6fb4c4b1df5",
-  "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-35%'>Pisolino.</prosody>",
-  "qa": "manual",
-  "stt": null,
-  "bytes": 21312,
-  "ts": "2026-08-03 17:03"
- },
  "word-panino": {
   "hash": "c7616dc37ab5",
   "voice": "it-IT-ElsaNeural",
