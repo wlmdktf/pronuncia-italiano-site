@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -2623,6 +2623,76 @@
             "NO"
           ],
           "emoji": "💤",
+          "doppia": false
+        }
+      ]
+    },
+    {
+      "id": "mix",
+      "title": "Mescola le sillabe",
+      "emoji": "🎲",
+      "type": "mix",
+      "parole": [
+        {
+          "word": "PANINO",
+          "sillabe": [
+            "PA",
+            "NI",
+            "NO"
+          ],
+          "emoji": "🥪",
+          "doppia": false
+        },
+        {
+          "word": "PILOTA",
+          "sillabe": [
+            "PI",
+            "LO",
+            "TA"
+          ],
+          "emoji": "🧑‍✈️",
+          "doppia": false
+        },
+        {
+          "word": "MONETA",
+          "sillabe": [
+            "MO",
+            "NE",
+            "TA"
+          ],
+          "emoji": "🪙",
+          "doppia": false
+        },
+        {
+          "word": "MELONE",
+          "sillabe": [
+            "ME",
+            "LO",
+            "NE"
+          ],
+          "emoji": "🍈",
+          "doppia": false
+        },
+        {
+          "word": "LIMONATA",
+          "sillabe": [
+            "LI",
+            "MO",
+            "NA",
+            "TA"
+          ],
+          "emoji": "🥤",
+          "doppia": false
+        },
+        {
+          "word": "PATATINE",
+          "sillabe": [
+            "PA",
+            "TA",
+            "TI",
+            "NE"
+          ],
+          "emoji": "🍟",
           "doppia": false
         }
       ]

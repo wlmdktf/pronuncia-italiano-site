@@ -20,6 +20,7 @@ function render() {
   if (s.screen === 'sillabe') return V.renderSillabe(s.unitId, s.idx);
   if (s.screen === 'casa') return V.renderCasa(s.unitId, s.idx);
   if (s.screen === 'parole') return V.renderParole(s.unitId, s.idx);
+  if (s.screen === 'mix') return V.renderMix(s);
   return V.renderHome();
 }
 

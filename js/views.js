@@ -134,9 +134,10 @@ export function renderHome() {
   const name = P.nickname();
   const grid = h('div', { class: 'unit-grid' });
   for (const u of CUR.units) {
-    const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : 4;
+    const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : (u.type === 'mix' ? 1 : 4);
+    const dest = u.type === 'mix' ? { screen: 'mix', idx: 0 } : { screen: 'unit', unitId: u.id };
     grid.append(h('button', {
-      class: 'unit-card', onclick: () => { A.sfx('tap'); go({ screen: 'unit', unitId: u.id }); }
+      class: 'unit-card', onclick: () => { A.sfx('tap'); go(dest); }
     },
       h('span', { class: 'emoji' }, u.emoji),
       h('span', { class: 'name' }, u.title),
@@ -358,18 +359,15 @@ export function renderCasa(unitId, idx) {
   A.playSeq(['ui-which_house', houseSound], 300);
 }
 
-// ---------- prime parole ----------
-export function renderParole(unitId, idx) {
-  const u = CUR.units.find(x => x.id === unitId);
-  const W = u.parole[idx];
+// ---------- 拼词引擎 (prime parole 与 mescola 共用) ----------
+function renderWordBuilder({ title, W, dotsTotal, dotsIdx, sylPool, nDistract, backState, onNext }) {
   const wid = 'word-' + slug(W.word);
   let filled = 0;
 
   const slots = W.sillabe.map(() => h('div', { class: 'slot' }, '·'));
-  // 音节选项: 需要的音节 + 1 个干扰项
   const needed = [...W.sillabe];
-  const distractor = u.sillabe.map(s => s.s).find(s => !needed.includes(s));
-  const options = [...new Set([...needed, distractor])].sort(() => Math.random() - 0.5);
+  const distract = pickN(sylPool.filter(s => !needed.includes(s)), nDistract);
+  const options = pickN([...new Set([...needed, ...distract])], 99);
 
   const result = h('div', { class: 'word-row' });
   const tiles = h('div', { class: 'merge-row' });
@@ -401,8 +399,7 @@ export function renderParole(unitId, idx) {
   }
   const nextBtn = h('button', { class: 'round-btn', disabled: '', onclick: () => {
     A.stopAll();
-    if (idx + 1 < u.parole.length) go({ screen: 'parole', unitId, idx: idx + 1 });
-    else celebrate(`${unitId}:parole`, { screen: 'unit', unitId });
+    onNext();
   } }, '➡️');
 
   // 目标图卡: 先听要拼的词, 随时可点重听 (文字拼完才揭晓)
@@ -411,14 +408,56 @@ export function renderParole(unitId, idx) {
     h('span', { class: 'goal-hint' }, '🔊'));
 
   app().replaceChildren(
-    topbar('Le prime parole', { screen: 'unit', unitId }),
+    topbar(title, backState),
     h('div', { class: 'stage' },
-      h('div', { class: 'dots' }, ...u.parole.map((_, i) => h('i', { class: i === idx ? 'on' : '' }))),
+      h('div', { class: 'dots' }, ...Array.from({ length: dotsTotal }, (_, i) => h('i', { class: i === dotsIdx ? 'on' : '' }))),
       goal,
       h('div', { class: 'slot-row' }, ...slots),
       tiles, result,
       h('div', { class: 'nav-row' }, nextBtn)));
   A.playSeq(['ui-make_word', wid], 350);
+}
+
+// ---------- prime parole (单元内, 1 个干扰项) ----------
+export function renderParole(unitId, idx) {
+  const u = CUR.units.find(x => x.id === unitId);
+  renderWordBuilder({
+    title: 'Le prime parole',
+    W: u.parole[idx],
+    dotsTotal: u.parole.length,
+    dotsIdx: idx,
+    sylPool: u.sillabe.map(s => s.s),
+    nDistract: 1,
+    backState: { screen: 'unit', unitId },
+    onNext: () => {
+      if (idx + 1 < u.parole.length) go({ screen: 'parole', unitId, idx: idx + 1 });
+      else celebrate(`${unitId}:parole`, { screen: 'unit', unitId });
+    },
+  });
+}
+
+// ---------- mescola le sillabe (全部音节混合, 2 个干扰项, 每轮随机 8 词) ----------
+const MIX_ROUND = 8;
+export function renderMix(state) {
+  if (!state.words) {
+    const pool = CUR.units.flatMap(u => u.parole || []);
+    state.words = pickN(pool, MIX_ROUND);
+  }
+  const allSyl = CUR.units.filter(u => u.type === 'consonante').flatMap(u => u.sillabe.map(s => s.s));
+  const idx = state.idx || 0;
+  renderWordBuilder({
+    title: 'Mescola le sillabe',
+    W: state.words[idx],
+    dotsTotal: state.words.length,
+    dotsIdx: idx,
+    sylPool: allSyl,
+    nDistract: 2,
+    backState: { screen: 'home' },
+    onNext: () => {
+      if (idx + 1 < state.words.length) go({ screen: 'mix', idx: idx + 1, words: state.words });
+      else celebrate('mix:parole', { screen: 'home' });
+    },
+  });
 }
 
 // ---------- splash ----------

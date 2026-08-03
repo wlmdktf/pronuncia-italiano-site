@@ -2265,7 +2265,7 @@
   "qa": "mismatch",
   "stt": "Londra.",
   "bytes": 21312,
-  "ts": "2026-08-03 17:03"
+  "ts": "2026-08-03 17:11"
  },
  "word-lupo": {
   "hash": "eb8349474bbe",
@@ -3247,5 +3247,95 @@
   "stt": null,
   "bytes": 21312,
   "ts": "2026-08-03 17:03"
+ },
+ "word-panino": {
+  "hash": "c7616dc37ab5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Panino.",
+  "qa": "ok",
+  "stt": "Panino.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-panino-slow": {
+  "hash": "ceb4b84319bd",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Panino.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-pilota": {
+  "hash": "f362c00dd707",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pilota.",
+  "qa": "ok",
+  "stt": "Pilota.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-pilota-slow": {
+  "hash": "012173170c18",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pilota.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-moneta-slow": {
+  "hash": "3f4a615c3eb0",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Moneta.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-melone-slow": {
+  "hash": "a46384ca4286",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Melone.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-limonata": {
+  "hash": "ea2f3de3d6d5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Limonata.",
+  "qa": "ok",
+  "stt": "Limonata.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-limonata-slow": {
+  "hash": "f7b588647f76",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Limonata.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21600,
+  "ts": "2026-08-03 17:11"
+ },
+ "word-patatine": {
+  "hash": "9d365f26276a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Patatine.",
+  "qa": "ok",
+  "stt": "Patatine.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:12"
+ },
+ "word-patatine-slow": {
+  "hash": "74cf46d664dc",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Patatine.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:12"
  }
 }
