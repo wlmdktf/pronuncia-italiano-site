@@ -2265,7 +2265,7 @@
   "qa": "mismatch",
   "stt": "Londra.",
   "bytes": 21312,
-  "ts": "2026-08-03 10:41"
+  "ts": "2026-08-03 17:03"
  },
  "word-lupo": {
   "hash": "eb8349474bbe",
@@ -3076,5 +3076,176 @@
   "stt": "Supermercato.",
   "bytes": 21312,
   "ts": "2026-08-03 10:41"
+ },
+ "word-pappa": {
+  "hash": "677d4e479fd4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pappa.",
+  "qa": "ok",
+  "stt": "Pappa.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-pappa-slow": {
+  "hash": "836a35ff06cc",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pappa.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-puma": {
+  "hash": "80f33bbd9de3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Puma.",
+  "qa": "ok",
+  "stt": "Puma.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-puma-slow": {
+  "hash": "8e8bc50f8252",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Puma.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-matita-slow": {
+  "hash": "2e7a8579fc10",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Matita.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-tana": {
+  "hash": "65c829d8a2cb",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tana.",
+  "qa": "ok",
+  "stt": "Tana.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-tana-slow": {
+  "hash": "5a4a7f47b658",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Tana.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-lana": {
+  "hash": "6b5847ba9d50",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lana.",
+  "qa": "ok",
+  "stt": "Lana.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-lana-slow": {
+  "hash": "31f561d05953",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Lana.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-pila": {
+  "hash": "bd39bfd48b9b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pila.",
+  "qa": "ok",
+  "stt": "Pila.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-pila-slow": {
+  "hash": "00a11e277cce",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pila.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-lama-slow": {
+  "hash": "058dd5fff6db",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Lama.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-sapone-slow": {
+  "hash": "72b7ceeb7c83",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Sapone.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-muso": {
+  "hash": "b504245f5010",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Muso.",
+  "qa": "ok",
+  "stt": "Muso.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-muso-slow": {
+  "hash": "39e84c5a19a7",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Muso.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-salame": {
+  "hash": "5b33f1ed7668",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Salame.",
+  "qa": "ok",
+  "stt": "Salame.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-salame-slow": {
+  "hash": "4d31f554d195",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Salame.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-pisolino": {
+  "hash": "3b7a3c9e2679",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pisolino.",
+  "qa": "ok",
+  "stt": "Pisolino.",
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
+ },
+ "word-pisolino-slow": {
+  "hash": "f6fb4c4b1df5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Pisolino.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 21312,
+  "ts": "2026-08-03 17:03"
  }
 }

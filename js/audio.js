@@ -2,6 +2,7 @@
 let ctx = null;
 const cache = new Map();
 let current = null;
+let currentResolve = null;   // 播放被打断时也要让等待方放行 (否则快速连点会卡死游戏逻辑)
 
 export function unlock() {
   // 必须在用户手势内调用一次: 解锁 WebAudio + HTMLAudio
@@ -16,6 +17,7 @@ export function unlock() {
 
 export function stopAll() {
   if (current) { current.pause(); current.currentTime = 0; current = null; }
+  if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
 }
 
 export function play(id) {
@@ -24,8 +26,13 @@ export function play(id) {
     let a = cache.get(id);
     if (!a) { a = new Audio(`audio/${id}.mp3`); cache.set(id, a); }
     current = a;
+    currentResolve = resolve;
     a.currentTime = 0;
-    const done = () => { a.removeEventListener('ended', done); a.removeEventListener('error', done); resolve(); };
+    const done = () => {
+      a.removeEventListener('ended', done); a.removeEventListener('error', done);
+      if (currentResolve === resolve) currentResolve = null;
+      resolve();
+    };
     a.addEventListener('ended', done);
     a.addEventListener('error', done);
     a.play().catch(done);
@@ -94,7 +101,9 @@ export function playUrl(url) {
     stopAll();
     const a = new Audio(url);
     current = a;
-    a.onended = resolve; a.onerror = resolve;
-    a.play().catch(resolve);
+    currentResolve = resolve;
+    const done = () => { if (currentResolve === resolve) currentResolve = null; resolve(); };
+    a.onended = done; a.onerror = done;
+    a.play().catch(done);
   });
 }

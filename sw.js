@@ -1,6 +1,6 @@
 // 离线缓存 + 版本化更新
 // VERSION 由 deploy.sh 在发布时替换成构建时间戳 (本地开发保持占位符不变)
-const VERSION = '2026-08-03_115446';
+const VERSION = '2026-08-03_170648';
 const CACHE = 'sillabe-' + VERSION;
 const CORE = [
   '.', 'index.html', 'css/style.css',

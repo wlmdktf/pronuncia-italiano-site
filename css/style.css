@@ -78,6 +78,9 @@ button:active { transform: scale(0.96); }
 @keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
 
 /* parole builder */
+.word-card.goal { background: linear-gradient(150deg, #fff6d9, #ffeef8); position: relative; }
+.word-card.goal .goal-hint { position: absolute; right: 10px; bottom: 8px; font-size: 20px; opacity: .7; }
+
 .slot-row { display: flex; gap: 10px; align-items: center; min-height: clamp(70px, 12vw, 110px); }
 .slot { font-size: clamp(40px, 9vw, 80px); font-weight: 900; border: 4px dashed #cbbcec; color: #cbbcec; border-radius: 22px; padding: 2px 22px; min-width: clamp(80px, 16vw, 140px); text-align: center; }
 .slot.filled { border-style: solid; color: #4a3b6b; background: #fff; box-shadow: 0 6px 0 #e2d9f5; }

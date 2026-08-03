@@ -393,6 +393,7 @@ export function renderParole(unitId, idx) {
 
   async function complete() {
     tiles.style.visibility = 'hidden';
+    goal.style.display = 'none';
     result.replaceChildren(wordCard(W, { slow: true, hlDoppia: W.doppia }), micBtn([wid]));
     await A.playSeq([wid + '-slow', wid], 350);
     await A.play(praise());
@@ -404,15 +405,20 @@ export function renderParole(unitId, idx) {
     else celebrate(`${unitId}:parole`, { screen: 'unit', unitId });
   } }, '➡️');
 
+  // 目标图卡: 先听要拼的词, 随时可点重听 (文字拼完才揭晓)
+  const goal = h('button', { class: 'word-card goal', onclick: () => A.play(wid) },
+    h('span', { class: 'w-emoji' }, W.emoji),
+    h('span', { class: 'goal-hint' }, '🔊'));
+
   app().replaceChildren(
     topbar('Le prime parole', { screen: 'unit', unitId }),
     h('div', { class: 'stage' },
       h('div', { class: 'dots' }, ...u.parole.map((_, i) => h('i', { class: i === idx ? 'on' : '' }))),
-      h('button', { class: 'chip', onclick: () => A.play('ui-make_word') }, '🧩 Unisci le sillabe!'),
+      goal,
       h('div', { class: 'slot-row' }, ...slots),
       tiles, result,
       h('div', { class: 'nav-row' }, nextBtn)));
-  A.play('ui-make_word');
+  A.playSeq(['ui-make_word', wid], 350);
 }
 
 // ---------- splash ----------

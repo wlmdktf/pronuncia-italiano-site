@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -1477,6 +1477,24 @@
           ],
           "emoji": "🗺️",
           "doppia": true
+        },
+        {
+          "word": "PAPPA",
+          "sillabe": [
+            "PA",
+            "PA"
+          ],
+          "emoji": "🥣",
+          "doppia": true
+        },
+        {
+          "word": "PUMA",
+          "sillabe": [
+            "PU",
+            "MA"
+          ],
+          "emoji": "🐆",
+          "doppia": false
         }
       ]
     },
@@ -1821,6 +1839,34 @@
           ],
           "emoji": "🥔",
           "doppia": false
+        },
+        {
+          "word": "MATITA",
+          "sillabe": [
+            "MA",
+            "TI",
+            "TA"
+          ],
+          "emoji": "✏️",
+          "doppia": false
+        },
+        {
+          "word": "NOTA",
+          "sillabe": [
+            "NO",
+            "TA"
+          ],
+          "emoji": "🎵",
+          "doppia": false
+        },
+        {
+          "word": "TANA",
+          "sillabe": [
+            "TA",
+            "NA"
+          ],
+          "emoji": "🕳️",
+          "doppia": false
         }
       ]
     },
@@ -2156,6 +2202,43 @@
           ],
           "emoji": "⚽",
           "doppia": true
+        },
+        {
+          "word": "LIMONE",
+          "sillabe": [
+            "LI",
+            "MO",
+            "NE"
+          ],
+          "emoji": "🍋",
+          "doppia": false
+        },
+        {
+          "word": "LANA",
+          "sillabe": [
+            "LA",
+            "NA"
+          ],
+          "emoji": "🧶",
+          "doppia": false
+        },
+        {
+          "word": "PILA",
+          "sillabe": [
+            "PI",
+            "LA"
+          ],
+          "emoji": "🔋",
+          "doppia": false
+        },
+        {
+          "word": "LAMA",
+          "sillabe": [
+            "LA",
+            "MA"
+          ],
+          "emoji": "🦙",
+          "doppia": false
         }
       ]
     },
@@ -2491,6 +2574,55 @@
             "SA"
           ],
           "emoji": "🌼",
+          "doppia": false
+        },
+        {
+          "word": "NASO",
+          "sillabe": [
+            "NA",
+            "SO"
+          ],
+          "emoji": "👃",
+          "doppia": false
+        },
+        {
+          "word": "SAPONE",
+          "sillabe": [
+            "SA",
+            "PO",
+            "NE"
+          ],
+          "emoji": "🧼",
+          "doppia": false
+        },
+        {
+          "word": "MUSO",
+          "sillabe": [
+            "MU",
+            "SO"
+          ],
+          "emoji": "🐽",
+          "doppia": false
+        },
+        {
+          "word": "SALAME",
+          "sillabe": [
+            "SA",
+            "LA",
+            "ME"
+          ],
+          "emoji": "🍖",
+          "doppia": false
+        },
+        {
+          "word": "PISOLINO",
+          "sillabe": [
+            "PI",
+            "SO",
+            "LI",
+            "NO"
+          ],
+          "emoji": "💤",
           "doppia": false
         }
       ]
