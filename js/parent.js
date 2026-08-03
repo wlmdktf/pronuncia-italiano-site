@@ -33,8 +33,9 @@ export function openParentGate() {
 }
 
 async function openPanel() {
-  let manifest = {};
+  let manifest = {}, version = null;
   try { manifest = await (await fetch('data/manifest.json')).json(); } catch {}
+  try { version = await (await fetch('data/version.json')).json(); } catch {}
   const review = loadReview();
   const ids = Object.keys(manifest).sort();
   const pending = ids.filter(id => ['manual', 'check', 'mismatch'].includes(manifest[id].qa));
@@ -73,6 +74,8 @@ async function openPanel() {
     h('button', { class: 'close-x', onclick: () => ov().replaceChildren() }, '✖️'),
     h('h2', {}, '家长区'),
     h('div', {}, `⭐ ${P.stars()} 颗星 · 🧸 ${P.stickers().length} 张贴纸 · 音频 ${ids.length} 条 (待人工 ${pending.length})`),
+    h('div', { style: 'font-size:12px;opacity:.6;margin-top:2px' },
+      version ? `版本 ${version.build} · 音频包 ${version.audio} 条 (打开 app 自动检查更新, 游戏中出现 🎁 即有新版)` : ''),
     h('h3', {}, '🎧 音频验收 (逐条听, 不满意点 👎, 结果导出发给 Claude 换真人录音)'),
     h('div', {},
       h('button', { class: 'pbtn ghost', onclick: () => { filter = 'pending'; renderList(); } }, '只看待验收'),

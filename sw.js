@@ -1,5 +1,6 @@
-// 离线缓存: 核心文件安装时缓存, 音频首次播放后缓存 + 后台全量预取 (尽力而为)
-const VERSION = 'v3';
+// 离线缓存 + 版本化更新
+// VERSION 由 deploy.sh 在发布时替换成构建时间戳 (本地开发保持占位符不变)
+const VERSION = '2026-08-03_115446';
 const CACHE = 'sillabe-' + VERSION;
 const CORE = [
   '.', 'index.html', 'css/style.css',
@@ -9,25 +10,31 @@ const CORE = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil((async () => {
-    const c = await caches.open(CACHE);
-    await c.addAll(CORE);
-    self.skipWaiting();
-    // 后台预取全部音频 (失败不影响安装)
-    try {
-      const list = await (await fetch('data/audio-list.json')).json();
-      for (const path of list) {
-        try { if (!(await c.match(path))) await c.add(path); } catch {}
-      }
-    } catch {}
-  })());
+  // 只预缓存核心文件, 快速进入 installed/waiting 状态 (更新提示不被音频下载拖慢)
+  // cache:'reload' 绕过 HTTP 缓存 — 防止把 CDN/浏览器里的旧版文件装进新版本缓存
+  e.waitUntil(caches.open(CACHE).then(c =>
+    c.addAll(CORE.map(u => new Request(u, { cache: 'reload' })))));
+});
+
+self.addEventListener('message', (e) => {
+  if (e.data && e.data.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('activate', (e) => {
   e.waitUntil((async () => {
     for (const k of await caches.keys()) if (k !== CACHE) await caches.delete(k);
-    self.clients.claim();
+    await self.clients.claim();
   })());
+  // 音频全量预取: 后台尽力而为, 不阻塞激活; 缺的由运行时缓存兜底
+  (async () => {
+    try {
+      const c = await caches.open(CACHE);
+      const list = await (await fetch('data/audio-list.json')).json();
+      for (const path of list) {
+        try { if (!(await c.match(path))) await c.add(path); } catch {}
+      }
+    } catch {}
+  })();
 });
 
 self.addEventListener('fetch', (e) => {
