@@ -3,6 +3,7 @@ let ctx = null;
 const cache = new Map();
 let current = null;
 let currentResolve = null;   // 播放被打断时也要让等待方放行 (否则快速连点会卡死游戏逻辑)
+let playToken = 0;           // 每次新播放 +1; playSeq 靠它发现自己被插播, 立即中止不再续播队列
 
 export function unlock() {
   // 必须在用户手势内调用一次: 解锁 WebAudio + HTMLAudio
@@ -21,6 +22,7 @@ export function stopAll() {
 }
 
 export function play(id) {
+  playToken++;
   return new Promise((resolve) => {
     stopAll();
     let a = cache.get(id);
@@ -41,8 +43,14 @@ export function play(id) {
 
 export async function playSeq(ids, gapMs = 350) {
   for (const id of ids) {
-    await play(id);
-    if (gapMs) await sleep(gapMs);
+    const p = play(id);
+    const myTok = playToken;
+    await p;
+    if (playToken !== myTok) return;   // 播放中被插播 (比如孩子点了音节) → 整个序列中止
+    if (gapMs) {
+      await sleep(gapMs);
+      if (playToken !== myTok) return; // 间隙里被插播同样中止
+    }
   }
 }
 
@@ -97,6 +105,7 @@ export function recordFor(ms) {
   });
 }
 export function playUrl(url) {
+  playToken++;
   return new Promise((resolve) => {
     stopAll();
     const a = new Audio(url);
