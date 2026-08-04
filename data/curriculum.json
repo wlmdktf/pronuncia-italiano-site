@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -1092,34 +1092,34 @@
     {
       "id": "p",
       "title": "La lettera P",
-      "emoji": "🎈",
+      "emoji": "🦆",
       "type": "consonante",
       "letter": {
         "grapheme": "P",
         "name": "pi",
         "ipa": "pə",
         "shape": {
-          "it": "La P ha una gran pancia davanti.",
-          "zh": "P 有一个鼓鼓的大肚子"
+          "it": "La P somiglia a una papera con la pancia piena.",
+          "zh": "P 像一只吃饱了肚子鼓鼓的鸭子"
         },
         "mouth": {
-          "it": "Quando dico la P, le labbra prima si chiudono e poi si aprono di colpo, come un piccolo scoppio!",
-          "zh": "发 P 双唇先闭紧再突然弹开，像小爆破；只有气、不带嗓音（区别于 B）"
+          "it": "Quando dico la P, le labbra si uniscono e poi si aprono come in uno scoppio, senza usare la voce.",
+          "zh": "发 P 双唇闭合再爆破弹开，不带嗓音（喉咙不震动）——和 B 正好是一对"
         }
       },
       "sillabe": [
         {
           "s": "PA",
           "anchor": {
-            "word": "PANE",
-            "emoji": "🍞"
+            "word": "PAPÀ",
+            "emoji": "👨"
           }
         },
         {
           "s": "PO",
           "anchor": {
-            "word": "PORTA",
-            "emoji": "🚪"
+            "word": "POPÒ",
+            "emoji": "💩"
           }
         },
         {
@@ -1132,15 +1132,15 @@
         {
           "s": "PI",
           "anchor": {
-            "word": "PIZZA",
-            "emoji": "🍕"
+            "word": "PINO",
+            "emoji": "🌲"
           }
         },
         {
           "s": "PU",
           "anchor": {
-            "word": "PULCINO",
-            "emoji": "🐤"
+            "word": "PUMA",
+            "emoji": "🐆"
           }
         }
       ],
@@ -1356,6 +1356,10 @@
             {
               "word": "PIANTA",
               "emoji": "🪴"
+            },
+            {
+              "word": "PIUMA",
+              "emoji": "🪶"
             }
           ],
           "wrong": [
@@ -1494,6 +1498,15 @@
             "MA"
           ],
           "emoji": "🐆",
+          "doppia": false
+        },
+        {
+          "word": "POPÒ",
+          "sillabe": [
+            "PO",
+            "PO"
+          ],
+          "emoji": "💩",
           "doppia": false
         }
       ]
@@ -2612,6 +2625,283 @@
             "ME"
           ],
           "emoji": "🍖",
+          "doppia": false
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "title": "La lettera B",
+      "emoji": "🐳",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "B",
+        "name": "bi",
+        "ipa": "bə",
+        "shape": {
+          "it": "La B ha due grandi pance e somiglia a degli occhiali.",
+          "zh": "B 有两个大肚子，像一副眼镜"
+        },
+        "mouth": {
+          "it": "Quando dico la B, le labbra prima si chiudono e poi scoppiano con la voce!",
+          "zh": "发 B 双唇闭合再爆破，但要带上嗓音（摸喉咙有震动）——和 P 的区别就在这里"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "BA",
+          "anchor": {
+            "word": "BANANA",
+            "emoji": "🍌"
+          }
+        },
+        {
+          "s": "BO",
+          "anchor": {
+            "word": "BOLLA",
+            "emoji": "🫧"
+          }
+        },
+        {
+          "s": "BE",
+          "anchor": {
+            "word": "BEFANA",
+            "emoji": "🧙‍♀️"
+          }
+        },
+        {
+          "s": "BI",
+          "anchor": {
+            "word": "BICICLETTA",
+            "emoji": "🚲"
+          }
+        },
+        {
+          "s": "BU",
+          "anchor": {
+            "word": "BUIO",
+            "emoji": "🌑"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "BA",
+          "correct": [
+            {
+              "word": "BANANA",
+              "emoji": "🍌"
+            },
+            {
+              "word": "BARCA",
+              "emoji": "⛵"
+            },
+            {
+              "word": "BALENA",
+              "emoji": "🐳"
+            },
+            {
+              "word": "BAGNO",
+              "emoji": "🛁"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LUMACA",
+              "emoji": "🐌"
+            },
+            {
+              "word": "MARMELLATA",
+              "emoji": "🫙"
+            },
+            {
+              "word": "SCIMMIA",
+              "emoji": "🐒"
+            },
+            {
+              "word": "PANE",
+              "emoji": "🍞"
+            }
+          ]
+        },
+        {
+          "s": "BO",
+          "correct": [
+            {
+              "word": "BOLLA",
+              "emoji": "🫧"
+            },
+            {
+              "word": "BOTTIGLIA",
+              "emoji": "🍾"
+            },
+            {
+              "word": "BOCCA",
+              "emoji": "👄"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "NUVOLA",
+              "emoji": "☁️"
+            },
+            {
+              "word": "COCCINELLA",
+              "emoji": "🐞"
+            },
+            {
+              "word": "BANANA",
+              "emoji": "🍌"
+            },
+            {
+              "word": "PALLA",
+              "emoji": "⚽"
+            }
+          ]
+        },
+        {
+          "s": "BE",
+          "correct": [
+            {
+              "word": "BEFANA",
+              "emoji": "🧙‍♀️"
+            },
+            {
+              "word": "BEBÈ",
+              "emoji": "👶"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "GUANTI",
+              "emoji": "🧤"
+            },
+            {
+              "word": "PULCINO",
+              "emoji": "🐤"
+            },
+            {
+              "word": "BANANA",
+              "emoji": "🍌"
+            },
+            {
+              "word": "BOLLA",
+              "emoji": "🫧"
+            }
+          ]
+        },
+        {
+          "s": "BI",
+          "correct": [
+            {
+              "word": "BICICLETTA",
+              "emoji": "🚲"
+            },
+            {
+              "word": "BIDONE",
+              "emoji": "🗑️"
+            },
+            {
+              "word": "BINARIO",
+              "emoji": "🛤️"
+            },
+            {
+              "word": "BISONTE",
+              "emoji": "🦬"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            },
+            {
+              "word": "ORSO",
+              "emoji": "🐻"
+            },
+            {
+              "word": "BEFANA",
+              "emoji": "🧙‍♀️"
+            },
+            {
+              "word": "BUDINO",
+              "emoji": "🍮"
+            }
+          ]
+        },
+        {
+          "s": "BU",
+          "correct": [
+            {
+              "word": "BUIO",
+              "emoji": "🌑"
+            },
+            {
+              "word": "BUDINO",
+              "emoji": "🍮"
+            },
+            {
+              "word": "BUS",
+              "emoji": "🚌"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ELEFANTE",
+              "emoji": "🐘"
+            },
+            {
+              "word": "ASINO",
+              "emoji": "🫏"
+            },
+            {
+              "word": "BANANA",
+              "emoji": "🍌"
+            },
+            {
+              "word": "BOLLA",
+              "emoji": "🫧"
+            }
+          ]
+        }
+      ],
+      "parole": [
+        {
+          "word": "BANANA",
+          "sillabe": [
+            "BA",
+            "NA",
+            "NA"
+          ],
+          "emoji": "🍌",
+          "doppia": false
+        },
+        {
+          "word": "BEBÈ",
+          "sillabe": [
+            "BE",
+            "BE"
+          ],
+          "emoji": "👶",
+          "doppia": false
+        },
+        {
+          "word": "BENE",
+          "sillabe": [
+            "BE",
+            "NE"
+          ],
+          "emoji": "👍",
+          "doppia": false
+        },
+        {
+          "word": "BALENA",
+          "sillabe": [
+            "BA",
+            "LE",
+            "NA"
+          ],
+          "emoji": "🐳",
           "doppia": false
         }
       ]
