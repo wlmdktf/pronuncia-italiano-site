@@ -351,22 +351,22 @@
   "ts": "2026-08-02 20:55"
  },
  "sil-ma": {
-  "hash": "a92b4b97f4e8",
+  "hash": "9261e0f7bb41",
   "voice": "it-IT-ElsaNeural",
-  "text": "ma.",
-  "qa": "ok",
-  "stt": "Ma.",
-  "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "text": "<phoneme alphabet='ipa' ph='ma'>ma</phoneme>",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-04 11:21"
  },
  "sil-ma-slow": {
-  "hash": "e060e12653d9",
+  "hash": "a522f39ff865",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>ma</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='ma'>ma</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-mano": {
   "hash": "83ba86ac729d",
@@ -387,22 +387,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-mo": {
-  "hash": "5dbb37ce10e0",
+  "hash": "a3d36ef2997c",
   "voice": "it-IT-ElsaNeural",
-  "text": "mo.",
-  "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 20:49"
+  "text": "<phoneme alphabet='ipa' ph='mo'>mo</phoneme>",
+  "qa": "ok",
+  "stt": "Mo.",
+  "bytes": 8352,
+  "ts": "2026-08-04 11:21"
  },
  "sil-mo-slow": {
-  "hash": "553817a2649f",
+  "hash": "90ec5145122b",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>mo</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='mo'>mo</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-mondo": {
   "hash": "cd766969e22d",
@@ -423,22 +423,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-me": {
-  "hash": "450c61f8919c",
+  "hash": "fc1a831ac9a4",
   "voice": "it-IT-ElsaNeural",
-  "text": "me.",
+  "text": "<phoneme alphabet='ipa' ph='me'>me</phoneme>",
   "qa": "ok",
   "stt": "Me.",
-  "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "bytes": 9216,
+  "ts": "2026-08-04 11:21"
  },
  "sil-me-slow": {
-  "hash": "08e7cad8b309",
+  "hash": "d75660e67f7d",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>me</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='me'>me</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-mela": {
   "hash": "0f3743333268",
@@ -459,22 +459,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-mi": {
-  "hash": "d176e8f7cc2a",
+  "hash": "a03e26a7573c",
   "voice": "it-IT-ElsaNeural",
-  "text": "mi.",
+  "text": "<phoneme alphabet='ipa' ph='mi'>mi</phoneme>",
   "qa": "ok",
   "stt": "Mi.",
   "bytes": 8640,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "sil-mi-slow": {
-  "hash": "c44cda61c171",
+  "hash": "f2856b10204a",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>mi</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='mi'>mi</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-miele": {
   "hash": "3612637d40f8",
@@ -495,22 +495,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-mu": {
-  "hash": "3c08f26532e8",
+  "hash": "9de0bb322eb6",
   "voice": "it-IT-ElsaNeural",
-  "text": "mu.",
+  "text": "<phoneme alphabet='ipa' ph='mu'>mu</phoneme>",
   "qa": "check",
   "stt": "",
   "bytes": 8640,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "sil-mu-slow": {
-  "hash": "f7d451a8ed09",
+  "hash": "8398880bfb0d",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>mu</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='mu'>mu</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-mucca": {
   "hash": "b0b9f3bc8fcf",
@@ -747,22 +747,22 @@
   "ts": "2026-08-02 20:55"
  },
  "sil-na": {
-  "hash": "df00cbd82468",
+  "hash": "7615643099d9",
   "voice": "it-IT-ElsaNeural",
-  "text": "na.",
-  "qa": "ok",
-  "stt": "NA.",
+  "text": "<phoneme alphabet='ipa' ph='na'>na</phoneme>",
+  "qa": "check",
+  "stt": "No.",
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "sil-na-slow": {
-  "hash": "3158807326e7",
+  "hash": "755158b711fb",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>na</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='na'>na</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-naso": {
   "hash": "5ed89ad5568c",
@@ -783,22 +783,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-no": {
-  "hash": "5d0ab99ce23e",
+  "hash": "f5df0cc1bbe4",
   "voice": "it-IT-ElsaNeural",
-  "text": "no.",
-  "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 20:49"
+  "text": "<phoneme alphabet='ipa' ph='no'>no</phoneme>",
+  "qa": "ok",
+  "stt": "No.",
+  "bytes": 8640,
+  "ts": "2026-08-04 11:21"
  },
  "sil-no-slow": {
-  "hash": "01b429293903",
+  "hash": "99b2c2705bda",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>no</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='no'>no</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-nota": {
   "hash": "92fe5e3db97b",
@@ -819,22 +819,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-ne": {
-  "hash": "f5e6e4a31c34",
+  "hash": "13796bdae51a",
   "voice": "it-IT-ElsaNeural",
-  "text": "ne.",
+  "text": "<phoneme alphabet='ipa' ph='ne'>ne</phoneme>",
   "qa": "ok",
   "stt": "Ne.",
-  "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "bytes": 8640,
+  "ts": "2026-08-04 11:21"
  },
  "sil-ne-slow": {
-  "hash": "610c479a8c34",
+  "hash": "43ac3785ec57",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>ne</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='ne'>ne</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "word-neve": {
   "hash": "00780e17c3c5",
@@ -855,22 +855,22 @@
   "ts": "2026-08-02 20:49"
  },
  "sil-ni": {
-  "hash": "c4c8b62c7ad2",
+  "hash": "6901799c2565",
   "voice": "it-IT-ElsaNeural",
-  "text": "ni.",
+  "text": "<phoneme alphabet='ipa' ph='ni'>ni</phoneme>",
   "qa": "check",
   "stt": "",
   "bytes": 8928,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:21"
  },
  "sil-ni-slow": {
-  "hash": "87e1f4b5db45",
+  "hash": "4e5f9293e743",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>ni</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='ni'>ni</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:49"
+  "ts": "2026-08-04 11:22"
  },
  "word-nido": {
   "hash": "a6568b15854d",
@@ -891,22 +891,22 @@
   "ts": "2026-08-02 20:50"
  },
  "sil-nu": {
-  "hash": "8be4345948a9",
+  "hash": "c91236f3b9c8",
   "voice": "it-IT-ElsaNeural",
-  "text": "nu.",
+  "text": "<phoneme alphabet='ipa' ph='nu'>nu</phoneme>",
   "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 20:50"
+  "stt": "No.",
+  "bytes": 8640,
+  "ts": "2026-08-04 11:22"
  },
  "sil-nu-slow": {
-  "hash": "27ff9517b962",
+  "hash": "26d8d9656701",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>nu</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='nu'>nu</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 20:50"
+  "ts": "2026-08-04 11:22"
  },
  "word-nuvola": {
   "hash": "f718abbda34d",
@@ -1440,22 +1440,22 @@
   "ts": "2026-08-04 10:12"
  },
  "sil-pa": {
-  "hash": "1645c2b0820d",
+  "hash": "ae9c9fd5b69e",
   "voice": "it-IT-ElsaNeural",
-  "text": "pa.",
-  "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 22:46"
+  "text": "<phoneme alphabet='ipa' ph='pa'>pa</phoneme>",
+  "qa": "ok",
+  "stt": "Pa.",
+  "bytes": 7488,
+  "ts": "2026-08-04 11:22"
  },
  "sil-pa-slow": {
-  "hash": "d9c00017a75a",
+  "hash": "cfc96a8dec92",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>pa</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='pa'>pa</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "word-pane-slow": {
   "hash": "9427692fd25c",
@@ -1467,22 +1467,22 @@
   "ts": "2026-08-02 22:46"
  },
  "sil-po": {
-  "hash": "dd68ad2727c8",
+  "hash": "17bda08b49c1",
   "voice": "it-IT-ElsaNeural",
-  "text": "po.",
-  "qa": "ok",
-  "stt": "Po.",
+  "text": "<phoneme alphabet='ipa' ph='po'>po</phoneme>",
+  "qa": "check",
+  "stt": "Può.",
   "bytes": 7488,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "sil-po-slow": {
-  "hash": "41d856550922",
+  "hash": "5f2e34499a4f",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>po</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='po'>po</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "word-porta": {
   "hash": "4bccfb8705af",
@@ -1503,22 +1503,22 @@
   "ts": "2026-08-02 22:46"
  },
  "sil-pe": {
-  "hash": "25c03772bc2e",
+  "hash": "333ec5a2429a",
   "voice": "it-IT-ElsaNeural",
-  "text": "pe.",
+  "text": "<phoneme alphabet='ipa' ph='pe'>pe</phoneme>",
   "qa": "check",
   "stt": "P.",
   "bytes": 7776,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "sil-pe-slow": {
-  "hash": "de4bf43fc5f8",
+  "hash": "283d54f7a2ad",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>pe</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='pe'>pe</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "word-pesce": {
   "hash": "e99aeda956da",
@@ -1539,22 +1539,22 @@
   "ts": "2026-08-02 22:46"
  },
  "sil-pi": {
-  "hash": "5785b58f9d65",
+  "hash": "394d8a06628a",
   "voice": "it-IT-ElsaNeural",
-  "text": "pi.",
+  "text": "<phoneme alphabet='ipa' ph='pi'>pi</phoneme>",
   "qa": "check",
   "stt": "P.",
   "bytes": 7488,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "sil-pi-slow": {
-  "hash": "aec3af550674",
+  "hash": "b165e092505f",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>pi</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='pi'>pi</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "word-pizza": {
   "hash": "a5ee9e8eec24",
@@ -1575,22 +1575,22 @@
   "ts": "2026-08-02 22:46"
  },
  "sil-pu": {
-  "hash": "91701364293e",
+  "hash": "9b32d771be36",
   "voice": "it-IT-ElsaNeural",
-  "text": "pu.",
+  "text": "<phoneme alphabet='ipa' ph='pu'>pu</phoneme>",
   "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 22:46"
+  "stt": "Può.",
+  "bytes": 7488,
+  "ts": "2026-08-04 11:22"
  },
  "sil-pu-slow": {
-  "hash": "ddc28144cf01",
+  "hash": "b1fb22d85b73",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>pu</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='pu'>pu</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:46"
+  "ts": "2026-08-04 11:22"
  },
  "word-pulcino": {
   "hash": "a70be819e7e7",
@@ -1800,22 +1800,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-ta": {
-  "hash": "f128be45d546",
+  "hash": "d56cda925d2a",
   "voice": "it-IT-ElsaNeural",
-  "text": "ta.",
+  "text": "<phoneme alphabet='ipa' ph='ta'>ta</phoneme>",
   "qa": "check",
-  "stt": "Da.",
-  "bytes": 8064,
-  "ts": "2026-08-02 22:47"
+  "stt": "Te.",
+  "bytes": 7488,
+  "ts": "2026-08-04 11:22"
  },
  "sil-ta-slow": {
-  "hash": "f7401a357a4d",
+  "hash": "55684290ebc0",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>ta</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='ta'>ta</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-tamburo": {
   "hash": "165ca5f62189",
@@ -1836,22 +1836,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-to": {
-  "hash": "80715a177f51",
+  "hash": "d3517c51c473",
   "voice": "it-IT-ElsaNeural",
-  "text": "to.",
+  "text": "<phoneme alphabet='ipa' ph='to'>to</phoneme>",
   "qa": "check",
-  "stt": "Tu.",
-  "bytes": 7200,
-  "ts": "2026-08-02 22:47"
+  "stt": "Tutto.",
+  "bytes": 8064,
+  "ts": "2026-08-04 11:22"
  },
  "sil-to-slow": {
-  "hash": "90189899f46f",
+  "hash": "6a9c0fb2e3aa",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>to</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='to'>to</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-topo-slow": {
   "hash": "299ce1050f1b",
@@ -1863,22 +1863,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-te": {
-  "hash": "ad042ff3f519",
+  "hash": "cf91997bbe67",
   "voice": "it-IT-ElsaNeural",
-  "text": "te.",
-  "qa": "check",
-  "stt": "T.",
+  "text": "<phoneme alphabet='ipa' ph='te'>te</phoneme>",
+  "qa": "ok",
+  "stt": "Te.",
   "bytes": 7776,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "sil-te-slow": {
-  "hash": "56a8b656869e",
+  "hash": "72b4bbe32241",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>te</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='te'>te</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-telefono": {
   "hash": "3580523ce66b",
@@ -1899,22 +1899,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-ti": {
-  "hash": "22ba99ff9e0e",
+  "hash": "0b0f83ec81fc",
   "voice": "it-IT-ElsaNeural",
-  "text": "ti.",
+  "text": "<phoneme alphabet='ipa' ph='ti'>ti</phoneme>",
   "qa": "check",
-  "stt": "T.",
-  "bytes": 8064,
-  "ts": "2026-08-02 22:47"
+  "stt": "Sì.",
+  "bytes": 7776,
+  "ts": "2026-08-04 11:22"
  },
  "sil-ti-slow": {
-  "hash": "7be24735d5be",
+  "hash": "6f09e66bfa4f",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>ti</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='ti'>ti</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-tigre-slow": {
   "hash": "9a063486e93a",
@@ -1926,22 +1926,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-tu": {
-  "hash": "6fd5fdbd990e",
+  "hash": "5a62d2a10d64",
   "voice": "it-IT-ElsaNeural",
-  "text": "tu.",
+  "text": "<phoneme alphabet='ipa' ph='tu'>tu</phoneme>",
   "qa": "ok",
   "stt": "Tu.",
-  "bytes": 7200,
-  "ts": "2026-08-02 22:47"
+  "bytes": 7488,
+  "ts": "2026-08-04 11:22"
  },
  "sil-tu-slow": {
-  "hash": "7cff388eae0e",
+  "hash": "99fca378e1cf",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>tu</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='tu'>tu</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-tulipano": {
   "hash": "45d5b25c1697",
@@ -2088,22 +2088,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-la": {
-  "hash": "34bf635b5a0d",
+  "hash": "73f909bccece",
   "voice": "it-IT-ElsaNeural",
-  "text": "la.",
-  "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 22:47"
+  "text": "<phoneme alphabet='ipa' ph='la'>la</phoneme>",
+  "qa": "ok",
+  "stt": "La.",
+  "bytes": 8640,
+  "ts": "2026-08-04 11:22"
  },
  "sil-la-slow": {
-  "hash": "8a7b90b9d1f2",
+  "hash": "f2c42074dcac",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>la</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='la'>la</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-latte": {
   "hash": "858050fe2597",
@@ -2124,22 +2124,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-lo": {
-  "hash": "39d5a35b60a7",
+  "hash": "de8acb76204e",
   "voice": "it-IT-ElsaNeural",
-  "text": "lo.",
-  "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 22:47"
+  "text": "<phoneme alphabet='ipa' ph='lo'>lo</phoneme>",
+  "qa": "ok",
+  "stt": "Lo.",
+  "bytes": 8352,
+  "ts": "2026-08-04 11:22"
  },
  "sil-lo-slow": {
-  "hash": "40b290c3c3d5",
+  "hash": "8513122a8b37",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>lo</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='lo'>lo</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-locomotiva": {
   "hash": "d18ce5aece05",
@@ -2160,22 +2160,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-le": {
-  "hash": "5ea116a4ef34",
+  "hash": "87103ec01e76",
   "voice": "it-IT-ElsaNeural",
-  "text": "le.",
-  "qa": "check",
-  "stt": "",
-  "bytes": 8928,
-  "ts": "2026-08-02 22:47"
+  "text": "<phoneme alphabet='ipa' ph='le'>le</phoneme>",
+  "qa": "ok",
+  "stt": "Le.",
+  "bytes": 8640,
+  "ts": "2026-08-04 11:22"
  },
  "sil-le-slow": {
-  "hash": "4b372c04bfa3",
+  "hash": "7d672009fb92",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>le</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='le'>le</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-leone": {
   "hash": "64c625cd92a4",
@@ -2196,22 +2196,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-li": {
-  "hash": "2b2dcff54376",
+  "hash": "b21567bacf0a",
   "voice": "it-IT-ElsaNeural",
-  "text": "li.",
+  "text": "<phoneme alphabet='ipa' ph='li'>li</phoneme>",
   "qa": "ok",
   "stt": "Lì.",
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "sil-li-slow": {
-  "hash": "051d7c80b98b",
+  "hash": "f76af7ba6739",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>li</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='li'>li</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-limone-slow": {
   "hash": "c0f9feb14239",
@@ -2223,22 +2223,22 @@
   "ts": "2026-08-02 22:47"
  },
  "sil-lu": {
-  "hash": "d7d7c45d6c65",
+  "hash": "6cf35e8210e2",
   "voice": "it-IT-ElsaNeural",
-  "text": "lu.",
+  "text": "<phoneme alphabet='ipa' ph='lu'>lu</phoneme>",
   "qa": "ok",
   "stt": "Lu.",
   "bytes": 7776,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "sil-lu-slow": {
-  "hash": "0b9768fd64f8",
+  "hash": "e60e04259460",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>lu</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='lu'>lu</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:47"
+  "ts": "2026-08-04 11:22"
  },
  "word-luna-slow": {
   "hash": "655f664ba121",
@@ -2265,7 +2265,7 @@
   "qa": "mismatch",
   "stt": "Londra.",
   "bytes": 21312,
-  "ts": "2026-08-04 10:13"
+  "ts": "2026-08-04 11:22"
  },
  "word-lupo": {
   "hash": "eb8349474bbe",
@@ -2376,22 +2376,22 @@
   "ts": "2026-08-02 22:48"
  },
  "sil-sa": {
-  "hash": "f69321c36a15",
+  "hash": "e09845b09b3d",
   "voice": "it-IT-ElsaNeural",
-  "text": "sa.",
+  "text": "<phoneme alphabet='ipa' ph='sa'>sa</phoneme>",
   "qa": "ok",
   "stt": "Sa.",
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "sil-sa-slow": {
-  "hash": "b4cab1cf2bb4",
+  "hash": "1e748a1f6808",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>sa</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='sa'>sa</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "word-sale": {
   "hash": "e6ede7f88b08",
@@ -2412,22 +2412,22 @@
   "ts": "2026-08-02 22:48"
  },
  "sil-so": {
-  "hash": "2d68da2efafb",
+  "hash": "fa18482c16e4",
   "voice": "it-IT-ElsaNeural",
-  "text": "so.",
-  "qa": "ok",
-  "stt": "So.",
-  "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "text": "<phoneme alphabet='ipa' ph='so'>so</phoneme>",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8928,
+  "ts": "2026-08-04 11:22"
  },
  "sil-so-slow": {
-  "hash": "4ce73d06bb46",
+  "hash": "18568fed914f",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>so</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='so'>so</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "word-sole-slow": {
   "hash": "420706f62ca5",
@@ -2439,22 +2439,22 @@
   "ts": "2026-08-02 22:48"
  },
  "sil-se": {
-  "hash": "a714779bd61a",
+  "hash": "60f1a65af34a",
   "voice": "it-IT-ElsaNeural",
-  "text": "se.",
+  "text": "<phoneme alphabet='ipa' ph='se'>se</phoneme>",
   "qa": "check",
   "stt": "Sì.",
-  "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "bytes": 9216,
+  "ts": "2026-08-04 11:22"
  },
  "sil-se-slow": {
-  "hash": "76f6619ca15c",
+  "hash": "de0d19579496",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>se</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='se'>se</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "word-serpente": {
   "hash": "34e6423a53cb",
@@ -2475,22 +2475,22 @@
   "ts": "2026-08-02 22:48"
  },
  "sil-si": {
-  "hash": "ea12ab02eb40",
+  "hash": "d61155c2dfc8",
   "voice": "it-IT-ElsaNeural",
-  "text": "si.",
+  "text": "<phoneme alphabet='ipa' ph='si'>si</phoneme>",
   "qa": "ok",
   "stt": "Sì.",
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "sil-si-slow": {
-  "hash": "5b86c715a69e",
+  "hash": "7c16493afc06",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>si</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='si'>si</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "word-sirena": {
   "hash": "39a4de215629",
@@ -2511,22 +2511,22 @@
   "ts": "2026-08-02 22:48"
  },
  "sil-su": {
-  "hash": "0f41c4ca80ad",
+  "hash": "f06ea51ea1e3",
   "voice": "it-IT-ElsaNeural",
-  "text": "su.",
+  "text": "<phoneme alphabet='ipa' ph='su'>su</phoneme>",
   "qa": "ok",
   "stt": "Su.",
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "sil-su-slow": {
-  "hash": "c71dd360faac",
+  "hash": "3a7c88fc64c1",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>su</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='su'>su</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-02 22:48"
+  "ts": "2026-08-04 11:22"
  },
  "word-succo": {
   "hash": "9079e57ca112",
@@ -3384,22 +3384,22 @@
   "ts": "2026-08-04 10:12"
  },
  "sil-ba": {
-  "hash": "e237c09dc109",
+  "hash": "87efd698219f",
   "voice": "it-IT-ElsaNeural",
-  "text": "ba.",
-  "qa": "check",
-  "stt": "Via.",
-  "bytes": 21312,
-  "ts": "2026-08-04 10:12"
+  "text": "<phoneme alphabet='ipa' ph='ba'>ba</phoneme>",
+  "qa": "ok",
+  "stt": "Ba.",
+  "bytes": 8352,
+  "ts": "2026-08-04 11:22"
  },
  "sil-ba-slow": {
-  "hash": "e89306ed3a57",
+  "hash": "b3bf0781be8a",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>ba</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='ba'>ba</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "word-banana": {
   "hash": "ec40971f65d1",
@@ -3420,22 +3420,22 @@
   "ts": "2026-08-04 10:12"
  },
  "sil-bo": {
-  "hash": "8354204f1997",
+  "hash": "a576480d459b",
   "voice": "it-IT-ElsaNeural",
-  "text": "bo.",
+  "text": "<phoneme alphabet='ipa' ph='bo'>bo</phoneme>",
   "qa": "check",
   "stt": "Boh.",
   "bytes": 8064,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "sil-bo-slow": {
-  "hash": "a7a6d42b57f8",
+  "hash": "1e28895b9c1e",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>bo</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='bo'>bo</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "word-bolla": {
   "hash": "e16ad5fa1521",
@@ -3456,22 +3456,22 @@
   "ts": "2026-08-04 10:12"
  },
  "sil-be": {
-  "hash": "63abf48ad7dc",
+  "hash": "2443348ec5c4",
   "voice": "it-IT-ElsaNeural",
-  "text": "be.",
+  "text": "<phoneme alphabet='ipa' ph='be'>be</phoneme>",
   "qa": "check",
   "stt": "",
-  "bytes": 8640,
-  "ts": "2026-08-04 10:12"
+  "bytes": 8928,
+  "ts": "2026-08-04 11:22"
  },
  "sil-be-slow": {
-  "hash": "93e189776170",
+  "hash": "3532adf2e631",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>be</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='be'>be</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "word-befana": {
   "hash": "8ef1004e1cb0",
@@ -3492,22 +3492,22 @@
   "ts": "2026-08-04 10:12"
  },
  "sil-bi": {
-  "hash": "47c07b53642c",
+  "hash": "87e66b5b211d",
   "voice": "it-IT-ElsaNeural",
-  "text": "bi.",
+  "text": "<phoneme alphabet='ipa' ph='bi'>bi</phoneme>",
   "qa": "check",
   "stt": "",
   "bytes": 8640,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "sil-bi-slow": {
-  "hash": "8742fa027a91",
+  "hash": "7a43f3f65a1f",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>bi</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='bi'>bi</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "word-bicicletta": {
   "hash": "5d8c4aff2e79",
@@ -3528,22 +3528,22 @@
   "ts": "2026-08-04 10:12"
  },
  "sil-bu": {
-  "hash": "5dc8dbda313a",
+  "hash": "fa18a6a128f6",
   "voice": "it-IT-ElsaNeural",
-  "text": "bu.",
+  "text": "<phoneme alphabet='ipa' ph='bu'>bu</phoneme>",
   "qa": "check",
-  "stt": "V.",
+  "stt": "Boh.",
   "bytes": 7488,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "sil-bu-slow": {
-  "hash": "19ebfadbc7f8",
+  "hash": "e09612b1e364",
   "voice": "it-IT-ElsaNeural",
-  "text": "<prosody rate='-40%'>bu</prosody>",
+  "text": "<prosody rate='-40%'><phoneme alphabet='ipa' ph='bu'>bu</phoneme></prosody>",
   "qa": "manual",
   "stt": null,
   "bytes": 21312,
-  "ts": "2026-08-04 10:12"
+  "ts": "2026-08-04 11:22"
  },
  "word-buio": {
   "hash": "9e939a80e9fd",
