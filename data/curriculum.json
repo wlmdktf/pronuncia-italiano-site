@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -1521,12 +1521,12 @@
         "name": "ti",
         "ipa": "tə",
         "shape": {
-          "it": "La T è dritta come un tavolino con una gamba sola.",
-          "zh": "T 像一张独脚小桌子"
+          "it": "La T somiglia a una casa con un tetto sulla testa.",
+          "zh": "T 像一座头顶着屋顶的小房子"
         },
         "mouth": {
-          "it": "Quando dico la T, la punta della lingua batte dietro i denti di sopra.",
-          "zh": "发 T 舌尖在上牙背后轻弹一下，干脆利落，不带嗓音（区别于 D）"
+          "it": "Quando dico la T, la punta della lingua batte veloce dietro i denti di sopra, senza usare la voce.",
+          "zh": "发 T 舌尖轻触上牙、气流快速弹出，不带嗓音——和 D 正好是一对"
         }
       },
       "sillabe": [
@@ -1540,8 +1540,8 @@
         {
           "s": "TO",
           "anchor": {
-            "word": "TOPO",
-            "emoji": "🐭"
+            "word": "TONNO",
+            "emoji": "🐠"
           }
         },
         {
@@ -1554,8 +1554,8 @@
         {
           "s": "TI",
           "anchor": {
-            "word": "TIGRE",
-            "emoji": "🐯"
+            "word": "TIMONE",
+            "emoji": "☸️"
           }
         },
         {
@@ -1619,6 +1619,10 @@
             {
               "word": "TUONO",
               "emoji": "⛈️"
+            },
+            {
+              "word": "TRATTORE",
+              "emoji": "🚜"
             }
           ]
         },
@@ -1640,6 +1644,10 @@
             {
               "word": "TORRE",
               "emoji": "🗼"
+            },
+            {
+              "word": "TONNO",
+              "emoji": "🐠"
             }
           ],
           "wrong": [
@@ -1670,6 +1678,10 @@
             {
               "word": "TENDA",
               "emoji": "⛺"
+            },
+            {
+              "word": "TRENO",
+              "emoji": "🚆"
             }
           ]
         },
@@ -1742,6 +1754,10 @@
             {
               "word": "TIRAMISÙ",
               "emoji": "🍰"
+            },
+            {
+              "word": "TIMONE",
+              "emoji": "☸️"
             }
           ],
           "wrong": [
@@ -1879,6 +1895,15 @@
             "NA"
           ],
           "emoji": "🕳️",
+          "doppia": false
+        },
+        {
+          "word": "TUTÙ",
+          "sillabe": [
+            "TU",
+            "TU"
+          ],
+          "emoji": "🩰",
           "doppia": false
         }
       ]
@@ -2902,6 +2927,265 @@
             "NA"
           ],
           "emoji": "🐳",
+          "doppia": false
+        }
+      ]
+    },
+    {
+      "id": "d",
+      "title": "La lettera D",
+      "emoji": "🐪",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "D",
+        "name": "di",
+        "ipa": "də",
+        "shape": {
+          "it": "La D ha una grossa gobba, come quella di un dromedario.",
+          "zh": "D 有一个大驼峰，像单峰骆驼"
+        },
+        "mouth": {
+          "it": "Quando dico la D, la punta della lingua tocca i denti di sopra e uso la voce!",
+          "zh": "发 D 舌尖位置和 T 一模一样，但要带上嗓音（摸喉咙有震动）——T/D 是一对"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "DA",
+          "anchor": {
+            "word": "DADO",
+            "emoji": "🎲"
+          }
+        },
+        {
+          "s": "DO",
+          "anchor": {
+            "word": "DONO",
+            "emoji": "🎁"
+          }
+        },
+        {
+          "s": "DE",
+          "anchor": {
+            "word": "DELFINO",
+            "emoji": "🐬"
+          }
+        },
+        {
+          "s": "DI",
+          "anchor": {
+            "word": "DINOSAURO",
+            "emoji": "🦕"
+          }
+        },
+        {
+          "s": "DU",
+          "anchor": {
+            "word": "DUNE",
+            "emoji": "🏜️"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "DA",
+          "correct": [
+            {
+              "word": "DADO",
+              "emoji": "🎲"
+            },
+            {
+              "word": "DALMATA",
+              "emoji": "🐕"
+            },
+            {
+              "word": "DAINO",
+              "emoji": "🦌"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "RICCIO",
+              "emoji": "🦔"
+            },
+            {
+              "word": "CIAMBELLA",
+              "emoji": "🍩"
+            },
+            {
+              "word": "DRAGO",
+              "emoji": "🐉"
+            },
+            {
+              "word": "TOPO",
+              "emoji": "🐭"
+            }
+          ]
+        },
+        {
+          "s": "DO",
+          "correct": [
+            {
+              "word": "DONO",
+              "emoji": "🎁"
+            },
+            {
+              "word": "DOCCIA",
+              "emoji": "🚿"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "NUVOLA",
+              "emoji": "☁️"
+            },
+            {
+              "word": "COCCINELLA",
+              "emoji": "🐞"
+            },
+            {
+              "word": "DADO",
+              "emoji": "🎲"
+            },
+            {
+              "word": "BEBÈ",
+              "emoji": "👶"
+            }
+          ]
+        },
+        {
+          "s": "DE",
+          "correct": [
+            {
+              "word": "DELFINO",
+              "emoji": "🐬"
+            },
+            {
+              "word": "DENTE",
+              "emoji": "🦷"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "VOLPE",
+              "emoji": "🦊"
+            },
+            {
+              "word": "CACTUS",
+              "emoji": "🌵"
+            },
+            {
+              "word": "FIORE",
+              "emoji": "🌸"
+            },
+            {
+              "word": "DADO",
+              "emoji": "🎲"
+            }
+          ]
+        },
+        {
+          "s": "DI",
+          "correct": [
+            {
+              "word": "DINOSAURO",
+              "emoji": "🦕"
+            },
+            {
+              "word": "DIVANO",
+              "emoji": "🛋️"
+            },
+            {
+              "word": "DITO",
+              "emoji": "☝️"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "VASO",
+              "emoji": "🏺"
+            },
+            {
+              "word": "SCOIATTOLO",
+              "emoji": "🐿️"
+            },
+            {
+              "word": "DONO",
+              "emoji": "🎁"
+            },
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            }
+          ]
+        },
+        {
+          "s": "DU",
+          "correct": [
+            {
+              "word": "DUE",
+              "emoji": "2️⃣"
+            },
+            {
+              "word": "DUNE",
+              "emoji": "🏜️"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ORCA",
+              "emoji": "🐋"
+            },
+            {
+              "word": "TASSO",
+              "emoji": "🦡"
+            },
+            {
+              "word": "NIDO",
+              "emoji": "🪺"
+            },
+            {
+              "word": "BANANA",
+              "emoji": "🍌"
+            }
+          ]
+        }
+      ],
+      "parole": [
+        {
+          "word": "DADO",
+          "sillabe": [
+            "DA",
+            "DO"
+          ],
+          "emoji": "🎲",
+          "doppia": false
+        },
+        {
+          "word": "DITO",
+          "sillabe": [
+            "DI",
+            "TO"
+          ],
+          "emoji": "☝️",
+          "doppia": false
+        },
+        {
+          "word": "DONO",
+          "sillabe": [
+            "DO",
+            "NO"
+          ],
+          "emoji": "🎁",
+          "doppia": false
+        },
+        {
+          "word": "DUNE",
+          "sillabe": [
+            "DU",
+            "NE"
+          ],
+          "emoji": "🏜️",
           "doppia": false
         }
       ]
