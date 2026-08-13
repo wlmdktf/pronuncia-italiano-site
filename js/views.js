@@ -134,8 +134,9 @@ export function renderHome() {
   const name = P.nickname();
   const grid = h('div', { class: 'unit-grid' });
   for (const u of CUR.units) {
-    const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : (u.type === 'mix' ? 1 : 4);
-    const dest = u.type === 'mix' ? { screen: 'mix', idx: 0 } : { screen: 'unit', unitId: u.id };
+    const solo = u.type === 'mix' || u.type === 'dettato';   // 单关板块, 无子菜单
+    const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : (solo ? 1 : 4);
+    const dest = solo ? { screen: u.type, idx: 0 } : { screen: 'unit', unitId: u.id };
     grid.append(h('button', {
       class: 'unit-card', onclick: () => { A.sfx('tap'); go(dest); }
     },
@@ -458,6 +459,77 @@ export function renderMix(state) {
       else celebrate('mix:parole', { screen: 'home' });
     },
   });
+}
+
+// ---------- Ascolta e scrivi (听音节 → 填字母, 干扰项取自 curriculum.confusable) ----------
+const DETTATO_ROUND = 8;
+
+function optionsFor(letter, pool, n) {
+  const near = pickN((CUR.confusable?.[letter] || []).filter(x => x !== letter && pool.includes(x)), n - 1);
+  const picked = [letter, ...near];
+  if (picked.length < n) picked.push(...pickN(pool.filter(x => !picked.includes(x)), n - picked.length));
+  return picked;
+}
+
+export function renderDettato(state) {
+  const consUnits = CUR.units.filter(u => u.type === 'consonante');
+  const consLetters = consUnits.map(u => u.letter.grapheme);
+  const vocLetters = CUR.units.find(u => u.type === 'vocali').letters.map(l => l.grapheme);
+  if (!state.items) state.items = pickN(consUnits.flatMap(u => u.sillabe.map(s => s.s)), DETTATO_ROUND);
+
+  const idx = state.idx || 0;
+  const syl = state.items[idx];
+  const low = syl.toLowerCase();
+  const target = [syl[0], syl[1]];   // 音节固定为 辅音+元音
+  let filled = 0;
+
+  const slots = [h('div', { class: 'slot c' }, '·'), h('div', { class: 'slot v' }, '·')];
+  const pad = h('div', { class: 'letter-pad' });
+  const letters = pickN([...optionsFor(target[0], consLetters, 3),
+                         ...optionsFor(target[1], vocLetters, 3)], 99);
+  for (const L of letters) {
+    const isVoc = vocLetters.includes(L);
+    const b = h('button', { class: 'tile lett ' + (isVoc ? 'v' : 'c') }, L);
+    b.addEventListener('click', async () => {
+      if (filled >= 2) return;
+      await A.play(`letter-${L.toLowerCase()}-sound`);
+      if (filled >= 2) return;                    // 音频期间可能已被别的点击填满
+      if (L === target[filled]) {
+        slots[filled].textContent = L;
+        slots[filled].classList.add('filled');
+        filled++;
+        A.sfx('ok');
+        if (filled === 2) complete();
+      } else {
+        A.sfx('no');
+        b.classList.remove('no'); void b.offsetWidth; b.classList.add('no');
+      }
+    });
+    pad.append(b);
+  }
+
+  async function complete() {
+    pad.style.visibility = 'hidden';
+    await A.playSeq([`sil-${low}-slow`, `sil-${low}`], 300);
+    await A.play(praise());
+    nextBtn.removeAttribute('disabled');
+  }
+
+  const nextBtn = h('button', { class: 'round-btn', disabled: '', onclick: () => {
+    A.stopAll();
+    if (idx + 1 < state.items.length) go({ screen: 'dettato', idx: idx + 1, items: state.items });
+    else celebrate('dettato:round', { screen: 'home' });
+  } }, '➡️');
+
+  app().replaceChildren(
+    topbar('Ascolta e scrivi', { screen: 'home' }),
+    h('div', { class: 'stage' },
+      h('div', { class: 'dots' }, ...state.items.map((_, i) => h('i', { class: i === idx ? 'on' : '' }))),
+      h('button', { class: 'round-btn primary big-ear', onclick: () => A.play(`sil-${low}`) }, '🔊'),
+      h('div', { class: 'slot-row' }, ...slots),
+      pad,
+      h('div', { class: 'nav-row' }, nextBtn)));
+  A.playSeq(['ui-listen_write', `sil-${low}`], 350);
 }
 
 // ---------- splash ----------

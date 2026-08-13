@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -3259,6 +3259,12 @@
           "doppia": false
         }
       ]
+    },
+    {
+      "id": "dettato",
+      "title": "Ascolta e scrivi",
+      "emoji": "🔤",
+      "type": "dettato"
     }
   ],
   "ui": {
@@ -3275,6 +3281,61 @@
     "star": "Hai vinto una stellina!",
     "sticker_new": "Un adesivo nuovo per te!",
     "which_house": "In quale casa entra?",
-    "make_word": "Unisci le sillabe!"
+    "make_word": "Unisci le sillabe!",
+    "listen_write": "Ascolta e scrivi!"
+  },
+  "confusable": {
+    "M": [
+      "N",
+      "B"
+    ],
+    "N": [
+      "M",
+      "D"
+    ],
+    "P": [
+      "B",
+      "T"
+    ],
+    "B": [
+      "P",
+      "D"
+    ],
+    "T": [
+      "D",
+      "P"
+    ],
+    "D": [
+      "T",
+      "B"
+    ],
+    "L": [
+      "N",
+      "S"
+    ],
+    "S": [
+      "L",
+      "T"
+    ],
+    "A": [
+      "O",
+      "E"
+    ],
+    "E": [
+      "I",
+      "A"
+    ],
+    "I": [
+      "E",
+      "U"
+    ],
+    "O": [
+      "U",
+      "A"
+    ],
+    "U": [
+      "O",
+      "I"
+    ]
   }
 }

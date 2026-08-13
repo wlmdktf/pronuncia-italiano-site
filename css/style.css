@@ -74,7 +74,7 @@ button:active { transform: scale(0.96); }
 .pick-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 14px; width: min(640px, 96vw); }
 .pick-card { background: #fff; border-radius: 24px; padding: 14px 8px; text-align: center; font-size: clamp(44px, 8vw, 66px); box-shadow: 0 6px 0 #e2d9f5; transition: opacity .3s, transform .3s; }
 .pick-card.gone { opacity: 0; transform: scale(.3) translateY(-40px); pointer-events: none; }
-.pick-card.no { animation: shake .5s; }
+.pick-card.no, .tile.no { animation: shake .5s; }
 @keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
 
 /* parole builder */
@@ -84,6 +84,13 @@ button:active { transform: scale(0.96); }
 .slot-row { display: flex; gap: 10px; align-items: center; min-height: clamp(70px, 12vw, 110px); }
 .slot { font-size: clamp(40px, 9vw, 80px); font-weight: 900; border: 4px dashed #cbbcec; color: #cbbcec; border-radius: 22px; padding: 2px 22px; min-width: clamp(80px, 16vw, 140px); text-align: center; }
 .slot.filled { border-style: solid; color: #4a3b6b; background: #fff; box-shadow: 0 6px 0 #e2d9f5; }
+
+/* dettato (ascolta e scrivi) */
+.big-ear { width: clamp(88px, 15vw, 116px); height: clamp(88px, 15vw, 116px); font-size: clamp(40px, 7.5vw, 56px); }
+.slot.c { border-color: #d9b8f0; } .slot.v { border-color: #a3cfe8; }
+.slot.c.filled { color: #b05ce0; } .slot.v.filled { color: #3b8fbf; }
+.letter-pad { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; width: min(680px, 96vw); }
+.tile.lett { font-size: clamp(36px, 7vw, 56px); padding: 6px 4px; min-width: clamp(66px, 12vw, 96px); text-align: center; box-shadow: 0 6px 0 #e2d9f5; }
 
 /* ---------- overlay / modals ---------- */
 #overlay:empty { display: none; }

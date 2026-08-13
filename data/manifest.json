@@ -2265,7 +2265,7 @@
   "qa": "mismatch",
   "stt": "Londra.",
   "bytes": 21312,
-  "ts": "2026-08-12 21:24"
+  "ts": "2026-08-13 11:20"
  },
  "word-lupo": {
   "hash": "eb8349474bbe",
@@ -3795,7 +3795,7 @@
   "qa": "mismatch",
   "stt": "Tutto.",
   "bytes": 21312,
-  "ts": "2026-08-12 21:24"
+  "ts": "2026-08-13 11:20"
  },
  "word-tutu-slow": {
   "hash": "52109fb09301",
@@ -4011,7 +4011,7 @@
   "qa": "mismatch",
   "stt": "Done.",
   "bytes": 21312,
-  "ts": "2026-08-12 21:24"
+  "ts": "2026-08-13 11:20"
  },
  "word-dune-slow": {
   "hash": "a9daca7976c6",
@@ -4092,7 +4092,7 @@
   "qa": "mismatch",
   "stt": "Volte.",
   "bytes": 21312,
-  "ts": "2026-08-12 21:24"
+  "ts": "2026-08-13 11:20"
  },
  "word-cactus": {
   "hash": "f5fa54138181",
@@ -4174,5 +4174,14 @@
   "stt": null,
   "bytes": 21312,
   "ts": "2026-08-12 21:23"
+ },
+ "ui-listen_write": {
+  "hash": "cbca4ec382f8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ascolta e scrivi!",
+  "qa": "ok",
+  "stt": "Ascolta e scrivi.",
+  "bytes": 21312,
+  "ts": "2026-08-13 11:20"
  }
 }
