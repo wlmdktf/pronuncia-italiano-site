@@ -1097,7 +1097,7 @@
       "letter": {
         "grapheme": "P",
         "name": "pi",
-        "ipa": "pə",
+        "ipa": "p",
         "shape": {
           "it": "La P somiglia a una papera con la pancia piena.",
           "zh": "P 像一只吃饱了肚子鼓鼓的鸭子"
@@ -1519,7 +1519,7 @@
       "letter": {
         "grapheme": "T",
         "name": "ti",
-        "ipa": "tə",
+        "ipa": "t",
         "shape": {
           "it": "La T somiglia a una casa con un tetto sulla testa.",
           "zh": "T 像一座头顶着屋顶的小房子"
@@ -2662,7 +2662,7 @@
       "letter": {
         "grapheme": "B",
         "name": "bi",
-        "ipa": "bə",
+        "ipa": "b",
         "shape": {
           "it": "La B ha due grandi pance e somiglia a degli occhiali.",
           "zh": "B 有两个大肚子，像一副眼镜"
@@ -2939,7 +2939,7 @@
       "letter": {
         "grapheme": "D",
         "name": "di",
-        "ipa": "də",
+        "ipa": "d",
         "shape": {
           "it": "La D ha una grossa gobba, come quella di un dromedario.",
           "zh": "D 有一个大驼峰，像单峰骆驼"
