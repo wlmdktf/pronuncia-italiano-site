@@ -22,6 +22,7 @@ function render() {
   if (s.screen === 'parole') return V.renderParole(s.unitId, s.idx);
   if (s.screen === 'mix') return V.renderMix(s);
   if (s.screen === 'dettato') return V.renderDettato(s);
+  if (s.screen === 'collega') return V.renderCollega(s);
   return V.renderHome();
 }
 

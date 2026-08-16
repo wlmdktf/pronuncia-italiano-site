@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "units": [
@@ -3265,6 +3265,12 @@
       "title": "Ascolta e scrivi",
       "emoji": "🔤",
       "type": "dettato"
+    },
+    {
+      "id": "collega",
+      "title": "Collega le parole",
+      "emoji": "🔗",
+      "type": "collega"
     }
   ],
   "ui": {
@@ -3282,7 +3288,8 @@
     "sticker_new": "Un adesivo nuovo per te!",
     "which_house": "In quale casa entra?",
     "make_word": "Unisci le sillabe!",
-    "listen_write": "Ascolta e scrivi!"
+    "listen_write": "Ascolta e scrivi!",
+    "collega": "Collega ogni parola alla sua immagine!"
   },
   "confusable": {
     "M": [

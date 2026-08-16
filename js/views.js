@@ -134,7 +134,7 @@ export function renderHome() {
   const name = P.nickname();
   const grid = h('div', { class: 'unit-grid' });
   for (const u of CUR.units) {
-    const solo = u.type === 'mix' || u.type === 'dettato';   // 单关板块, 无子菜单
+    const solo = ['mix', 'dettato', 'collega'].includes(u.type);   // 单关板块, 无子菜单
     const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : (solo ? 1 : 4);
     const dest = solo ? { screen: u.type, idx: 0 } : { screen: 'unit', unitId: u.id };
     grid.append(h('button', {
@@ -530,6 +530,164 @@ export function renderDettato(state) {
       pad,
       h('div', { class: 'nav-row' }, nextBtn)));
   A.playSeq(['ui-listen_write', `sil-${low}`], 350);
+}
+
+// ---------- Collega le parole (图词连线: 读首字母/首音节找图) ----------
+const COLLEGA_ROUNDS = 3;
+const PAIR_COLORS = ['#8f6ae0', '#3bbf8f', '#ff9a76', '#5c7de0'];
+
+function collegaBank() {
+  // 全词库: 去重 (同词取首个 emoji)
+  const seen = new Map();
+  const put = (w) => { if (w && !seen.has(w.word)) seen.set(w.word, { word: w.word, emoji: w.emoji }); };
+  for (const u of CUR.units) {
+    if (u.type === 'vocali') {
+      for (const L of u.letters) { put(L.anchor); (L.extra || []).forEach(put); }
+    }
+    if (u.type === 'consonante') {
+      u.sillabe.forEach(s => put(s.anchor));
+      (u.casa || []).forEach(r => { r.correct.forEach(put); r.wrong.forEach(put); });
+    }
+    (u.parole || []).forEach(put);
+  }
+  return [...seen.values()];
+}
+
+function buildCollegaRound(tier) {
+  // easy: 4 词首字母全不同 | medium: 含一对同首字母异元音 | hard: 含一对同首音节
+  const bank = pickN(collegaBank(), 9999);
+  const out = [], usedW = new Set(), usedE = new Set();
+  const take = (e) => { out.push(e); usedW.add(e.word); usedE.add(e.emoji); };
+  if (tier !== 'easy') {
+    const n = tier === 'hard' ? 2 : 1;
+    outer:
+    for (let i = 0; i < bank.length; i++) {
+      for (let j = i + 1; j < bank.length; j++) {
+        const a = bank[i], b = bank[j];
+        if (a.emoji === b.emoji) continue;
+        if (a.word.slice(0, n) === b.word.slice(0, n) && a.word[n] !== b.word[n]) {
+          take(a); take(b); break outer;
+        }
+      }
+    }
+  }
+  for (const e of bank) {
+    if (out.length >= 4) break;
+    if (usedW.has(e.word) || usedE.has(e.emoji)) continue;
+    if (out.some(x => x.word[0] === e.word[0])) continue;  // 填充词与已选词首字母互异
+    take(e);
+  }
+  for (const e of bank) {  // 兜底 (词库极端情况下放宽首字母约束)
+    if (out.length >= 4) break;
+    if (!usedW.has(e.word) && !usedE.has(e.emoji)) take(e);
+  }
+  return out;
+}
+
+export function renderCollega(state) {
+  if (!state.rounds) state.rounds = ['easy', 'medium', 'hard'].slice(0, COLLEGA_ROUNDS).map(buildCollegaRound);
+  const r = state.r || 0;
+  const entries = state.rounds[r];
+  const wordOrder = pickN(entries, entries.length);
+  let matchedCount = 0;
+  let selected = null;          // 点选模式当前选中的图卡
+  const matches = [];           // {picEl, wrdEl, color}
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('class', 'collega-svg');
+  const board = h('div', { class: 'collega-board' });
+  const colL = h('div', { class: 'collega-col' });
+  const colR = h('div', { class: 'collega-col' });
+  board.append(colL, colR, svg);
+
+  const mkLine = (color) => {
+    const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    l.setAttribute('stroke', color);
+    svg.append(l);
+    return l;
+  };
+  const dotPos = (card, side) => {
+    const b = board.getBoundingClientRect(), c = card.getBoundingClientRect();
+    return [side === 'r' ? c.right - b.left + 8 : c.left - b.left - 8, c.top - b.top + c.height / 2];
+  };
+  const setLine = (l, x1, y1, x2, y2) => {
+    l.setAttribute('x1', x1); l.setAttribute('y1', y1);
+    l.setAttribute('x2', x2); l.setAttribute('y2', y2);
+  };
+  const redraw = () => {
+    for (const m of matches) {
+      const [x1, y1] = dotPos(m.picEl, 'r'), [x2, y2] = dotPos(m.wrdEl, 'l');
+      setLine(m.lineEl, x1, y1, x2, y2);
+    }
+  };
+  new ResizeObserver(redraw).observe(board);
+
+  function judge(picEl, wrdEl) {
+    if (wrdEl.classList.contains('done')) return;
+    if (picEl.dataset.word === wrdEl.dataset.word) {
+      const color = PAIR_COLORS[matchedCount % PAIR_COLORS.length];
+      const lineEl = mkLine(color);
+      matches.push({ picEl, wrdEl, lineEl });
+      redraw();
+      picEl.classList.add('done'); wrdEl.classList.add('done');
+      picEl.classList.remove('sel');
+      selected = null;
+      matchedCount++;
+      A.sfx('ok');
+      A.play('word-' + slug(picEl.dataset.word)).then(async () => {
+        if (matchedCount === entries.length) {
+          await A.play(praise());
+          if (r + 1 < state.rounds.length) go({ screen: 'collega', r: r + 1, rounds: state.rounds });
+          else celebrate('collega:round', { screen: 'home' });
+        }
+      });
+    } else {
+      A.sfx('no');
+      wrdEl.classList.remove('no'); void wrdEl.offsetWidth; wrdEl.classList.add('no');
+      if (selected) { selected.classList.remove('sel'); selected = null; }
+    }
+  }
+
+  for (const e of entries) {
+    const pic = h('div', { class: 'ccard pic', 'data-word': e.word }, e.emoji, h('span', { class: 'dot' }));
+    pic.addEventListener('pointerdown', (ev) => {
+      if (pic.classList.contains('done')) return;
+      ev.preventDefault();
+      A.sfx('tap');
+      if (selected) selected.classList.remove('sel');
+      selected = pic;
+      pic.classList.add('sel');
+      // 拖线模式: 跟手画临时线, 抬手时命中词卡则判定
+      const temp = mkLine('#b9a8e6');
+      const [x1, y1] = dotPos(pic, 'r');
+      setLine(temp, x1, y1, x1, y1);
+      const bb = board.getBoundingClientRect();
+      const move = (mv) => setLine(temp, x1, y1, mv.clientX - bb.left, mv.clientY - bb.top);
+      const up = (uv) => {
+        document.removeEventListener('pointermove', move);
+        document.removeEventListener('pointerup', up);
+        temp.remove();
+        const hit = document.elementFromPoint(uv.clientX, uv.clientY)?.closest('.ccard.wrd');
+        if (hit) judge(pic, hit);
+        // 未命中词卡 = 点选模式, 保持选中等待点词
+      };
+      document.addEventListener('pointermove', move);
+      document.addEventListener('pointerup', up);
+    });
+    colL.append(pic);
+  }
+  for (const e of wordOrder) {
+    const wrd = h('div', { class: 'ccard wrd', 'data-word': e.word }, e.word, h('span', { class: 'dot' }));
+    wrd.addEventListener('click', () => { if (selected) judge(selected, wrd); });
+    colR.append(wrd);
+  }
+
+  app().replaceChildren(
+    topbar('Collega le parole', { screen: 'home' }),
+    h('div', { class: 'stage' },
+      h('div', { class: 'dots' }, ...state.rounds.map((_, i) => h('i', { class: i === r ? 'on' : '' }))),
+      board));
+  if (r === 0) A.play('ui-collega');
 }
 
 // ---------- splash ----------
