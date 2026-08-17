@@ -95,8 +95,8 @@ button:active { transform: scale(0.96); }
 /* collega le parole (连线) */
 .collega-board { position: relative; display: flex; justify-content: space-between; gap: 10vw; width: min(720px, 94vw); touch-action: none; }
 .collega-col { display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; }
-.ccard { position: relative; background: #fff; border-radius: 22px; box-shadow: 0 5px 0 #e2d9f5; text-align: center; min-height: clamp(64px, 11vw, 92px); display: flex; align-items: center; justify-content: center; }
-.ccard.pic { font-size: clamp(40px, 8vw, 60px); cursor: pointer; }
+.ccard { position: relative; background: #fff; border-radius: 22px; box-shadow: 0 5px 0 #e2d9f5; text-align: center; min-height: clamp(80px, 14vw, 118px); display: flex; align-items: center; justify-content: center; }
+.ccard.pic { font-size: clamp(58px, 11.5vw, 92px); cursor: pointer; }
 .ccard.wrd { font-weight: 900; font-size: clamp(16px, 3.4vw, 25px); letter-spacing: 1px; padding: 6px 10px; word-break: keep-all; }
 .ccard .dot { position: absolute; top: 50%; width: 15px; height: 15px; border-radius: 50%; background: #4a3b6b; transform: translateY(-50%); }
 .ccard.pic .dot { right: -8px; }
