@@ -1,6 +1,6 @@
-// 离线缓存 + 版本化更新
-// VERSION 由 deploy.sh 在发布时替换成构建时间戳 (本地开发保持占位符不变)
-const VERSION = '2026-08-18_195311';
+// ç¦»çº¿ç¼“å­˜ + ç‰ˆæœ¬åŒ–æ›´æ–°
+// VERSION ç”± deploy.sh åœ¨å‘å¸ƒæ—¶æ›¿æ¢æˆæž„å»ºæ—¶é—´æˆ³ (æœ¬åœ°å¼€å‘ä¿æŒå ä½ç¬¦ä¸å˜)
+const VERSION = '2026-08-18_212931';
 const CACHE = 'sillabe-' + VERSION;
 const CORE = [
   '.', 'index.html', 'css/style.css',
@@ -11,8 +11,8 @@ const CORE = [
 ];
 
 self.addEventListener('install', (e) => {
-  // 只预缓存核心文件, 快速进入 installed/waiting 状态 (更新提示不被音频下载拖慢)
-  // cache:'reload' 绕过 HTTP 缓存 — 防止把 CDN/浏览器里的旧版文件装进新版本缓存
+  // åªé¢„ç¼“å­˜æ ¸å¿ƒæ–‡ä»¶, å¿«é€Ÿè¿›å…¥ installed/waiting çŠ¶æ€ (æ›´æ–°æç¤ºä¸è¢«éŸ³é¢‘ä¸‹è½½æ‹–æ…¢)
+  // cache:'reload' ç»•è¿‡ HTTP ç¼“å­˜ â€” é˜²æ­¢æŠŠ CDN/æµè§ˆå™¨é‡Œçš„æ—§ç‰ˆæ–‡ä»¶è£…è¿›æ–°ç‰ˆæœ¬ç¼“å­˜
   e.waitUntil(caches.open(CACHE).then(c =>
     c.addAll(CORE.map(u => new Request(u, { cache: 'reload' })))));
 });
@@ -26,7 +26,7 @@ self.addEventListener('activate', (e) => {
     for (const k of await caches.keys()) if (k !== CACHE) await caches.delete(k);
     await self.clients.claim();
   })());
-  // 音频全量预取: 后台尽力而为, 不阻塞激活; 缺的由运行时缓存兜底
+  // éŸ³é¢‘å…¨é‡é¢„å–: åŽå°å°½åŠ›è€Œä¸º, ä¸é˜»å¡žæ¿€æ´»; ç¼ºçš„ç”±è¿è¡Œæ—¶ç¼“å­˜å…œåº•
   (async () => {
     try {
       const c = await caches.open(CACHE);
@@ -54,4 +54,3 @@ self.addEventListener('fetch', (e) => {
     }
   })());
 });
-

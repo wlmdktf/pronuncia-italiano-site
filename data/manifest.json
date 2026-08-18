@@ -1404,13 +1404,13 @@
   "ts": "2026-08-02 22:46"
  },
  "letter-p-sound": {
-  "hash": "0c9c092fd3af",
+  "hash": "5785b58f9d65",
   "voice": "it-IT-ElsaNeural",
-  "text": "<phoneme alphabet='ipa' ph='pa'>p</phoneme>",
-  "qa": "manual",
-  "stt": null,
-  "bytes": 2924,
-  "ts": "2026-08-18 19:51"
+  "text": "pi.",
+  "qa": "check",
+  "stt": "P.",
+  "bytes": 6956,
+  "ts": "2026-08-18 21:10"
  },
  "letter-p-name": {
   "hash": "5785b58f9d65",
@@ -1764,13 +1764,13 @@
   "ts": "2026-08-02 22:46"
  },
  "letter-t-sound": {
-  "hash": "177594433952",
+  "hash": "22ba99ff9e0e",
   "voice": "it-IT-ElsaNeural",
-  "text": "<phoneme alphabet='ipa' ph='ta'>t</phoneme>",
-  "qa": "manual",
-  "stt": null,
-  "bytes": 2924,
-  "ts": "2026-08-18 19:51"
+  "text": "ti.",
+  "qa": "check",
+  "stt": "T.",
+  "bytes": 7532,
+  "ts": "2026-08-18 21:10"
  },
  "letter-t-name": {
   "hash": "22ba99ff9e0e",
@@ -3348,13 +3348,13 @@
   "ts": "2026-08-04 10:12"
  },
  "letter-b-sound": {
-  "hash": "a8a254c3ead5",
+  "hash": "47c07b53642c",
   "voice": "it-IT-ElsaNeural",
-  "text": "<phoneme alphabet='ipa' ph='ba'>b</phoneme>",
-  "qa": "manual",
-  "stt": null,
-  "bytes": 3212,
-  "ts": "2026-08-18 19:51"
+  "text": "bi.",
+  "qa": "check",
+  "stt": "",
+  "bytes": 8108,
+  "ts": "2026-08-18 21:10"
  },
  "letter-b-name": {
   "hash": "47c07b53642c",
@@ -3807,13 +3807,13 @@
   "ts": "2026-08-12 21:22"
  },
  "letter-d-sound": {
-  "hash": "36267d17c24c",
+  "hash": "f590d05bda57",
   "voice": "it-IT-ElsaNeural",
-  "text": "<phoneme alphabet='ipa' ph='da'>d</phoneme>",
-  "qa": "manual",
-  "stt": null,
-  "bytes": 3212,
-  "ts": "2026-08-18 19:51"
+  "text": "di.",
+  "qa": "ok",
+  "stt": "Di.",
+  "bytes": 8972,
+  "ts": "2026-08-18 21:10"
  },
  "letter-d-name": {
   "hash": "f590d05bda57",

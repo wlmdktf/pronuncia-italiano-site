@@ -261,14 +261,15 @@ export function renderConosci(unitId) {
   const u = CUR.units.find(x => x.id === unitId);
   const L = u.letter;
   const g = L.grapheme.toLowerCase();
+  const standaloneId = A.standaloneLetterId(L.grapheme);
   app().replaceChildren(
     topbar(`Conosci la ${L.grapheme}`, { screen: 'unit', unitId }),
     h('div', { class: 'stage' },
-      h('button', { class: 'big-letter', onclick: () => A.playSeq([`letter-${g}-sound`, `letter-${g}-name`], 300) }, L.grapheme),
+      h('button', { class: 'big-letter', onclick: () => A.playSeq(A.letterIntroIds(L.grapheme), 300) }, L.grapheme),
       h('div', { class: 'hint-row' },
         h('button', { class: 'chip big', onclick: () => A.play(`letter-${g}-shape`) }, `${u.emoji} La forma`),
         h('button', { class: 'chip big', onclick: () => A.play(`letter-${g}-mouth`) }, '🗣️ Come si dice?'),
-        micBtn([`letter-${g}-sound`])),
+        micBtn([standaloneId])),
       h('div', { class: 'nav-row' },
         h('button', {
           class: 'round-btn primary',
@@ -318,7 +319,7 @@ export function renderSillabe(unitId, idx) {
     h('div', { class: 'stage' },
       dots,
       h('div', { class: 'merge-row' },
-        h('button', { class: 'tile c', onclick: () => A.play(`letter-${cons.toLowerCase()}-sound`) }, cons),
+        h('button', { class: 'tile c', onclick: () => A.play(A.standaloneLetterId(cons)) }, cons),
         h('span', { class: 'merge-eq' }, '+'),
         h('button', { class: 'tile v', onclick: () => A.play(`letter-${voc.toLowerCase()}-sound`) }, voc),
         h('span', { class: 'merge-eq' }, '='),
@@ -509,7 +510,7 @@ export function renderDettato(state) {
     const b = h('button', { class: 'tile lett ' + (isVoc ? 'v' : 'c') }, L);
     b.addEventListener('click', async () => {
       if (filled >= 2) return;
-      await A.play(`letter-${L.toLowerCase()}-sound`);
+      await A.play(A.standaloneLetterId(L));
       if (filled >= 2) return;                    // 音频期间可能已被别的点击填满
       if (L === target[filled]) {
         slots[filled].textContent = L;
