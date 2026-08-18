@@ -1,7 +1,31 @@
 {
-  "version": 10,
+  "version": 11,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
+  "pictureAtlases": {
+    "fvl": {
+      "src": "assets/phonics-fvl-atlas.png",
+      "cols": 5,
+      "rows": 3
+    }
+  },
+  "pictures": {
+    "FATA": { "atlas": "fvl", "col": 0, "row": 0 },
+    "FOCA": { "atlas": "fvl", "col": 1, "row": 0 },
+    "FENICOTTERO": { "atlas": "fvl", "col": 2, "row": 0 },
+    "FIORE": { "atlas": "fvl", "col": 3, "row": 0 },
+    "FUNGO": { "atlas": "fvl", "col": 4, "row": 0 },
+    "VALLE": { "atlas": "fvl", "col": 0, "row": 1 },
+    "VOLPE": { "atlas": "fvl", "col": 1, "row": 1 },
+    "VELA": { "atlas": "fvl", "col": 2, "row": 1 },
+    "VINO": { "atlas": "fvl", "col": 3, "row": 1 },
+    "VULCANO": { "atlas": "fvl", "col": 4, "row": 1 },
+    "LAMA": { "atlas": "fvl", "col": 0, "row": 2 },
+    "LOMBRICO": { "atlas": "fvl", "col": 1, "row": 2 },
+    "LENTE": { "atlas": "fvl", "col": 2, "row": 2 },
+    "LINCE": { "atlas": "fvl", "col": 3, "row": 2 },
+    "LUPO": { "atlas": "fvl", "col": 4, "row": 2 }
+  },
   "units": [
     {
       "id": "vocali",
@@ -1918,48 +1942,48 @@
         "name": "elle",
         "ipa": "lː",
         "shape": {
-          "it": "La L sembra una gamba con il piede.",
-          "zh": "L 像一条腿带着小脚"
+          "it": "La L somiglia a un lombrico curioso.",
+          "zh": "L 像一条好奇的小蚯蚓"
         },
         "mouth": {
-          "it": "Quando dico la L, la punta della lingua tocca dietro i denti di sopra e la voce scorre ai lati.",
-          "zh": "发 L 舌尖抵上牙背后，声音从舌头两侧流出来"
+          "it": "Quando dico la L, la lingua tocca la gengiva dietro i denti superiori e poi si allontana lentamente, producendo un suono liquido.",
+          "zh": "发 L 时舌尖先碰上牙后面的牙龈，再慢慢离开，发出流动的声音"
         }
       },
       "sillabe": [
         {
           "s": "LA",
           "anchor": {
-            "word": "LATTE",
-            "emoji": "🥛"
+            "word": "LAMA",
+            "emoji": "🦙"
           }
         },
         {
           "s": "LO",
           "anchor": {
-            "word": "LOCOMOTIVA",
-            "emoji": "🚂"
+            "word": "LOMBRICO",
+            "emoji": "🪱"
           }
         },
         {
           "s": "LE",
           "anchor": {
-            "word": "LEONE",
-            "emoji": "🦁"
+            "word": "LENTE",
+            "emoji": "🔍"
           }
         },
         {
           "s": "LI",
           "anchor": {
-            "word": "LIMONE",
-            "emoji": "🍋"
+            "word": "LINCE",
+            "emoji": "🐈"
           }
         },
         {
           "s": "LU",
           "anchor": {
-            "word": "LUNA",
-            "emoji": "🌙"
+            "word": "LUPO",
+            "emoji": "🐺"
           }
         }
       ],
@@ -2021,6 +2045,10 @@
             {
               "word": "LOCOMOTIVA",
               "emoji": "🚂"
+            },
+            {
+              "word": "LOMBRICO",
+              "emoji": "🪱"
             },
             {
               "word": "LONTRA",
@@ -2121,6 +2149,10 @@
               "emoji": "🍋"
             },
             {
+              "word": "LINCE",
+              "emoji": "🐈"
+            },
+            {
               "word": "LIBRO",
               "emoji": "📖"
             },
@@ -2174,6 +2206,10 @@
             {
               "word": "LUCERTOLA",
               "emoji": "🦎"
+            },
+            {
+              "word": "LUCCIOLA",
+              "emoji": "✨"
             }
           ],
           "wrong": [
@@ -2233,13 +2269,14 @@
           "doppia": false
         },
         {
-          "word": "PALLA",
+          "word": "MELONE",
           "sillabe": [
-            "PA",
-            "LA"
+            "ME",
+            "LO",
+            "NE"
           ],
-          "emoji": "⚽",
-          "doppia": true
+          "emoji": "🍈",
+          "doppia": false
         },
         {
           "word": "LIMONE",
@@ -2261,12 +2298,13 @@
           "doppia": false
         },
         {
-          "word": "PILA",
+          "word": "TAVOLO",
           "sillabe": [
-            "PI",
-            "LA"
+            "TA",
+            "VO",
+            "LO"
           ],
-          "emoji": "🔋",
+          "emoji": "🪑",
           "doppia": false
         },
         {
@@ -3191,6 +3229,290 @@
       ]
     },
     {
+      "id": "f",
+      "title": "La lettera F",
+      "emoji": "🦋",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "F",
+        "name": "effe",
+        "ipa": "fː",
+        "shape": {
+          "it": "La F ricorda una farfalla leggera.",
+          "zh": "F 像一只轻盈的蝴蝶"
+        },
+        "mouth": {
+          "it": "Quando dico la F, appoggio i denti superiori al labbro inferiore e faccio passare l'aria con un soffio.",
+          "zh": "发 F 时上牙轻碰下唇，让气流像吹气一样通过，不振动声带"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "FA",
+          "anchor": {
+            "word": "FATA",
+            "emoji": "🧚‍♀️"
+          }
+        },
+        {
+          "s": "FO",
+          "anchor": {
+            "word": "FOCA",
+            "emoji": "🦭"
+          }
+        },
+        {
+          "s": "FE",
+          "anchor": {
+            "word": "FENICOTTERO",
+            "emoji": "🦩"
+          }
+        },
+        {
+          "s": "FI",
+          "anchor": {
+            "word": "FIORE",
+            "emoji": "🌼"
+          }
+        },
+        {
+          "s": "FU",
+          "anchor": {
+            "word": "FUNGO",
+            "emoji": "🍄"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "FA",
+          "correct": [
+            { "word": "FATA", "emoji": "🧚‍♀️" },
+            { "word": "FARFALLA", "emoji": "🦋" },
+            { "word": "FANTASMA", "emoji": "👻" },
+            { "word": "FALCO", "emoji": "🦅" }
+          ],
+          "wrong": [
+            { "word": "FOCA", "emoji": "🦭" },
+            { "word": "FIORE", "emoji": "🌼" },
+            { "word": "FUNGO", "emoji": "🍄" },
+            { "word": "VASO", "emoji": "🏺" }
+          ]
+        },
+        {
+          "s": "FO",
+          "correct": [
+            { "word": "FOCA", "emoji": "🦭" },
+            { "word": "FOGLIA", "emoji": "🍃" },
+            { "word": "FORMICA", "emoji": "🐜" },
+            { "word": "FOTO", "emoji": "🖼️" }
+          ],
+          "wrong": [
+            { "word": "FATA", "emoji": "🧚‍♀️" },
+            { "word": "FUOCO", "emoji": "🔥" },
+            { "word": "FIORE", "emoji": "🌼" },
+            { "word": "DONO", "emoji": "🎁" }
+          ]
+        },
+        {
+          "s": "FE",
+          "correct": [
+            { "word": "FENICOTTERO", "emoji": "🦩" },
+            { "word": "FESTA", "emoji": "🎉" },
+            { "word": "FERRO", "emoji": "🧲" },
+            { "word": "FELCE", "emoji": "🌿" }
+          ],
+          "wrong": [
+            { "word": "FATA", "emoji": "🧚‍♀️" },
+            { "word": "FOCA", "emoji": "🦭" },
+            { "word": "FUNGO", "emoji": "🍄" },
+            { "word": "MELA", "emoji": "🍎" }
+          ]
+        },
+        {
+          "s": "FI",
+          "correct": [
+            { "word": "FIORE", "emoji": "🌼" },
+            { "word": "FINESTRA", "emoji": "🪟" },
+            { "word": "FILO", "emoji": "🧵" },
+            { "word": "FIOCCO", "emoji": "🎀" }
+          ],
+          "wrong": [
+            { "word": "FENICOTTERO", "emoji": "🦩" },
+            { "word": "FUMO", "emoji": "💨" },
+            { "word": "FOGLIA", "emoji": "🍃" },
+            { "word": "PINO", "emoji": "🌲" }
+          ]
+        },
+        {
+          "s": "FU",
+          "correct": [
+            { "word": "FUNGO", "emoji": "🍄" },
+            { "word": "FUMO", "emoji": "💨" },
+            { "word": "FUOCO", "emoji": "🔥" },
+            { "word": "FULMINE", "emoji": "⚡" }
+          ],
+          "wrong": [
+            { "word": "FOCA", "emoji": "🦭" },
+            { "word": "FATA", "emoji": "🧚‍♀️" },
+            { "word": "FIORE", "emoji": "🌼" },
+            { "word": "LUNA", "emoji": "🌙" }
+          ]
+        }
+      ],
+      "parole": [
+        { "word": "FATA", "sillabe": ["FA", "TA"], "emoji": "🧚‍♀️", "doppia": false },
+        { "word": "FOTO", "sillabe": ["FO", "TO"], "emoji": "🖼️", "doppia": false },
+        { "word": "FIUTO", "sillabe": ["FI", "U", "TO"], "emoji": "👃", "doppia": false },
+        { "word": "FAME", "sillabe": ["FA", "ME"], "emoji": "🍽️", "doppia": false },
+        { "word": "FUMO", "sillabe": ["FU", "MO"], "emoji": "💨", "doppia": false },
+        { "word": "TUFFO", "sillabe": ["TU", "FO"], "emoji": "🏊", "doppia": true },
+        { "word": "FATATO", "sillabe": ["FA", "TA", "TO"], "emoji": "✨", "doppia": false },
+        { "word": "FINITO", "sillabe": ["FI", "NI", "TO"], "emoji": "🏁", "doppia": false }
+      ]
+    },
+    {
+      "id": "v",
+      "title": "La lettera V",
+      "emoji": "🌬️",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "V",
+        "name": "vu",
+        "ipa": "vː",
+        "shape": {
+          "it": "La lettera vu somiglia a un grande vaso.",
+          "zh": "V 像一个大花瓶"
+        },
+        "mouth": {
+          "it": "Quando dico la V, appoggio i denti superiori al labbro inferiore e accendo la voce: sembra il vento.",
+          "zh": "发 V 时口型和 F 一样，但要振动声带，像有声音的风"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "VA",
+          "anchor": {
+            "word": "VALLE",
+            "emoji": "🏞️"
+          }
+        },
+        {
+          "s": "VO",
+          "anchor": {
+            "word": "VOLPE",
+            "emoji": "🦊"
+          }
+        },
+        {
+          "s": "VE",
+          "anchor": {
+            "word": "VELA",
+            "emoji": "⛵"
+          }
+        },
+        {
+          "s": "VI",
+          "anchor": {
+            "word": "VINO",
+            "emoji": "🍷"
+          }
+        },
+        {
+          "s": "VU",
+          "anchor": {
+            "word": "VULCANO",
+            "emoji": "🌋"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "VA",
+          "correct": [
+            { "word": "VALLE", "emoji": "🏞️" },
+            { "word": "VASO", "emoji": "🏺" },
+            { "word": "VALANGA", "emoji": "🏔️" },
+            { "word": "VALIGIA", "emoji": "🧳" }
+          ],
+          "wrong": [
+            { "word": "VOLPE", "emoji": "🦊" },
+            { "word": "VELA", "emoji": "⛵" },
+            { "word": "VULCANO", "emoji": "🌋" },
+            { "word": "LAMA", "emoji": "🦙" }
+          ]
+        },
+        {
+          "s": "VO",
+          "correct": [
+            { "word": "VOLPE", "emoji": "🦊" },
+            { "word": "VORTICE", "emoji": "🌀" },
+            { "word": "VOLTO", "emoji": "🙂" },
+            { "word": "VOCE", "emoji": "🗣️" }
+          ],
+          "wrong": [
+            { "word": "VALLE", "emoji": "🏞️" },
+            { "word": "VELA", "emoji": "⛵" },
+            { "word": "VINO", "emoji": "🍷" },
+            { "word": "LUPO", "emoji": "🐺" }
+          ]
+        },
+        {
+          "s": "VE",
+          "correct": [
+            { "word": "VELA", "emoji": "⛵" },
+            { "word": "VENTO", "emoji": "💨" },
+            { "word": "VESPA", "emoji": "🐝" },
+            { "word": "VESTITO", "emoji": "👗" }
+          ],
+          "wrong": [
+            { "word": "VOLPE", "emoji": "🦊" },
+            { "word": "VALIGIA", "emoji": "🧳" },
+            { "word": "VULCANO", "emoji": "🌋" },
+            { "word": "NEVE", "emoji": "❄️" }
+          ]
+        },
+        {
+          "s": "VI",
+          "correct": [
+            { "word": "VINO", "emoji": "🍷" },
+            { "word": "VIOLA", "emoji": "🌸" },
+            { "word": "VIOLINO", "emoji": "🎻" },
+            { "word": "VITE", "emoji": "🔩" }
+          ],
+          "wrong": [
+            { "word": "VALLE", "emoji": "🏞️" },
+            { "word": "VOLPE", "emoji": "🦊" },
+            { "word": "VELA", "emoji": "⛵" },
+            { "word": "PINO", "emoji": "🌲" }
+          ]
+        },
+        {
+          "s": "VU",
+          "correct": [
+            { "word": "VULCANO", "emoji": "🌋" },
+            { "word": "VUOTO", "emoji": "🫙" }
+          ],
+          "wrong": [
+            { "word": "UVA", "emoji": "🍇" },
+            { "word": "DADO", "emoji": "🎲" },
+            { "word": "VOLPE", "emoji": "🦊" },
+            { "word": "VALLE", "emoji": "🏞️" }
+          ]
+        }
+      ],
+      "parole": [
+        { "word": "VIA", "sillabe": ["VI", "A"], "emoji": "🛣️", "doppia": false },
+        { "word": "VIVA", "sillabe": ["VI", "VA"], "emoji": "🎉", "doppia": false },
+        { "word": "VENA", "sillabe": ["VE", "NA"], "emoji": "🩸", "doppia": false },
+        { "word": "NAVE", "sillabe": ["NA", "VE"], "emoji": "🚢", "doppia": false },
+        { "word": "NEVE", "sillabe": ["NE", "VE"], "emoji": "❄️", "doppia": false },
+        { "word": "VENTO", "sillabe": ["VE", "N", "TO"], "emoji": "💨", "doppia": false },
+        { "word": "DIVANO", "sillabe": ["DI", "VA", "NO"], "emoji": "🛋️", "doppia": false },
+        { "word": "PAVONE", "sillabe": ["PA", "VO", "NE"], "emoji": "🦚", "doppia": false }
+      ]
+    },
+    {
       "id": "mix",
       "title": "Mescola le sillabe",
       "emoji": "🎲",
@@ -3322,7 +3644,15 @@
     ],
     "S": [
       "L",
-      "T"
+      "F"
+    ],
+    "F": [
+      "V",
+      "S"
+    ],
+    "V": [
+      "F",
+      "B"
     ],
     "A": [
       "O",

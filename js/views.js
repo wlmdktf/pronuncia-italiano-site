@@ -27,6 +27,19 @@ const praise = () => 'ui-brava' + (1 + Math.floor(Math.random() * 4));
 const slug = (w) => w.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 const pickN = (arr, n) => [...arr].sort(() => Math.random() - 0.5).slice(0, n);
 
+// 词图优先走课程里的原创插画图集；尚未覆盖的旧词继续用 emoji，便于逐批统一风格。
+function pictureFor(w, cls) {
+  const pic = w?.word ? CUR?.pictures?.[w.word] : null;
+  const atlas = pic ? CUR?.pictureAtlases?.[pic.atlas] : null;
+  if (!pic || !atlas) {
+    return h('span', { class: `${cls} emoji-visual`, role: 'img', 'aria-label': w?.word || '' }, w?.emoji || '');
+  }
+  const x = atlas.cols > 1 ? (pic.col / (atlas.cols - 1)) * 100 : 0;
+  const y = atlas.rows > 1 ? (pic.row / (atlas.rows - 1)) * 100 : 0;
+  const style = `background-image:url('${atlas.src}');background-size:${atlas.cols * 100}% ${atlas.rows * 100}%;background-position:${x}% ${y}%`;
+  return h('span', { class: `${cls} picture-visual`, role: 'img', 'aria-label': w.word, style });
+}
+
 function confetti() {
   const em = ['🎉', '⭐', '🌟', '🦄', '💜', '🎈'];
   for (let i = 0; i < 14; i++) {
@@ -126,7 +139,7 @@ function wordCard(w, { slow = false, hlDoppia = false } = {}) {
   return h('button', {
     class: 'word-card',
     onclick: () => A.playSeq(slow ? [id + '-slow', id] : [id], 300)
-  }, h('span', { class: 'w-emoji' }, w.emoji), h('span', { class: 'w-text', html: text }));
+  }, pictureFor(w, 'w-visual'), h('span', { class: 'w-text', html: text }));
 }
 
 // ---------- home ----------
@@ -137,10 +150,13 @@ export function renderHome() {
     const solo = ['mix', 'dettato', 'collega'].includes(u.type);   // 单关板块, 无子菜单
     const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : (solo ? 1 : 4);
     const dest = solo ? { screen: u.type, idx: 0 } : { screen: 'unit', unitId: u.id };
+    const firstAnchor = u.type === 'consonante' ? u.sillabe?.[0]?.anchor : null;
+    const unitVisual = firstAnchor && CUR.pictures?.[firstAnchor.word]
+      ? firstAnchor : { word: u.title, emoji: u.emoji };
     grid.append(h('button', {
       class: 'unit-card', onclick: () => { A.sfx('tap'); go(dest); }
     },
-      h('span', { class: 'emoji' }, u.emoji),
+      pictureFor(unitVisual, 'unit-visual'),
       h('span', { class: 'name' }, u.title),
       h('span', { class: 'done' }, `⭐ ${P.unitDoneCount(u.id, total)}`)));
   }
@@ -330,7 +346,7 @@ export function renderCasa(unitId, idx) {
   const grid = h('div', { class: 'pick-grid' });
   for (const c of chosen) {
     const id = 'word-' + slug(c.word);
-    const btn = h('button', { class: 'pick-card' }, c.emoji);
+    const btn = h('button', { class: 'pick-card' }, pictureFor(c, 'pick-visual'));
     btn.addEventListener('click', async () => {
       await A.play(id);
       if (c.ok) {
@@ -375,7 +391,8 @@ function renderWordBuilder({ title, W, dotsTotal, dotsIdx, sylPool, nDistract, b
   for (const s of options) {
     const t = h('button', { class: 'tile sil', onclick: async () => {
       const expect = W.sillabe[filled];
-      await A.play('sil-' + s.toLowerCase());
+      const partId = s.length === 1 ? `letter-${s.toLowerCase()}-sound` : `sil-${s.toLowerCase()}`;
+      await A.play(partId);
       if (s === expect) {
         slots[filled].textContent = s;
         slots[filled].classList.add('filled');
@@ -405,7 +422,7 @@ function renderWordBuilder({ title, W, dotsTotal, dotsIdx, sylPool, nDistract, b
 
   // 目标图卡: 先听要拼的词, 随时可点重听 (文字拼完才揭晓)
   const goal = h('button', { class: 'word-card goal', onclick: () => A.play(wid) },
-    h('span', { class: 'w-emoji' }, W.emoji),
+    pictureFor(W, 'w-visual'),
     h('span', { class: 'goal-hint' }, '🔊'));
 
   app().replaceChildren(
@@ -656,7 +673,7 @@ export function renderCollega(state) {
   }
 
   for (const e of entries) {
-    const pic = h('div', { class: 'ccard pic', 'data-word': e.word }, e.emoji, h('span', { class: 'dot' }));
+    const pic = h('div', { class: 'ccard pic', 'data-word': e.word }, pictureFor(e, 'collega-visual'), h('span', { class: 'dot' }));
     pic.addEventListener('pointerdown', (ev) => {
       if (pic.classList.contains('done')) return;
       ev.preventDefault();
