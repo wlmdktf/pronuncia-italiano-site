@@ -4689,13 +4689,13 @@
   "ts": "2026-08-18 18:28"
  },
  "letter-v-sound": {
-  "hash": "548ac7e0dd94",
+  "hash": "07a941366673",
   "voice": "it-IT-ElsaNeural",
-  "text": "<phoneme alphabet='ipa' ph='vː'>v</phoneme>",
-  "qa": "manual",
-  "stt": null,
-  "bytes": 8640,
-  "ts": "2026-08-18 18:28"
+  "text": "vu.",
+  "qa": "check",
+  "stt": "V.",
+  "bytes": 7532,
+  "ts": "2026-08-18 22:01"
  },
  "letter-v-name": {
   "hash": "07a941366673",

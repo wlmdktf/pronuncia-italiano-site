@@ -5,13 +5,13 @@ let current = null;
 let currentResolve = null;   // 播放被打断时也要让等待方放行 (否则快速连点会卡死游戏逻辑)
 let playToken = 0;           // 每次新播放 +1; playSeq 靠它发现自己被插播, 立即中止不再续播队列
 
-// 爆破辅音无法在脱离元音时稳定地做成可辨认的幼儿练习音。
-// 只要按钮代表“这个字母”，B/P/T/D 就读意大利语字母名 bi/pi/ti/di。
-const STOP_LETTERS = new Set(['B', 'P', 'T', 'D']);
+// 裸爆破音不可靠，V 的孤立 TTS 纯音也未通过家长试听。
+// 只要按钮代表“这个字母”，B/P/T/D/V 就读意大利语字母名 bi/pi/ti/di/vu。
+const LETTER_NAME_ONLY = new Set(['B', 'P', 'T', 'D', 'V']);
 
 export function standaloneLetterId(grapheme) {
   const upper = String(grapheme).toUpperCase();
-  const kind = STOP_LETTERS.has(upper) ? 'name' : 'sound';
+  const kind = LETTER_NAME_ONLY.has(upper) ? 'name' : 'sound';
   return `letter-${upper.toLowerCase()}-${kind}`;
 }
 
