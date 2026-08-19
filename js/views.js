@@ -554,14 +554,14 @@ export function renderDettato(state) {
 const COLLEGA_ROUNDS = 3;
 const PAIR_COLORS = ['#8f6ae0', '#3bbf8f', '#ff9a76', '#5c7de0'];
 
-// 连线关排除抽象/符号类配图 (数字、色块、手势、抽象概念) — 图必须一眼看出是什么东西
+// 连线关排除抽象/符号类配图；个别词还可在 curriculum 标记 collega:false。
 const COLLEGA_EXCLUDE = new Set(['1️⃣', '2️⃣', '9️⃣', '🔢', '⚫', '🤫', '👍', '🌑', '🕳️', '💰', '😴', '📛', '☸️']);
 
 function collegaBank() {
   // 全词库: 去重 (同词取首个 emoji), 剔除抽象配图
   const seen = new Map();
   const put = (w) => {
-    if (w && !seen.has(w.word) && !COLLEGA_EXCLUDE.has(w.emoji)) {
+    if (w && w.collega !== false && !seen.has(w.word) && !COLLEGA_EXCLUDE.has(w.emoji)) {
       seen.set(w.word, { word: w.word, emoji: w.emoji });
     }
   };

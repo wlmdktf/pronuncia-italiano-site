@@ -1,6 +1,6 @@
 // ç¦»çº¿ç¼“å­˜ + ç‰ˆæœ¬åŒ–æ›´æ–°
 // VERSION ç”± deploy.sh åœ¨å‘å¸ƒæ—¶æ›¿æ¢æˆæž„å»ºæ—¶é—´æˆ³ (æœ¬åœ°å¼€å‘ä¿æŒå ä½ç¬¦ä¸å˜)
-const VERSION = '2026-08-18_220310';
+const VERSION = '2026-08-19_185729';
 const CACHE = 'sillabe-' + VERSION;
 const CORE = [
   '.', 'index.html', 'css/style.css',

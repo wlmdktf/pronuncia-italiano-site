@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "voice": "it-IT-ElsaNeural",
   "appTitle": "Sillabe Magiche",
   "pictureAtlases": {
@@ -3513,6 +3513,155 @@
       ]
     },
     {
+      "id": "r",
+      "title": "La lettera R",
+      "emoji": "🐸",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "R",
+        "name": "erre",
+        "nameAudio": "<prosody rate='-18%'>erre.</prosody>",
+        "ipa": "r",
+        "shape": {
+          "it": "La R è come un ricciolo attorcigliato.",
+          "zh": "R 像一个卷起来的小卷毛"
+        },
+        "mouth": {
+          "it": "Quando dico la R, la punta della lingua sfiora i denti superiori e vibra grazie al soffio.",
+          "zh": "发 R 时舌尖靠近上牙，让气流带动舌尖振动"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "RA",
+          "anchor": {
+            "word": "RANA",
+            "emoji": "🐸"
+          }
+        },
+        {
+          "s": "RO",
+          "audio": {
+            "normal": "Rò.",
+            "slow": "<prosody rate='-35%'>Rò.</prosody>",
+            "qa": "manual"
+          },
+          "anchor": {
+            "word": "ROBOT",
+            "emoji": "🤖"
+          }
+        },
+        {
+          "s": "RE",
+          "anchor": {
+            "word": "REGINA",
+            "emoji": "👸"
+          }
+        },
+        {
+          "s": "RI",
+          "anchor": {
+            "word": "RICCIO",
+            "emoji": "🦔"
+          }
+        },
+        {
+          "s": "RU",
+          "anchor": {
+            "word": "RUSPA",
+            "emoji": "🚜"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "RA",
+          "correct": [
+            { "word": "RANA", "emoji": "🐸" },
+            { "word": "RAZZO", "emoji": "🚀" },
+            { "word": "RAMO", "emoji": "🌿" },
+            { "word": "RADIO", "emoji": "📻" }
+          ],
+          "wrong": [
+            { "word": "REGINA", "emoji": "👸" },
+            { "word": "ROBOT", "emoji": "🤖" },
+            { "word": "RICCIO", "emoji": "🦔" },
+            { "word": "ANGURIA", "emoji": "🍉" }
+          ]
+        },
+        {
+          "s": "RO",
+          "correct": [
+            { "word": "ROBOT", "emoji": "🤖" },
+            { "word": "ROSA", "emoji": "🌹" },
+            { "word": "ROCCIA", "emoji": "🪨" },
+            { "word": "ROSPO", "emoji": "🐸" }
+          ],
+          "wrong": [
+            { "word": "REGINA", "emoji": "👸" },
+            { "word": "RICCIO", "emoji": "🦔" },
+            { "word": "RAMO", "emoji": "🌿" },
+            { "word": "LUPO", "emoji": "🐺" }
+          ]
+        },
+        {
+          "s": "RE",
+          "correct": [
+            { "word": "REGINA", "emoji": "👸" },
+            { "word": "REGALO", "emoji": "🎁" },
+            { "word": "RENNA", "emoji": "🦌" },
+            { "word": "RETE", "emoji": "🥅" }
+          ],
+          "wrong": [
+            { "word": "RANA", "emoji": "🐸" },
+            { "word": "ROBOT", "emoji": "🤖" },
+            { "word": "RICCIO", "emoji": "🦔" },
+            { "word": "POMODORO", "emoji": "🍅" }
+          ]
+        },
+        {
+          "s": "RI",
+          "correct": [
+            { "word": "RICCIO", "emoji": "🦔" },
+            { "word": "RISO", "emoji": "🍚" },
+            { "word": "RINOCERONTE", "emoji": "🦏" },
+            { "word": "RIMA", "emoji": "📜" }
+          ],
+          "wrong": [
+            { "word": "RANA", "emoji": "🐸" },
+            { "word": "ROBOT", "emoji": "🤖" },
+            { "word": "LIBRO", "emoji": "📚" },
+            { "word": "GUFO", "emoji": "🦉" }
+          ]
+        },
+        {
+          "s": "RU",
+          "correct": [
+            { "word": "RUSPA", "emoji": "🚜" },
+            { "word": "RUOTA", "emoji": "🛞" },
+            { "word": "RUCOLA", "emoji": "🥬" },
+            { "word": "RUBINO", "emoji": "💎" }
+          ],
+          "wrong": [
+            { "word": "UVA", "emoji": "🍇" },
+            { "word": "RETE", "emoji": "🥅" },
+            { "word": "ROBOT", "emoji": "🤖" },
+            { "word": "REGINA", "emoji": "👸" }
+          ]
+        }
+      ],
+      "parole": [
+        { "word": "RARA", "sillabe": ["RA", "RA"], "emoji": "💎", "doppia": false, "collega": false },
+        { "word": "RIMA", "sillabe": ["RI", "MA"], "emoji": "📜", "doppia": false, "collega": false },
+        { "word": "RETE", "sillabe": ["RE", "TE"], "emoji": "🥅", "doppia": false },
+        { "word": "ROMA", "sillabe": ["RO", "MA"], "emoji": "🏛️", "doppia": false },
+        { "word": "DIRE", "sillabe": ["DI", "RE"], "emoji": "💬", "doppia": false, "collega": false },
+        { "word": "RUMORE", "sillabe": ["RU", "MO", "RE"], "emoji": "🔊", "doppia": false, "collega": false },
+        { "word": "DORATI", "sillabe": ["DO", "RA", "TI"], "emoji": "✨", "doppia": false, "collega": false },
+        { "word": "RIPETO", "sillabe": ["RI", "PE", "TO"], "emoji": "🔁", "doppia": false, "collega": false }
+      ]
+    },
+    {
       "id": "mix",
       "title": "Mescola le sillabe",
       "emoji": "🎲",
@@ -3639,8 +3788,8 @@
       "B"
     ],
     "L": [
-      "N",
-      "S"
+      "R",
+      "N"
     ],
     "S": [
       "L",
@@ -3653,6 +3802,10 @@
     "V": [
       "F",
       "B"
+    ],
+    "R": [
+      "L",
+      "D"
     ],
     "A": [
       "O",
