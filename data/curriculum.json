@@ -1,6 +1,19 @@
 {
-  "version": 12,
+  "version": 13,
   "voice": "it-IT-ElsaNeural",
+  "wordAudioOverrides": {
+    "ZIBELLINO": {
+      "normal": "<phoneme alphabet='ipa' ph='d͡zibelˈlino'>Zibellino</phoneme>.",
+      "slow": "<prosody rate='-35%'><phoneme alphabet='ipa' ph='d͡zibelˈlino'>Zibellino</phoneme>.</prosody>",
+      "normalQa": "stt",
+      "slowQa": "manual"
+    },
+    "ZECCA": {
+      "normal": "Tsecca.",
+      "normalQa": "stt",
+      "voice": "it-IT-IsabellaNeural"
+    }
+  },
   "appTitle": "Sillabe Magiche",
   "pictureAtlases": {
     "fvl": {
@@ -10,21 +23,81 @@
     }
   },
   "pictures": {
-    "FATA": { "atlas": "fvl", "col": 0, "row": 0 },
-    "FOCA": { "atlas": "fvl", "col": 1, "row": 0 },
-    "FENICOTTERO": { "atlas": "fvl", "col": 2, "row": 0 },
-    "FIORE": { "atlas": "fvl", "col": 3, "row": 0 },
-    "FUNGO": { "atlas": "fvl", "col": 4, "row": 0 },
-    "VALLE": { "atlas": "fvl", "col": 0, "row": 1 },
-    "VOLPE": { "atlas": "fvl", "col": 1, "row": 1 },
-    "VELA": { "atlas": "fvl", "col": 2, "row": 1 },
-    "VINO": { "atlas": "fvl", "col": 3, "row": 1 },
-    "VULCANO": { "atlas": "fvl", "col": 4, "row": 1 },
-    "LAMA": { "atlas": "fvl", "col": 0, "row": 2 },
-    "LOMBRICO": { "atlas": "fvl", "col": 1, "row": 2 },
-    "LENTE": { "atlas": "fvl", "col": 2, "row": 2 },
-    "LINCE": { "atlas": "fvl", "col": 3, "row": 2 },
-    "LUPO": { "atlas": "fvl", "col": 4, "row": 2 }
+    "FATA": {
+      "atlas": "fvl",
+      "col": 0,
+      "row": 0
+    },
+    "FOCA": {
+      "atlas": "fvl",
+      "col": 1,
+      "row": 0
+    },
+    "FENICOTTERO": {
+      "atlas": "fvl",
+      "col": 2,
+      "row": 0
+    },
+    "FIORE": {
+      "atlas": "fvl",
+      "col": 3,
+      "row": 0
+    },
+    "FUNGO": {
+      "atlas": "fvl",
+      "col": 4,
+      "row": 0
+    },
+    "VALLE": {
+      "atlas": "fvl",
+      "col": 0,
+      "row": 1
+    },
+    "VOLPE": {
+      "atlas": "fvl",
+      "col": 1,
+      "row": 1
+    },
+    "VELA": {
+      "atlas": "fvl",
+      "col": 2,
+      "row": 1
+    },
+    "VINO": {
+      "atlas": "fvl",
+      "col": 3,
+      "row": 1
+    },
+    "VULCANO": {
+      "atlas": "fvl",
+      "col": 4,
+      "row": 1
+    },
+    "LAMA": {
+      "atlas": "fvl",
+      "col": 0,
+      "row": 2
+    },
+    "LOMBRICO": {
+      "atlas": "fvl",
+      "col": 1,
+      "row": 2
+    },
+    "LENTE": {
+      "atlas": "fvl",
+      "col": 2,
+      "row": 2
+    },
+    "LINCE": {
+      "atlas": "fvl",
+      "col": 3,
+      "row": 2
+    },
+    "LUPO": {
+      "atlas": "fvl",
+      "col": 4,
+      "row": 2
+    }
   },
   "units": [
     {
@@ -2328,12 +2401,12 @@
         "name": "esse",
         "ipa": "sː",
         "shape": {
-          "it": "La S è come un serpente che striscia.",
-          "zh": "S 像一条爬行的蛇"
+          "it": "La S ricorda la forma di un serpente.",
+          "zh": "S 的形状像一条弯弯的蛇"
         },
         "mouth": {
-          "it": "Quando dico la S, i denti sono quasi chiusi e l'aria esce facendo sssss, come un serpente.",
-          "zh": "发 S 牙齿轻合，气流从齿缝嘶出来，像蛇的声音"
+          "it": "Quando dico la S, i denti sono stretti, la lingua rimane ferma e lascio passare un sibilo.",
+          "zh": "发 S 时牙齿轻合，舌头不碰牙齿，让气流发出像蛇一样的嘶声"
         }
       },
       "sillabe": [
@@ -2354,8 +2427,8 @@
         {
           "s": "SE",
           "anchor": {
-            "word": "SERPENTE",
-            "emoji": "🐍"
+            "word": "SEDIA",
+            "emoji": "🪑"
           }
         },
         {
@@ -2616,78 +2689,81 @@
       ],
       "parole": [
         {
-          "word": "SOLE",
-          "sillabe": [
-            "SO",
-            "LE"
-          ],
-          "emoji": "☀️",
-          "doppia": false
-        },
-        {
-          "word": "SALE",
-          "sillabe": [
-            "SA",
-            "LE"
-          ],
-          "emoji": "🧂",
-          "doppia": false
-        },
-        {
           "word": "SASSO",
+          "emoji": "🪨",
           "sillabe": [
             "SA",
+            "S",
             "SO"
           ],
-          "emoji": "🪨",
           "doppia": true
         },
         {
-          "word": "MIMOSA",
+          "word": "SISSI",
+          "emoji": "👧",
           "sillabe": [
-            "MI",
-            "MO",
+            "SI",
+            "S",
+            "SI"
+          ],
+          "doppia": true,
+          "collega": false
+        },
+        {
+          "word": "SALE",
+          "emoji": "🧂",
+          "sillabe": [
+            "SA",
+            "LE"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "SERA",
+          "emoji": "🌆",
+          "sillabe": [
+            "SE",
+            "RA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "ROSA",
+          "emoji": "🌹",
+          "sillabe": [
+            "RO",
             "SA"
           ],
-          "emoji": "🌼",
           "doppia": false
         },
         {
-          "word": "NASO",
+          "word": "SIRENA",
+          "emoji": "🧜‍♀️",
           "sillabe": [
-            "NA",
-            "SO"
+            "SI",
+            "RE",
+            "NA"
           ],
-          "emoji": "👃",
           "doppia": false
         },
         {
-          "word": "SAPONE",
+          "word": "SOMARO",
+          "emoji": "🫏",
           "sillabe": [
-            "SA",
-            "PO",
-            "NE"
+            "SO",
+            "MA",
+            "RO"
           ],
-          "emoji": "🧼",
           "doppia": false
         },
         {
-          "word": "MUSO",
+          "word": "SOLARE",
+          "emoji": "☀️",
           "sillabe": [
-            "MU",
-            "SO"
-          ],
-          "emoji": "🐽",
-          "doppia": false
-        },
-        {
-          "word": "SALAME",
-          "sillabe": [
-            "SA",
+            "SO",
             "LA",
-            "ME"
+            "RE"
           ],
-          "emoji": "🍖",
           "doppia": false
         }
       ]
@@ -3287,88 +3363,275 @@
         {
           "s": "FA",
           "correct": [
-            { "word": "FATA", "emoji": "🧚‍♀️" },
-            { "word": "FARFALLA", "emoji": "🦋" },
-            { "word": "FANTASMA", "emoji": "👻" },
-            { "word": "FALCO", "emoji": "🦅" }
+            {
+              "word": "FATA",
+              "emoji": "🧚‍♀️"
+            },
+            {
+              "word": "FARFALLA",
+              "emoji": "🦋"
+            },
+            {
+              "word": "FANTASMA",
+              "emoji": "👻"
+            },
+            {
+              "word": "FALCO",
+              "emoji": "🦅"
+            }
           ],
           "wrong": [
-            { "word": "FOCA", "emoji": "🦭" },
-            { "word": "FIORE", "emoji": "🌼" },
-            { "word": "FUNGO", "emoji": "🍄" },
-            { "word": "VASO", "emoji": "🏺" }
+            {
+              "word": "FOCA",
+              "emoji": "🦭"
+            },
+            {
+              "word": "FIORE",
+              "emoji": "🌼"
+            },
+            {
+              "word": "FUNGO",
+              "emoji": "🍄"
+            },
+            {
+              "word": "VASO",
+              "emoji": "🏺"
+            }
           ]
         },
         {
           "s": "FO",
           "correct": [
-            { "word": "FOCA", "emoji": "🦭" },
-            { "word": "FOGLIA", "emoji": "🍃" },
-            { "word": "FORMICA", "emoji": "🐜" },
-            { "word": "FOTO", "emoji": "🖼️" }
+            {
+              "word": "FOCA",
+              "emoji": "🦭"
+            },
+            {
+              "word": "FOGLIA",
+              "emoji": "🍃"
+            },
+            {
+              "word": "FORMICA",
+              "emoji": "🐜"
+            },
+            {
+              "word": "FOTO",
+              "emoji": "🖼️"
+            }
           ],
           "wrong": [
-            { "word": "FATA", "emoji": "🧚‍♀️" },
-            { "word": "FUOCO", "emoji": "🔥" },
-            { "word": "FIORE", "emoji": "🌼" },
-            { "word": "DONO", "emoji": "🎁" }
+            {
+              "word": "FATA",
+              "emoji": "🧚‍♀️"
+            },
+            {
+              "word": "FUOCO",
+              "emoji": "🔥"
+            },
+            {
+              "word": "FIORE",
+              "emoji": "🌼"
+            },
+            {
+              "word": "DONO",
+              "emoji": "🎁"
+            }
           ]
         },
         {
           "s": "FE",
           "correct": [
-            { "word": "FENICOTTERO", "emoji": "🦩" },
-            { "word": "FESTA", "emoji": "🎉" },
-            { "word": "FERRO", "emoji": "🧲" },
-            { "word": "FELCE", "emoji": "🌿" }
+            {
+              "word": "FENICOTTERO",
+              "emoji": "🦩"
+            },
+            {
+              "word": "FESTA",
+              "emoji": "🎉"
+            },
+            {
+              "word": "FERRO",
+              "emoji": "🧲"
+            },
+            {
+              "word": "FELCE",
+              "emoji": "🌿"
+            }
           ],
           "wrong": [
-            { "word": "FATA", "emoji": "🧚‍♀️" },
-            { "word": "FOCA", "emoji": "🦭" },
-            { "word": "FUNGO", "emoji": "🍄" },
-            { "word": "MELA", "emoji": "🍎" }
+            {
+              "word": "FATA",
+              "emoji": "🧚‍♀️"
+            },
+            {
+              "word": "FOCA",
+              "emoji": "🦭"
+            },
+            {
+              "word": "FUNGO",
+              "emoji": "🍄"
+            },
+            {
+              "word": "MELA",
+              "emoji": "🍎"
+            }
           ]
         },
         {
           "s": "FI",
           "correct": [
-            { "word": "FIORE", "emoji": "🌼" },
-            { "word": "FINESTRA", "emoji": "🪟" },
-            { "word": "FILO", "emoji": "🧵" },
-            { "word": "FIOCCO", "emoji": "🎀" }
+            {
+              "word": "FIORE",
+              "emoji": "🌼"
+            },
+            {
+              "word": "FINESTRA",
+              "emoji": "🪟"
+            },
+            {
+              "word": "FILO",
+              "emoji": "🧵"
+            },
+            {
+              "word": "FIOCCO",
+              "emoji": "🎀"
+            }
           ],
           "wrong": [
-            { "word": "FENICOTTERO", "emoji": "🦩" },
-            { "word": "FUMO", "emoji": "💨" },
-            { "word": "FOGLIA", "emoji": "🍃" },
-            { "word": "PINO", "emoji": "🌲" }
+            {
+              "word": "FENICOTTERO",
+              "emoji": "🦩"
+            },
+            {
+              "word": "FUMO",
+              "emoji": "💨"
+            },
+            {
+              "word": "FOGLIA",
+              "emoji": "🍃"
+            },
+            {
+              "word": "PINO",
+              "emoji": "🌲"
+            }
           ]
         },
         {
           "s": "FU",
           "correct": [
-            { "word": "FUNGO", "emoji": "🍄" },
-            { "word": "FUMO", "emoji": "💨" },
-            { "word": "FUOCO", "emoji": "🔥" },
-            { "word": "FULMINE", "emoji": "⚡" }
+            {
+              "word": "FUNGO",
+              "emoji": "🍄"
+            },
+            {
+              "word": "FUMO",
+              "emoji": "💨"
+            },
+            {
+              "word": "FUOCO",
+              "emoji": "🔥"
+            },
+            {
+              "word": "FULMINE",
+              "emoji": "⚡"
+            }
           ],
           "wrong": [
-            { "word": "FOCA", "emoji": "🦭" },
-            { "word": "FATA", "emoji": "🧚‍♀️" },
-            { "word": "FIORE", "emoji": "🌼" },
-            { "word": "LUNA", "emoji": "🌙" }
+            {
+              "word": "FOCA",
+              "emoji": "🦭"
+            },
+            {
+              "word": "FATA",
+              "emoji": "🧚‍♀️"
+            },
+            {
+              "word": "FIORE",
+              "emoji": "🌼"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            }
           ]
         }
       ],
       "parole": [
-        { "word": "FATA", "sillabe": ["FA", "TA"], "emoji": "🧚‍♀️", "doppia": false },
-        { "word": "FOTO", "sillabe": ["FO", "TO"], "emoji": "🖼️", "doppia": false },
-        { "word": "FIUTO", "sillabe": ["FI", "U", "TO"], "emoji": "👃", "doppia": false },
-        { "word": "FAME", "sillabe": ["FA", "ME"], "emoji": "🍽️", "doppia": false },
-        { "word": "FUMO", "sillabe": ["FU", "MO"], "emoji": "💨", "doppia": false },
-        { "word": "TUFFO", "sillabe": ["TU", "FO"], "emoji": "🏊", "doppia": true },
-        { "word": "FATATO", "sillabe": ["FA", "TA", "TO"], "emoji": "✨", "doppia": false },
-        { "word": "FINITO", "sillabe": ["FI", "NI", "TO"], "emoji": "🏁", "doppia": false }
+        {
+          "word": "FATA",
+          "sillabe": [
+            "FA",
+            "TA"
+          ],
+          "emoji": "🧚‍♀️",
+          "doppia": false
+        },
+        {
+          "word": "FOTO",
+          "sillabe": [
+            "FO",
+            "TO"
+          ],
+          "emoji": "🖼️",
+          "doppia": false
+        },
+        {
+          "word": "FIUTO",
+          "sillabe": [
+            "FI",
+            "U",
+            "TO"
+          ],
+          "emoji": "👃",
+          "doppia": false
+        },
+        {
+          "word": "FAME",
+          "sillabe": [
+            "FA",
+            "ME"
+          ],
+          "emoji": "🍽️",
+          "doppia": false
+        },
+        {
+          "word": "FUMO",
+          "sillabe": [
+            "FU",
+            "MO"
+          ],
+          "emoji": "💨",
+          "doppia": false
+        },
+        {
+          "word": "TUFFO",
+          "sillabe": [
+            "TU",
+            "FO"
+          ],
+          "emoji": "🏊",
+          "doppia": true
+        },
+        {
+          "word": "FATATO",
+          "sillabe": [
+            "FA",
+            "TA",
+            "TO"
+          ],
+          "emoji": "✨",
+          "doppia": false
+        },
+        {
+          "word": "FINITO",
+          "sillabe": [
+            "FI",
+            "NI",
+            "TO"
+          ],
+          "emoji": "🏁",
+          "doppia": false
+        }
       ]
     },
     {
@@ -3430,86 +3693,267 @@
         {
           "s": "VA",
           "correct": [
-            { "word": "VALLE", "emoji": "🏞️" },
-            { "word": "VASO", "emoji": "🏺" },
-            { "word": "VALANGA", "emoji": "🏔️" },
-            { "word": "VALIGIA", "emoji": "🧳" }
+            {
+              "word": "VALLE",
+              "emoji": "🏞️"
+            },
+            {
+              "word": "VASO",
+              "emoji": "🏺"
+            },
+            {
+              "word": "VALANGA",
+              "emoji": "🏔️"
+            },
+            {
+              "word": "VALIGIA",
+              "emoji": "🧳"
+            }
           ],
           "wrong": [
-            { "word": "VOLPE", "emoji": "🦊" },
-            { "word": "VELA", "emoji": "⛵" },
-            { "word": "VULCANO", "emoji": "🌋" },
-            { "word": "LAMA", "emoji": "🦙" }
+            {
+              "word": "VOLPE",
+              "emoji": "🦊"
+            },
+            {
+              "word": "VELA",
+              "emoji": "⛵"
+            },
+            {
+              "word": "VULCANO",
+              "emoji": "🌋"
+            },
+            {
+              "word": "LAMA",
+              "emoji": "🦙"
+            }
           ]
         },
         {
           "s": "VO",
           "correct": [
-            { "word": "VOLPE", "emoji": "🦊" },
-            { "word": "VORTICE", "emoji": "🌀" },
-            { "word": "VOLTO", "emoji": "🙂" },
-            { "word": "VOCE", "emoji": "🗣️" }
+            {
+              "word": "VOLPE",
+              "emoji": "🦊"
+            },
+            {
+              "word": "VORTICE",
+              "emoji": "🌀"
+            },
+            {
+              "word": "VOLTO",
+              "emoji": "🙂"
+            },
+            {
+              "word": "VOCE",
+              "emoji": "🗣️"
+            }
           ],
           "wrong": [
-            { "word": "VALLE", "emoji": "🏞️" },
-            { "word": "VELA", "emoji": "⛵" },
-            { "word": "VINO", "emoji": "🍷" },
-            { "word": "LUPO", "emoji": "🐺" }
+            {
+              "word": "VALLE",
+              "emoji": "🏞️"
+            },
+            {
+              "word": "VELA",
+              "emoji": "⛵"
+            },
+            {
+              "word": "VINO",
+              "emoji": "🍷"
+            },
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            }
           ]
         },
         {
           "s": "VE",
           "correct": [
-            { "word": "VELA", "emoji": "⛵" },
-            { "word": "VENTO", "emoji": "💨" },
-            { "word": "VESPA", "emoji": "🐝" },
-            { "word": "VESTITO", "emoji": "👗" }
+            {
+              "word": "VELA",
+              "emoji": "⛵"
+            },
+            {
+              "word": "VENTO",
+              "emoji": "💨"
+            },
+            {
+              "word": "VESPA",
+              "emoji": "🐝"
+            },
+            {
+              "word": "VESTITO",
+              "emoji": "👗"
+            }
           ],
           "wrong": [
-            { "word": "VOLPE", "emoji": "🦊" },
-            { "word": "VALIGIA", "emoji": "🧳" },
-            { "word": "VULCANO", "emoji": "🌋" },
-            { "word": "NEVE", "emoji": "❄️" }
+            {
+              "word": "VOLPE",
+              "emoji": "🦊"
+            },
+            {
+              "word": "VALIGIA",
+              "emoji": "🧳"
+            },
+            {
+              "word": "VULCANO",
+              "emoji": "🌋"
+            },
+            {
+              "word": "NEVE",
+              "emoji": "❄️"
+            }
           ]
         },
         {
           "s": "VI",
           "correct": [
-            { "word": "VINO", "emoji": "🍷" },
-            { "word": "VIOLA", "emoji": "🌸" },
-            { "word": "VIOLINO", "emoji": "🎻" },
-            { "word": "VITE", "emoji": "🔩" }
+            {
+              "word": "VINO",
+              "emoji": "🍷"
+            },
+            {
+              "word": "VIOLA",
+              "emoji": "🌸"
+            },
+            {
+              "word": "VIOLINO",
+              "emoji": "🎻"
+            },
+            {
+              "word": "VITE",
+              "emoji": "🔩"
+            }
           ],
           "wrong": [
-            { "word": "VALLE", "emoji": "🏞️" },
-            { "word": "VOLPE", "emoji": "🦊" },
-            { "word": "VELA", "emoji": "⛵" },
-            { "word": "PINO", "emoji": "🌲" }
+            {
+              "word": "VALLE",
+              "emoji": "🏞️"
+            },
+            {
+              "word": "VOLPE",
+              "emoji": "🦊"
+            },
+            {
+              "word": "VELA",
+              "emoji": "⛵"
+            },
+            {
+              "word": "PINO",
+              "emoji": "🌲"
+            }
           ]
         },
         {
           "s": "VU",
           "correct": [
-            { "word": "VULCANO", "emoji": "🌋" },
-            { "word": "VUOTO", "emoji": "🫙" }
+            {
+              "word": "VULCANO",
+              "emoji": "🌋"
+            },
+            {
+              "word": "VUOTO",
+              "emoji": "🫙"
+            }
           ],
           "wrong": [
-            { "word": "UVA", "emoji": "🍇" },
-            { "word": "DADO", "emoji": "🎲" },
-            { "word": "VOLPE", "emoji": "🦊" },
-            { "word": "VALLE", "emoji": "🏞️" }
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "DADO",
+              "emoji": "🎲"
+            },
+            {
+              "word": "VOLPE",
+              "emoji": "🦊"
+            },
+            {
+              "word": "VALLE",
+              "emoji": "🏞️"
+            }
           ]
         }
       ],
       "parole": [
-        { "word": "VIA", "sillabe": ["VI", "A"], "emoji": "🛣️", "doppia": false },
-        { "word": "VIVA", "sillabe": ["VI", "VA"], "emoji": "🎉", "doppia": false },
-        { "word": "VENA", "sillabe": ["VE", "NA"], "emoji": "🩸", "doppia": false },
-        { "word": "NAVE", "sillabe": ["NA", "VE"], "emoji": "🚢", "doppia": false },
-        { "word": "NEVE", "sillabe": ["NE", "VE"], "emoji": "❄️", "doppia": false },
-        { "word": "VENTO", "sillabe": ["VE", "N", "TO"], "emoji": "💨", "doppia": false },
-        { "word": "DIVANO", "sillabe": ["DI", "VA", "NO"], "emoji": "🛋️", "doppia": false },
-        { "word": "PAVONE", "sillabe": ["PA", "VO", "NE"], "emoji": "🦚", "doppia": false }
+        {
+          "word": "VIA",
+          "sillabe": [
+            "VI",
+            "A"
+          ],
+          "emoji": "🛣️",
+          "doppia": false
+        },
+        {
+          "word": "VIVA",
+          "sillabe": [
+            "VI",
+            "VA"
+          ],
+          "emoji": "🎉",
+          "doppia": false
+        },
+        {
+          "word": "VENA",
+          "sillabe": [
+            "VE",
+            "NA"
+          ],
+          "emoji": "🩸",
+          "doppia": false
+        },
+        {
+          "word": "NAVE",
+          "sillabe": [
+            "NA",
+            "VE"
+          ],
+          "emoji": "🚢",
+          "doppia": false
+        },
+        {
+          "word": "NEVE",
+          "sillabe": [
+            "NE",
+            "VE"
+          ],
+          "emoji": "❄️",
+          "doppia": false
+        },
+        {
+          "word": "VENTO",
+          "sillabe": [
+            "VE",
+            "N",
+            "TO"
+          ],
+          "emoji": "💨",
+          "doppia": false
+        },
+        {
+          "word": "DIVANO",
+          "sillabe": [
+            "DI",
+            "VA",
+            "NO"
+          ],
+          "emoji": "🛋️",
+          "doppia": false
+        },
+        {
+          "word": "PAVONE",
+          "sillabe": [
+            "PA",
+            "VO",
+            "NE"
+          ],
+          "emoji": "🦚",
+          "doppia": false
+        }
       ]
     },
     {
@@ -3577,88 +4021,1707 @@
         {
           "s": "RA",
           "correct": [
-            { "word": "RANA", "emoji": "🐸" },
-            { "word": "RAZZO", "emoji": "🚀" },
-            { "word": "RAMO", "emoji": "🌿" },
-            { "word": "RADIO", "emoji": "📻" }
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "RAZZO",
+              "emoji": "🚀"
+            },
+            {
+              "word": "RAMO",
+              "emoji": "🌿"
+            },
+            {
+              "word": "RADIO",
+              "emoji": "📻"
+            }
           ],
           "wrong": [
-            { "word": "REGINA", "emoji": "👸" },
-            { "word": "ROBOT", "emoji": "🤖" },
-            { "word": "RICCIO", "emoji": "🦔" },
-            { "word": "ANGURIA", "emoji": "🍉" }
+            {
+              "word": "REGINA",
+              "emoji": "👸"
+            },
+            {
+              "word": "ROBOT",
+              "emoji": "🤖"
+            },
+            {
+              "word": "RICCIO",
+              "emoji": "🦔"
+            },
+            {
+              "word": "ANGURIA",
+              "emoji": "🍉"
+            }
           ]
         },
         {
           "s": "RO",
           "correct": [
-            { "word": "ROBOT", "emoji": "🤖" },
-            { "word": "ROSA", "emoji": "🌹" },
-            { "word": "ROCCIA", "emoji": "🪨" },
-            { "word": "ROSPO", "emoji": "🐸" }
+            {
+              "word": "ROBOT",
+              "emoji": "🤖"
+            },
+            {
+              "word": "ROSA",
+              "emoji": "🌹"
+            },
+            {
+              "word": "ROCCIA",
+              "emoji": "🪨"
+            },
+            {
+              "word": "ROSPO",
+              "emoji": "🐸"
+            }
           ],
           "wrong": [
-            { "word": "REGINA", "emoji": "👸" },
-            { "word": "RICCIO", "emoji": "🦔" },
-            { "word": "RAMO", "emoji": "🌿" },
-            { "word": "LUPO", "emoji": "🐺" }
+            {
+              "word": "REGINA",
+              "emoji": "👸"
+            },
+            {
+              "word": "RICCIO",
+              "emoji": "🦔"
+            },
+            {
+              "word": "RAMO",
+              "emoji": "🌿"
+            },
+            {
+              "word": "LUPO",
+              "emoji": "🐺"
+            }
           ]
         },
         {
           "s": "RE",
           "correct": [
-            { "word": "REGINA", "emoji": "👸" },
-            { "word": "REGALO", "emoji": "🎁" },
-            { "word": "RENNA", "emoji": "🦌" },
-            { "word": "RETE", "emoji": "🥅" }
+            {
+              "word": "REGINA",
+              "emoji": "👸"
+            },
+            {
+              "word": "REGALO",
+              "emoji": "🎁"
+            },
+            {
+              "word": "RENNA",
+              "emoji": "🦌"
+            },
+            {
+              "word": "RETE",
+              "emoji": "🥅"
+            }
           ],
           "wrong": [
-            { "word": "RANA", "emoji": "🐸" },
-            { "word": "ROBOT", "emoji": "🤖" },
-            { "word": "RICCIO", "emoji": "🦔" },
-            { "word": "POMODORO", "emoji": "🍅" }
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "ROBOT",
+              "emoji": "🤖"
+            },
+            {
+              "word": "RICCIO",
+              "emoji": "🦔"
+            },
+            {
+              "word": "POMODORO",
+              "emoji": "🍅"
+            }
           ]
         },
         {
           "s": "RI",
           "correct": [
-            { "word": "RICCIO", "emoji": "🦔" },
-            { "word": "RISO", "emoji": "🍚" },
-            { "word": "RINOCERONTE", "emoji": "🦏" },
-            { "word": "RIMA", "emoji": "📜" }
+            {
+              "word": "RICCIO",
+              "emoji": "🦔"
+            },
+            {
+              "word": "RISO",
+              "emoji": "🍚"
+            },
+            {
+              "word": "RINOCERONTE",
+              "emoji": "🦏"
+            },
+            {
+              "word": "RIMA",
+              "emoji": "📜"
+            }
           ],
           "wrong": [
-            { "word": "RANA", "emoji": "🐸" },
-            { "word": "ROBOT", "emoji": "🤖" },
-            { "word": "LIBRO", "emoji": "📚" },
-            { "word": "GUFO", "emoji": "🦉" }
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "ROBOT",
+              "emoji": "🤖"
+            },
+            {
+              "word": "LIBRO",
+              "emoji": "📚"
+            },
+            {
+              "word": "GUFO",
+              "emoji": "🦉"
+            }
           ]
         },
         {
           "s": "RU",
           "correct": [
-            { "word": "RUSPA", "emoji": "🚜" },
-            { "word": "RUOTA", "emoji": "🛞" },
-            { "word": "RUCOLA", "emoji": "🥬" },
-            { "word": "RUBINO", "emoji": "💎" }
+            {
+              "word": "RUSPA",
+              "emoji": "🚜"
+            },
+            {
+              "word": "RUOTA",
+              "emoji": "🛞"
+            },
+            {
+              "word": "RUCOLA",
+              "emoji": "🥬"
+            },
+            {
+              "word": "RUBINO",
+              "emoji": "💎"
+            }
           ],
           "wrong": [
-            { "word": "UVA", "emoji": "🍇" },
-            { "word": "RETE", "emoji": "🥅" },
-            { "word": "ROBOT", "emoji": "🤖" },
-            { "word": "REGINA", "emoji": "👸" }
+            {
+              "word": "UVA",
+              "emoji": "🍇"
+            },
+            {
+              "word": "RETE",
+              "emoji": "🥅"
+            },
+            {
+              "word": "ROBOT",
+              "emoji": "🤖"
+            },
+            {
+              "word": "REGINA",
+              "emoji": "👸"
+            }
           ]
         }
       ],
       "parole": [
-        { "word": "RARA", "sillabe": ["RA", "RA"], "emoji": "💎", "doppia": false, "collega": false },
-        { "word": "RIMA", "sillabe": ["RI", "MA"], "emoji": "📜", "doppia": false, "collega": false },
-        { "word": "RETE", "sillabe": ["RE", "TE"], "emoji": "🥅", "doppia": false },
-        { "word": "ROMA", "sillabe": ["RO", "MA"], "emoji": "🏛️", "doppia": false },
-        { "word": "DIRE", "sillabe": ["DI", "RE"], "emoji": "💬", "doppia": false, "collega": false },
-        { "word": "RUMORE", "sillabe": ["RU", "MO", "RE"], "emoji": "🔊", "doppia": false, "collega": false },
-        { "word": "DORATI", "sillabe": ["DO", "RA", "TI"], "emoji": "✨", "doppia": false, "collega": false },
-        { "word": "RIPETO", "sillabe": ["RI", "PE", "TO"], "emoji": "🔁", "doppia": false, "collega": false }
+        {
+          "word": "RARA",
+          "sillabe": [
+            "RA",
+            "RA"
+          ],
+          "emoji": "💎",
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "RIMA",
+          "sillabe": [
+            "RI",
+            "MA"
+          ],
+          "emoji": "📜",
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "RETE",
+          "sillabe": [
+            "RE",
+            "TE"
+          ],
+          "emoji": "🥅",
+          "doppia": false
+        },
+        {
+          "word": "ROMA",
+          "sillabe": [
+            "RO",
+            "MA"
+          ],
+          "emoji": "🏛️",
+          "doppia": false
+        },
+        {
+          "word": "DIRE",
+          "sillabe": [
+            "DI",
+            "RE"
+          ],
+          "emoji": "💬",
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "RUMORE",
+          "sillabe": [
+            "RU",
+            "MO",
+            "RE"
+          ],
+          "emoji": "🔊",
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "DORATI",
+          "sillabe": [
+            "DO",
+            "RA",
+            "TI"
+          ],
+          "emoji": "✨",
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "RIPETO",
+          "sillabe": [
+            "RI",
+            "PE",
+            "TO"
+          ],
+          "emoji": "🔁",
+          "doppia": false,
+          "collega": false
+        }
+      ]
+    },
+    {
+      "id": "z",
+      "title": "La lettera Z",
+      "emoji": "🦓",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "Z",
+        "name": "zeta",
+        "ipa": "d͡z",
+        "shape": {
+          "it": "La Z è come un taglio netto, come lo zig-zag di una zanzara.",
+          "zh": "Z 像蚊子飞行时画出的尖尖折线"
+        },
+        "mouth": {
+          "it": "Quando dico la Z, i denti sono quasi chiusi e la voce fa vibrare un suono rumoroso.",
+          "zh": "发 Z 时牙齿轻合，让有声音的气流在前面振动"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "ZA",
+          "ipa": "d͡za",
+          "anchor": {
+            "word": "ZAINO",
+            "emoji": "🎒"
+          }
+        },
+        {
+          "s": "ZO",
+          "ipa": "d͡zo",
+          "anchor": {
+            "word": "ZOO",
+            "emoji": "🦁"
+          }
+        },
+        {
+          "s": "ZE",
+          "ipa": "d͡ze",
+          "anchor": {
+            "word": "ZEBRA",
+            "emoji": "🦓"
+          }
+        },
+        {
+          "s": "ZI",
+          "ipa": "d͡zi",
+          "anchor": {
+            "word": "ZIBELLINO",
+            "emoji": "🐾"
+          }
+        },
+        {
+          "s": "ZU",
+          "ipa": "d͡zu",
+          "anchor": {
+            "word": "ZUCCA",
+            "emoji": "🎃"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "ZA",
+          "correct": [
+            {
+              "word": "ZANZARA",
+              "emoji": "🦟"
+            },
+            {
+              "word": "ZAMPA",
+              "emoji": "🐾"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ZUPPA",
+              "emoji": "🥣"
+            },
+            {
+              "word": "PAVONE",
+              "emoji": "🦚"
+            },
+            {
+              "word": "ZOO",
+              "emoji": "🦁"
+            },
+            {
+              "word": "ZERO",
+              "emoji": "0️⃣"
+            }
+          ]
+        },
+        {
+          "s": "ZO",
+          "correct": [
+            {
+              "word": "ZOCCOLO",
+              "emoji": "👞"
+            },
+            {
+              "word": "ZOLLA",
+              "emoji": "🌱"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "CORONA",
+              "emoji": "👑"
+            },
+            {
+              "word": "PULCINO",
+              "emoji": "🐥"
+            },
+            {
+              "word": "ZAINO",
+              "emoji": "🎒"
+            },
+            {
+              "word": "ZUCCA",
+              "emoji": "🎃"
+            }
+          ]
+        },
+        {
+          "s": "ZE",
+          "correct": [
+            {
+              "word": "ZECCA",
+              "emoji": "🕷️"
+            },
+            {
+              "word": "ZERO",
+              "emoji": "0️⃣"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "COPPA",
+              "emoji": "🏆"
+            },
+            {
+              "word": "BORSA",
+              "emoji": "👜"
+            },
+            {
+              "word": "ZEBRA",
+              "emoji": "🦓"
+            },
+            {
+              "word": "ZOO",
+              "emoji": "🦁"
+            }
+          ]
+        },
+        {
+          "s": "ZI",
+          "correct": [
+            {
+              "word": "ZIP",
+              "emoji": "🤐"
+            },
+            {
+              "word": "ZIBELLINO",
+              "emoji": "🐾"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PERA",
+              "emoji": "🍐"
+            },
+            {
+              "word": "TORTA",
+              "emoji": "🍰"
+            },
+            {
+              "word": "ZUCCA",
+              "emoji": "🎃"
+            },
+            {
+              "word": "ZERO",
+              "emoji": "0️⃣"
+            }
+          ]
+        },
+        {
+          "s": "ZU",
+          "correct": [
+            {
+              "word": "ZUPPA",
+              "emoji": "🥣"
+            },
+            {
+              "word": "ZUCCHINE",
+              "emoji": "🥒"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LATTUGA",
+              "emoji": "🥬"
+            },
+            {
+              "word": "ZAPPA",
+              "emoji": "⛏️"
+            },
+            {
+              "word": "ZAINO",
+              "emoji": "🎒"
+            },
+            {
+              "word": "ZEBRA",
+              "emoji": "🦓"
+            }
+          ]
+        }
+      ],
+      "parole": [
+        {
+          "word": "ZOO",
+          "emoji": "🦁",
+          "sillabe": [
+            "ZO",
+            "O"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "ZETA",
+          "emoji": "🔤",
+          "sillabe": [
+            "ZE",
+            "TA"
+          ],
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "ZERO",
+          "emoji": "0️⃣",
+          "sillabe": [
+            "ZE",
+            "RO"
+          ],
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "ZAMPA",
+          "emoji": "🐾",
+          "sillabe": [
+            "ZA",
+            "M",
+            "PA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "ZANZARA",
+          "emoji": "🦟",
+          "sillabe": [
+            "ZA",
+            "N",
+            "ZA",
+            "RA"
+          ],
+          "doppia": false
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "title": "La lettera C",
+      "emoji": "🐕",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "C",
+        "name": "ci",
+        "ipa": "k",
+        "shape": {
+          "it": "La C è curva come un cestino visto di lato.",
+          "zh": "C 像一个侧面打开的弯弯篮子"
+        },
+        "mouth": {
+          "it": "Con A, O e U la C ha un suono duro. Davanti a E e I diventa dolce; con la H torna dura.",
+          "zh": "C 遇到 A、O、U 发硬音；遇到 E、I 发软音；加 H 又变回硬音"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "CA",
+          "ipa": "ka",
+          "anchor": {
+            "word": "CANE",
+            "emoji": "🐕"
+          }
+        },
+        {
+          "s": "CO",
+          "ipa": "ko",
+          "anchor": {
+            "word": "CORONA",
+            "emoji": "👑"
+          }
+        },
+        {
+          "s": "CU",
+          "ipa": "ku",
+          "anchor": {
+            "word": "CUBO",
+            "emoji": "🧊"
+          }
+        },
+        {
+          "s": "CHE",
+          "ipa": "ke",
+          "anchor": {
+            "word": "CHELE",
+            "emoji": "🦀"
+          },
+          "parts": [
+            "CH",
+            "E"
+          ]
+        },
+        {
+          "s": "CHI",
+          "ipa": "ki",
+          "anchor": {
+            "word": "CHIAVE",
+            "emoji": "🔑"
+          },
+          "parts": [
+            "CH",
+            "I"
+          ]
+        },
+        {
+          "s": "CE",
+          "ipa": "t͡ʃe",
+          "anchor": {
+            "word": "CESTO",
+            "emoji": "🧺"
+          }
+        },
+        {
+          "s": "CI",
+          "ipa": "t͡ʃi",
+          "anchor": {
+            "word": "CIGNO",
+            "emoji": "🦢"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "CA",
+          "correct": [
+            {
+              "word": "CAVOLO",
+              "emoji": "🥬"
+            },
+            {
+              "word": "CAMMELLO",
+              "emoji": "🐫"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ARANCIA",
+              "emoji": "🍊"
+            },
+            {
+              "word": "LATTE",
+              "emoji": "🥛"
+            },
+            {
+              "word": "CORONA",
+              "emoji": "👑"
+            },
+            {
+              "word": "CIGNO",
+              "emoji": "🦢"
+            }
+          ]
+        },
+        {
+          "s": "CO",
+          "correct": [
+            {
+              "word": "COLLANA",
+              "emoji": "📿"
+            },
+            {
+              "word": "COLORI",
+              "emoji": "🎨"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SCATOLA",
+              "emoji": "📦"
+            },
+            {
+              "word": "PATATINE",
+              "emoji": "🍟"
+            },
+            {
+              "word": "CANE",
+              "emoji": "🐕"
+            },
+            {
+              "word": "CUBO",
+              "emoji": "🧊"
+            }
+          ]
+        },
+        {
+          "s": "CU",
+          "correct": [
+            {
+              "word": "CULLA",
+              "emoji": "🛏️"
+            },
+            {
+              "word": "CUSCINO",
+              "emoji": "🛏️"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "ALTALENA",
+              "emoji": "🎠"
+            },
+            {
+              "word": "LETTO",
+              "emoji": "🛏️"
+            },
+            {
+              "word": "CIPOLLA",
+              "emoji": "🧅"
+            },
+            {
+              "word": "CHELE",
+              "emoji": "🦀"
+            }
+          ]
+        },
+        {
+          "s": "CHE",
+          "correct": [
+            {
+              "word": "CHELE",
+              "emoji": "🦀"
+            },
+            {
+              "word": "CHERUBINO",
+              "emoji": "👼"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "RANA",
+              "emoji": "🐸"
+            },
+            {
+              "word": "GRANCHIO",
+              "emoji": "🦀"
+            },
+            {
+              "word": "CHIAVE",
+              "emoji": "🔑"
+            },
+            {
+              "word": "CIGNO",
+              "emoji": "🦢"
+            }
+          ]
+        },
+        {
+          "s": "CHI",
+          "correct": [
+            {
+              "word": "CHIODO",
+              "emoji": "🔩"
+            },
+            {
+              "word": "CHICCO",
+              "emoji": "🫘"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LUMACA",
+              "emoji": "🐌"
+            },
+            {
+              "word": "ALBERO",
+              "emoji": "🌳"
+            },
+            {
+              "word": "CHELE",
+              "emoji": "🦀"
+            },
+            {
+              "word": "CANE",
+              "emoji": "🐕"
+            }
+          ]
+        },
+        {
+          "s": "CE",
+          "correct": [
+            {
+              "word": "CENTO",
+              "emoji": "💯"
+            },
+            {
+              "word": "CERVELLO",
+              "emoji": "🧠"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "GIRASOLE",
+              "emoji": "🌻"
+            },
+            {
+              "word": "LUNA",
+              "emoji": "🌙"
+            },
+            {
+              "word": "CIGNO",
+              "emoji": "🦢"
+            },
+            {
+              "word": "CIPOLLA",
+              "emoji": "🧅"
+            }
+          ]
+        },
+        {
+          "s": "CI",
+          "correct": [
+            {
+              "word": "CIAMBELLA",
+              "emoji": "🍩"
+            },
+            {
+              "word": "CIOCCOLATO",
+              "emoji": "🍫"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "MORE",
+              "emoji": "🫐"
+            },
+            {
+              "word": "BURRO",
+              "emoji": "🧈"
+            },
+            {
+              "word": "CESTO",
+              "emoji": "🧺"
+            },
+            {
+              "word": "CEROTTO",
+              "emoji": "🩹"
+            }
+          ]
+        }
+      ],
+      "parole": [
+        {
+          "word": "CODA",
+          "emoji": "🐕",
+          "sillabe": [
+            "CO",
+            "DA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CUCÙ",
+          "emoji": "🕰️",
+          "sillabe": [
+            "CU",
+            "CU"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CHILO",
+          "emoji": "⚖️",
+          "sillabe": [
+            "CHI",
+            "LO"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CHELE",
+          "emoji": "🦀",
+          "sillabe": [
+            "CHE",
+            "LE"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CABINA",
+          "emoji": "🚠",
+          "sillabe": [
+            "CA",
+            "BI",
+            "NA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CAMERA",
+          "emoji": "📷",
+          "sillabe": [
+            "CA",
+            "ME",
+            "RA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CICALA",
+          "emoji": "🦗",
+          "sillabe": [
+            "CI",
+            "CA",
+            "LA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CENA",
+          "emoji": "🍽️",
+          "sillabe": [
+            "CE",
+            "NA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "CINEMA",
+          "emoji": "🎬",
+          "sillabe": [
+            "CI",
+            "NE",
+            "MA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "AMICI",
+          "emoji": "🧑‍🤝‍🧑",
+          "sillabe": [
+            "A",
+            "MI",
+            "CI"
+          ],
+          "doppia": false
+        }
+      ]
+    },
+    {
+      "id": "g",
+      "title": "La lettera G",
+      "emoji": "🐈",
+      "type": "consonante",
+      "letter": {
+        "grapheme": "G",
+        "name": "gi",
+        "ipa": "g",
+        "shape": {
+          "it": "La G somiglia a un gomitolo srotolato o a un gatto acciambellato.",
+          "zh": "G 像散开的毛线团，也像蜷起来的小猫"
+        },
+        "mouth": {
+          "it": "Con A, O e U la G ha un suono duro e sonoro. Davanti a E e I diventa dolce; con la H torna dura.",
+          "zh": "G 遇到 A、O、U 发浊的硬音；遇到 E、I 发软音；加 H 又变回硬音"
+        }
+      },
+      "sillabe": [
+        {
+          "s": "GA",
+          "ipa": "ga",
+          "anchor": {
+            "word": "GATTO",
+            "emoji": "🐈"
+          }
+        },
+        {
+          "s": "GO",
+          "ipa": "go",
+          "anchor": {
+            "word": "GORILLA",
+            "emoji": "🦍"
+          }
+        },
+        {
+          "s": "GU",
+          "ipa": "gu",
+          "anchor": {
+            "word": "GUFO",
+            "emoji": "🦉"
+          }
+        },
+        {
+          "s": "GHE",
+          "ipa": "ge",
+          "anchor": {
+            "word": "GHEPARDO",
+            "emoji": "🐆"
+          },
+          "parts": [
+            "GH",
+            "E"
+          ]
+        },
+        {
+          "s": "GHI",
+          "ipa": "gi",
+          "anchor": {
+            "word": "GHIRO",
+            "emoji": "🐿️"
+          },
+          "parts": [
+            "GH",
+            "I"
+          ]
+        },
+        {
+          "s": "GE",
+          "ipa": "d͡ʒe",
+          "anchor": {
+            "word": "GELATO",
+            "emoji": "🍨"
+          }
+        },
+        {
+          "s": "GI",
+          "ipa": "d͡ʒi",
+          "anchor": {
+            "word": "GIGANTE",
+            "emoji": "🧌"
+          }
+        }
+      ],
+      "casa": [
+        {
+          "s": "GA",
+          "correct": [
+            {
+              "word": "GABBIANO",
+              "emoji": "🕊️"
+            },
+            {
+              "word": "GALLINA",
+              "emoji": "🐔"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SOLE",
+              "emoji": "☀️"
+            },
+            {
+              "word": "MARE",
+              "emoji": "🌊"
+            },
+            {
+              "word": "GORILLA",
+              "emoji": "🦍"
+            },
+            {
+              "word": "GUFO",
+              "emoji": "🦉"
+            }
+          ]
+        },
+        {
+          "s": "GO",
+          "correct": [
+            {
+              "word": "GOCCIA",
+              "emoji": "💧"
+            },
+            {
+              "word": "GOMMA",
+              "emoji": "🧽"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "LIBRO",
+              "emoji": "📖"
+            },
+            {
+              "word": "FORCHETTA",
+              "emoji": "🍴"
+            },
+            {
+              "word": "GATTO",
+              "emoji": "🐈"
+            },
+            {
+              "word": "GHIRO",
+              "emoji": "🐿️"
+            }
+          ]
+        },
+        {
+          "s": "GU",
+          "correct": [
+            {
+              "word": "GUANTONE",
+              "emoji": "🥊"
+            },
+            {
+              "word": "GUSCIO",
+              "emoji": "🥚"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "BICCHIERE",
+              "emoji": "🥛"
+            },
+            {
+              "word": "MOLLA",
+              "emoji": "🌀"
+            },
+            {
+              "word": "GELATO",
+              "emoji": "🍨"
+            },
+            {
+              "word": "GOMMA",
+              "emoji": "🧽"
+            }
+          ]
+        },
+        {
+          "s": "GHE",
+          "correct": [
+            {
+              "word": "GHETTE",
+              "emoji": "🥾"
+            },
+            {
+              "word": "GHEPARDO",
+              "emoji": "🐆"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PIPA",
+              "emoji": "🪈"
+            },
+            {
+              "word": "RASTRELLO",
+              "emoji": "🧹"
+            },
+            {
+              "word": "GHIANDA",
+              "emoji": "🌰"
+            },
+            {
+              "word": "GIGANTE",
+              "emoji": "🧌"
+            }
+          ]
+        },
+        {
+          "s": "GHI",
+          "correct": [
+            {
+              "word": "GHIANDA",
+              "emoji": "🌰"
+            },
+            {
+              "word": "GHIRLANDA",
+              "emoji": "🎄"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "SERPENTE",
+              "emoji": "🐍"
+            },
+            {
+              "word": "TEMPERINO",
+              "emoji": "✏️"
+            },
+            {
+              "word": "GHEPARDO",
+              "emoji": "🐆"
+            },
+            {
+              "word": "GELATO",
+              "emoji": "🍨"
+            }
+          ]
+        },
+        {
+          "s": "GE",
+          "correct": [
+            {
+              "word": "GESSO",
+              "emoji": "🧱"
+            },
+            {
+              "word": "GELATO",
+              "emoji": "🍨"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "PANINO",
+              "emoji": "🥪"
+            },
+            {
+              "word": "PASTELLO",
+              "emoji": "🖍️"
+            },
+            {
+              "word": "GIRASOLE",
+              "emoji": "🌻"
+            },
+            {
+              "word": "GATTO",
+              "emoji": "🐈"
+            }
+          ]
+        },
+        {
+          "s": "GI",
+          "correct": [
+            {
+              "word": "GIRASOLE",
+              "emoji": "🌻"
+            },
+            {
+              "word": "GIALLO",
+              "emoji": "🟡"
+            }
+          ],
+          "wrong": [
+            {
+              "word": "GRIGIO",
+              "emoji": "⚪"
+            },
+            {
+              "word": "ROSA",
+              "emoji": "🌹"
+            },
+            {
+              "word": "GELATO",
+              "emoji": "🍨"
+            },
+            {
+              "word": "GUFO",
+              "emoji": "🦉"
+            }
+          ]
+        }
+      ],
+      "parole": [
+        {
+          "word": "AGO",
+          "emoji": "🪡",
+          "sillabe": [
+            "A",
+            "GO"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "GARA",
+          "emoji": "🏁",
+          "sillabe": [
+            "GA",
+            "RA"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "GOLA",
+          "emoji": "🗣️",
+          "sillabe": [
+            "GO",
+            "LA"
+          ],
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "GHIRO",
+          "emoji": "🐿️",
+          "sillabe": [
+            "GHI",
+            "RO"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "GURU",
+          "emoji": "🧘",
+          "sillabe": [
+            "GU",
+            "RU"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "GIGI",
+          "emoji": "👦",
+          "sillabe": [
+            "GI",
+            "GI"
+          ],
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "GIRO",
+          "emoji": "🔄",
+          "sillabe": [
+            "GI",
+            "RO"
+          ],
+          "doppia": false,
+          "collega": false
+        },
+        {
+          "word": "GELO",
+          "emoji": "🧊",
+          "sillabe": [
+            "GE",
+            "LO"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "GELATO",
+          "emoji": "🍨",
+          "sillabe": [
+            "GE",
+            "LA",
+            "TO"
+          ],
+          "doppia": false
+        },
+        {
+          "word": "GIRASOLE",
+          "emoji": "🌻",
+          "sillabe": [
+            "GI",
+            "RA",
+            "SO",
+            "LE"
+          ],
+          "doppia": false
+        }
+      ]
+    },
+    {
+      "id": "h",
+      "title": "La lettera H",
+      "emoji": "🌉",
+      "type": "speciale",
+      "groups": [
+        {
+          "id": "h",
+          "grapheme": "H",
+          "nameAudio": "Acca.",
+          "nameExpect": "acca",
+          "intro": {
+            "it": "La H è una lettera speciale: in italiano spesso si scrive ma non si sente.",
+            "zh": "H 在意大利语里常常只看得见、听不见"
+          },
+          "words": [
+            {
+              "word": "HUSKY",
+              "emoji": "🐕"
+            },
+            {
+              "word": "HAMBURGER",
+              "emoji": "🍔"
+            },
+            {
+              "word": "HOT DOG",
+              "emoji": "🌭"
+            },
+            {
+              "word": "HOTEL",
+              "emoji": "🏨"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q",
+      "title": "Q, QU e CQU",
+      "emoji": "🦅",
+      "type": "speciale",
+      "groups": [
+        {
+          "id": "qu",
+          "grapheme": "QU",
+          "nameAudio": "<phoneme alphabet='ipa' ph='kw'>qu</phoneme>",
+          "nameExpect": "qu",
+          "intro": {
+            "it": "La Q non vuole stare da sola: si unisce alla U e insieme formano QU.",
+            "zh": "Q 总和 U 做朋友，一起组成 QU"
+          },
+          "words": [
+            {
+              "word": "QUADRO",
+              "emoji": "🖼️"
+            },
+            {
+              "word": "QUADERNO",
+              "emoji": "📓"
+            },
+            {
+              "word": "QUADRIFOGLIO",
+              "emoji": "🍀"
+            },
+            {
+              "word": "QUERCIA",
+              "emoji": "🌳"
+            }
+          ]
+        },
+        {
+          "id": "cqu",
+          "grapheme": "CQU",
+          "nameAudio": "<phoneme alphabet='ipa' ph='kw'>cqu</phoneme>",
+          "nameExpect": "cqu",
+          "intro": {
+            "it": "Nelle parole della famiglia di acqua troviamo spesso C, Q e U tutte vicine.",
+            "zh": "和水有关的一组词里常常能看到 CQU"
+          },
+          "words": [
+            {
+              "word": "ACQUA",
+              "emoji": "💧"
+            },
+            {
+              "word": "ACQUARIO",
+              "emoji": "🐠"
+            },
+            {
+              "word": "SUBACQUEO",
+              "emoji": "🤿"
+            },
+            {
+              "word": "ACQUITRINO",
+              "emoji": "🐸"
+            },
+            {
+              "word": "ACQUOLINA",
+              "emoji": "😋",
+              "collega": false
+            },
+            {
+              "word": "ACQUERELLI",
+              "emoji": "🎨"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digrammi",
+      "title": "GN e GLI",
+      "emoji": "🕷️",
+      "type": "speciale",
+      "groups": [
+        {
+          "id": "gn",
+          "grapheme": "GN",
+          "nameAudio": "<phoneme alphabet='ipa' ph='ɲ'>gn</phoneme>",
+          "nameExpect": "gn",
+          "intro": {
+            "it": "Il gruppo GN forma un suono unico, come in gnomo.",
+            "zh": "G 和 N 靠在一起时组成一个鼻音，像 GNOMO"
+          },
+          "words": [
+            {
+              "word": "GNOMO",
+              "emoji": "🧙"
+            },
+            {
+              "word": "CIGNO",
+              "emoji": "🦢"
+            },
+            {
+              "word": "RAGNO",
+              "emoji": "🕷️"
+            }
+          ]
+        },
+        {
+          "id": "gli",
+          "grapheme": "GLI",
+          "nameAudio": "<phoneme alphabet='ipa' ph='ʎi'>gli</phoneme>",
+          "nameExpect": "gli",
+          "intro": {
+            "it": "Il gruppo GLI forma un suono unico, come in aglio.",
+            "zh": "G、L、I 靠在一起时组成 GLI，像 AGLIO"
+          },
+          "words": [
+            {
+              "word": "AGLIO",
+              "emoji": "🧄"
+            },
+            {
+              "word": "TOVAGLIA",
+              "emoji": "🧺"
+            },
+            {
+              "word": "SVEGLIE",
+              "emoji": "⏰"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jk",
+      "title": "Le lettere J e K",
+      "emoji": "🐨",
+      "type": "speciale",
+      "groups": [
+        {
+          "id": "j",
+          "grapheme": "J",
+          "nameAudio": "I lunga.",
+          "nameExpect": "i lunga",
+          "intro": {
+            "it": "La i lunga si trova soprattutto in parole di origine straniera.",
+            "zh": "J 主要出现在外来词中"
+          },
+          "words": [
+            {
+              "word": "JEANS",
+              "emoji": "👖"
+            },
+            {
+              "word": "JAZZ",
+              "emoji": "🎷"
+            },
+            {
+              "word": "JET",
+              "emoji": "✈️"
+            },
+            {
+              "word": "JUDO",
+              "emoji": "🥋"
+            },
+            {
+              "word": "JOYSTICK",
+              "emoji": "🎮"
+            },
+            {
+              "word": "JOLLY",
+              "emoji": "🃏"
+            }
+          ]
+        },
+        {
+          "id": "k",
+          "grapheme": "K",
+          "nameAudio": "Cappa.",
+          "nameExpect": "cappa",
+          "intro": {
+            "it": "La cappa si pronuncia come il suono duro della C.",
+            "zh": "K 的读音像 C 的硬音"
+          },
+          "words": [
+            {
+              "word": "KUNG FU",
+              "emoji": "🥋"
+            },
+            {
+              "word": "KEBAB",
+              "emoji": "🥙"
+            },
+            {
+              "word": "KETCHUP",
+              "emoji": "🍅"
+            },
+            {
+              "word": "KOALA",
+              "emoji": "🐨"
+            },
+            {
+              "word": "KIWI",
+              "emoji": "🥝"
+            },
+            {
+              "word": "KARATE",
+              "emoji": "🥋"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wxy",
+      "title": "Le lettere W, X e Y",
+      "emoji": "🪀",
+      "type": "speciale",
+      "groups": [
+        {
+          "id": "w",
+          "grapheme": "W",
+          "nameAudio": "Doppia vu.",
+          "nameExpect": "doppia vu",
+          "intro": {
+            "it": "La doppia vu si trova in parole straniere e può suonare come U oppure come V.",
+            "zh": "W 常见于外来词，读音可能像 U，也可能像 V"
+          },
+          "words": [
+            {
+              "word": "WÜRSTEL",
+              "emoji": "🌭"
+            },
+            {
+              "word": "WI-FI",
+              "emoji": "📶"
+            },
+            {
+              "word": "WALKIE TALKIE",
+              "emoji": "📻"
+            },
+            {
+              "word": "WESTERN",
+              "emoji": "🤠"
+            },
+            {
+              "word": "WRESTLING",
+              "emoji": "🤼"
+            },
+            {
+              "word": "WATER",
+              "emoji": "🚽"
+            },
+            {
+              "word": "WAFER",
+              "emoji": "🍪"
+            },
+            {
+              "word": "WEBCAM",
+              "emoji": "📹"
+            }
+          ]
+        },
+        {
+          "id": "x",
+          "grapheme": "X",
+          "nameAudio": "Ics.",
+          "nameExpect": "ics",
+          "intro": {
+            "it": "La ics unisce i suoni C e S, come in xilofono.",
+            "zh": "X 常把 C 和 S 的声音连在一起，像 XILOFONO"
+          },
+          "words": [
+            {
+              "word": "XILOFONO",
+              "emoji": "🎼"
+            }
+          ]
+        },
+        {
+          "id": "y",
+          "grapheme": "Y",
+          "nameAudio": "Ipsilon.",
+          "nameExpect": "ipsilon",
+          "intro": {
+            "it": "La ipsilon si trova in parole straniere e spesso si pronuncia come la vocale I.",
+            "zh": "Y 常见于外来词，读音往往像 I"
+          },
+          "words": [
+            {
+              "word": "YOGA",
+              "emoji": "🧘"
+            },
+            {
+              "word": "YOGURT",
+              "emoji": "🥛"
+            },
+            {
+              "word": "YO-YO",
+              "emoji": "🪀"
+            },
+            {
+              "word": "YEN",
+              "emoji": "🪙"
+            },
+            {
+              "word": "YACHT",
+              "emoji": "🛥️"
+            },
+            {
+              "word": "YETI",
+              "emoji": "❄️"
+            },
+            {
+              "word": "YAK",
+              "emoji": "🦬"
+            }
+          ]
+        }
       ]
     },
     {
@@ -3826,6 +5889,18 @@
     "U": [
       "O",
       "I"
+    ],
+    "Z": [
+      "S",
+      "R"
+    ],
+    "C": [
+      "G",
+      "Q"
+    ],
+    "G": [
+      "C",
+      "D"
     ]
   }
 }

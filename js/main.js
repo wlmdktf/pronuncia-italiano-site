@@ -20,6 +20,7 @@ function render() {
   if (s.screen === 'sillabe') return V.renderSillabe(s.unitId, s.idx);
   if (s.screen === 'casa') return V.renderCasa(s.unitId, s.idx);
   if (s.screen === 'parole') return V.renderParole(s.unitId, s.idx);
+  if (s.screen === 'speciale') return V.renderSpeciale(s.unitId, s.idx);
   if (s.screen === 'mix') return V.renderMix(s);
   if (s.screen === 'dettato') return V.renderDettato(s);
   if (s.screen === 'collega') return V.renderCollega(s);

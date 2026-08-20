@@ -6,8 +6,8 @@ let currentResolve = null;   // 播放被打断时也要让等待方放行 (否�
 let playToken = 0;           // 每次新播放 +1; playSeq 靠它发现自己被插播, 立即中止不再续播队列
 
 // 裸爆破音不可靠，V 的孤立 TTS 纯音也未通过家长试听。
-// 只要按钮代表“这个字母”，B/P/T/D/V 就读意大利语字母名 bi/pi/ti/di/vu。
-const LETTER_NAME_ONLY = new Set(['B', 'P', 'T', 'D', 'V']);
+// 只要按钮代表“这个字母”，爆破音 B/P/T/D/C/G 与 V 都读意大利语字母名。
+const LETTER_NAME_ONLY = new Set(['B', 'P', 'T', 'D', 'V', 'C', 'G']);
 
 export function standaloneLetterId(grapheme) {
   const upper = String(grapheme).toUpperCase();

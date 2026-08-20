@@ -147,9 +147,13 @@ export function renderHome() {
   const name = P.nickname();
   const grid = h('div', { class: 'unit-grid' });
   for (const u of CUR.units) {
-    const solo = ['mix', 'dettato', 'collega'].includes(u.type);   // 单关板块, 无子菜单
-    const total = u.type === 'vocali' ? u.letters.length + (u.casa ? 1 : 0) : (solo ? 1 : 4);
-    const dest = solo ? { screen: u.type, idx: 0 } : { screen: 'unit', unitId: u.id };
+    const solo = ['mix', 'dettato', 'collega', 'speciale'].includes(u.type);   // 单关板块, 无子菜单
+    const total = u.type === 'vocali'
+      ? u.letters.length + (u.casa ? 1 : 0)
+      : (u.type === 'speciale' ? u.groups.length : (solo ? 1 : 4));
+    const dest = u.type === 'speciale'
+      ? { screen: 'speciale', unitId: u.id, idx: 0 }
+      : (solo ? { screen: u.type, idx: 0 } : { screen: 'unit', unitId: u.id });
     const firstAnchor = u.type === 'consonante' ? u.sillabe?.[0]?.anchor : null;
     const unitVisual = firstAnchor && CUR.pictures?.[firstAnchor.word]
       ? firstAnchor : { word: u.title, emoji: u.emoji };
@@ -282,7 +286,7 @@ export function renderSillabe(unitId, idx) {
   const u = CUR.units.find(x => x.id === unitId);
   const S = u.sillabe[idx];
   const cons = u.letter.grapheme;
-  const voc = S.s.slice(cons.length);
+  const parts = S.parts || [cons, S.s.slice(cons.length)];
   const low = S.s.toLowerCase();
   let revealed = false;
 
@@ -314,16 +318,26 @@ export function renderSillabe(unitId, idx) {
   const dots = h('div', { class: 'dots' },
     ...u.sillabe.map((_, i) => h('i', { class: i === idx ? 'on' : '' })));
 
+  const merge = h('div', { class: 'merge-row' });
+  parts.forEach((part, partIdx) => {
+    const text = typeof part === 'string' ? part : part.text;
+    const audio = typeof part === 'string' ? null : part.audio;
+    const fallback = partIdx === 0
+      ? A.standaloneLetterId(cons)
+      : (text.length === 1 ? `letter-${text.toLowerCase()}-sound` : `sil-${low}`);
+    if (partIdx) merge.append(h('span', { class: 'merge-eq' }, '+'));
+    merge.append(h('button', {
+      class: `tile ${partIdx === 0 ? 'c' : 'v'}`,
+      onclick: () => A.play(audio || fallback),
+    }, text));
+  });
+  merge.append(h('span', { class: 'merge-eq' }, '='), silTile);
+
   app().replaceChildren(
     topbar('Le sillabe', { screen: 'unit', unitId }),
     h('div', { class: 'stage' },
       dots,
-      h('div', { class: 'merge-row' },
-        h('button', { class: 'tile c', onclick: () => A.play(A.standaloneLetterId(cons)) }, cons),
-        h('span', { class: 'merge-eq' }, '+'),
-        h('button', { class: 'tile v', onclick: () => A.play(`letter-${voc.toLowerCase()}-sound`) }, voc),
-        h('span', { class: 'merge-eq' }, '='),
-        silTile),
+      merge,
       h('div', { class: 'hint-row' }, soundBtn([`sil-${low}-slow`, `sil-${low}`]), micB),
       anchorWrap,
       h('div', { class: 'nav-row' }, nextBtn)));
@@ -455,6 +469,34 @@ export function renderParole(unitId, idx) {
   });
 }
 
+// ---------- lettere e gruppi speciali ----------
+export function renderSpeciale(unitId, idx = 0) {
+  const u = CUR.units.find(x => x.id === unitId);
+  const group = u.groups[idx];
+  const nameId = `special-${group.id}-name`;
+  const introId = `special-${group.id}-intro`;
+  const key = `${unitId}:${group.id}`;
+  const nextState = idx + 1 < u.groups.length
+    ? { screen: 'speciale', unitId, idx: idx + 1 }
+    : { screen: 'home' };
+
+  app().replaceChildren(
+    topbar(u.title, { screen: 'home' }),
+    h('div', { class: 'stage' },
+      h('div', { class: 'dots' }, ...u.groups.map((_, i) => h('i', { class: i === idx ? 'on' : '' }))),
+      h('button', { class: 'big-letter special-letter', onclick: () => A.play(nameId) }, group.grapheme),
+      h('div', { class: 'hint-row' },
+        h('button', { class: 'chip big', onclick: () => A.play(introId) }, '👂 Scopri il suono'),
+        micBtn([nameId])),
+      h('div', { class: 'word-row special-words' }, ...group.words.map(word => wordCard(word, { slow: true }))),
+      h('div', { class: 'nav-row' },
+        h('button', {
+          class: 'round-btn primary',
+          onclick: () => celebrate(key, nextState),
+        }, idx + 1 < u.groups.length ? '➡️' : (P.isDone(key) ? '⭐' : '✓')))));
+  A.playSeq([introId, nameId], 300);
+}
+
 // ---------- mescola le sillabe (全部音节混合, 2 个干扰项, 每轮随机 8 词) ----------
 const MIX_ROUND = 8;
 export function renderMix(state) {
@@ -490,10 +532,13 @@ function optionsFor(letter, pool, n) {
 }
 
 export function renderDettato(state) {
-  const consUnits = CUR.units.filter(u => u.type === 'consonante');
+  const consUnits = CUR.units.filter(u => u.type === 'consonante' && u.dettato !== false);
   const consLetters = consUnits.map(u => u.letter.grapheme);
   const vocLetters = CUR.units.find(u => u.type === 'vocali').letters.map(l => l.grapheme);
-  if (!state.items) state.items = pickN(consUnits.flatMap(u => u.sillabe.map(s => s.s)), DETTATO_ROUND);
+  if (!state.items) {
+    const pool = consUnits.flatMap(u => u.sillabe.filter(s => s.dettato !== false && s.s.length === 2).map(s => s.s));
+    state.items = pickN(pool, DETTATO_ROUND);
+  }
 
   const idx = state.idx || 0;
   const syl = state.items[idx];
@@ -572,6 +617,9 @@ function collegaBank() {
     if (u.type === 'consonante') {
       u.sillabe.forEach(s => put(s.anchor));
       (u.casa || []).forEach(r => { r.correct.forEach(put); r.wrong.forEach(put); });
+    }
+    if (u.type === 'speciale') {
+      u.groups.forEach(group => (group.words || []).forEach(put));
     }
     (u.parole || []).forEach(put);
   }
