@@ -157,6 +157,14 @@ button:active { transform: scale(0.96); }
 .parent .badge { font-size: 11px; padding: 2px 7px; border-radius: 8px; background: #e8e2f7; }
 .parent .badge.ok { background: #cdebdd; } .parent .badge.warn { background: #ffe1b8; }
 .parent textarea { width: 100%; height: 90px; font-size: 12px; margin-top: 6px; }
+.progress-tools { margin-top: 16px; padding: 14px; border-radius: 18px; background: #eee7fa; }
+.progress-tools h3:first-child { margin-top: 0; }
+.progress-tools p { line-height: 1.6; margin: 8px 0; }
+.progress-tools input[type=file] { display: block; max-width: 100%; margin: 10px 0; font-size: 16px; }
+.progress-tools textarea { height: 120px; font-size: 16px; }
+.progress-status { margin-top: 10px; line-height: 1.6; overflow-wrap: anywhere; }
+.progress-confirm:not(:empty) { margin-top: 12px; padding: 12px; border: 2px solid #7c5cbf; border-radius: 14px; background: #fff; }
+.parent .pbtn:disabled { opacity: .45; cursor: default; }
 .parent .pbtn { display: inline-block; background: #7c5cbf; color: #fff; font-weight: 700; border-radius: 14px; padding: 10px 16px; margin: 6px 6px 0 0; font-size: 15px; }
 .parent .pbtn.ghost { background: #e8e2f7; color: #4a3b6b; }
 .parent input[type=text] { font-size: 16px; padding: 8px 12px; border-radius: 12px; border: 2px solid #d8cdf0; width: 180px; }

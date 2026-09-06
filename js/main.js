@@ -27,6 +27,8 @@ function render() {
   return V.renderHome();
 }
 
+window.addEventListener('progresschange', render);
+
 async function onStart() {
   started = true;
   A.unlock();
