@@ -71,10 +71,11 @@ function progressTools(onChange) {
     h('p', {}, '进度只保存在当前设备，不会自动同步。换设备前请导出备份，再在新设备平时使用的 App 入口导入。'),
     h('button', { class: 'pbtn', onclick: () => {
       if (P.stickers().length >= 14) { status.textContent = '本机已有至少 14 张贴纸，无需补回。'; return; }
-      ask('补回前 14 张贴纸，最后的 🌸 和 🍓 继续通过练习获得。按 56 颗星恢复奖励，保留本机已有的关卡记录；无法找回旧设备具体完成过的关卡。确认恢复？',
-        () => { P.restoreFourteenStickers(); return '已恢复 14/16 张贴纸！再获得 8 颗新星星即可拿到最后两张。'; });
-    } }, '恢复前 14 张贴纸（还差 2 张）'),
+      ask('补回原来的前 14 张贴纸，🌸、🍓 和新增贴纸继续通过练习获得。按 56 颗星恢复奖励，保留本机已有的关卡记录；无法找回旧设备具体完成过的关卡。确认恢复？',
+        () => { P.restoreFourteenStickers(); return `已恢复 14/${P.stickerPool.length} 张贴纸！原有的 🌸、🍓 和新增贴纸等着继续收集。`; });
+    } }, '恢复原来的 14 张贴纸'),
     h('p', {}, '旧设备已丢失进度时可用上方按钮。按 14 张贴纸对应的最低 56 颗星补回，具体关卡不作猜测。'),
+    h('p', {}, '贴纸册共 31 张，每 4 颗星获得一张。拼词混合、听写、连线这三种练习完整重做一轮也能获得星星；单页确认只计首次完成。'),
     h('h3', {}, '💾 进度备份与导入'),
     h('button', { class: 'pbtn', onclick: () => { try { exportProgress(); } catch (err) { status.textContent = `下载未完成，可复制下方备份文字：${err.message}`; } } }, '导出进度备份'),
     h('button', { class: 'pbtn ghost', onclick: async () => {

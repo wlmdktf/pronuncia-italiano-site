@@ -59,17 +59,23 @@ function topbar(title, backState) {
     h('div', { class: 'stars' }, `⭐ ${P.stars()}`));
 }
 
+let celebrating = false;
 async function celebrate(key, backState) {
-  const { newStar, newSticker } = P.markDone(key);
-  confetti();
-  A.sfx('star');
-  await A.play(praise());
-  if (newStar) await A.play('ui-star');
-  if (newSticker) {
-    await A.play('ui-sticker_new');
-    await modalSticker(newSticker);
-  }
-  go(backState);
+  // 防止一轮结尾连点在异步音效/贴纸弹窗期间重复领奖。
+  if (celebrating) return;
+  celebrating = true;
+  try {
+    const { newStar, newSticker } = P.markDone(key);
+    confetti();
+    A.sfx('star');
+    await A.play(praise());
+    if (newStar) await A.play('ui-star');
+    if (newSticker) {
+      await A.play('ui-sticker_new');
+      await modalSticker(newSticker);
+    }
+    go(backState);
+  } finally { celebrating = false; }
 }
 
 function modalSticker(sticker) {
@@ -186,14 +192,21 @@ function gearBtn() {
 
 function openStickers() {
   const ov = document.getElementById('overlay');
-  const grid = h('div', { class: 'sticker-grid' });
   const owned = P.stickers();
-  P.stickerPool.forEach((s, i) => {
-    grid.append(h('div', { class: 'sticker-cell' + (i < owned.length ? '' : ' empty') }, i < owned.length ? owned[i] : s));
-  });
+  const collection = h('div', {});
+  for (const [title, from, to] of [['I miei primi adesivi', 0, 16], ['Amici, dolci e magia', 16, P.stickerPool.length]]) {
+    const grid = h('div', { class: 'sticker-grid' + (from === 16 ? ' new-stickers' : '') });
+    for (let i = from; i < to; i++) {
+      grid.append(h('div', { class: 'sticker-cell' + (i < owned.length ? '' : ' empty') }, i < owned.length ? owned[i] : P.stickerPool[i]));
+    }
+    collection.append(h('h3', { class: 'sticker-section-title' }, title), grid);
+  }
   ov.replaceChildren(h('div', { class: 'modal' },
     h('button', { class: 'close-x', onclick: () => ov.replaceChildren() }, '✖️'),
-    h('h2', {}, 'I miei adesivi'), grid));
+    h('h2', {}, 'I miei adesivi'),
+    h('p', { class: 'sticker-summary' }, `${Math.min(owned.length, P.stickerPool.length)} / ${P.stickerPool.length} ✨`),
+    collection,
+    h('p', { class: 'sticker-help' }, 'Ogni 4 stelle, un adesivo! Anche rigiocando a Mescola, Ascolta e scrivi e Collega le parole.')));
 }
 
 // ---------- unit menu ----------

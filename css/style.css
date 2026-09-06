@@ -145,6 +145,11 @@ button:active { transform: scale(0.96); }
 .sticker-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 10px; margin-top: 8px; }
 .sticker-cell { font-size: 44px; background: #fff; border-radius: 18px; padding: 8px; box-shadow: 0 3px 0 #e2d9f5; }
 .sticker-cell.empty { opacity: .18; filter: grayscale(1); }
+.sticker-grid.new-stickers { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.new-stickers .sticker-cell { font-size: clamp(30px, 5.8vw, 44px); padding: 8px 4px; }
+.sticker-section-title { font-size: 17px; margin: 20px 0 10px; color: #7956a4; }
+.sticker-summary { font-size: 21px; font-weight: 800; color: #7956a4; }
+.sticker-help { font-size: 15px; line-height: 1.5; margin-top: 22px; }
 
 /* ---------- parent ---------- */
 .parent { text-align: left; font-size: 15px; }

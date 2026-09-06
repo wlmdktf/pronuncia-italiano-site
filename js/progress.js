@@ -2,16 +2,25 @@
 const KEY = 'sillabe-progress-v1';
 const UNDO_KEY = 'sillabe-progress-before-restore-v1';
 const BACKUP_FORMAT = 'sillabe-progress';
-const STICKER_POOL = ['🦄', '🌟', '🍭', '🧸', '🎈', '🐬', '🦋', '🌈', '🍦', '🐣', '💎', '🎀', '🚀', '🐳', '🌸', '🍓'];
+const ORIGINAL_STICKERS = ['🦄', '🌟', '🍭', '🧸', '🎈', '🐬', '🦋', '🌈', '🍦', '🐣', '💎', '🎀', '🚀', '🐳', '🌸', '🍓'];
+const STICKER_POOL = [...ORIGINAL_STICKERS,
+  '🐱', '🐰', '🦊', '🐼', '🦉',
+  '🧁', '🍩', '🍪', '🍒', '🍉',
+  '👑', '🧚‍♀️', '🪄', '🏰', '🎠'];
+// 这三个玩法必须完整做完一轮才能领奖；单页确认仍只计首次完成。
+const REPLAY_KEYS = new Set(['mix:parole', 'dettato:round', 'collega:round']);
 
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
 }
 function save(p) { localStorage.setItem(KEY, JSON.stringify(p)); }
 
-let p = Object.assign({ done: {}, stickers: [], nickname: '', recoveredStars: 0 }, load());
+let p = Object.assign({ done: {}, stickers: [], nickname: '', recoveredStars: 0, practiceStars: 0 }, load());
+// 旧版第 17 张起会循环原 16 张；按已挣得的数量换成扩充后的贴纸，星星不变。
+p.stickers = p.stickers.map((s, i) => s === ORIGINAL_STICKERS[i % ORIGINAL_STICKERS.length]
+  ? STICKER_POOL[i % STICKER_POOL.length] : s);
 
-export function stars() { return Object.keys(p.done).length + p.recoveredStars; }
+export function stars() { return Object.keys(p.done).length + p.recoveredStars + p.practiceStars; }
 export function stickers() { return p.stickers; }
 export function nickname() { return p.nickname; }
 export function setNickname(n) { p.nickname = n.trim(); save(p); }
@@ -20,14 +29,18 @@ export function isDone(key) { return !!p.done[key]; }
 
 export function markDone(key) {
   // 返回 {newStar, newSticker}
-  if (p.done[key]) return { newStar: false, newSticker: null };
-  p.done[key] = 1;
+  const repeated = !!p.done[key];
+  if (repeated && !REPLAY_KEYS.has(key)) return { newStar: false, newSticker: null };
+  const next = snapshot();
+  if (repeated) next.practiceStars++;
+  else next.done[key] = 1;
   let newSticker = null;
-  if (stars() % 4 === 0) { // 每 4 颗星解锁一张贴纸
+  if ((stars() + 1) % 4 === 0) { // 每 4 颗星解锁一张贴纸
     newSticker = STICKER_POOL[p.stickers.length % STICKER_POOL.length];
-    p.stickers.push(newSticker);
+    next.stickers.push(newSticker);
   }
-  save(p);
+  save(next);
+  p = next;
   return { newStar: true, newSticker };
 }
 
@@ -37,7 +50,7 @@ export function unitDoneCount(unitId, total) {
 }
 
 export function resetAll() {
-  replaceWithUndo({ done: {}, stickers: [], nickname: p.nickname, recoveredStars: 0 });
+  replaceWithUndo({ done: {}, stickers: [], nickname: p.nickname, recoveredStars: 0, practiceStars: 0 });
 }
 
 function snapshot() { return JSON.parse(JSON.stringify(p)); }
@@ -77,18 +90,22 @@ export function exportBackup() {
 function validateProgress(value) {
   const invalid = () => { throw new Error('备份中的进度无效，请使用“导出进度备份”生成的文件或文字。'); };
   if (!value || typeof value !== 'object' || Array.isArray(value)) invalid();
-  const { done, stickers, nickname, recoveredStars = 0 } = value;
+  const { done, stickers, nickname, recoveredStars = 0, practiceStars = 0 } = value;
   if (!done || typeof done !== 'object' || Array.isArray(done) ||
       !Array.isArray(stickers) || typeof nickname !== 'string' || nickname.length > 200 ||
-      !Number.isSafeInteger(recoveredStars) || recoveredStars < 0) invalid();
+      !Number.isSafeInteger(recoveredStars) || recoveredStars < 0 ||
+      !Number.isSafeInteger(practiceStars) || practiceStars < 0) invalid();
   const entries = Object.entries(done);
   if (entries.length > 10000 || entries.some(([key, v]) =>
     !/^[a-zA-Z0-9][a-zA-Z0-9:_-]{0,199}$/.test(key) ||
     ['__proto__', 'constructor', 'prototype'].includes(key) || v !== 1)) invalid();
-  const total = entries.length + recoveredStars;
+  const total = entries.length + recoveredStars + practiceStars;
   if (total > 10000 || stickers.length !== Math.floor(total / 4) ||
-      stickers.some((s, i) => s !== STICKER_POOL[i % STICKER_POOL.length])) invalid();
-  return { done: Object.fromEntries(entries), stickers: [...stickers], nickname, recoveredStars };
+      stickers.some((s, i) => s !== STICKER_POOL[i % STICKER_POOL.length] &&
+        s !== ORIGINAL_STICKERS[i % ORIGINAL_STICKERS.length])) invalid();
+  return { done: Object.fromEntries(entries),
+    stickers: stickers.map((s, i) => STICKER_POOL[i % STICKER_POOL.length]),
+    nickname, recoveredStars, practiceStars };
 }
 
 function parseBackup(text) {
@@ -103,7 +120,7 @@ function parseBackup(text) {
 
 export function previewBackup(text) {
   const next = parseBackup(text);
-  return { stars: Object.keys(next.done).length + next.recoveredStars,
+  return { stars: Object.keys(next.done).length + next.recoveredStars + next.practiceStars,
     stickers: next.stickers.length, nickname: next.nickname };
 }
 
