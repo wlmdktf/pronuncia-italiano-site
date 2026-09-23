@@ -1,13 +1,17 @@
 // 所有屏幕渲染 + 关卡玩法
 import * as A from './audio.js';
 import * as P from './progress.js';
+import * as F from './flags.js';
+import { collegaBank, conceptKeyFn, buildRound } from './collega.js';
 import { openParentGate } from './parent.js';
 
 let CUR = null;      // curriculum
 let go = null;       // (state) => render
-let state = null;
+let state = null;    // 当前屏幕 (纠错标记记录“在哪一关”)
 
 export function init(curriculum, navigate) { CUR = curriculum; go = navigate; }
+export function noteState(s) { state = s; }
+export function curriculum() { return CUR; }
 
 export function h(tag, props = {}, ...kids) {
   const el = document.createElement(tag);
@@ -27,17 +31,23 @@ const praise = () => 'ui-brava' + (1 + Math.floor(Math.random() * 4));
 const slug = (w) => w.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 const pickN = (arr, n) => [...arr].sort(() => Math.random() - 0.5).slice(0, n);
 
-// 词图优先走课程里的原创插画图集；尚未覆盖的旧词继续用 emoji，便于逐批统一风格。
+// 词图唯一入口: 课程 pictures 映射优先 (公共图库单图 src, 或原创图集的格子);
+// 没有映射的词 (概念词等) 和图片加载失败时显示 emoji。各页面不要自己硬编码图片。
 function pictureFor(w, cls) {
-  const pic = w?.word ? CUR?.pictures?.[w.word] : null;
-  const atlas = pic ? CUR?.pictureAtlases?.[pic.atlas] : null;
-  if (!pic || !atlas) {
-    return h('span', { class: `${cls} emoji-visual`, role: 'img', 'aria-label': w?.word || '' }, w?.emoji || '');
+  const word = w?.word || '';
+  const pic = word ? CUR?.pictures?.[word] : null;
+  const emoji = () => h('span', { class: `${cls} emoji-visual`, role: 'img', 'aria-label': word, 'data-word': word }, w?.emoji || '');
+  if (pic?.src) {
+    const img = h('img', { class: `${cls} picture-visual`, src: pic.src, alt: word, draggable: 'false', decoding: 'async', 'data-word': word });
+    img.addEventListener('error', () => img.replaceWith(emoji()), { once: true });
+    return img;
   }
+  const atlas = pic ? CUR?.pictureAtlases?.[pic.atlas] : null;
+  if (!atlas) return emoji();
   const x = atlas.cols > 1 ? (pic.col / (atlas.cols - 1)) * 100 : 0;
   const y = atlas.rows > 1 ? (pic.row / (atlas.rows - 1)) * 100 : 0;
   const style = `background-image:url('${atlas.src}');background-size:${atlas.cols * 100}% ${atlas.rows * 100}%;background-position:${x}% ${y}%`;
-  return h('span', { class: `${cls} picture-visual`, role: 'img', 'aria-label': w.word, style });
+  return h('span', { class: `${cls} picture-visual`, role: 'img', 'aria-label': word, 'data-word': word, style });
 }
 
 function confetti() {
@@ -56,7 +66,83 @@ function topbar(title, backState) {
   return h('div', { class: 'topbar' },
     h('button', { class: 'back', onclick: () => { A.stopAll(); go(backState); } }, '⬅️'),
     h('div', { class: 'title' }, title),
-    h('div', { class: 'stars' }, `⭐ ${P.stars()}`));
+    h('div', { class: 'topbar-right' },
+      F.modeOn() ? h('button', { class: 'flag-btn', 'aria-label': '记下内容问题', onclick: openFlagSheet }, '🚩') : null,
+      h('div', { class: 'stars' }, `⭐ ${P.stars()}`)));
+}
+
+// ---------- 纠错标记 (家长陪练时用; 家长区开关, 界面用中文) ----------
+const SCREEN_ZH = { vocale: '元音', conosci: '认识字母', sillabe: '音节', casa: '声音房子', parole: '拼词',
+  speciale: '特殊组合', mix: '混合拼词', dettato: '听写', collega: '连线', unit: '单元菜单' };
+const KIND_BUTTONS = [['audio', '🔊 读音不对'], ['picture', '🖼️ 图不对'], ['word', '📝 词不合适'], ['other', '💬 其他']];
+
+function flagContext() {
+  const s = state || {};
+  const u = s.unitId ? CUR.units.find(x => x.id === s.unitId) : null;
+  const i = s.idx || 0;
+  const item = {
+    vocale: () => u?.letters?.[i]?.grapheme,
+    sillabe: () => u?.sillabe?.[i]?.s,
+    casa: () => u?.casa?.[i]?.s,
+    parole: () => u?.parole?.[i]?.word,
+    speciale: () => u?.groups?.[i]?.grapheme,
+    mix: () => s.words?.[i]?.word,
+    dettato: () => s.items?.[i],
+    collega: () => `第 ${(s.r || 0) + 1} 轮`,
+  }[s.screen]?.() || null;
+  return { screen: s.screen || null, unit: u?.id || null, item,
+    place: [u?.title, SCREEN_ZH[s.screen] || s.screen, item].filter(Boolean).join(' › ') };
+}
+
+function flagToast(text) {
+  document.querySelector('.flag-toast')?.remove();
+  const t = h('div', { class: 'flag-toast', role: 'status' }, text);
+  document.body.append(t);
+  setTimeout(() => t.remove(), 2200);
+}
+
+function openFlagSheet() {
+  const ov = document.getElementById('overlay');
+  const ctx = flagContext();
+  const recent = A.recentAudio();
+  const words = [...new Set([...app().querySelectorAll('[data-word]')].map(el => el.dataset.word).filter(Boolean))];
+  const heard = (w) => recent.findIndex(id => id === 'word-' + slug(w) || id === 'word-' + slug(w) + '-slow');
+  let word = words.filter(w => heard(w) >= 0).sort((a, b) => heard(a) - heard(b))[0] ?? null;
+  let kind = null;
+  let build = null;
+  fetch('data/version.json').then(r => r.json()).then(v => { build = v.build; }).catch(() => {});
+
+  const status = h('p', { class: 'flag-status', role: 'status' });
+  const note = h('textarea', { class: 'flag-note', maxlength: '500', placeholder: '补充说明（可选），例如：听起来像 SECCA；图看起来像杯子' });
+  const save = h('button', { class: 'pbtn', disabled: '' }, '记下');
+  const chipRow = (options, isOn, pick) => {
+    const row = h('div', { class: 'chip-row' });
+    const paint = () => row.querySelectorAll('button').forEach((b, n) => b.classList.toggle('on', isOn(options[n][0])));
+    options.forEach(([value, label]) => row.append(h('button', { class: 'pchip', onclick: () => { pick(value); paint(); } }, label)));
+    paint();
+    return row;
+  };
+  const wordRow = chipRow([...words.map(w => [w, w]), [null, '音节 / 字母 / 整页']], v => v === word, v => { word = v; });
+  const kindRow = chipRow(KIND_BUTTONS, v => v === kind, v => { kind = v; save.removeAttribute('disabled'); });
+  save.addEventListener('click', () => {
+    try {
+      F.add({ ...ctx, word, kind, note: note.value, audio: recent[0], recentAudio: recent,
+        wordAudio: word ? 'word-' + slug(word) : null,
+        picture: word ? (CUR.pictures?.[word]?.src || null) : null,
+        build, curriculumVersion: CUR.version });
+      ov.replaceChildren();
+      flagToast(`🚩 已记下（共 ${F.list().length} 条，家长区可导出）`);
+    } catch (err) { status.textContent = `没有保存：${err.message}`; }
+  });
+  ov.replaceChildren(h('div', { class: 'modal parent flag-sheet' },
+    h('button', { class: 'close-x', onclick: () => ov.replaceChildren() }, '✖️'),
+    h('h2', {}, '🚩 记下一个内容问题'),
+    h('p', { class: 'flag-place' }, `位置：${ctx.place || '—'}`, recent[0] ? h('br') : null, recent[0] ? `刚播放：${recent[0]}` : null),
+    h('h3', {}, '哪一个？'), wordRow,
+    h('h3', {}, '什么问题？'), kindRow,
+    note,
+    h('div', {}, save, h('button', { class: 'pbtn ghost', onclick: () => ov.replaceChildren() }, '取消')),
+    status));
 }
 
 let celebrating = false;
@@ -236,7 +322,7 @@ function renderVocaliGrid(u) {
     grid.append(h('button', {
       class: 'unit-card', onclick: () => { A.sfx('tap'); go({ screen: 'vocale', unitId: u.id, idx: i }); }
     },
-      h('span', { class: 'emoji' }, L.anchor.emoji),
+      pictureFor(L.anchor, 'unit-visual'),
       h('span', { class: 'name' }, L.grapheme),
       h('span', { class: 'done' }, P.isDone(`vocali:${L.grapheme}`) ? '⭐' : '')));
   });
@@ -244,7 +330,7 @@ function renderVocaliGrid(u) {
     grid.append(h('button', {
       class: 'unit-card', onclick: () => { A.sfx('tap'); go({ screen: 'casa', unitId: u.id, idx: 0 }); }
     },
-      h('span', { class: 'emoji' }, '🏠'),
+      h('span', { class: 'unit-visual emoji-visual' }, '🏠'),
       h('span', { class: 'name' }, 'La casa dei suoni'),
       h('span', { class: 'done' }, P.isDone(`${u.id}:casa`) ? '⭐' : '')));
   }
@@ -612,62 +698,11 @@ export function renderDettato(state) {
 const COLLEGA_ROUNDS = 3;
 const PAIR_COLORS = ['#8f6ae0', '#3bbf8f', '#ff9a76', '#5c7de0'];
 
-// 连线关排除抽象/符号类配图；个别词还可在 curriculum 标记 collega:false。
-const COLLEGA_EXCLUDE = new Set(['1️⃣', '2️⃣', '9️⃣', '🔢', '⚫', '🤫', '👍', '🌑', '🕳️', '💰', '😴', '📛', '☸️']);
-
-function collegaBank() {
-  // 全词库: 去重 (同词取首个 emoji), 剔除抽象配图
-  const seen = new Map();
-  const put = (w) => {
-    if (w && w.collega !== false && !seen.has(w.word) && !COLLEGA_EXCLUDE.has(w.emoji)) {
-      seen.set(w.word, { word: w.word, emoji: w.emoji });
-    }
-  };
-  for (const u of CUR.units) {
-    if (u.type === 'vocali') {
-      for (const L of u.letters) { put(L.anchor); (L.extra || []).forEach(put); }
-    }
-    if (u.type === 'consonante') {
-      u.sillabe.forEach(s => put(s.anchor));
-      (u.casa || []).forEach(r => { r.correct.forEach(put); r.wrong.forEach(put); });
-    }
-    if (u.type === 'speciale') {
-      u.groups.forEach(group => (group.words || []).forEach(put));
-    }
-    (u.parole || []).forEach(put);
-  }
-  return [...seen.values()];
-}
-
+// 词库、概念组去重与分级组卷在 collega.js (只收有正式图片的词; 近义/同类或同图的词不同轮)。
+let conceptOf = null;
 function buildCollegaRound(tier) {
-  // easy: 4 词首字母全不同 | medium: 含一对同首字母异元音 | hard: 含一对同首音节
-  const bank = pickN(collegaBank(), 9999);
-  const out = [], usedW = new Set(), usedE = new Set();
-  const take = (e) => { out.push(e); usedW.add(e.word); usedE.add(e.emoji); };
-  if (tier !== 'easy') {
-    const n = tier === 'hard' ? 2 : 1;
-    outer:
-    for (let i = 0; i < bank.length; i++) {
-      for (let j = i + 1; j < bank.length; j++) {
-        const a = bank[i], b = bank[j];
-        if (a.emoji === b.emoji) continue;
-        if (a.word.slice(0, n) === b.word.slice(0, n) && a.word[n] !== b.word[n]) {
-          take(a); take(b); break outer;
-        }
-      }
-    }
-  }
-  for (const e of bank) {
-    if (out.length >= 4) break;
-    if (usedW.has(e.word) || usedE.has(e.emoji)) continue;
-    if (out.some(x => x.word[0] === e.word[0])) continue;  // 填充词与已选词首字母互异
-    take(e);
-  }
-  for (const e of bank) {  // 兜底 (词库极端情况下放宽首字母约束)
-    if (out.length >= 4) break;
-    if (!usedW.has(e.word) && !usedE.has(e.emoji)) take(e);
-  }
-  return out;
+  conceptOf ||= conceptKeyFn(CUR);
+  return buildRound(pickN(collegaBank(CUR), 9999), tier, conceptOf);
 }
 
 export function renderCollega(state) {

@@ -23,80 +23,1287 @@
     }
   },
   "pictures": {
-    "FATA": {
-      "atlas": "fvl",
-      "col": 0,
-      "row": 0
+    "APE": {
+      "src": "assets/pictures/arasaac-2239.png"
     },
-    "FOCA": {
-      "atlas": "fvl",
-      "col": 1,
-      "row": 0
+    "ALBERO": {
+      "src": "assets/pictures/arasaac-3057.png"
     },
-    "FENICOTTERO": {
-      "atlas": "fvl",
-      "col": 2,
-      "row": 0
+    "ANATRA": {
+      "src": "assets/pictures/arasaac-28479.png"
     },
-    "FIORE": {
-      "atlas": "fvl",
-      "col": 3,
-      "row": 0
+    "ELEFANTE": {
+      "src": "assets/pictures/arasaac-2372.png"
     },
-    "FUNGO": {
-      "atlas": "fvl",
-      "col": 4,
-      "row": 0
+    "ELMO": {
+      "src": "assets/pictures/arasaac-36509.png"
     },
-    "VALLE": {
-      "atlas": "fvl",
-      "col": 0,
-      "row": 1
+    "ERBA": {
+      "src": "assets/pictures/arasaac-3113.png"
     },
-    "VOLPE": {
-      "atlas": "fvl",
-      "col": 1,
-      "row": 1
+    "ISOLA": {
+      "src": "assets/pictures/arasaac-2966.png"
     },
-    "VELA": {
-      "atlas": "fvl",
-      "col": 2,
-      "row": 1
+    "IPPOPOTAMO": {
+      "src": "assets/pictures/arasaac-2424.png"
     },
-    "VINO": {
-      "atlas": "fvl",
-      "col": 3,
-      "row": 1
+    "INSALATA": {
+      "src": "assets/pictures/arasaac-2377.png"
     },
-    "VULCANO": {
-      "atlas": "fvl",
-      "col": 4,
-      "row": 1
+    "OCA": {
+      "src": "assets/pictures/arasaac-2878.png"
+    },
+    "OMBRELLO": {
+      "src": "assets/pictures/arasaac-2500.png"
+    },
+    "ORSO": {
+      "src": "assets/pictures/arasaac-2488.png"
+    },
+    "UVA": {
+      "src": "assets/pictures/arasaac-3247.png"
+    },
+    "UCCELLINO": {
+      "src": "assets/pictures/arasaac-2490.png"
+    },
+    "ANANAS": {
+      "src": "assets/pictures/arasaac-2525.png"
+    },
+    "AEREO": {
+      "src": "assets/pictures/arasaac-2264.png"
+    },
+    "ANGURIA": {
+      "src": "assets/pictures/arasaac-2557.png"
+    },
+    "MELA": {
+      "src": "assets/pictures/arasaac-2462.png"
+    },
+    "SOLE": {
+      "src": "assets/pictures/arasaac-7252.png"
+    },
+    "ELICOTTERO": {
+      "src": "assets/pictures/arasaac-7126.png"
+    },
+    "LUNA": {
+      "src": "assets/pictures/arasaac-10294.png"
+    },
+    "TOPO": {
+      "src": "assets/pictures/arasaac-2546.png"
+    },
+    "NAVE": {
+      "src": "assets/pictures/arasaac-2273.png"
+    },
+    "PANE": {
+      "src": "assets/pictures/arasaac-2494.png"
+    },
+    "OROLOGIO": {
+      "src": "assets/pictures/arasaac-7229.png"
+    },
+    "OCCHIALI": {
+      "src": "assets/pictures/arasaac-3329.png"
+    },
+    "OSSO": {
+      "src": "assets/pictures/arasaac-6528.png"
+    },
+    "GATTO": {
+      "src": "assets/pictures/arasaac-7114.png"
+    },
+    "UOVO": {
+      "src": "assets/pictures/arasaac-2427.png"
+    },
+    "MANO": {
+      "src": "assets/pictures/arasaac-2928.png"
+    },
+    "MONDO": {
+      "src": "assets/pictures/arasaac-27798.png"
+    },
+    "MIELE": {
+      "src": "assets/pictures/arasaac-2911.png"
+    },
+    "MUCCA": {
+      "src": "assets/pictures/arasaac-2609.png"
+    },
+    "MATITA": {
+      "src": "assets/pictures/arasaac-2440.png"
+    },
+    "MAIALE": {
+      "src": "assets/pictures/arasaac-2327.png"
+    },
+    "MAGO": {
+      "src": "assets/pictures/arasaac-2932.png"
+    },
+    "MARE": {
+      "src": "assets/pictures/arasaac-2925.png"
+    },
+    "MACCHINA": {
+      "src": "assets/pictures/arasaac-2339.png"
+    },
+    "MARTELLO": {
+      "src": "assets/pictures/arasaac-2922.png"
+    },
+    "MAESTRA": {
+      "src": "assets/pictures/arasaac-2456.png"
+    },
+    "RANA": {
+      "src": "assets/pictures/arasaac-2543.png"
     },
     "LAMA": {
-      "atlas": "fvl",
-      "col": 0,
-      "row": 2
+      "src": "assets/pictures/arasaac-9067.png"
+    },
+    "PIZZA": {
+      "src": "assets/pictures/arasaac-2527.png"
+    },
+    "MOSTRO": {
+      "src": "assets/pictures/arasaac-11306.png"
+    },
+    "MOSCA": {
+      "src": "assets/pictures/arasaac-2478.png"
+    },
+    "MOTO": {
+      "src": "assets/pictures/arasaac-2480.png"
+    },
+    "MONETA": {
+      "src": "assets/pictures/arasaac-10279.png"
+    },
+    "MONTAGNA": {
+      "src": "assets/pictures/arasaac-2909.png"
+    },
+    "ASINO": {
+      "src": "assets/pictures/arasaac-2291.png"
+    },
+    "PALLA": {
+      "src": "assets/pictures/arasaac-3241.png"
+    },
+    "PERA": {
+      "src": "assets/pictures/arasaac-2561.png"
+    },
+    "MURO": {
+      "src": "assets/pictures/arasaac-8266.png"
+    },
+    "MEDAGLIA": {
+      "src": "assets/pictures/arasaac-3128.png"
+    },
+    "MELONE": {
+      "src": "assets/pictures/arasaac-36153.png"
+    },
+    "MEDUSA": {
+      "src": "assets/pictures/arasaac-2920.png"
+    },
+    "MELANZANA": {
+      "src": "assets/pictures/arasaac-2660.png"
+    },
+    "TARTARUGA": {
+      "src": "assets/pictures/arasaac-2596.png"
+    },
+    "UFO": {
+      "src": "assets/pictures/arasaac-7191.png"
+    },
+    "LIMONE": {
+      "src": "assets/pictures/arasaac-3022.png"
+    },
+    "NUVOLA": {
+      "src": "assets/pictures/arasaac-2883.png"
+    },
+    "MINESTRA": {
+      "src": "assets/pictures/arasaac-2573.png"
+    },
+    "MIRTILLO": {
+      "src": "assets/pictures/arasaac-13034.png"
+    },
+    "MICIO": {
+      "src": "assets/pictures/arasaac-2406.png"
+    },
+    "ROBOT": {
+      "src": "assets/pictures/arasaac-6208.png"
+    },
+    "TIGRE": {
+      "src": "assets/pictures/arasaac-2590.png"
+    },
+    "MUSICA": {
+      "src": "assets/pictures/arasaac-24791.png"
+    },
+    "FARFALLA": {
+      "src": "assets/pictures/arasaac-2465.png"
+    },
+    "MAMMA": {
+      "src": "assets/pictures/arasaac-2458.png"
+    },
+    "MIMO": {
+      "src": "assets/pictures/arasaac-37343.png"
+    },
+    "NASO": {
+      "src": "assets/pictures/arasaac-2887.png"
+    },
+    "NOTA": {
+      "src": "assets/pictures/arasaac-9127.png"
+    },
+    "NEVE": {
+      "src": "assets/pictures/arasaac-3135.png"
+    },
+    "NIDO": {
+      "src": "assets/pictures/arasaac-7173.png"
+    },
+    "NASTRO": {
+      "src": "assets/pictures/arasaac-36360.png"
+    },
+    "NATALE": {
+      "src": "assets/pictures/arasaac-3134.png"
+    },
+    "CANE": {
+      "src": "assets/pictures/arasaac-2517.png"
+    },
+    "NOCE": {
+      "src": "assets/pictures/arasaac-2880.png"
+    },
+    "NOTTE": {
+      "src": "assets/pictures/arasaac-26997.png"
+    },
+    "NONNA": {
+      "src": "assets/pictures/arasaac-2243.png"
+    },
+    "ANELLO": {
+      "src": "assets/pictures/arasaac-2252.png"
+    },
+    "SQUALO": {
+      "src": "assets/pictures/arasaac-2589.png"
+    },
+    "NEGOZIO": {
+      "src": "assets/pictures/arasaac-9116.png"
+    },
+    "NEONATO": {
+      "src": "assets/pictures/arasaac-6060.png"
+    },
+    "CONIGLIO": {
+      "src": "assets/pictures/arasaac-2351.png"
+    },
+    "NINFEA": {
+      "src": "assets/pictures/commons-29960775.jpg"
+    },
+    "BRADIPO": {
+      "src": "assets/pictures/arasaac-22039.png"
+    },
+    "NUOTO": {
+      "src": "assets/pictures/arasaac-25038.png"
+    },
+    "NUTRIA": {
+      "src": "assets/pictures/commons-81623655.jpg"
+    },
+    "ARCOBALENO": {
+      "src": "assets/pictures/arasaac-2986.png"
+    },
+    "NONNO": {
+      "src": "assets/pictures/arasaac-2244.png"
+    },
+    "NANNA": {
+      "src": "assets/pictures/arasaac-2369.png"
+    },
+    "MANI": {
+      "src": "assets/pictures/arasaac-9830.png"
+    },
+    "PAPÀ": {
+      "src": "assets/pictures/arasaac-31146.png"
+    },
+    "POPÒ": {
+      "src": "assets/pictures/arasaac-8050.png"
+    },
+    "PESCE": {
+      "src": "assets/pictures/arasaac-2520.png"
+    },
+    "PINO": {
+      "src": "assets/pictures/arasaac-3216.png"
+    },
+    "PUMA": {
+      "src": "assets/pictures/arasaac-9068.png"
+    },
+    "PATATA": {
+      "src": "assets/pictures/arasaac-2503.png"
+    },
+    "PASTA": {
+      "src": "assets/pictures/arasaac-8652.png"
+    },
+    "PANDA": {
+      "src": "assets/pictures/arasaac-2869.png"
+    },
+    "PAGLIACCIO": {
+      "src": "assets/pictures/arasaac-31426.png"
+    },
+    "PAVONE": {
+      "src": "assets/pictures/arasaac-13348.png"
+    },
+    "POLLO": {
+      "src": "assets/pictures/arasaac-4952.png"
+    },
+    "PORTA": {
+      "src": "assets/pictures/arasaac-3244.png"
+    },
+    "POMODORO": {
+      "src": "assets/pictures/arasaac-2594.png"
+    },
+    "POLIPO": {
+      "src": "assets/pictures/arasaac-3379.png"
+    },
+    "PONTE": {
+      "src": "assets/pictures/arasaac-6194.png"
+    },
+    "POPCORN": {
+      "src": "assets/pictures/arasaac-5534.png"
+    },
+    "PULCINO": {
+      "src": "assets/pictures/arasaac-2533.png"
+    },
+    "PECORA": {
+      "src": "assets/pictures/arasaac-2489.png"
+    },
+    "PENNA": {
+      "src": "assets/pictures/arasaac-2282.png"
+    },
+    "PESCA": {
+      "src": "assets/pictures/arasaac-2468.png"
+    },
+    "PENNELLO": {
+      "src": "assets/pictures/arasaac-2670.png"
+    },
+    "PIEDE": {
+      "src": "assets/pictures/arasaac-2841.png"
+    },
+    "PIPISTRELLO": {
+      "src": "assets/pictures/arasaac-2903.png"
+    },
+    "PINGUINO": {
+      "src": "assets/pictures/arasaac-3243.png"
+    },
+    "PIOGGIA": {
+      "src": "assets/pictures/arasaac-3123.png"
+    },
+    "PIANTA": {
+      "src": "assets/pictures/arasaac-38613.png"
+    },
+    "PIUMA": {
+      "src": "assets/pictures/arasaac-5545.png"
+    },
+    "PUPAZZO": {
+      "src": "assets/pictures/arasaac-3131.png"
+    },
+    "PUGNO": {
+      "src": "assets/pictures/arasaac-16865.png"
+    },
+    "PULMINO": {
+      "src": "assets/pictures/arasaac-35600.png"
+    },
+    "FIORE": {
+      "src": "assets/pictures/arasaac-3102.png"
+    },
+    "MAPPA": {
+      "src": "assets/pictures/arasaac-24161.png"
+    },
+    "PAPPA": {
+      "src": "assets/pictures/commons-146254417.jpg"
+    },
+    "TAMBURO": {
+      "src": "assets/pictures/arasaac-2578.png"
+    },
+    "TONNO": {
+      "src": "assets/pictures/arasaac-6918.png"
+    },
+    "TELEFONO": {
+      "src": "assets/pictures/arasaac-2585.png"
+    },
+    "TIMONE": {
+      "src": "assets/pictures/arasaac-7277.png"
+    },
+    "TULIPANO": {
+      "src": "assets/pictures/arasaac-3163.png"
+    },
+    "TAXI": {
+      "src": "assets/pictures/arasaac-2580.png"
+    },
+    "TACCHINO": {
+      "src": "assets/pictures/arasaac-2509.png"
+    },
+    "TAZZA": {
+      "src": "assets/pictures/arasaac-2582.png"
+    },
+    "TORTA": {
+      "src": "assets/pictures/arasaac-2579.png"
+    },
+    "TUONO": {
+      "src": "assets/pictures/arasaac-11389.png"
+    },
+    "TRATTORE": {
+      "src": "assets/pictures/arasaac-2600.png"
+    },
+    "TORO": {
+      "src": "assets/pictures/arasaac-2595.png"
+    },
+    "TORRE": {
+      "src": "assets/pictures/arasaac-6232.png"
+    },
+    "TENDA": {
+      "src": "assets/pictures/arasaac-4756.png"
+    },
+    "TRENO": {
+      "src": "assets/pictures/arasaac-7282.png"
+    },
+    "TESORO": {
+      "src": "assets/pictures/arasaac-6229.png"
+    },
+    "TELESCOPIO": {
+      "src": "assets/pictures/arasaac-15477.png"
+    },
+    "TEIERA": {
+      "src": "assets/pictures/arasaac-7276.png"
+    },
+    "TIVÙ": {
+      "src": "assets/pictures/arasaac-25498.png"
+    },
+    "TUFFO": {
+      "src": "assets/pictures/arasaac-22170.png"
+    },
+    "TANA": {
+      "src": "assets/pictures/arasaac-7149.png"
+    },
+    "TUTÙ": {
+      "src": "assets/pictures/commons-153295949.jpg"
     },
     "LOMBRICO": {
-      "atlas": "fvl",
-      "col": 1,
-      "row": 2
+      "src": "assets/pictures/arasaac-2935.png"
     },
     "LENTE": {
-      "atlas": "fvl",
-      "col": 2,
-      "row": 2
+      "src": "assets/pictures/arasaac-9927.png"
     },
     "LINCE": {
-      "atlas": "fvl",
-      "col": 3,
-      "row": 2
+      "src": "assets/pictures/arasaac-21964.png"
     },
     "LUPO": {
-      "atlas": "fvl",
-      "col": 4,
-      "row": 2
+      "src": "assets/pictures/arasaac-5892.png"
+    },
+    "LATTE": {
+      "src": "assets/pictures/arasaac-2445.png"
+    },
+    "LAMPADA": {
+      "src": "assets/pictures/arasaac-4936.png"
+    },
+    "LATTUGA": {
+      "src": "assets/pictures/arasaac-2446.png"
+    },
+    "LEONE": {
+      "src": "assets/pictures/arasaac-2449.png"
+    },
+    "LETTO": {
+      "src": "assets/pictures/arasaac-2304.png"
+    },
+    "LOCOMOTIVA": {
+      "src": "assets/pictures/arasaac-5094.png"
+    },
+    "LONTRA": {
+      "src": "assets/pictures/arasaac-6158.png"
+    },
+    "LIBRO": {
+      "src": "assets/pictures/arasaac-2450.png"
+    },
+    "LECCA-LECCA": {
+      "src": "assets/pictures/arasaac-2832.png"
+    },
+    "LEPRE": {
+      "src": "assets/pictures/arasaac-17265.png"
+    },
+    "LUMACA": {
+      "src": "assets/pictures/arasaac-8061.png"
+    },
+    "LINGUA": {
+      "src": "assets/pictures/arasaac-2944.png"
+    },
+    "LUCERTOLA": {
+      "src": "assets/pictures/arasaac-2950.png"
+    },
+    "LUCCIOLA": {
+      "src": "assets/pictures/arasaac-25203.png"
+    },
+    "LANA": {
+      "src": "assets/pictures/arasaac-2948.png"
+    },
+    "TAVOLO": {
+      "src": "assets/pictures/arasaac-3129.png"
+    },
+    "SALE": {
+      "src": "assets/pictures/arasaac-25576.png"
+    },
+    "SEDIA": {
+      "src": "assets/pictures/arasaac-4960.png"
+    },
+    "SIRENA": {
+      "src": "assets/pictures/arasaac-5589.png"
+    },
+    "SUCCO": {
+      "src": "assets/pictures/arasaac-11461.png"
+    },
+    "SASSO": {
+      "src": "assets/pictures/arasaac-28585.png"
+    },
+    "SAPONE": {
+      "src": "assets/pictures/arasaac-2964.png"
+    },
+    "SALVAGENTE": {
+      "src": "assets/pictures/arasaac-3103.png"
+    },
+    "SANDALO": {
+      "src": "assets/pictures/arasaac-8368.png"
+    },
+    "SERPENTE": {
+      "src": "assets/pictures/arasaac-2568.png"
+    },
+    "SOFÀ": {
+      "src": "assets/pictures/arasaac-2571.png"
+    },
+    "SOLDI": {
+      "src": "assets/pictures/arasaac-4630.png"
+    },
+    "SORRISO": {
+      "src": "assets/pictures/arasaac-13354.png"
+    },
+    "SEMAFORO": {
+      "src": "assets/pictures/arasaac-2567.png"
+    },
+    "SEME": {
+      "src": "assets/pictures/arasaac-8689.png"
+    },
+    "SUPERMERCATO": {
+      "src": "assets/pictures/arasaac-6618.png"
+    },
+    "ROSA": {
+      "src": "assets/pictures/arasaac-3151.png"
+    },
+    "SOMARO": {
+      "src": "assets/pictures/arasaac-2291.png"
+    },
+    "BANANA": {
+      "src": "assets/pictures/arasaac-2530.png"
+    },
+    "BOLLA": {
+      "src": "assets/pictures/arasaac-8389.png"
+    },
+    "BEFANA": {
+      "src": "assets/pictures/arasaac-5404.png"
+    },
+    "BICICLETTA": {
+      "src": "assets/pictures/arasaac-2277.png"
+    },
+    "BARCA": {
+      "src": "assets/pictures/arasaac-4920.png"
+    },
+    "BALENA": {
+      "src": "assets/pictures/arasaac-2268.png"
+    },
+    "BAGNO": {
+      "src": "assets/pictures/arasaac-36349.png"
+    },
+    "SCIMMIA": {
+      "src": "assets/pictures/arasaac-2477.png"
+    },
+    "BOTTIGLIA": {
+      "src": "assets/pictures/arasaac-2288.png"
+    },
+    "BOCCA": {
+      "src": "assets/pictures/arasaac-2663.png"
+    },
+    "COCCINELLA": {
+      "src": "assets/pictures/arasaac-2924.png"
+    },
+    "BEBÈ": {
+      "src": "assets/pictures/arasaac-2275.png"
+    },
+    "GUANTI": {
+      "src": "assets/pictures/arasaac-2415.png"
+    },
+    "BIDONE": {
+      "src": "assets/pictures/arasaac-37417.png"
+    },
+    "BINARIO": {
+      "src": "assets/pictures/arasaac-7299.png"
+    },
+    "BISONTE": {
+      "src": "assets/pictures/arasaac-8507.png"
+    },
+    "BUDINO": {
+      "src": "assets/pictures/arasaac-3317.png"
+    },
+    "BUS": {
+      "src": "assets/pictures/arasaac-38090.png"
+    },
+    "DADO": {
+      "src": "assets/pictures/arasaac-2731.png"
+    },
+    "DONO": {
+      "src": "assets/pictures/arasaac-3149.png"
+    },
+    "DELFINO": {
+      "src": "assets/pictures/arasaac-2732.png"
+    },
+    "DINOSAURO": {
+      "src": "assets/pictures/arasaac-2738.png"
+    },
+    "DUNE": {
+      "src": "assets/pictures/commons-4526023.jpg"
+    },
+    "DALMATA": {
+      "src": "assets/pictures/commons-69373339.jpg"
+    },
+    "DAINO": {
+      "src": "assets/pictures/commons-42306319.jpg"
+    },
+    "RICCIO": {
+      "src": "assets/pictures/arasaac-26829.png"
+    },
+    "CIAMBELLA": {
+      "src": "assets/pictures/arasaac-2368.png"
+    },
+    "DRAGO": {
+      "src": "assets/pictures/arasaac-5572.png"
+    },
+    "DOCCIA": {
+      "src": "assets/pictures/arasaac-2370.png"
+    },
+    "DENTE": {
+      "src": "assets/pictures/arasaac-2905.png"
+    },
+    "VOLPE": {
+      "src": "assets/pictures/arasaac-2623.png"
+    },
+    "CACTUS": {
+      "src": "assets/pictures/arasaac-3070.png"
+    },
+    "DIVANO": {
+      "src": "assets/pictures/arasaac-2571.png"
+    },
+    "DITO": {
+      "src": "assets/pictures/arasaac-3298.png"
+    },
+    "VASO": {
+      "src": "assets/pictures/arasaac-28541.png"
+    },
+    "SCOIATTOLO": {
+      "src": "assets/pictures/arasaac-25815.png"
+    },
+    "ORCA": {
+      "src": "assets/pictures/arasaac-8642.png"
+    },
+    "TASSO": {
+      "src": "assets/pictures/arasaac-37493.png"
+    },
+    "FATA": {
+      "src": "assets/pictures/arasaac-8131.png"
+    },
+    "FOCA": {
+      "src": "assets/pictures/arasaac-2397.png"
+    },
+    "FENICOTTERO": {
+      "src": "assets/pictures/arasaac-3316.png"
+    },
+    "FUNGO": {
+      "src": "assets/pictures/arasaac-8328.png"
+    },
+    "FANTASMA": {
+      "src": "assets/pictures/arasaac-5469.png"
+    },
+    "FALCO": {
+      "src": "assets/pictures/arasaac-38947.png"
+    },
+    "FOGLIA": {
+      "src": "assets/pictures/arasaac-5077.png"
+    },
+    "FORMICA": {
+      "src": "assets/pictures/arasaac-2425.png"
+    },
+    "FOTO": {
+      "src": "assets/pictures/arasaac-7107.png"
+    },
+    "FUOCO": {
+      "src": "assets/pictures/arasaac-4654.png"
+    },
+    "FESTA": {
+      "src": "assets/pictures/arasaac-7099.png"
+    },
+    "FERRO": {
+      "src": "assets/pictures/arasaac-37002.png"
+    },
+    "FELCE": {
+      "src": "assets/pictures/arasaac-8601.png"
+    },
+    "FINESTRA": {
+      "src": "assets/pictures/arasaac-2611.png"
+    },
+    "FILO": {
+      "src": "assets/pictures/arasaac-2978.png"
+    },
+    "FIOCCO": {
+      "src": "assets/pictures/arasaac-2946.png"
+    },
+    "FUMO": {
+      "src": "assets/pictures/arasaac-6529.png"
+    },
+    "FULMINE": {
+      "src": "assets/pictures/arasaac-7288.png"
+    },
+    "VALLE": {
+      "src": "assets/pictures/arasaac-6238.png"
+    },
+    "VELA": {
+      "src": "assets/pictures/arasaac-7294.png"
+    },
+    "VINO": {
+      "src": "assets/pictures/arasaac-2614.png"
+    },
+    "VULCANO": {
+      "src": "assets/pictures/arasaac-6247.png"
+    },
+    "VALANGA": {
+      "src": "assets/pictures/arasaac-29686.png"
+    },
+    "VALIGIA": {
+      "src": "assets/pictures/arasaac-2931.png"
+    },
+    "VORTICE": {
+      "src": "assets/pictures/arasaac-5598.png"
+    },
+    "VOLTO": {
+      "src": "assets/pictures/arasaac-37138.png"
+    },
+    "VENTO": {
+      "src": "assets/pictures/arasaac-7259.png"
+    },
+    "VESPA": {
+      "src": "assets/pictures/arasaac-6925.png"
+    },
+    "VESTITO": {
+      "src": "assets/pictures/arasaac-2613.png"
+    },
+    "VIOLA": {
+      "src": "assets/pictures/arasaac-26310.png"
+    },
+    "VIOLINO": {
+      "src": "assets/pictures/arasaac-2615.png"
+    },
+    "VITE": {
+      "src": "assets/pictures/arasaac-2788.png"
+    },
+    "VIA": {
+      "src": "assets/pictures/arasaac-2299.png"
+    },
+    "VENA": {
+      "src": "assets/pictures/arasaac-10270.png"
+    },
+    "REGINA": {
+      "src": "assets/pictures/arasaac-5559.png"
+    },
+    "RUSPA": {
+      "src": "assets/pictures/arasaac-2390.png"
+    },
+    "RAZZO": {
+      "src": "assets/pictures/arasaac-2344.png"
+    },
+    "RAMO": {
+      "src": "assets/pictures/arasaac-7224.png"
+    },
+    "RADIO": {
+      "src": "assets/pictures/arasaac-11354.png"
+    },
+    "ROCCIA": {
+      "src": "assets/pictures/arasaac-6594.png"
+    },
+    "ROSPO": {
+      "src": "assets/pictures/arasaac-3384.png"
+    },
+    "REGALO": {
+      "src": "assets/pictures/arasaac-3149.png"
+    },
+    "RENNA": {
+      "src": "assets/pictures/arasaac-3150.png"
+    },
+    "RETE": {
+      "src": "assets/pictures/arasaac-6205.png"
+    },
+    "RISO": {
+      "src": "assets/pictures/arasaac-39387.png"
+    },
+    "RINOCERONTE": {
+      "src": "assets/pictures/arasaac-2550.png"
+    },
+    "GUFO": {
+      "src": "assets/pictures/arasaac-2671.png"
+    },
+    "RUOTA": {
+      "src": "assets/pictures/arasaac-6209.png"
+    },
+    "RUCOLA": {
+      "src": "assets/pictures/arasaac-35755.png"
+    },
+    "RUBINO": {
+      "src": "assets/pictures/arasaac-25397.png"
+    },
+    "ZAINO": {
+      "src": "assets/pictures/arasaac-2475.png"
+    },
+    "ZOO": {
+      "src": "assets/pictures/arasaac-4773-notext.png",
+      "adapted": "去掉左上角的 ZOO 字样"
+    },
+    "ZEBRA": {
+      "src": "assets/pictures/arasaac-2324.png"
+    },
+    "ZIBELLINO": {
+      "src": "assets/pictures/commons-96129617.jpg"
+    },
+    "ZUCCA": {
+      "src": "assets/pictures/arasaac-2679.png"
+    },
+    "ZANZARA": {
+      "src": "assets/pictures/arasaac-2479.png"
+    },
+    "ZAMPA": {
+      "src": "assets/pictures/commons-157949133.jpg"
+    },
+    "ZUPPA": {
+      "src": "assets/pictures/arasaac-36642.png"
+    },
+    "ZOCCOLO": {
+      "src": "assets/pictures/arasaac-35639.png"
+    },
+    "CORONA": {
+      "src": "assets/pictures/arasaac-25016.png"
+    },
+    "ZECCA": {
+      "src": "assets/pictures/commons-104936874.jpg"
+    },
+    "COPPA": {
+      "src": "assets/pictures/arasaac-3162.png"
+    },
+    "BORSA": {
+      "src": "assets/pictures/arasaac-2284.png"
+    },
+    "ZIP": {
+      "src": "assets/pictures/arasaac-2723.png"
+    },
+    "ZUCCHINE": {
+      "src": "assets/pictures/arasaac-2678.png"
+    },
+    "ZAPPA": {
+      "src": "assets/pictures/arasaac-2651.png"
+    },
+    "CUBO": {
+      "src": "assets/pictures/arasaac-8308.png"
+    },
+    "CHELE": {
+      "src": "assets/pictures/arasaac-24292-pair.png",
+      "adapted": "镜像复制成一对钳子（教材画的是一对）"
+    },
+    "CHIAVE": {
+      "src": "assets/pictures/arasaac-8153.png"
+    },
+    "CESTO": {
+      "src": "assets/pictures/arasaac-3012.png"
+    },
+    "CIGNO": {
+      "src": "assets/pictures/arasaac-2337.png"
+    },
+    "CAVOLO": {
+      "src": "assets/pictures/arasaac-2708.png"
+    },
+    "CAMMELLO": {
+      "src": "assets/pictures/arasaac-8522.png"
+    },
+    "ARANCIA": {
+      "src": "assets/pictures/arasaac-2483.png"
+    },
+    "COLLANA": {
+      "src": "assets/pictures/arasaac-6988.png"
+    },
+    "COLORI": {
+      "src": "assets/pictures/arasaac-5968.png"
+    },
+    "SCATOLA": {
+      "src": "assets/pictures/arasaac-5935.png"
+    },
+    "PATATINE": {
+      "src": "assets/pictures/arasaac-8653.png"
+    },
+    "CULLA": {
+      "src": "assets/pictures/arasaac-37540.png"
+    },
+    "CUSCINO": {
+      "src": "assets/pictures/arasaac-2250.png"
+    },
+    "ALTALENA": {
+      "src": "assets/pictures/arasaac-4608.png"
+    },
+    "CIPOLLA": {
+      "src": "assets/pictures/arasaac-2323.png"
+    },
+    "CHERUBINO": {
+      "src": "assets/pictures/arasaac-36141.png"
+    },
+    "GRANCHIO": {
+      "src": "assets/pictures/arasaac-2312.png"
+    },
+    "CHIODO": {
+      "src": "assets/pictures/arasaac-8306.png"
+    },
+    "CHICCO": {
+      "src": "assets/pictures/commons-34928706.jpg"
+    },
+    "CERVELLO": {
+      "src": "assets/pictures/arasaac-2696.png"
+    },
+    "GIRASOLE": {
+      "src": "assets/pictures/arasaac-11274.png"
+    },
+    "CIOCCOLATO": {
+      "src": "assets/pictures/arasaac-2334.png"
+    },
+    "MORE": {
+      "src": "assets/pictures/arasaac-8360.png"
+    },
+    "BURRO": {
+      "src": "assets/pictures/arasaac-2461.png"
+    },
+    "CEROTTO": {
+      "src": "assets/pictures/arasaac-8331.png"
+    },
+    "CODA": {
+      "src": "assets/pictures/arasaac-5967.png"
+    },
+    "CAMERA": {
+      "src": "assets/pictures/arasaac-5988.png"
+    },
+    "CICALA": {
+      "src": "assets/pictures/arasaac-16613.png"
+    },
+    "CINEMA": {
+      "src": "assets/pictures/arasaac-30387.png"
+    },
+    "AMICI": {
+      "src": "assets/pictures/arasaac-2255.png"
+    },
+    "GORILLA": {
+      "src": "assets/pictures/arasaac-2410.png"
+    },
+    "GHEPARDO": {
+      "src": "assets/pictures/arasaac-39488.png"
+    },
+    "GHIRO": {
+      "src": "assets/pictures/commons-87167155.jpg"
+    },
+    "GELATO": {
+      "src": "assets/pictures/arasaac-35209.png"
+    },
+    "GIGANTE": {
+      "src": "assets/pictures/arasaac-11273.png"
+    },
+    "GABBIANO": {
+      "src": "assets/pictures/arasaac-3334.png"
+    },
+    "GALLINA": {
+      "src": "assets/pictures/arasaac-2403.png"
+    },
+    "GOCCIA": {
+      "src": "assets/pictures/arasaac-8592.png"
+    },
+    "GOMMA": {
+      "src": "assets/pictures/arasaac-2409.png"
+    },
+    "FORCHETTA": {
+      "src": "assets/pictures/arasaac-2588.png"
+    },
+    "GUANTONE": {
+      "src": "assets/pictures/arasaac-34067.png"
+    },
+    "GUSCIO": {
+      "src": "assets/pictures/arasaac-6966.png"
+    },
+    "BICCHIERE": {
+      "src": "assets/pictures/arasaac-4768.png"
+    },
+    "MOLLA": {
+      "src": "assets/pictures/arasaac-28563.png"
+    },
+    "GHETTE": {
+      "src": "assets/pictures/arasaac-25339.png"
+    },
+    "RASTRELLO": {
+      "src": "assets/pictures/arasaac-6200.png"
+    },
+    "GHIANDA": {
+      "src": "assets/pictures/arasaac-8041.png"
+    },
+    "GHIRLANDA": {
+      "src": "assets/pictures/arasaac-3085.png"
+    },
+    "TEMPERINO": {
+      "src": "assets/pictures/arasaac-2553.png"
+    },
+    "GESSO": {
+      "src": "assets/pictures/arasaac-16343.png"
+    },
+    "PANINO": {
+      "src": "assets/pictures/arasaac-2281.png"
+    },
+    "PASTELLO": {
+      "src": "assets/pictures/arasaac-4951.png"
+    },
+    "AGO": {
+      "src": "assets/pictures/arasaac-2639.png"
+    },
+    "GOLA": {
+      "src": "assets/pictures/arasaac-3332.png"
+    },
+    "HUSKY": {
+      "src": "assets/pictures/commons-78757143.jpg"
+    },
+    "HAMBURGER": {
+      "src": "assets/pictures/arasaac-2419.png"
+    },
+    "HOT DOG": {
+      "src": "assets/pictures/arasaac-7201.png"
+    },
+    "HOTEL": {
+      "src": "assets/pictures/arasaac-15728.png"
+    },
+    "QUADRO": {
+      "src": "assets/pictures/arasaac-2360.png"
+    },
+    "QUADERNO": {
+      "src": "assets/pictures/arasaac-2359.png"
+    },
+    "QUADRIFOGLIO": {
+      "src": "assets/pictures/commons-171148306.jpg"
+    },
+    "ACQUA": {
+      "src": "assets/pictures/arasaac-2248.png"
+    },
+    "ACQUARIO": {
+      "src": "assets/pictures/arasaac-5360.png"
+    },
+    "SUBACQUEO": {
+      "src": "assets/pictures/arasaac-2999.png"
+    },
+    "ACQUITRINO": {
+      "src": "assets/pictures/arasaac-26290.png"
+    },
+    "ACQUERELLI": {
+      "src": "assets/pictures/arasaac-6881.png"
+    },
+    "GNOMO": {
+      "src": "assets/pictures/arasaac-5450.png"
+    },
+    "RAGNO": {
+      "src": "assets/pictures/arasaac-2254.png"
+    },
+    "AGLIO": {
+      "src": "assets/pictures/arasaac-2641.png"
+    },
+    "TOVAGLIA": {
+      "src": "assets/pictures/arasaac-2460.png"
+    },
+    "JEANS": {
+      "src": "assets/pictures/arasaac-24222.png"
+    },
+    "JET": {
+      "src": "assets/pictures/arasaac-9205.png"
+    },
+    "JUDO": {
+      "src": "assets/pictures/arasaac-21943.png"
+    },
+    "JOYSTICK": {
+      "src": "assets/pictures/arasaac-6201.png"
+    },
+    "JOLLY": {
+      "src": "assets/pictures/commons-6909215-notext.jpg",
+      "adapted": "把牌面 J-O-K-E-R 五个字母块涂成空白"
+    },
+    "KEBAB": {
+      "src": "assets/pictures/arasaac-36994.png"
+    },
+    "KETCHUP": {
+      "src": "assets/pictures/arasaac-6540-notext.png",
+      "adapted": "去掉瓶身标签上的 KETCHUP 字样"
+    },
+    "KOALA": {
+      "src": "assets/pictures/arasaac-2954.png"
+    },
+    "KIWI": {
+      "src": "assets/pictures/arasaac-2955.png"
+    },
+    "KARATE": {
+      "src": "assets/pictures/arasaac-21955.png"
+    },
+    "WÜRSTEL": {
+      "src": "assets/pictures/arasaac-6647.png"
+    },
+    "WALKIE TALKIE": {
+      "src": "assets/pictures/arasaac-37193.png"
+    },
+    "WESTERN": {
+      "src": "assets/pictures/arasaac-5602.png"
+    },
+    "WATER": {
+      "src": "assets/pictures/arasaac-2430.png"
+    },
+    "WAFER": {
+      "src": "assets/pictures/commons-154168643.jpg"
+    },
+    "WEBCAM": {
+      "src": "assets/pictures/arasaac-9167.png"
+    },
+    "XILOFONO": {
+      "src": "assets/pictures/arasaac-2616.png"
+    },
+    "YOGA": {
+      "src": "assets/pictures/arasaac-9098.png"
+    },
+    "YOGURT": {
+      "src": "assets/pictures/arasaac-2618.png"
+    },
+    "YO-YO": {
+      "src": "assets/pictures/arasaac-8734.png"
+    },
+    "YACHT": {
+      "src": "assets/pictures/arasaac-3172.png"
+    },
+    "YAK": {
+      "src": "assets/pictures/commons-22106967.jpg"
+    },
+    "PILOTA": {
+      "src": "assets/pictures/arasaac-3370.png"
+    },
+    "LIMONATA": {
+      "src": "assets/pictures/arasaac-6551.png"
+    }
+  },
+  "pictureCredits": {
+    "arasaac": {
+      "name": "ARASAAC",
+      "url": "https://arasaac.org",
+      "author": "Sergio Palao",
+      "owner": "Gobierno de Aragón",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "commons-29960775": {
+      "title": "Nymphaea alba flower-and-leaves-DSC 3326w.jpg",
+      "author": "Peter Haas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nymphaea_alba_flower-and-leaves-DSC_3326w.jpg"
+    },
+    "commons-81623655": {
+      "title": "Ragondin (Myocastor coypus) (39).jpg",
+      "author": "Gzen92",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ragondin_(Myocastor_coypus)_(39).jpg"
+    },
+    "commons-146254417": {
+      "title": "Starting solids - homemade baby food in a bowl.jpg",
+      "author": "MAKY.OREL",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Starting_solids_-_homemade_baby_food_in_a_bowl.jpg"
+    },
+    "commons-153295949": {
+      "title": "Alexandra Danilova red swan tutu 02 (NYPL).jpg",
+      "author": "Crawdad Blues",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alexandra_Danilova_red_swan_tutu_02_(NYPL).jpg"
+    },
+    "commons-4526023": {
+      "title": "Sossusvlei sand dunes.jpg",
+      "author": "Winfried Bruenken (Amrum)",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sossusvlei_sand_dunes.jpg"
+    },
+    "commons-69373339": {
+      "title": "Dalmatian at Easton Lodge Gardens open day, Little Easton, Essex, England 02.jpg",
+      "author": "Acabashi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dalmatian_at_Easton_Lodge_Gardens_open_day,_Little_Easton,_Essex,_England_02.jpg"
+    },
+    "commons-42306319": {
+      "title": "Spotted Wood Deer Lakeland Florida.jpg",
+      "author": "Seth Eisenberg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Spotted_Wood_Deer_Lakeland_Florida.jpg"
+    },
+    "commons-96129617": {
+      "title": "Sable - 2 (flipped).png",
+      "author": "No machine-readable author provided. GifTagger assumed (based on copyright claims).",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sable_-_2_(flipped).png"
+    },
+    "commons-157949133": {
+      "title": "Sleeping cat paw.jpg",
+      "author": "Misterneedlemouse",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sleeping_cat_paw.jpg"
+    },
+    "commons-104936874": {
+      "title": "Ixodes ricinus on dry grass.jpg",
+      "author": "W.alter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ixodes_ricinus_on_dry_grass.jpg"
+    },
+    "commons-34928706": {
+      "title": "(64-365) Simply delicious!! (5330904503).jpg",
+      "author": "Sander van der Wel from Netherlands",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:(64-365)_Simply_delicious!!_(5330904503).jpg"
+    },
+    "commons-87167155": {
+      "title": "Glis glis 4058.JPG",
+      "author": "Azay",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Glis_glis_4058.JPG"
+    },
+    "commons-78757143": {
+      "title": "Siberian-husky-1291343 1920.jpg",
+      "author": "https://pixabay.com/pt/users/milanonegro-2307797/",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Siberian-husky-1291343_1920.jpg"
+    },
+    "commons-171148306": {
+      "title": "A Four-Leaf Clover (Taken by SpicyVoice).jpg",
+      "author": "SpicyVoice",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A_Four-Leaf_Clover_(Taken_by_SpicyVoice).jpg"
+    },
+    "commons-6909215": {
+      "title": "Joker (carte de jeu).jpg",
+      "author": "Teuxe",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Joker_(carte_de_jeu).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Joker_(carte_de_jeu).jpg"
+    },
+    "commons-154168643": {
+      "title": "Milk flavored peanut wafer biscuits.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Milk_flavored_peanut_wafer_biscuits.jpg"
+    },
+    "commons-22106967": {
+      "title": "Bos grunniens at Letdar on Annapurna Circuit.jpg",
+      "author": "travelwayoflife",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bos_grunniens_at_Letdar_on_Annapurna_Circuit.jpg"
     }
   },
   "units": [
@@ -209,7 +1416,8 @@
           "extra": [
             {
               "word": "UNO",
-              "emoji": "1️⃣"
+              "emoji": "1️⃣",
+              "collega": false
             },
             {
               "word": "UCCELLINO",
@@ -432,7 +1640,8 @@
             },
             {
               "word": "UNO",
-              "emoji": "1️⃣"
+              "emoji": "1️⃣",
+              "collega": false
             },
             {
               "word": "UCCELLINO",
@@ -949,7 +2158,8 @@
             },
             {
               "word": "NOVE",
-              "emoji": "9️⃣"
+              "emoji": "9️⃣",
+              "collega": false
             }
           ],
           "wrong": [
@@ -996,7 +2206,8 @@
             },
             {
               "word": "NERO",
-              "emoji": "⚫"
+              "emoji": "⚫",
+              "collega": false
             },
             {
               "word": "NEONATO",
@@ -1030,7 +2241,8 @@
             },
             {
               "word": "NUMERI",
-              "emoji": "🔢"
+              "emoji": "🔢",
+              "collega": false
             }
           ]
         },
@@ -1044,10 +2256,6 @@
             {
               "word": "NINFEA",
               "emoji": "🪷"
-            },
-            {
-              "word": "NINJA",
-              "emoji": "🥷"
             }
           ],
           "wrong": [
@@ -1086,7 +2294,8 @@
             },
             {
               "word": "NUMERI",
-              "emoji": "🔢"
+              "emoji": "🔢",
+              "collega": false
             },
             {
               "word": "NUOTO",
@@ -1164,7 +2373,8 @@
             "ME"
           ],
           "emoji": "📛",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "MANO",
@@ -1847,10 +3057,6 @@
             {
               "word": "TIVÙ",
               "emoji": "📺"
-            },
-            {
-              "word": "TIRAMISÙ",
-              "emoji": "🍰"
             },
             {
               "word": "TIMONE",
@@ -2613,7 +3819,8 @@
             },
             {
               "word": "SILENZIO",
-              "emoji": "🤫"
+              "emoji": "🤫",
+              "collega": false
             }
           ],
           "wrong": [
@@ -2652,7 +3859,8 @@
             },
             {
               "word": "SUPEREROE",
-              "emoji": "🦸"
+              "emoji": "🦸",
+              "collega": false
             },
             {
               "word": "SUPERMERCATO",
@@ -2725,7 +3933,8 @@
             "SE",
             "RA"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "ROSA",
@@ -2764,7 +3973,8 @@
             "LA",
             "RE"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         }
       ]
     },
@@ -2819,7 +4029,8 @@
           "s": "BU",
           "anchor": {
             "word": "BUIO",
-            "emoji": "🌑"
+            "emoji": "🌑",
+            "collega": false
           }
         }
       ],
@@ -2848,10 +4059,6 @@
             {
               "word": "LUMACA",
               "emoji": "🐌"
-            },
-            {
-              "word": "MARMELLATA",
-              "emoji": "🫙"
             },
             {
               "word": "SCIMMIA",
@@ -2973,7 +4180,8 @@
           "correct": [
             {
               "word": "BUIO",
-              "emoji": "🌑"
+              "emoji": "🌑",
+              "collega": false
             },
             {
               "word": "BUDINO",
@@ -3031,7 +4239,8 @@
             "NE"
           ],
           "emoji": "👍",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "BALENA",
@@ -3238,7 +4447,8 @@
           "correct": [
             {
               "word": "DUE",
-              "emoji": "2️⃣"
+              "emoji": "2️⃣",
+              "collega": false
             },
             {
               "word": "DUNE",
@@ -3583,7 +4793,8 @@
             "TO"
           ],
           "emoji": "👃",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "FAME",
@@ -3592,7 +4803,8 @@
             "ME"
           ],
           "emoji": "🍽️",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "FUMO",
@@ -3620,7 +4832,8 @@
             "TO"
           ],
           "emoji": "✨",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "FINITO",
@@ -3630,7 +4843,8 @@
             "TO"
           ],
           "emoji": "🏁",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         }
       ]
     },
@@ -3746,7 +4960,8 @@
             },
             {
               "word": "VOCE",
-              "emoji": "🗣️"
+              "emoji": "🗣️",
+              "collega": false
             }
           ],
           "wrong": [
@@ -3855,7 +5070,8 @@
             },
             {
               "word": "VUOTO",
-              "emoji": "🫙"
+              "emoji": "🫙",
+              "collega": false
             }
           ],
           "wrong": [
@@ -3895,7 +5111,8 @@
             "VA"
           ],
           "emoji": "🎉",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "VENA",
@@ -4152,7 +5369,8 @@
             },
             {
               "word": "RIMA",
-              "emoji": "📜"
+              "emoji": "📜",
+              "collega": false
             }
           ],
           "wrong": [
@@ -4251,7 +5469,8 @@
             "MA"
           ],
           "emoji": "🏛️",
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "DIRE",
@@ -4386,7 +5605,8 @@
             },
             {
               "word": "ZERO",
-              "emoji": "0️⃣"
+              "emoji": "0️⃣",
+              "collega": false
             }
           ]
         },
@@ -4396,10 +5616,6 @@
             {
               "word": "ZOCCOLO",
               "emoji": "👞"
-            },
-            {
-              "word": "ZOLLA",
-              "emoji": "🌱"
             }
           ],
           "wrong": [
@@ -4430,7 +5646,8 @@
             },
             {
               "word": "ZERO",
-              "emoji": "0️⃣"
+              "emoji": "0️⃣",
+              "collega": false
             }
           ],
           "wrong": [
@@ -4479,7 +5696,8 @@
             },
             {
               "word": "ZERO",
-              "emoji": "0️⃣"
+              "emoji": "0️⃣",
+              "collega": false
             }
           ]
         },
@@ -4813,7 +6031,8 @@
           "correct": [
             {
               "word": "CENTO",
-              "emoji": "💯"
+              "emoji": "💯",
+              "collega": false
             },
             {
               "word": "CERVELLO",
@@ -4888,7 +6107,8 @@
             "CU",
             "CU"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "CHILO",
@@ -4897,7 +6117,8 @@
             "CHI",
             "LO"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "CHELE",
@@ -4916,7 +6137,8 @@
             "BI",
             "NA"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "CAMERA",
@@ -4945,7 +6167,8 @@
             "CE",
             "NA"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "CINEMA",
@@ -5161,10 +6384,6 @@
           ],
           "wrong": [
             {
-              "word": "PIPA",
-              "emoji": "🪈"
-            },
-            {
               "word": "RASTRELLO",
               "emoji": "🧹"
             },
@@ -5249,13 +6468,15 @@
             },
             {
               "word": "GIALLO",
-              "emoji": "🟡"
+              "emoji": "🟡",
+              "collega": false
             }
           ],
           "wrong": [
             {
               "word": "GRIGIO",
-              "emoji": "⚪"
+              "emoji": "⚪",
+              "collega": false
             },
             {
               "word": "ROSA",
@@ -5289,7 +6510,8 @@
             "GA",
             "RA"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "GOLA",
@@ -5317,7 +6539,8 @@
             "GU",
             "RU"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "GIGI",
@@ -5346,7 +6569,8 @@
             "GE",
             "LO"
           ],
-          "doppia": false
+          "doppia": false,
+          "collega": false
         },
         {
           "word": "GELATO",
@@ -5434,10 +6658,6 @@
             {
               "word": "QUADRIFOGLIO",
               "emoji": "🍀"
-            },
-            {
-              "word": "QUERCIA",
-              "emoji": "🌳"
             }
           ]
         },
@@ -5530,7 +6750,8 @@
             },
             {
               "word": "SVEGLIE",
-              "emoji": "⏰"
+              "emoji": "⏰",
+              "collega": false
             }
           ]
         }
@@ -5558,7 +6779,8 @@
             },
             {
               "word": "JAZZ",
-              "emoji": "🎷"
+              "emoji": "🎷",
+              "collega": false
             },
             {
               "word": "JET",
@@ -5590,7 +6812,8 @@
           "words": [
             {
               "word": "KUNG FU",
-              "emoji": "🥋"
+              "emoji": "🥋",
+              "collega": false
             },
             {
               "word": "KEBAB",
@@ -5638,7 +6861,8 @@
             },
             {
               "word": "WI-FI",
-              "emoji": "📶"
+              "emoji": "📶",
+              "collega": false
             },
             {
               "word": "WALKIE TALKIE",
@@ -5650,7 +6874,8 @@
             },
             {
               "word": "WRESTLING",
-              "emoji": "🤼"
+              "emoji": "🤼",
+              "collega": false
             },
             {
               "word": "WATER",
@@ -5706,15 +6931,12 @@
             },
             {
               "word": "YEN",
-              "emoji": "🪙"
+              "emoji": "🪙",
+              "collega": false
             },
             {
               "word": "YACHT",
               "emoji": "🛥️"
-            },
-            {
-              "word": "YETI",
-              "emoji": "❄️"
             },
             {
               "word": "YAK",
@@ -5902,5 +7124,129 @@
       "C",
       "D"
     ]
-  }
+  },
+  "conceptGroups": [
+    [
+      "GATTO",
+      "MICIO"
+    ],
+    [
+      "DIVANO",
+      "SOFÀ"
+    ],
+    [
+      "ASINO",
+      "SOMARO"
+    ],
+    [
+      "BEBÈ",
+      "NEONATO"
+    ],
+    [
+      "DONO",
+      "REGALO"
+    ],
+    [
+      "MINESTRA",
+      "ZUPPA"
+    ],
+    [
+      "TUONO",
+      "FULMINE"
+    ],
+    [
+      "TRENO",
+      "LOCOMOTIVA"
+    ],
+    [
+      "NOTA",
+      "MUSICA"
+    ],
+    [
+      "AEREO",
+      "JET"
+    ],
+    [
+      "BARCA",
+      "NAVE",
+      "YACHT",
+      "VELA"
+    ],
+    [
+      "JUDO",
+      "KARATE",
+      "KUNG FU"
+    ],
+    [
+      "LOMBRICO",
+      "VERME"
+    ],
+    [
+      "CONIGLIO",
+      "LEPRE"
+    ],
+    [
+      "CERVO",
+      "DAINO",
+      "RENNA"
+    ],
+    [
+      "ZUCCHINE",
+      "CETRIOLO"
+    ],
+    [
+      "GALLINA",
+      "GALLO",
+      "POLLO"
+    ],
+    [
+      "CAPPELLO",
+      "BERRETTO"
+    ],
+    [
+      "SASSO",
+      "ROCCIA"
+    ],
+    [
+      "LUNA",
+      "NOTTE"
+    ],
+    [
+      "GELATO",
+      "GHIACCIOLO"
+    ],
+    [
+      "APE",
+      "VESPA"
+    ],
+    [
+      "OCA",
+      "CIGNO"
+    ],
+    [
+      "CAVOLO",
+      "LATTUGA",
+      "INSALATA"
+    ],
+    [
+      "LUMACA",
+      "LOMBRICO"
+    ],
+    [
+      "BUS",
+      "PULMINO"
+    ],
+    [
+      "NEGOZIO",
+      "SUPERMERCATO"
+    ],
+    [
+      "DENTE",
+      "DENTIFRICIO"
+    ],
+    [
+      "MANO",
+      "MANI"
+    ]
+  ]
 }

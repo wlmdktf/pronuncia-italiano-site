@@ -19,6 +19,17 @@ button:active { transform: scale(0.96); }
 .topbar .back { font-size: 34px; padding: 8px 14px; border-radius: 20px; background: #ffffffaa; box-shadow: 0 3px 0 #d8cdf0; }
 .topbar .title { font-size: clamp(20px, 4vw, 30px); font-weight: 800; }
 .topbar .stars { font-size: 22px; font-weight: 800; background: #fff; padding: 8px 14px; border-radius: 20px; box-shadow: 0 3px 0 #f4d06f; }
+.topbar .stars { white-space: nowrap; }
+.topbar-right { display: flex; align-items: center; gap: 10px; }
+.flag-btn { font-size: 22px; line-height: 1; padding: 9px 11px; border-radius: 16px; background: #ffffffaa; box-shadow: 0 3px 0 #ecd3d6; }
+@media (max-width: 480px) {
+  .topbar .title { flex: 1; min-width: 0; text-align: center; margin: 0 6px; }
+  .topbar-right { gap: 6px; }
+  .flag-btn { font-size: 18px; padding: 8px; }
+  .topbar .stars { font-size: 18px; padding: 7px 10px; }
+}
+.flag-toast { position: fixed; top: calc(12px + env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); z-index: 70;
+  background: #4a3b6b; color: #fff; font-size: 16px; font-weight: 700; padding: 10px 18px; border-radius: 18px; box-shadow: 0 6px 20px #0003; max-width: 92vw; }
 
 /* ---------- home ---------- */
 .home-title { text-align: center; font-size: clamp(34px, 7vw, 56px); font-weight: 900; margin: 10px 0 4px;
@@ -26,7 +37,8 @@ button:active { transform: scale(0.96); }
 .home-sub { text-align: center; font-size: clamp(16px, 3vw, 22px); opacity: .75; margin-bottom: 18px; font-weight: 600; }
 .unit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; padding: 10px 4px; flex: 1; align-content: center; }
 .unit-card { background: #fff; border-radius: 32px; padding: 26px 18px; text-align: center; box-shadow: 0 8px 0 #e2d9f5, 0 14px 30px #0001; }
-.picture-visual { display: block; background-repeat: no-repeat; background-color: #fff; }
+.picture-visual { display: block; background-repeat: no-repeat; background-color: #fff; pointer-events: none; -webkit-touch-callout: none; -webkit-user-drag: none; }
+img.picture-visual { object-fit: contain; }
 .unit-visual { display: block; margin: 0 auto; }
 .unit-visual.emoji-visual { font-size: clamp(56px, 10vw, 84px); }
 .unit-visual.picture-visual { width: clamp(82px, 13vw, 112px); height: clamp(82px, 13vw, 112px); border-radius: 24px; }
@@ -109,11 +121,11 @@ button:active { transform: scale(0.96); }
 /* collega le parole (连线) */
 .collega-board { position: relative; display: flex; justify-content: space-between; gap: 10vw; width: min(720px, 94vw); touch-action: none; }
 .collega-col { display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; }
-.ccard { position: relative; background: #fff; border-radius: 22px; box-shadow: 0 5px 0 #e2d9f5; text-align: center; min-height: clamp(80px, 14vw, 118px); display: flex; align-items: center; justify-content: center; }
+.ccard { position: relative; background: #fff; border-radius: 22px; box-shadow: 0 5px 0 #e2d9f5; text-align: center; min-height: clamp(84px, 15vw, 124px); display: flex; align-items: center; justify-content: center; }
 .ccard.pic { cursor: pointer; }
 .collega-visual { display: block; margin: 0 auto; }
 .collega-visual.emoji-visual { font-size: clamp(58px, 11.5vw, 92px); }
-.collega-visual.picture-visual { width: clamp(72px, 12vw, 102px); height: clamp(72px, 12vw, 102px); border-radius: 16px; }
+.collega-visual.picture-visual { width: clamp(76px, 13.5vw, 112px); height: clamp(76px, 13.5vw, 112px); border-radius: 16px; }
 .ccard.wrd { font-weight: 900; font-size: clamp(16px, 3.4vw, 25px); letter-spacing: 1px; padding: 6px 10px; word-break: keep-all; }
 .ccard .dot { position: absolute; top: 50%; width: 15px; height: 15px; border-radius: 50%; background: #4a3b6b; transform: translateY(-50%); }
 .ccard.pic .dot { right: -8px; }
@@ -173,6 +185,31 @@ button:active { transform: scale(0.96); }
 .parent .pbtn { display: inline-block; background: #7c5cbf; color: #fff; font-weight: 700; border-radius: 14px; padding: 10px 16px; margin: 6px 6px 0 0; font-size: 15px; }
 .parent .pbtn.ghost { background: #e8e2f7; color: #4a3b6b; }
 .parent input[type=text] { font-size: 16px; padding: 8px 12px; border-radius: 12px; border: 2px solid #d8cdf0; width: 180px; }
+/* 纠错标记: 记录面板 + 家长区列表 */
+.flag-sheet h3 { margin-top: 14px; }
+.flag-place { font-size: 14px; line-height: 1.6; opacity: .8; overflow-wrap: anywhere; }
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.pchip { font-size: 16px; font-weight: 700; background: #efe9fb; border-radius: 14px; padding: 9px 13px; }
+.pchip.on { background: #7c5cbf; color: #fff; }
+.flag-sheet .flag-note { height: 70px; font-size: 16px; margin: 14px 0 4px; border-radius: 12px; border: 2px solid #d8cdf0; padding: 8px; }
+.flag-status:not(:empty) { margin-top: 8px; color: #b3261e; }
+.flag-mode { display: flex; align-items: center; gap: 8px; font-weight: 700; margin: 10px 0 4px; font-size: 16px; }
+.flag-mode input { width: 22px; height: 22px; }
+.flag-item { padding: 8px 0; border-bottom: 1px solid #00000012; }
+.flag-head { display: flex; align-items: center; gap: 4px; }
+.flag-head .flag-del { margin-left: auto; font-size: 17px; padding: 4px 8px; border-radius: 10px; background: #efe9fb; }
+.flag-meta { font-size: 12.5px; opacity: .7; margin-top: 2px; overflow-wrap: anywhere; }
+.flag-note-text { font-size: 14px; margin-top: 4px; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* 图片署名 */
+.credits { margin-top: 16px; padding: 12px 14px; border-radius: 18px; background: #f3f0fa; }
+.credits summary { font-weight: 800; font-size: 16px; cursor: pointer; }
+.credits p, .credits li { line-height: 1.55; margin: 6px 0; overflow-wrap: anywhere; }
+.credits h4 { margin: 12px 0 4px; font-size: 15px; }
+.credits ul { padding-left: 20px; }
+.credits .credit-en { font-size: 13px; opacity: .75; }
+.credits a { color: #5443a8; }
+
 .gate-num { font-size: 30px; font-weight: 900; letter-spacing: 4px; }
 .gate-pad { display: grid; grid-template-columns: repeat(3, 72px); gap: 10px; justify-content: center; margin-top: 14px; }
 .gate-pad button { font-size: 26px; font-weight: 800; background: #fff; border-radius: 18px; padding: 14px 0; box-shadow: 0 4px 0 #e2d9f5; }

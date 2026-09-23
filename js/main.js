@@ -12,6 +12,7 @@ function navigate(next) {
 
 function render() {
   const s = state;
+  V.noteState(s);
   if (s.screen === 'splash') return V.renderSplash(onStart);
   if (s.screen === 'home') return V.renderHome();
   if (s.screen === 'unit') return V.renderUnit(s.unitId);

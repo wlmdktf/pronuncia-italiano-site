@@ -4,6 +4,9 @@ const cache = new Map();
 let current = null;
 let currentResolve = null;   // 播放被打断时也要让等待方放行 (否则快速连点会卡死游戏逻辑)
 let playToken = 0;           // 每次新播放 +1; playSeq 靠它发现自己被插播, 立即中止不再续播队列
+const recent = [];           // 最近播放的音频 ID (新的在前), 纠错标记记录“当时播的是哪条”
+
+export function recentAudio() { return [...recent]; }
 
 // 裸爆破音不可靠，V 的孤立 TTS 纯音也未通过家长试听。
 // 只要按钮代表“这个字母”，爆破音 B/P/T/D/C/G 与 V 都读意大利语字母名。
@@ -39,6 +42,8 @@ export function stopAll() {
 
 export function play(id) {
   playToken++;
+  recent.unshift(id);
+  recent.length = Math.min(recent.length, 8);
   return new Promise((resolve) => {
     stopAll();
     let a = cache.get(id);

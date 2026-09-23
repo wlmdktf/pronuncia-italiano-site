@@ -1,10 +1,118 @@
-// 家长角: 长按齿轮 → 算术门 → 面板 (音频验收 / 设置) — 家长界面用中文
-import { h } from './views.js';
+// 家长角: 长按齿轮 → 算术门 → 面板 (纠错标记 / 进度 / 音频验收 / 图片署名) — 家长界面用中文
+import { h, curriculum } from './views.js';
 import * as A from './audio.js';
 import * as P from './progress.js';
+import * as F from './flags.js';
 
 const REVIEW_KEY = 'sillabe-review-v1';
 const ov = () => document.getElementById('overlay');
+const KIND_ZH = { audio: '读音', picture: '图', word: '词不合适', other: '其他' };
+
+function downloadText(text, filename) {
+  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  const link = h('a', { href: url, download: filename });
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+
+function flagTools(version) {
+  const status = h('div', { role: 'status', 'aria-live': 'polite', class: 'progress-status' });
+  const listWrap = h('div', { class: 'flag-list' });
+  const text = h('textarea', { readonly: '', 'aria-label': '纠错标记导出文字' });
+  text.style.display = 'none';
+  const meta = () => ({ build: version?.build ?? null, curriculumVersion: curriculum()?.version ?? null });
+  const showText = () => { text.value = F.exportText(meta()); text.style.display = 'block'; };
+  const mode = h('input', { type: 'checkbox', id: 'flag-mode' });
+  mode.checked = F.modeOn();
+  mode.addEventListener('change', () => {
+    try {
+      F.setMode(mode.checked);
+      status.textContent = mode.checked ? '已开启：练习页顶栏右上角会出现 🚩。' : '已关闭：🚩 不再显示，已记下的标记仍保留。';
+      window.dispatchEvent(new Event('progresschange'));   // 底下的页面立即显示 / 隐藏 🚩
+    } catch (err) { mode.checked = !mode.checked; status.textContent = `没有切换：${err.message}`; }
+  });
+  function renderList() {
+    const flags = F.list().slice().reverse();
+    listWrap.replaceChildren(
+      h('p', {}, flags.length ? `这台设备上共 ${flags.length} 条标记（新的在上）。` : '还没有标记。'),
+      ...flags.map(f => h('div', { class: 'flag-item' },
+        h('div', { class: 'flag-head' },
+          h('strong', {}, f.word || '（音节 / 字母 / 整页）'), ` · ${KIND_ZH[f.kind] || f.kind}`,
+          h('button', { class: 'flag-del', 'aria-label': '删除这条标记', onclick: () => {
+            try { F.remove(f.id); renderList(); } catch (err) { status.textContent = `没有删除：${err.message}`; }
+          } }, '🗑️')),
+        h('div', { class: 'flag-meta' },
+          [new Date(f.at).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }),
+            f.place, f.audio ? `刚播放 ${f.audio}` : ''].filter(Boolean).join(' · ')),
+        f.note ? h('div', { class: 'flag-note-text' }, f.note) : null)));
+  }
+  renderList();
+  const exportFlags = () => {
+    if (!F.list().length) { status.textContent = '还没有标记可导出。'; return; }
+    showText();
+    try {
+      downloadText(text.value, `sillabe-flags-${new Date().toISOString().slice(0, 10)}.json`);
+      status.textContent = '已下载标记文件，发给 Claude 即可；也可以复制下方文字。';
+    } catch (err) { status.textContent = `下载未完成，请复制下方文字：${err.message}`; }
+  };
+  const copyFlags = async () => {
+    if (!F.list().length) { status.textContent = '还没有标记可复制。'; return; }
+    showText();
+    try { await navigator.clipboard.writeText(text.value); status.textContent = `已复制 ${F.list().length} 条标记，可以直接粘贴给 Claude。`; }
+    catch { text.focus(); text.select(); status.textContent = '请长按下方文字，全选并复制。'; }
+  };
+  const clearFlags = () => {
+    const n = F.list().length;
+    if (!n) { status.textContent = '没有需要清空的标记。'; return; }
+    if (!confirm(`清空这台设备上的 ${n} 条标记？请先确认已经导出并交给 Claude。`)) return;
+    F.clear();
+    text.value = ''; text.style.display = 'none';
+    renderList();
+    status.textContent = '已清空。';
+  };
+  return h('section', { class: 'progress-tools flag-tools' },
+    h('h3', {}, '🚩 纠错标记（读音 / 图 / 词）'),
+    h('p', {}, '陪孩子练习时发现读音不准、图不对或词不合适：打开下面的开关，练习页顶栏会出现 🚩，点它选中是哪个词、什么问题，就记下了。标记只存在这台设备，攒一些后导出交给 Claude 逐条处理。'),
+    h('label', { class: 'flag-mode', for: 'flag-mode' }, mode, ' 陪练纠错模式（显示 🚩）'),
+    h('div', {},
+      h('button', { class: 'pbtn', onclick: exportFlags }, '导出标记'),
+      h('button', { class: 'pbtn ghost', onclick: copyFlags }, '复制标记'),
+      h('button', { class: 'pbtn ghost', onclick: clearFlags }, '清空标记')),
+    text, status, listWrap);
+}
+
+// 图片署名页: ARASAAC 图符 (CC BY-NC-SA 4.0) + 逐张 Commons 照片的作者与许可, 数据来自课程 pictureCredits。
+function pictureCredits() {
+  const cur = curriculum();
+  const ara = cur?.pictureCredits?.arasaac;
+  if (!ara) return null;
+  const pictures = Object.entries(cur.pictures || {});
+  const link = (href, label) => h('a', { href, target: '_blank', rel: 'noopener' }, label);
+  const pictograms = pictures.filter(([, p]) => p.src?.includes('/arasaac-'));
+  const adapted = pictograms.filter(([, p]) => p.adapted);
+  const photos = new Map();
+  for (const [word, p] of pictures) {
+    const id = p.src?.match(/\/(commons-\d+)/)?.[1];
+    if (id) photos.set(id, [...(photos.get(id) || []), [word, p]]);
+  }
+  return h('details', { class: 'credits' },
+    h('summary', {}, `🖼️ 图片来源与许可（ARASAAC 图符 ${new Set(pictograms.map(([, p]) => p.src)).size} 张 · Commons 照片 ${photos.size} 张）`),
+    h('p', {}, '图符来自 ', link(ara.url, 'ARASAAC'), `，作者 ${ara.author}，权利人 ${ara.owner}（西班牙阿拉贡自治区政府），以 `,
+      link(ara.licenseUrl, ara.license), ' 许可发布；App 里的图符经过裁边和缩小。'),
+    h('p', { class: 'credit-en' }, `Pictographic symbols: ${ara.author}. Origin: ARASAAC (${ara.url}). License: ${ara.license}. Owner: Government of Aragón (Spain).`),
+    adapted.length ? h('h4', {}, `改编过的图符（同样以 ${ara.license} 许可）`) : null,
+    adapted.length ? h('ul', {}, ...adapted.map(([word, p]) => h('li', {}, `${word}：${p.adapted}`))) : null,
+    h('h4', {}, 'Wikimedia Commons 照片（裁成方形并缩小）'),
+    h('ul', {}, ...[...photos].map(([id, uses]) => {
+      const c = cur.pictureCredits[id] || {};
+      const notes = uses.map(([, p]) => p.adapted).filter(Boolean);
+      return h('li', {}, `${uses.map(([word]) => word).join('、')}：`, link(c.sourcePage, c.title || id),
+        `，作者 ${c.author || '未注明'}，`, link(c.licenseUrl, c.license), notes.length ? `；${notes.join('；')}` : '');
+    })),
+    h('p', {}, '本 App 为家庭内部的非商业学习用途。'));
+}
 
 function loadReview() {
   try { return JSON.parse(localStorage.getItem(REVIEW_KEY)) || {}; } catch { return {}; }
@@ -159,7 +267,8 @@ async function openPanel() {
     h('h2', {}, '家长区'),
     progressSummary,
     h('div', { style: 'font-size:12px;opacity:.6;margin-top:2px' },
-      version ? `版本 ${version.build} · 音频包 ${version.audio} 条 (打开 app 自动检查更新, 游戏中出现 🎁 即有新版)` : ''),
+      version ? `版本 ${version.build} · 音频包 ${version.audio} 条${version.pictures ? ` · 图片 ${version.pictures} 张` : ''} (打开 app 自动检查更新, 游戏中出现 🎁 即有新版)` : ''),
+    flagTools(version),
     progressTools(updateSummary),
     h('h3', {}, '⚙️ 设置'),
     h('div', {}, nick, h('button', { class: 'pbtn', onclick: () => { P.setNickname(nick.value); A.sfx('ok'); } }, '保存昵称')),
@@ -168,6 +277,7 @@ async function openPanel() {
       try { P.resetAll(); window.dispatchEvent(new Event('progresschange')); openPanel(); }
       catch { alert('未能保存，请检查设备存储空间后重试。'); }
     } }, '🗑️ 重置进度')),
+    pictureCredits(),
     h('h3', {}, '🎧 音频验收 (逐条听, 不满意点 👎, 结果导出发给 Claude 换真人录音)'),
     h('div', {},
       h('button', { class: 'pbtn ghost', onclick: () => { filter = 'pending'; renderList(); } }, '只看待验收'),
