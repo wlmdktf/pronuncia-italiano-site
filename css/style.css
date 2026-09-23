@@ -85,7 +85,9 @@ img.picture-visual { object-fit: contain; }
 .dots i.on { background: #8f6ae0; }
 
 /* sillaba merge */
-.merge-row { display: flex; align-items: center; gap: 14px; }
+/* 放不下就换行: 居中的单行超出屏幕时, 左侧会被裁掉且滑不到。
+   负外边距让一行仍可宽到整个屏幕, 平板上原本放得下的保持单行不变 */
+.merge-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin: 0 calc(50% - 50vw); }
 .tile { font-size: clamp(52px, 11vw, 96px); font-weight: 900; background: #fff; border-radius: 26px; padding: 6px 26px; box-shadow: 0 7px 0 #e2d9f5; }
 .tile.c { color: #b05ce0; } .tile.v { color: #3b8fbf; }
 .merge-eq { font-size: clamp(30px, 6vw, 52px); opacity: .6; }
@@ -107,9 +109,19 @@ img.picture-visual { object-fit: contain; }
 .word-card.goal { background: linear-gradient(150deg, #fff6d9, #ffeef8); position: relative; }
 .word-card.goal .goal-hint { position: absolute; right: 10px; bottom: 8px; font-size: 20px; opacity: .7; }
 
-.slot-row { display: flex; gap: 10px; align-items: center; min-height: clamp(70px, 12vw, 110px); }
+.slot-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; align-items: center; min-height: clamp(70px, 12vw, 110px); }
 .slot { font-size: clamp(40px, 9vw, 80px); font-weight: 900; border: 4px dashed #cbbcec; color: #cbbcec; border-radius: 22px; padding: 2px 22px; min-width: clamp(80px, 16vw, 140px); text-align: center; }
 .slot.filled { border-style: solid; color: #4a3b6b; background: #fff; box-shadow: 0 6px 0 #e2d9f5; }
+
+/* 手机 (≤600px): 同一 vw 字号公式只放低下限, 收窄内边距和间距, 让 GH + E = GHE 和四个空格都一行放下;
+   音节块在内容区内换行、不贴屏幕边。平板不受影响 */
+@media (max-width: 600px) {
+  .merge-row { margin: 0; column-gap: clamp(6px, 2vw, 10px); }
+  .tile { font-size: clamp(34px, 11vw, 96px); padding: 6px clamp(10px, 3.2vw, 16px); }
+  .merge-eq { font-size: clamp(20px, 6vw, 52px); }
+  .slot-row { gap: clamp(4px, 1.6vw, 10px); }
+  .slot { font-size: clamp(28px, 9vw, 80px); padding: 2px clamp(6px, 2.2vw, 22px); min-width: clamp(52px, 16vw, 140px); }
+}
 
 /* dettato (ascolta e scrivi) */
 .big-ear { width: clamp(88px, 15vw, 116px); height: clamp(88px, 15vw, 116px); font-size: clamp(40px, 7.5vw, 56px); }
