@@ -8578,5 +8578,635 @@
   "bytes": 14444,
   "ts": "2026-08-20 20:07",
   "manual": "parent-approved 2026-08-20"
+ },
+ "word-elfo": {
+  "hash": "eaeeff4ec88d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Elfo.",
+  "qa": "ok",
+  "stt": "Elfo.",
+  "bytes": 10700,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-microfono": {
+  "hash": "1f196e6fe070",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Microfono.",
+  "qa": "ok",
+  "stt": "Microfono.",
+  "bytes": 14444,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-mulino": {
+  "hash": "cfc1c22ef61f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<phoneme alphabet='ipa' ph='muˈlino'>Mulino</phoneme>.",
+  "qa": "ok",
+  "stt": "Mulino.",
+  "bytes": 11564,
+  "ts": "2026-09-23 06:56",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-mutande": {
+  "hash": "80027c3220b5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Mutande.",
+  "qa": "ok",
+  "stt": "Mutande.",
+  "bytes": 13004,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-pappagallo": {
+  "hash": "1e576d7ec373",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Pappagallo.",
+  "qa": "ok",
+  "stt": "Pappagallo.",
+  "bytes": 13868,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-tappo": {
+  "hash": "208bf7758fe2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tappo.",
+  "qa": "ok",
+  "stt": "Tappo.",
+  "bytes": 10412,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-talpa": {
+  "hash": "bf22be313b5c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Talpa.",
+  "qa": "ok",
+  "stt": "Talpa.",
+  "bytes": 10700,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-testa": {
+  "hash": "a9aeef99a72f",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Testa.",
+  "qa": "ok",
+  "stt": "Testa.",
+  "bytes": 10988,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-tetto": {
+  "hash": "86f067d3ec1b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tetto.",
+  "qa": "ok",
+  "stt": "Tetto.",
+  "bytes": 9836,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-tuta": {
+  "hash": "faaf95c7ed7a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Tuta.",
+  "qa": "ok",
+  "stt": "Tuta.",
+  "bytes": 10124,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-lettera": {
+  "hash": "af53571ee4fe",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lettera.",
+  "qa": "ok",
+  "stt": "Lettera.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-libellula": {
+  "hash": "c5cc8338f3d2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Libellula.",
+  "qa": "ok",
+  "stt": "Libellula.",
+  "bytes": 13292,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-sabbia": {
+  "hash": "395106c83e34",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sabbia.",
+  "qa": "ok",
+  "stt": "Sabbia.",
+  "bytes": 11564,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-sacco": {
+  "hash": "096388b54bc0",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sacco.",
+  "qa": "ok",
+  "stt": "Sacco.",
+  "bytes": 12140,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-sottomarino": {
+  "hash": "0d24484ff039",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Sottomarino.",
+  "qa": "ok",
+  "stt": "Sottomarino.",
+  "bytes": 15308,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-susina": {
+  "hash": "1236aaa677ca",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Susina.",
+  "qa": "ok",
+  "stt": "Susina.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-barattolo": {
+  "hash": "0d95b8b071e1",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Barattolo.",
+  "qa": "ok",
+  "stt": "Barattolo.",
+  "bytes": 13580,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-berretto": {
+  "hash": "8376cf6e8718",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Berretto.",
+  "qa": "ok",
+  "stt": "Berretto.",
+  "bytes": 13868,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-dottore": {
+  "hash": "f8ba7d1ddda9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Dottore.",
+  "qa": "ok",
+  "stt": "Dottore.",
+  "bytes": 13580,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-dentifricio": {
+  "hash": "a550e7914141",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Dentifricio.",
+  "qa": "ok",
+  "stt": "Dentifricio.",
+  "bytes": 15884,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-felpa": {
+  "hash": "add1ce4c52c1",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Felpa.",
+  "qa": "ok",
+  "stt": "Felpa.",
+  "bytes": 11564,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-fico": {
+  "hash": "494a1b5bb413",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Fico.",
+  "qa": "ok",
+  "stt": "Fico.",
+  "bytes": 10988,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-furetto": {
+  "hash": "799d166b9150",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Furetto.",
+  "qa": "ok",
+  "stt": "Furetto.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-volante": {
+  "hash": "e912b519b3ed",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Volante.",
+  "qa": "ok",
+  "stt": "Volante.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-vongola": {
+  "hash": "54bd882768c4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Vongola.",
+  "qa": "ok",
+  "stt": "Vongola.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-verme": {
+  "hash": "d78debc2e12a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Verme.",
+  "qa": "ok",
+  "stt": "Verme.",
+  "bytes": 10700,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-rondine": {
+  "hash": "bd5ba2cf9de8",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Rondine.",
+  "qa": "ok",
+  "stt": "Rondine.",
+  "bytes": 12140,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-rubinetto": {
+  "hash": "114261929f24",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Rubinetto.",
+  "qa": "ok",
+  "stt": "Rubinetto.",
+  "bytes": 13580,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-zucchero": {
+  "hash": "d5b5c3d4acc5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Zucchero.",
+  "qa": "ok",
+  "stt": "Zucchero.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-camion": {
+  "hash": "f6ed829b37d5",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Camion.",
+  "qa": "ok",
+  "stt": "Camion.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cavallo": {
+  "hash": "4f14b8fcb845",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cavallo.",
+  "qa": "ok",
+  "stt": "Cavallo.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-casa": {
+  "hash": "341562ce2877",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Casa.",
+  "qa": "ok",
+  "stt": "Casa.",
+  "bytes": 10124,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cappello": {
+  "hash": "edd51bc43122",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cappello.",
+  "qa": "ok",
+  "stt": "Cappello.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-coccodrillo": {
+  "hash": "8d4f59485bfd",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Coccodrillo.",
+  "qa": "ok",
+  "stt": "Coccodrillo.",
+  "bytes": 14732,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-coperta": {
+  "hash": "9b0dc126671d",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Coperta.",
+  "qa": "ok",
+  "stt": "Coperta.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cucchiaio": {
+  "hash": "e25acaea93e9",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cucchiaio.",
+  "qa": "ok",
+  "stt": "Cucchiaio.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cuore": {
+  "hash": "4a1f88d15474",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cuore.",
+  "qa": "ok",
+  "stt": "Cuore.",
+  "bytes": 10412,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cucina": {
+  "hash": "147e60d82562",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cucina.",
+  "qa": "ok",
+  "stt": "Cucina.",
+  "bytes": 11852,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-chitarra": {
+  "hash": "d224daa37919",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Chitarra.",
+  "qa": "ok",
+  "stt": "Chitarra.",
+  "bytes": 12140,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cerchio": {
+  "hash": "c36943173ab2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cerchio.",
+  "qa": "ok",
+  "stt": "Cerchio.",
+  "bytes": 11564,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cetriolo": {
+  "hash": "2d95a80940dc",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cetriolo.",
+  "qa": "ok",
+  "stt": "Cetriolo.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-ciliegia": {
+  "hash": "3a75cf8a527c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ciliegia.",
+  "qa": "ok",
+  "stt": "Ciliegia.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-ciuccio": {
+  "hash": "6366972c1c24",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ciuccio.",
+  "qa": "ok",
+  "stt": "Ciuccio.",
+  "bytes": 10988,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-cicogna": {
+  "hash": "d7f68d1f204e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Cicogna.",
+  "qa": "ok",
+  "stt": "Cicogna.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gamba": {
+  "hash": "94309d40178e",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Gamba.",
+  "qa": "ok",
+  "stt": "Gamba.",
+  "bytes": 10412,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gallo": {
+  "hash": "ab79c00e008b",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Gallo.",
+  "qa": "ok",
+  "stt": "Gallo.",
+  "bytes": 10700,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gonna": {
+  "hash": "2b125ee542f1",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Gonna.",
+  "qa": "ok",
+  "stt": "Gonna.",
+  "bytes": 10412,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gomito": {
+  "hash": "ef403401075c",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Gomito.",
+  "qa": "ok",
+  "stt": "Gomito.",
+  "bytes": 11852,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-guancia": {
+  "hash": "f52f71fdb477",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Guancia.",
+  "qa": "ok",
+  "stt": "Guancia.",
+  "bytes": 11276,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-ghiaccio": {
+  "hash": "aed0b89d91f3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ghiaccio.",
+  "qa": "ok",
+  "stt": "Ghiaccio.",
+  "bytes": 10988,
+  "ts": "2026-09-23 06:54",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-ghiacciolo": {
+  "hash": "f8d190973288",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Ghiacciolo.",
+  "qa": "ok",
+  "stt": "Ghiacciolo.",
+  "bytes": 12140,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gemelli": {
+  "hash": "4e41b74b14e4",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Gemelli.",
+  "qa": "ok",
+  "stt": "Gemelli.",
+  "bytes": 12140,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-giostra": {
+  "hash": "08285f9637cc",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Giostra.",
+  "qa": "ok",
+  "stt": "Giostra.",
+  "bytes": 11852,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-giraffa": {
+  "hash": "6dbfc9e1c402",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Giraffa.",
+  "qa": "ok",
+  "stt": "Giraffa.",
+  "bytes": 12716,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-giacca": {
+  "hash": "e3947a2a4759",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Giacca.",
+  "qa": "ok",
+  "stt": "Giacca.",
+  "bytes": 11276,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-castagne": {
+  "hash": "e48fb5ab2cec",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Castagne.",
+  "qa": "ok",
+  "stt": "Castagne.",
+  "bytes": 13004,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-castagne-slow": {
+  "hash": "b5cb3f5afcf2",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Castagne.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 18188,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-lasagne": {
+  "hash": "e1fa6933cfea",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Lasagne.",
+  "qa": "ok",
+  "stt": "Lasagne.",
+  "bytes": 13004,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-lasagne-slow": {
+  "hash": "92b331e8463a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Lasagne.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 18188,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gnocchi": {
+  "hash": "033a2525a984",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Gnocchi.",
+  "qa": "ok",
+  "stt": "Gnocchi.",
+  "bytes": 11852,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-gnocchi-slow": {
+  "hash": "8b072890f67a",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Gnocchi.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 16172,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-maglione": {
+  "hash": "460adf9ab1b6",
+  "voice": "it-IT-ElsaNeural",
+  "text": "Maglione.",
+  "qa": "ok",
+  "stt": "Maglione.",
+  "bytes": 12428,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
+ },
+ "word-maglione-slow": {
+  "hash": "e3f9bdfb89a3",
+  "voice": "it-IT-ElsaNeural",
+  "text": "<prosody rate='-35%'>Maglione.</prosody>",
+  "qa": "manual",
+  "stt": null,
+  "bytes": 17612,
+  "ts": "2026-09-23 06:55",
+  "manual": "parent-approved 2026-09-23 (new-words-2026-09-23)"
  }
 }

@@ -12,6 +12,11 @@
       "normal": "Tsecca.",
       "normalQa": "stt",
       "voice": "it-IT-IsabellaNeural"
+    },
+    "MULINO": {
+      "normal": "<phoneme alphabet='ipa' ph='muˈlino'>Mulino</phoneme>.",
+      "normalQa": "stt",
+      "why": "普通文本合成两次都被回读成 Molino（首音节像 MO）；改用 IPA 音标 /muˈlino/ 合成后回读为 Mulino。请重点听第一个元音是不是清楚的 u。"
     }
   },
   "appTitle": "Sillabe Magiche",
@@ -35,8 +40,8 @@
     "ELEFANTE": {
       "src": "assets/pictures/arasaac-2372.png"
     },
-    "ELMO": {
-      "src": "assets/pictures/arasaac-36509.png"
+    "ELFO": {
+      "src": "assets/pictures/arasaac-36387.png"
     },
     "ERBA": {
       "src": "assets/pictures/arasaac-3113.png"
@@ -209,8 +214,8 @@
     "MIRTILLO": {
       "src": "assets/pictures/arasaac-13034.png"
     },
-    "MICIO": {
-      "src": "assets/pictures/arasaac-2406.png"
+    "MICROFONO": {
+      "src": "assets/pictures/arasaac-2912.png"
     },
     "ROBOT": {
       "src": "assets/pictures/arasaac-6208.png"
@@ -220,6 +225,12 @@
     },
     "MUSICA": {
       "src": "assets/pictures/arasaac-24791.png"
+    },
+    "MULINO": {
+      "src": "assets/pictures/arasaac-13086.png"
+    },
+    "MUTANDE": {
+      "src": "assets/pictures/arasaac-2303.png"
     },
     "FARFALLA": {
       "src": "assets/pictures/arasaac-2465.png"
@@ -329,6 +340,9 @@
     "PAVONE": {
       "src": "assets/pictures/arasaac-13348.png"
     },
+    "PAPPAGALLO": {
+      "src": "assets/pictures/arasaac-2934.png"
+    },
     "POLLO": {
       "src": "assets/pictures/arasaac-4952.png"
     },
@@ -422,6 +436,12 @@
     "TAZZA": {
       "src": "assets/pictures/arasaac-2582.png"
     },
+    "TAPPO": {
+      "src": "assets/pictures/arasaac-7267.png"
+    },
+    "TALPA": {
+      "src": "assets/pictures/arasaac-9070.png"
+    },
     "TORTA": {
       "src": "assets/pictures/arasaac-2579.png"
     },
@@ -452,11 +472,20 @@
     "TEIERA": {
       "src": "assets/pictures/arasaac-7276.png"
     },
+    "TESTA": {
+      "src": "assets/pictures/arasaac-2673.png"
+    },
+    "TETTO": {
+      "src": "assets/pictures/arasaac-2584.png"
+    },
     "TIVÙ": {
       "src": "assets/pictures/arasaac-25498.png"
     },
     "TUFFO": {
       "src": "assets/pictures/arasaac-22170.png"
+    },
+    "TUTA": {
+      "src": "assets/pictures/arasaac-2332.png"
     },
     "TANA": {
       "src": "assets/pictures/arasaac-7149.png"
@@ -506,11 +535,17 @@
     "LEPRE": {
       "src": "assets/pictures/arasaac-17265.png"
     },
+    "LETTERA": {
+      "src": "assets/pictures/arasaac-2688.png"
+    },
     "LUMACA": {
       "src": "assets/pictures/arasaac-8061.png"
     },
     "LINGUA": {
       "src": "assets/pictures/arasaac-2944.png"
+    },
+    "LIBELLULA": {
+      "src": "assets/pictures/arasaac-9066.png"
     },
     "LUCERTOLA": {
       "src": "assets/pictures/arasaac-2950.png"
@@ -548,11 +583,17 @@
     "SANDALO": {
       "src": "assets/pictures/arasaac-8368.png"
     },
+    "SABBIA": {
+      "src": "assets/pictures/arasaac-4565.png"
+    },
+    "SACCO": {
+      "src": "assets/pictures/arasaac-6210.png"
+    },
     "SERPENTE": {
       "src": "assets/pictures/arasaac-2568.png"
     },
-    "SOFÀ": {
-      "src": "assets/pictures/arasaac-2571.png"
+    "SOTTOMARINO": {
+      "src": "assets/pictures/arasaac-3157.png"
     },
     "SOLDI": {
       "src": "assets/pictures/arasaac-4630.png"
@@ -565,6 +606,9 @@
     },
     "SEME": {
       "src": "assets/pictures/arasaac-8689.png"
+    },
+    "SUSINA": {
+      "src": "assets/pictures/arasaac-8305.png"
     },
     "SUPERMERCATO": {
       "src": "assets/pictures/arasaac-6618.png"
@@ -596,6 +640,9 @@
     "BAGNO": {
       "src": "assets/pictures/arasaac-36349.png"
     },
+    "BARATTOLO": {
+      "src": "assets/pictures/arasaac-3322.png"
+    },
     "SCIMMIA": {
       "src": "assets/pictures/arasaac-2477.png"
     },
@@ -610,6 +657,9 @@
     },
     "BEBÈ": {
       "src": "assets/pictures/arasaac-2275.png"
+    },
+    "BERRETTO": {
+      "src": "assets/pictures/arasaac-2411.png"
     },
     "GUANTI": {
       "src": "assets/pictures/arasaac-2415.png"
@@ -662,8 +712,14 @@
     "DOCCIA": {
       "src": "assets/pictures/arasaac-2370.png"
     },
+    "DOTTORE": {
+      "src": "assets/pictures/arasaac-2467.png"
+    },
     "DENTE": {
       "src": "assets/pictures/arasaac-2905.png"
+    },
+    "DENTIFRICIO": {
+      "src": "assets/pictures/arasaac-2858.png"
     },
     "VOLPE": {
       "src": "assets/pictures/arasaac-2623.png"
@@ -722,8 +778,8 @@
     "FESTA": {
       "src": "assets/pictures/arasaac-7099.png"
     },
-    "FERRO": {
-      "src": "assets/pictures/arasaac-37002.png"
+    "FELPA": {
+      "src": "assets/pictures/arasaac-8701.png"
     },
     "FELCE": {
       "src": "assets/pictures/arasaac-8601.png"
@@ -737,11 +793,17 @@
     "FIOCCO": {
       "src": "assets/pictures/arasaac-2946.png"
     },
+    "FICO": {
+      "src": "assets/pictures/arasaac-2979.png"
+    },
     "FUMO": {
       "src": "assets/pictures/arasaac-6529.png"
     },
     "FULMINE": {
       "src": "assets/pictures/arasaac-7288.png"
+    },
+    "FURETTO": {
+      "src": "assets/pictures/arasaac-37251.png"
     },
     "VALLE": {
       "src": "assets/pictures/arasaac-6238.png"
@@ -764,8 +826,11 @@
     "VORTICE": {
       "src": "assets/pictures/arasaac-5598.png"
     },
-    "VOLTO": {
-      "src": "assets/pictures/arasaac-37138.png"
+    "VOLANTE": {
+      "src": "assets/pictures/arasaac-6245.png"
+    },
+    "VONGOLA": {
+      "src": "assets/pictures/arasaac-2645.png"
     },
     "VENTO": {
       "src": "assets/pictures/arasaac-7259.png"
@@ -775,6 +840,9 @@
     },
     "VESTITO": {
       "src": "assets/pictures/arasaac-2613.png"
+    },
+    "VERME": {
+      "src": "assets/pictures/arasaac-3344.png"
     },
     "VIOLA": {
       "src": "assets/pictures/arasaac-26310.png"
@@ -812,6 +880,9 @@
     "ROSPO": {
       "src": "assets/pictures/arasaac-3384.png"
     },
+    "RONDINE": {
+      "src": "assets/pictures/arasaac-3336.png"
+    },
     "REGALO": {
       "src": "assets/pictures/arasaac-3149.png"
     },
@@ -836,8 +907,8 @@
     "RUCOLA": {
       "src": "assets/pictures/arasaac-35755.png"
     },
-    "RUBINO": {
-      "src": "assets/pictures/arasaac-25397.png"
+    "RUBINETTO": {
+      "src": "assets/pictures/arasaac-2414.png"
     },
     "ZAINO": {
       "src": "assets/pictures/arasaac-2475.png"
@@ -885,6 +956,9 @@
     "ZUCCHINE": {
       "src": "assets/pictures/arasaac-2678.png"
     },
+    "ZUCCHERO": {
+      "src": "assets/pictures/arasaac-25560.png"
+    },
     "ZAPPA": {
       "src": "assets/pictures/arasaac-2651.png"
     },
@@ -910,6 +984,18 @@
     "CAMMELLO": {
       "src": "assets/pictures/arasaac-8522.png"
     },
+    "CAMION": {
+      "src": "assets/pictures/arasaac-2306.png"
+    },
+    "CAVALLO": {
+      "src": "assets/pictures/arasaac-2294.png"
+    },
+    "CASA": {
+      "src": "assets/pictures/arasaac-2317.png"
+    },
+    "CAPPELLO": {
+      "src": "assets/pictures/arasaac-2572.png"
+    },
     "ARANCIA": {
       "src": "assets/pictures/arasaac-2483.png"
     },
@@ -918,6 +1004,12 @@
     },
     "COLORI": {
       "src": "assets/pictures/arasaac-5968.png"
+    },
+    "COCCODRILLO": {
+      "src": "assets/pictures/arasaac-2343.png"
+    },
+    "COPERTA": {
+      "src": "assets/pictures/arasaac-2459.png"
     },
     "SCATOLA": {
       "src": "assets/pictures/arasaac-5935.png"
@@ -930,6 +1022,15 @@
     },
     "CUSCINO": {
       "src": "assets/pictures/arasaac-2250.png"
+    },
+    "CUCCHIAIO": {
+      "src": "assets/pictures/arasaac-2362.png"
+    },
+    "CUORE": {
+      "src": "assets/pictures/arasaac-2715.png"
+    },
+    "CUCINA": {
+      "src": "assets/pictures/arasaac-2341.png"
     },
     "ALTALENA": {
       "src": "assets/pictures/arasaac-4608.png"
@@ -949,14 +1050,32 @@
     "CHICCO": {
       "src": "assets/pictures/commons-34928706.jpg"
     },
+    "CHITARRA": {
+      "src": "assets/pictures/arasaac-2417.png"
+    },
     "CERVELLO": {
       "src": "assets/pictures/arasaac-2696.png"
+    },
+    "CERCHIO": {
+      "src": "assets/pictures/arasaac-3253.png"
+    },
+    "CETRIOLO": {
+      "src": "assets/pictures/arasaac-2847.png"
     },
     "GIRASOLE": {
       "src": "assets/pictures/arasaac-11274.png"
     },
     "CIOCCOLATO": {
       "src": "assets/pictures/arasaac-2334.png"
+    },
+    "CILIEGIA": {
+      "src": "assets/pictures/arasaac-8303.png"
+    },
+    "CIUCCIO": {
+      "src": "assets/pictures/arasaac-4599.png"
+    },
+    "CICOGNA": {
+      "src": "assets/pictures/arasaac-3015.png"
     },
     "MORE": {
       "src": "assets/pictures/arasaac-8360.png"
@@ -1003,11 +1122,23 @@
     "GALLINA": {
       "src": "assets/pictures/arasaac-2403.png"
     },
+    "GAMBA": {
+      "src": "assets/pictures/arasaac-8666.png"
+    },
+    "GALLO": {
+      "src": "assets/pictures/arasaac-2404.png"
+    },
     "GOCCIA": {
       "src": "assets/pictures/arasaac-8592.png"
     },
     "GOMMA": {
       "src": "assets/pictures/arasaac-2409.png"
+    },
+    "GONNA": {
+      "src": "assets/pictures/arasaac-2391.png"
+    },
+    "GOMITO": {
+      "src": "assets/pictures/arasaac-2707.png"
     },
     "FORCHETTA": {
       "src": "assets/pictures/arasaac-2588.png"
@@ -1017,6 +1148,9 @@
     },
     "GUSCIO": {
       "src": "assets/pictures/arasaac-6966.png"
+    },
+    "GUANCIA": {
+      "src": "assets/pictures/arasaac-2919.png"
     },
     "BICCHIERE": {
       "src": "assets/pictures/arasaac-4768.png"
@@ -1036,17 +1170,35 @@
     "GHIRLANDA": {
       "src": "assets/pictures/arasaac-3085.png"
     },
+    "GHIACCIO": {
+      "src": "assets/pictures/arasaac-7128.png"
+    },
+    "GHIACCIOLO": {
+      "src": "assets/pictures/arasaac-3348.png"
+    },
     "TEMPERINO": {
       "src": "assets/pictures/arasaac-2553.png"
     },
     "GESSO": {
       "src": "assets/pictures/arasaac-16343.png"
     },
+    "GEMELLI": {
+      "src": "assets/pictures/arasaac-7115.png"
+    },
     "PANINO": {
       "src": "assets/pictures/arasaac-2281.png"
     },
     "PASTELLO": {
       "src": "assets/pictures/arasaac-4951.png"
+    },
+    "GIOSTRA": {
+      "src": "assets/pictures/arasaac-4757.png"
+    },
+    "GIRAFFA": {
+      "src": "assets/pictures/arasaac-2437.png"
+    },
+    "GIACCA": {
+      "src": "assets/pictures/arasaac-3296.png"
     },
     "AGO": {
       "src": "assets/pictures/arasaac-2639.png"
@@ -1096,11 +1248,23 @@
     "RAGNO": {
       "src": "assets/pictures/arasaac-2254.png"
     },
+    "CASTAGNE": {
+      "src": "assets/pictures/arasaac-3183.png"
+    },
+    "LASAGNE": {
+      "src": "assets/pictures/arasaac-9051.png"
+    },
+    "GNOCCHI": {
+      "src": "assets/pictures/arasaac-39589.png"
+    },
     "AGLIO": {
       "src": "assets/pictures/arasaac-2641.png"
     },
     "TOVAGLIA": {
       "src": "assets/pictures/arasaac-2460.png"
+    },
+    "MAGLIONE": {
+      "src": "assets/pictures/arasaac-2436.png"
     },
     "JEANS": {
       "src": "assets/pictures/arasaac-24222.png"
@@ -1346,8 +1510,8 @@
           },
           "extra": [
             {
-              "word": "ELMO",
-              "emoji": "⛑️"
+              "word": "ELFO",
+              "emoji": "🧝"
             },
             {
               "word": "ERBA",
@@ -1494,8 +1658,8 @@
               "emoji": "🐘"
             },
             {
-              "word": "ELMO",
-              "emoji": "⛑️"
+              "word": "ELFO",
+              "emoji": "🧝"
             },
             {
               "word": "ERBA",
@@ -1551,8 +1715,8 @@
           ],
           "wrong": [
             {
-              "word": "ELMO",
-              "emoji": "⛑️"
+              "word": "ELFO",
+              "emoji": "🧝"
             },
             {
               "word": "OCA",
@@ -1926,8 +2090,8 @@
               "emoji": "🫐"
             },
             {
-              "word": "MICIO",
-              "emoji": "🐱"
+              "word": "MICROFONO",
+              "emoji": "🎤"
             }
           ],
           "wrong": [
@@ -1975,6 +2139,14 @@
             {
               "word": "MURO",
               "emoji": "🧱"
+            },
+            {
+              "word": "MULINO",
+              "emoji": "🌾"
+            },
+            {
+              "word": "MUTANDE",
+              "emoji": "🩲"
             }
           ],
           "wrong": [
@@ -2482,6 +2654,10 @@
             {
               "word": "PAVONE",
               "emoji": "🦚"
+            },
+            {
+              "word": "PAPPAGALLO",
+              "emoji": "🦜"
             }
           ],
           "wrong": [
@@ -2896,6 +3072,14 @@
             {
               "word": "TAZZA",
               "emoji": "☕"
+            },
+            {
+              "word": "TAPPO",
+              "emoji": "🍾"
+            },
+            {
+              "word": "TALPA",
+              "emoji": "🐀"
             }
           ],
           "wrong": [
@@ -3014,6 +3198,14 @@
             {
               "word": "TEIERA",
               "emoji": "🫖"
+            },
+            {
+              "word": "TESTA",
+              "emoji": "🧑"
+            },
+            {
+              "word": "TETTO",
+              "emoji": "🏠"
             }
           ],
           "wrong": [
@@ -3104,6 +3296,10 @@
             {
               "word": "TUFFO",
               "emoji": "🤿"
+            },
+            {
+              "word": "TUTA",
+              "emoji": "🎽"
             }
           ],
           "wrong": [
@@ -3387,6 +3583,10 @@
             {
               "word": "LEPRE",
               "emoji": "🐇"
+            },
+            {
+              "word": "LETTERA",
+              "emoji": "✉️"
             }
           ],
           "wrong": [
@@ -3438,6 +3638,10 @@
             {
               "word": "LINGUA",
               "emoji": "👅"
+            },
+            {
+              "word": "LIBELLULA",
+              "emoji": "🦋"
             }
           ],
           "wrong": [
@@ -3675,6 +3879,14 @@
             {
               "word": "SANDALO",
               "emoji": "👡"
+            },
+            {
+              "word": "SABBIA",
+              "emoji": "🏖️"
+            },
+            {
+              "word": "SACCO",
+              "emoji": "🛍️"
             }
           ],
           "wrong": [
@@ -3716,8 +3928,8 @@
               "emoji": "☀️"
             },
             {
-              "word": "SOFÀ",
-              "emoji": "🛋️"
+              "word": "SOTTOMARINO",
+              "emoji": "🚢"
             },
             {
               "word": "SOLDI",
@@ -3858,9 +4070,8 @@
               "emoji": "🧃"
             },
             {
-              "word": "SUPEREROE",
-              "emoji": "🦸",
-              "collega": false
+              "word": "SUSINA",
+              "emoji": "🍑"
             },
             {
               "word": "SUPERMERCATO",
@@ -4053,6 +4264,10 @@
             {
               "word": "BAGNO",
               "emoji": "🛁"
+            },
+            {
+              "word": "BARATTOLO",
+              "emoji": "🫙"
             }
           ],
           "wrong": [
@@ -4115,6 +4330,10 @@
             {
               "word": "BEBÈ",
               "emoji": "👶"
+            },
+            {
+              "word": "BERRETTO",
+              "emoji": "🧢"
             }
           ],
           "wrong": [
@@ -4355,6 +4574,10 @@
             {
               "word": "DOCCIA",
               "emoji": "🚿"
+            },
+            {
+              "word": "DOTTORE",
+              "emoji": "🧑‍⚕️"
             }
           ],
           "wrong": [
@@ -4386,6 +4609,10 @@
             {
               "word": "DENTE",
               "emoji": "🦷"
+            },
+            {
+              "word": "DENTIFRICIO",
+              "emoji": "🪥"
             }
           ],
           "wrong": [
@@ -4660,8 +4887,8 @@
               "emoji": "🎉"
             },
             {
-              "word": "FERRO",
-              "emoji": "🧲"
+              "word": "FELPA",
+              "emoji": "👕"
             },
             {
               "word": "FELCE",
@@ -4705,6 +4932,10 @@
             {
               "word": "FIOCCO",
               "emoji": "🎀"
+            },
+            {
+              "word": "FICO",
+              "emoji": "🍈"
             }
           ],
           "wrong": [
@@ -4744,6 +4975,10 @@
             {
               "word": "FULMINE",
               "emoji": "⚡"
+            },
+            {
+              "word": "FURETTO",
+              "emoji": "🐾"
             }
           ],
           "wrong": [
@@ -4955,13 +5190,12 @@
               "emoji": "🌀"
             },
             {
-              "word": "VOLTO",
-              "emoji": "🙂"
+              "word": "VOLANTE",
+              "emoji": "🚗"
             },
             {
-              "word": "VOCE",
-              "emoji": "🗣️",
-              "collega": false
+              "word": "VONGOLA",
+              "emoji": "🐚"
             }
           ],
           "wrong": [
@@ -5001,6 +5235,10 @@
             {
               "word": "VESTITO",
               "emoji": "👗"
+            },
+            {
+              "word": "VERME",
+              "emoji": "🪱"
             }
           ],
           "wrong": [
@@ -5292,6 +5530,10 @@
             {
               "word": "ROSPO",
               "emoji": "🐸"
+            },
+            {
+              "word": "RONDINE",
+              "emoji": "🐦"
             }
           ],
           "wrong": [
@@ -5408,8 +5650,8 @@
               "emoji": "🥬"
             },
             {
-              "word": "RUBINO",
-              "emoji": "💎"
+              "word": "RUBINETTO",
+              "emoji": "🚰"
             }
           ],
           "wrong": [
@@ -5711,6 +5953,10 @@
             {
               "word": "ZUCCHINE",
               "emoji": "🥒"
+            },
+            {
+              "word": "ZUCCHERO",
+              "emoji": "🍬"
             }
           ],
           "wrong": [
@@ -5881,6 +6127,22 @@
             {
               "word": "CAMMELLO",
               "emoji": "🐫"
+            },
+            {
+              "word": "CAMION",
+              "emoji": "🚚"
+            },
+            {
+              "word": "CAVALLO",
+              "emoji": "🐴"
+            },
+            {
+              "word": "CASA",
+              "emoji": "🏠"
+            },
+            {
+              "word": "CAPPELLO",
+              "emoji": "🎩"
             }
           ],
           "wrong": [
@@ -5912,6 +6174,14 @@
             {
               "word": "COLORI",
               "emoji": "🎨"
+            },
+            {
+              "word": "COCCODRILLO",
+              "emoji": "🐊"
+            },
+            {
+              "word": "COPERTA",
+              "emoji": "🛏️"
             }
           ],
           "wrong": [
@@ -5943,6 +6213,18 @@
             {
               "word": "CUSCINO",
               "emoji": "🛏️"
+            },
+            {
+              "word": "CUCCHIAIO",
+              "emoji": "🥄"
+            },
+            {
+              "word": "CUORE",
+              "emoji": "❤️"
+            },
+            {
+              "word": "CUCINA",
+              "emoji": "🍳"
             }
           ],
           "wrong": [
@@ -6005,6 +6287,10 @@
             {
               "word": "CHICCO",
               "emoji": "🫘"
+            },
+            {
+              "word": "CHITARRA",
+              "emoji": "🎸"
             }
           ],
           "wrong": [
@@ -6037,6 +6323,14 @@
             {
               "word": "CERVELLO",
               "emoji": "🧠"
+            },
+            {
+              "word": "CERCHIO",
+              "emoji": "⭕"
+            },
+            {
+              "word": "CETRIOLO",
+              "emoji": "🥒"
             }
           ],
           "wrong": [
@@ -6068,6 +6362,18 @@
             {
               "word": "CIOCCOLATO",
               "emoji": "🍫"
+            },
+            {
+              "word": "CILIEGIA",
+              "emoji": "🍒"
+            },
+            {
+              "word": "CIUCCIO",
+              "emoji": "🍼"
+            },
+            {
+              "word": "CICOGNA",
+              "emoji": "🐦"
             }
           ],
           "wrong": [
@@ -6287,6 +6593,14 @@
             {
               "word": "GALLINA",
               "emoji": "🐔"
+            },
+            {
+              "word": "GAMBA",
+              "emoji": "🦵"
+            },
+            {
+              "word": "GALLO",
+              "emoji": "🐓"
             }
           ],
           "wrong": [
@@ -6318,6 +6632,14 @@
             {
               "word": "GOMMA",
               "emoji": "🧽"
+            },
+            {
+              "word": "GONNA",
+              "emoji": "👗"
+            },
+            {
+              "word": "GOMITO",
+              "emoji": "💪"
             }
           ],
           "wrong": [
@@ -6349,6 +6671,10 @@
             {
               "word": "GUSCIO",
               "emoji": "🥚"
+            },
+            {
+              "word": "GUANCIA",
+              "emoji": "😊"
             }
           ],
           "wrong": [
@@ -6407,6 +6733,14 @@
             {
               "word": "GHIRLANDA",
               "emoji": "🎄"
+            },
+            {
+              "word": "GHIACCIO",
+              "emoji": "🧊"
+            },
+            {
+              "word": "GHIACCIOLO",
+              "emoji": "🍧"
             }
           ],
           "wrong": [
@@ -6438,6 +6772,10 @@
             {
               "word": "GELATO",
               "emoji": "🍨"
+            },
+            {
+              "word": "GEMELLI",
+              "emoji": "👬"
             }
           ],
           "wrong": [
@@ -6470,6 +6808,18 @@
               "word": "GIALLO",
               "emoji": "🟡",
               "collega": false
+            },
+            {
+              "word": "GIOSTRA",
+              "emoji": "🎠"
+            },
+            {
+              "word": "GIRAFFA",
+              "emoji": "🦒"
+            },
+            {
+              "word": "GIACCA",
+              "emoji": "🧥"
             }
           ],
           "wrong": [
@@ -6727,6 +7077,18 @@
             {
               "word": "RAGNO",
               "emoji": "🕷️"
+            },
+            {
+              "word": "CASTAGNE",
+              "emoji": "🌰"
+            },
+            {
+              "word": "LASAGNE",
+              "emoji": "🍝"
+            },
+            {
+              "word": "GNOCCHI",
+              "emoji": "🥟"
             }
           ]
         },
@@ -6749,9 +7111,8 @@
               "emoji": "🧺"
             },
             {
-              "word": "SVEGLIE",
-              "emoji": "⏰",
-              "collega": false
+              "word": "MAGLIONE",
+              "emoji": "🧶"
             }
           ]
         }
