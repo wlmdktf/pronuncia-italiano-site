@@ -1,6 +1,6 @@
-// ç¦»çº¿ç¼“å­˜ + ç‰ˆæœ¬åŒ–æ›´æ–°
-// VERSION ç”± deploy.sh åœ¨å‘å¸ƒæ—¶æ›¿æ¢æˆæž„å»ºæ—¶é—´æˆ³ (æœ¬åœ°å¼€å‘ä¿æŒå ä½ç¬¦ä¸å˜)
-const VERSION = '2026-09-23_094915';
+// 离线缓存 + 版本化更新
+// VERSION 由 deploy.sh 在发布时替换成构建时间戳 (本地开发保持占位符不变)
+const VERSION = '2026-09-23_100106';
 const CACHE = 'sillabe-' + VERSION;
 const CORE = [
   '.', 'index.html', 'css/style.css',
@@ -8,12 +8,12 @@ const CORE = [
   'data/curriculum.json', 'data/manifest.json',
   'manifest.webmanifest', 'icons/icon-180.png', 'icons/icon-512.png',
 ];
-// è¯¾ç¨‹ç”¨åˆ°çš„å›¾ç‰‡ (deploy ç”Ÿæˆ picture-list.json) ä¸Žå…¨éƒ¨éŸ³é¢‘: æ¿€æ´»åŽåœ¨åŽå°é¢„å–, å…ˆå›¾åŽéŸ³
+// 课程用到的图片 (deploy 生成 picture-list.json) 与全部音频: 激活后在后台预取, 先图后音
 const PREFETCH_LISTS = ['data/picture-list.json', 'data/audio-list.json'];
 
 self.addEventListener('install', (e) => {
-  // åªé¢„ç¼“å­˜æ ¸å¿ƒæ–‡ä»¶, å¿«é€Ÿè¿›å…¥ installed/waiting çŠ¶æ€ (æ›´æ–°æç¤ºä¸è¢«éŸ³é¢‘ä¸‹è½½æ‹–æ…¢)
-  // cache:'reload' ç»•è¿‡ HTTP ç¼“å­˜ â€” é˜²æ­¢æŠŠ CDN/æµè§ˆå™¨é‡Œçš„æ—§ç‰ˆæ–‡ä»¶è£…è¿›æ–°ç‰ˆæœ¬ç¼“å­˜
+  // 只预缓存核心文件, 快速进入 installed/waiting 状态 (更新提示不被音频下载拖慢)
+  // cache:'reload' 绕过 HTTP 缓存 — 防止把 CDN/浏览器里的旧版文件装进新版本缓存
   e.waitUntil(caches.open(CACHE).then(c =>
     c.addAll(CORE.map(u => new Request(u, { cache: 'reload' })))));
 });
@@ -27,7 +27,7 @@ self.addEventListener('activate', (e) => {
     for (const k of await caches.keys()) if (k !== CACHE) await caches.delete(k);
     await self.clients.claim();
   })());
-  // å›¾ç‰‡ + éŸ³é¢‘å…¨é‡é¢„å–: åŽå°å°½åŠ›è€Œä¸º, ä¸é˜»å¡žæ¿€æ´»; ç¼ºçš„ç”±è¿è¡Œæ—¶ç¼“å­˜å…œåº•
+  // 图片 + 音频全量预取: 后台尽力而为, 不阻塞激活; 缺的由运行时缓存兜底
   (async () => {
     try {
       const c = await caches.open(CACHE);
